@@ -1,0 +1,212 @@
+object TNT_06: TTNT_06
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  BorderStyle = bsNone
+  ClientHeight = 485
+  ClientWidth = 644
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl2: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 1
+    object img2backgroud: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitLeft = 256
+      ExplicitTop = 216
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object OK2: TImage
+      Left = 489
+      Top = 262
+      Width = 132
+      Height = 34
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OK2Click
+    end
+    object img2clean: TImage
+      Left = 512
+      Top = 211
+      Width = 93
+      Height = 37
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = img2cleanClick
+    end
+    object T8: TImage
+      Left = 209
+      Top = 200
+      Width = 26
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T3: TImage
+      Left = 268
+      Top = 200
+      Width = 27
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T1: TImage
+      Left = 325
+      Top = 200
+      Width = 26
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T2: TImage
+      Left = 382
+      Top = 200
+      Width = 27
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T6: TImage
+      Left = 209
+      Top = 283
+      Width = 26
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T4: TImage
+      Left = 268
+      Top = 283
+      Width = 27
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T7: TImage
+      Left = 325
+      Top = 283
+      Width = 26
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T9: TImage
+      Left = 382
+      Top = 283
+      Width = 27
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T5: TImage
+      Left = 440
+      Top = 200
+      Width = 27
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object T0: TImage
+      Left = 440
+      Top = 283
+      Width = 27
+      Height = 27
+      Cursor = crHandPoint
+      OnClick = T8Click
+    end
+    object edt2campo: TEdit
+      Left = 312
+      Top = 249
+      Width = 53
+      Height = 14
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 8
+      NumbersOnly = True
+      PasswordChar = #8226
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+  object pnl1: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 0
+    object img1background: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitLeft = 0
+    end
+    object OK: TImage
+      Left = 488
+      Top = 329
+      Width = 133
+      Height = 39
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OKClick
+    end
+    object img1clean: TImage
+      Left = 372
+      Top = 220
+      Width = 49
+      Height = 27
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = img1cleanClick
+    end
+    object campo: TLabel
+      Left = 512
+      Top = 254
+      Width = 36
+      Height = 16
+      Caption = 'XXXX'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 4227327
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object edt1campo: TEdit
+      Left = 204
+      Top = 227
+      Width = 130
+      Height = 14
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 6
+      PasswordChar = #8226
+      TabOrder = 0
+    end
+  end
+end

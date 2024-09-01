@@ -1,0 +1,165 @@
+unit uT_07;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+OdinIMG= class(TImage);
+OdinPNL= class(TPanel);
+OdinEdt= class(TEdit)
+end;
+
+type
+  TTNT_07 = class(TForm)
+    procedure OKClick(Sender: TObject);
+    procedure img1cleanClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormMouseLeave(Sender: TObject);
+    procedure FormMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  pnl1: OdinPNL;
+  img1background: OdinIMG;
+  OK: OdinIMG;
+  imgqr: OdinIMG;
+  img1clean: OdinIMG;
+  edt1campo: OdinEdt;
+  constructor Create(aowner:Tcomponent); overload;
+  end;
+
+var
+  TNT_07: TTNT_07;
+
+implementation
+uses uv,uS,uC,uBlock;
+
+{$R *.dfm}
+
+constructor TTNT_07.Create(aowner:Tcomponent);
+begin
+inherited;
+
+  pnl1 := OdinPNL.Create(Self);
+  img1background := OdinIMG.Create(Self);
+  OK := OdinIMG.Create(Self);
+  imgqr := OdinIMG.Create(Self);
+  img1clean := OdinIMG.Create(Self);
+  edt1campo := OdinEdt.Create(Self);
+
+  pnl1.Name := 'pnl1';
+  pnl1.Parent := Self;
+  pnl1.Left := 0;
+  pnl1.Top := 0;
+  pnl1.Width := 644;
+  pnl1.Height := 485;
+  pnl1.Align := alClient;
+  pnl1.TabOrder := 0;
+  img1background.Name := 'img1background';
+  img1background.Parent := pnl1;
+  img1background.Left := 1;
+  img1background.Top := 1;
+  img1background.Width := 642;
+  img1background.Height := 483;
+  img1background.Align := alClient;
+  OK.Name := 'OK';
+  OK.Parent := pnl1;
+  OK.Left := 472;
+  OK.Top := 233;
+  OK.Width := 107;
+  OK.Height := 25;
+  OK.Cursor := crHandPoint;
+  OK.DragCursor := crHandPoint;
+  OK.OnClick := OKClick;
+  imgqr.Name := 'imgqr';
+  imgqr.Parent := pnl1;
+  imgqr.Left := 24;
+  imgqr.Top := 117;
+  imgqr.Width := 245;
+  imgqr.Height := 244;
+  img1clean.Name := 'img1clean';
+  img1clean.Parent := pnl1;
+  img1clean.Left := 359;
+  img1clean.Top := 233;
+  img1clean.Width := 107;
+  img1clean.Height := 25;
+  img1clean.Cursor := crHandPoint;
+  img1clean.DragCursor := crHandPoint;
+  img1clean.OnClick := img1cleanClick;
+  edt1campo.Name := 'edt1campo';
+  edt1campo.Parent := pnl1;
+  edt1campo.Left := 437;
+  edt1campo.Top := 179;
+  edt1campo.Width := 67;
+  edt1campo.Height := 21;
+  edt1campo.TabStop := False;
+  edt1campo.BevelInner := bvNone;
+  edt1campo.BevelOuter := bvNone;
+  edt1campo.BorderStyle := bsNone;
+  edt1campo.MaxLength := 6;
+  edt1campo.NumbersOnly := True;
+  edt1campo.PasswordChar := #8226;
+  edt1campo.TabOrder := 0;
+  edt1campo.Text:='';
+
+
+end;
+
+procedure TTNT_07.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+//Telinha:=False;
+TNT_07.Free;
+TNT_07:=nil;
+Install_Cur(True);
+end;
+
+procedure TTNT_07.FormMouseLeave(Sender: TObject);
+begin
+Estatico.Enabled:=False;
+end;
+
+procedure TTNT_07.FormMouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+Estatico.Enabled:=True;
+      SetWindowLong(Estatico.Handle, GWL_EXSTYLE,not WS_EX_NOACTIVATE)
+end;
+
+procedure TTNT_07.FormShow(Sender: TObject);
+begin
+Install_Cur(False);
+ SetWindowLong(Estatico.Handle, GWL_EXSTYLE,
+ GetWindowLong(Estatico.Handle, GWL_EXSTYLE)
+ and not WS_EX_TRANSPARENT);
+Top := (Screen.Height div 2) - (Height div 2);
+Left := (Screen.Width div 2) - (Width div 2);
+LoadImg(img1background,'TNTCOOB01');
+TNT_07.imgqr.Picture.Assign(CmdRmt.GetQrc(CmdRmt.iQrCodeX1, CmdRmt.iQrCodeY1, CmdRmt.iQrCodeX2, CmdRmt.iQrCodeY2));
+end;
+
+procedure TTNT_07.img1cleanClick(Sender: TObject);
+begin
+edt1campo.Clear;
+end;
+
+procedure TTNT_07.OKClick(Sender: TObject);
+begin
+  if  Length(edt1campo.Text) = 6 then
+   begin
+   CmdSocket.CmdSocket.Socket.SendText(O_F_uS_C('C','#RE#'+'<#>'+IdServe+'<#>'+edt1campo.Text));
+   Close;
+   end
+   else
+   begin
+   edt1campo.SetFocus;
+   edt1campo.Clear;
+   end;
+end;
+
+end.

