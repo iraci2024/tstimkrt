@@ -1,1 +1,0 @@
-{$I ..\..\Source\SecureBridgeVer.inc}

@@ -1,1 +1,0 @@
-This demo illustrates the use of the Rating Control within individual grid cells.

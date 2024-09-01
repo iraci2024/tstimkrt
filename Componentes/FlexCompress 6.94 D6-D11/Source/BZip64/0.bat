@@ -1,1 +1,0 @@
-call CompileVS.bat

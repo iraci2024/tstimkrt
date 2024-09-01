@@ -1,9 +1,0 @@
-[users]
-admin=
-
-[users::names]
-admin=Administrator
-
-[users::passwords]
-admin=admin
-

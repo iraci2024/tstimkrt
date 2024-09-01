@@ -1,1 +1,0 @@
-{$SCOPEDENUMS ON}
