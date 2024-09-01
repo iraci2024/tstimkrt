@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ChartConnectionDemoRSCXE3">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoRSCXE3">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSCXE3">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoRSCXE3">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoRSCXE3">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserRSCXE3">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrderReportsDemoRSCXE3">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoRSCXE3">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSCXE3">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoRSCXE3">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoRSCXE3">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSCXE3">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ChartConnectionDemoRSCXE3;CompactLayoutDemoRSCXE3;CustomDrawDemoRSCXE3;DataSetsDemoRSCXE3;MultipleTotalsDemoRSCXE3;OLAPBrowserRSCXE3;OrderReportsDemoRSCXE3;SortBySummaryDemoRSCXE3;StylesMultiDemoRSCXE3;UnboundExternalDemoRSCXE3;PrefilterByCodeDemoRSCXE3;EditorsInPlaceDemoRSCXE3" />
+  </Target>
+</Project>

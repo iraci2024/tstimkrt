@@ -1,0 +1,1766 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="About the Trial Version">
+	<param name="Local" value="aboutthetrialversion.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Active">
+	<param name="Local" value="active.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Active">
+	<param name="Local" value="active.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="active.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="add files">
+	<param name="Local" value="basicexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFiles">
+	<param name="Local" value="addfiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFiles">
+	<param name="Local" value="addfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromBuffer">
+	<param name="Local" value="addfrombuffer.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromBuffer">
+	<param name="Local" value="addfrombuffer.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfrombuffer.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromStream">
+	<param name="Local" value="addfromstream.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromStream">
+	<param name="Local" value="addfromstream.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfromstream.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromString">
+	<param name="Local" value="addfromstring.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromString">
+	<param name="Local" value="addfromstring.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfromstring.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Advanced Example">
+	<param name="Local" value="advancedexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AfterOpen">
+	<param name="Local" value="afteropen.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AfterOpen">
+	<param name="Local" value="afteropen.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="afteropen.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Archive management">
+	<param name="Local" value="advancedexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BaseDir">
+	<param name="Local" value="basedir.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BaseDir">
+	<param name="Local" value="basedir.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="basedir.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BeginUpdate">
+	<param name="Local" value="beginupdate.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BeginUpdate">
+	<param name="Local" value="beginupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="beginupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BeginUpdate example">
+	<param name="Local" value="transactionexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Benefits">
+	<param name="Local" value="benefits.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CancelUpdate">
+	<param name="Local" value="cancelupdate.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CancelUpdate">
+	<param name="Local" value="cancelupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="cancelupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CancelUpdate example">
+	<param name="Local" value="transactionexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ChangeFilesAttr">
+	<param name="Local" value="changefilesattr.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ChangeFilesAttr">
+	<param name="Local" value="changefilesattr.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="changefilesattr.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ChangeFilesComment">
+	<param name="Local" value="changefilescomment.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ChangeFilesComment">
+	<param name="Local" value="changefilescomment.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="changefilescomment.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CloseArchive">
+	<param name="Local" value="closearchive.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CloseArchive">
+	<param name="Local" value="closearchive.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="closearchive.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Comment">
+	<param name="Local" value="comment.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Comment">
+	<param name="Local" value="comment.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="comment.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionAlgorithm">
+	<param name="Local" value="compressionalgorithm.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionAlgorithm">
+	<param name="Local" value="compressionalgorithm.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="compressionalgorithm.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionLevel">
+	<param name="Local" value="compressionlevel.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionLevel">
+	<param name="Local" value="compressionlevel.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="compressionlevel.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionMode">
+	<param name="Local" value="compressionmode.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionMode">
+	<param name="Local" value="compressionmode.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="compressionmode.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="create archive">
+	<param name="Local" value="basicexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Creating SFX archive">
+	<param name="Local" value="makesfxexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CryptoAlgorithm">
+	<param name="Local" value="cryptoalgorithm.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CryptoAlgorithm">
+	<param name="Local" value="cryptoalgorithm.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="cryptoalgorithm.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CurrentVersion">
+	<param name="Local" value="currentversion.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CurrentVersion">
+	<param name="Local" value="currentversion.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="currentversion.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="DeleteFiles">
+	<param name="Local" value="deletefiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="DeleteFiles">
+	<param name="Local" value="deletefiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="deletefiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="EncryptionAlgorithm">
+	<param name="Local" value="properties2.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="EndUpdate">
+	<param name="Local" value="endupdate.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="EndUpdate">
+	<param name="Local" value="endupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="endupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="EndUpdate example">
+	<param name="Local" value="transactionexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExclusionMasks">
+	<param name="Local" value="exclusionmasks.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExclusionMasks">
+	<param name="Local" value="exclusionmasks.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="exclusionmasks.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Exists">
+	<param name="Local" value="exists.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Exists">
+	<param name="Local" value="exists.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="exists.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="extract files">
+	<param name="Local" value="basicexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractCorruptedFiles">
+	<param name="Local" value="extractcorruptedfiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractCorruptedFiles">
+	<param name="Local" value="extractcorruptedfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extractcorruptedfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractFiles">
+	<param name="Local" value="extractfiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractFiles">
+	<param name="Local" value="extractfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extractfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToBuffer">
+	<param name="Local" value="extracttobuffer.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToBuffer">
+	<param name="Local" value="extracttobuffer.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extracttobuffer.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToStream">
+	<param name="Local" value="extracttostream.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToStream">
+	<param name="Local" value="extracttostream.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extracttostream.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToString">
+	<param name="Local" value="extracttostring.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToString">
+	<param name="Local" value="extracttostring.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extracttostring.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Features">
+	<param name="Local" value="features.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileCount">
+	<param name="Local" value="filecount.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileCount">
+	<param name="Local" value="filecount.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="filecount.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileMasks">
+	<param name="Local" value="filemasks.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileMasks">
+	<param name="Local" value="filemasks.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="filemasks.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileName">
+	<param name="Local" value="filename.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileName">
+	<param name="Local" value="filename.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="filename.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FindFirst">
+	<param name="Local" value="findfirst.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FindFirst">
+	<param name="Local" value="findfirst.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="findfirst.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FindNext">
+	<param name="Local" value="findnext.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FindNext">
+	<param name="Local" value="findnext.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="findnext.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FlexCompress">
+	<param name="Local" value="tflexcompress.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FlexCompress vs ZipForge">
+	<param name="Local" value="flexcompressvszipforge.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="How to Order">
+	<param name="Local" value="howtoorder.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="InMemory">
+	<param name="Local" value="inmemory.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="InMemory">
+	<param name="Local" value="inmemory.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="inmemory.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="InUpdate">
+	<param name="Local" value="inupdate.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="InUpdate">
+	<param name="Local" value="inupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="inupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="IsFilePasswordValid">
+	<param name="Local" value="isfilepasswordvalid.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="IsFilePasswordValid">
+	<param name="Local" value="isfilepasswordvalid.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="isfilepasswordvalid.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="IsValidArchiveFile">
+	<param name="Local" value="isvalidarchivefile.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="IsValidArchiveFile">
+	<param name="Local" value="isvalidarchivefile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="isvalidarchivefile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Make SFX archive">
+	<param name="Local" value="makesfxexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="MakeSFX">
+	<param name="Local" value="makesfx.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="MakeSFX">
+	<param name="Local" value="makesfx.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="makesfx.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="MoveFiles">
+	<param name="Local" value="movefiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="MoveFiles">
+	<param name="Local" value="movefiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="movefiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="NoCompressionMasks">
+	<param name="Local" value="nocompressmasks.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="NoCompressionMasks">
+	<param name="Local" value="nocompressmasks.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="nocompressmasks.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnConfirmOverwrite">
+	<param name="Local" value="onconfirmoverwrite.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnConfirmOverwrite">
+	<param name="Local" value="onconfirmoverwrite.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onconfirmoverwrite.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnConfirmProcessFile">
+	<param name="Local" value="onconfirmprocessfile.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnConfirmProcessFile">
+	<param name="Local" value="onconfirmprocessfile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onconfirmprocessfile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnCopyTempFileProgress">
+	<param name="Local" value="oncopytempfileprogress.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnCopyTempFileProgress">
+	<param name="Local" value="oncopytempfileprogress.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="oncopytempfileprogress.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnDiskFull">
+	<param name="Local" value="ondiskfull.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnDiskFull">
+	<param name="Local" value="ondiskfull.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="ondiskfull.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnExtractFile">
+	<param name="Local" value="onextractfile.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnExtractFile">
+	<param name="Local" value="onextractfile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onextractfile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnFileProgress">
+	<param name="Local" value="onfileprogress.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnFileProgress">
+	<param name="Local" value="onfileprogress.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onfileprogress.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnOverallProgress">
+	<param name="Local" value="onoverallprogress.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnOverallProgress">
+	<param name="Local" value="onoverallprogress.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onoverallprogress.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnPassword">
+	<param name="Local" value="onpassword.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnPassword">
+	<param name="Local" value="onpassword.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onpassword.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnProcessFileFailure">
+	<param name="Local" value="onprocessfilefailure.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnProcessFileFailure">
+	<param name="Local" value="onprocessfilefailure.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onprocessfilefailure.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestBlankVolume">
+	<param name="Local" value="onrequestblankvolume.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestBlankVolume">
+	<param name="Local" value="onrequestblankvolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestblankvolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestFirstVolume">
+	<param name="Local" value="onrequestfirstvolume.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestFirstVolume">
+	<param name="Local" value="onrequestfirstvolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestfirstvolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestLastVolume">
+	<param name="Local" value="onrequestlastvolume.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestLastVolume">
+	<param name="Local" value="onrequestlastvolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestlastvolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestMiddleVolume">
+	<param name="Local" value="onrequestmiddlevolume.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestMiddleVolume">
+	<param name="Local" value="onrequestmiddlevolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestmiddlevolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnStoreFile">
+	<param name="Local" value="onstorefile.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnStoreFile">
+	<param name="Local" value="onstorefile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onstorefile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="open archive">
+	<param name="Local" value="basicexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OpenArchive">
+	<param name="Local" value="openarchive.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OpenArchive">
+	<param name="Local" value="openarchive.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="openarchive.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OpenCorruptedArchives">
+	<param name="Local" value="opencorruptedarchives.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OpenCorruptedArchives">
+	<param name="Local" value="opencorruptedarchives.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="opencorruptedarchives.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Options">
+	<param name="Local" value="options.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Options">
+	<param name="Local" value="options.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="options.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Order">
+	<param name="Local" value="howtoorder.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Overview">
+	<param name="Local" value="overview.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Password">
+	<param name="Local" value="password.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Password">
+	<param name="Local" value="password.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="password.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Purchase">
+	<param name="Local" value="howtoorder.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Registration">
+	<param name="Local" value="howtoorder.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="RenameFile">
+	<param name="Local" value="renamefile.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="RenameFile">
+	<param name="Local" value="renamefile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="renamefile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="RepairArchive">
+	<param name="Local" value="repairarchive.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="RepairArchive">
+	<param name="Local" value="repairarchive.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="repairarchive.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Search example">
+	<param name="Local" value="searchexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Searching files">
+	<param name="Local" value="searchexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SFXStub">
+	<param name="Local" value="sfxstub.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SFXStub">
+	<param name="Local" value="sfxstub.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="sfxstub.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Size">
+	<param name="Local" value="size.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Size">
+	<param name="Local" value="size.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="size.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SpanningMode">
+	<param name="Local" value="spanningmode.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SpanningMode">
+	<param name="Local" value="spanningmode.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="spanningmode.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SpanningOptions">
+	<param name="Local" value="spanningoptions.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SpanningOptions">
+	<param name="Local" value="spanningoptions.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="spanningoptions.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Support">
+	<param name="Local" value="gettinghelpfromtechnicalsu.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Technical Support">
+	<param name="Local" value="gettinghelpfromtechnicalsu.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TempDir">
+	<param name="Local" value="tempdir.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TempDir">
+	<param name="Local" value="tempdir.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="tempdir.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TestFiles">
+	<param name="Local" value="testfiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TestFiles">
+	<param name="Local" value="testfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="testfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="tflexcompress.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="active.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Active">
+	<param name="Local" value="active.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFiles">
+	<param name="Local" value="addfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfrombuffer.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromBuffer">
+	<param name="Local" value="addfrombuffer.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfromstream.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromStream">
+	<param name="Local" value="addfromstream.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="addfromstring.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AddFromString">
+	<param name="Local" value="addfromstring.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="afteropen.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="AfterOpen">
+	<param name="Local" value="afteropen.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="basedir.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BaseDir">
+	<param name="Local" value="basedir.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="beginupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="BeginUpdate">
+	<param name="Local" value="beginupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="cancelupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CancelUpdate">
+	<param name="Local" value="cancelupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="changefilesattr.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ChangeFilesAttr">
+	<param name="Local" value="changefilesattr.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="changefilescomment.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ChangeFilesComment">
+	<param name="Local" value="changefilescomment.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="closearchive.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CloseArchive">
+	<param name="Local" value="closearchive.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="comment.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Comment">
+	<param name="Local" value="comment.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="compressionalgorithm.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionAlgorithm">
+	<param name="Local" value="compressionalgorithm.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="compressionlevel.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionLevel">
+	<param name="Local" value="compressionlevel.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="compressionmode.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CompressionMode">
+	<param name="Local" value="compressionmode.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="cryptoalgorithm.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CryptoAlgorithm">
+	<param name="Local" value="cryptoalgorithm.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="currentversion.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="CurrentVersion">
+	<param name="Local" value="currentversion.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="deletefiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="DeleteFiles">
+	<param name="Local" value="deletefiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="endupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="EndUpdate">
+	<param name="Local" value="endupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="exclusionmasks.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExclusionMasks">
+	<param name="Local" value="exclusionmasks.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="exists.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Exists">
+	<param name="Local" value="exists.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extractcorruptedfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractCorruptedFiles">
+	<param name="Local" value="extractcorruptedfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extractfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractFiles">
+	<param name="Local" value="extractfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extracttobuffer.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToBuffer">
+	<param name="Local" value="extracttobuffer.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extracttostream.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToStream">
+	<param name="Local" value="extracttostream.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="extracttostring.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="ExtractToString">
+	<param name="Local" value="extracttostring.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="filecount.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileCount">
+	<param name="Local" value="filecount.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="filemasks.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileMasks">
+	<param name="Local" value="filemasks.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="filename.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FileName">
+	<param name="Local" value="filename.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="findfirst.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FindFirst">
+	<param name="Local" value="findfirst.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="findnext.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="FindNext">
+	<param name="Local" value="findnext.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="inmemory.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="InMemory">
+	<param name="Local" value="inmemory.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="inupdate.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="InUpdate">
+	<param name="Local" value="inupdate.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="isfilepasswordvalid.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="IsFilePasswordValid">
+	<param name="Local" value="isfilepasswordvalid.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="isvalidarchivefile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="IsValidArchiveFile">
+	<param name="Local" value="isvalidarchivefile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="makesfx.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="MakeSFX">
+	<param name="Local" value="makesfx.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="movefiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="MoveFiles">
+	<param name="Local" value="movefiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="nocompressmasks.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="NoCompressionMasks">
+	<param name="Local" value="nocompressmasks.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onconfirmoverwrite.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnConfirmOverwrite">
+	<param name="Local" value="onconfirmoverwrite.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onconfirmprocessfile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnConfirmProcessFile">
+	<param name="Local" value="onconfirmprocessfile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="oncopytempfileprogress.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnCopyTempFileProgress">
+	<param name="Local" value="oncopytempfileprogress.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="ondiskfull.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnDiskFull">
+	<param name="Local" value="ondiskfull.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onextractfile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnExtractFile">
+	<param name="Local" value="onextractfile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onfileprogress.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnFileProgress">
+	<param name="Local" value="onfileprogress.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onoverallprogress.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnOverallProgress">
+	<param name="Local" value="onoverallprogress.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onpassword.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnPassword">
+	<param name="Local" value="onpassword.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onprocessfilefailure.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnProcessFileFailure">
+	<param name="Local" value="onprocessfilefailure.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestblankvolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestBlankVolume">
+	<param name="Local" value="onrequestblankvolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestfirstvolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestFirstVolume">
+	<param name="Local" value="onrequestfirstvolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestlastvolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestLastVolume">
+	<param name="Local" value="onrequestlastvolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onrequestmiddlevolume.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnRequestMiddleVolume">
+	<param name="Local" value="onrequestmiddlevolume.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="onstorefile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OnStoreFile">
+	<param name="Local" value="onstorefile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="openarchive.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OpenArchive">
+	<param name="Local" value="openarchive.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="opencorruptedarchives.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="OpenCorruptedArchives">
+	<param name="Local" value="opencorruptedarchives.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="options.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Options">
+	<param name="Local" value="options.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="password.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Password">
+	<param name="Local" value="password.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="renamefile.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="RenameFile">
+	<param name="Local" value="renamefile.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="repairarchive.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="RepairArchive">
+	<param name="Local" value="repairarchive.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="sfxstub.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SFXStub">
+	<param name="Local" value="sfxstub.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="size.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Size">
+	<param name="Local" value="size.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="spanningmode.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SpanningMode">
+	<param name="Local" value="spanningmode.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="spanningoptions.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="SpanningOptions">
+	<param name="Local" value="spanningoptions.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="tempdir.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TempDir">
+	<param name="Local" value="tempdir.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="testfiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TestFiles">
+	<param name="Local" value="testfiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="updatefiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="UpdateFiles">
+	<param name="Local" value="updatefiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCArchiveItem">
+	<param name="Local" value="tfcarchiveitem.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCFileShareMode">
+	<param name="Local" value="tfcfilesharemode.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCOverwriteMode">
+	<param name="Local" value="tfcoverwritemode.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCProcessOperation">
+	<param name="Local" value="tfcprocessoperation.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCProgressPhase">
+	<param name="Local" value="tfcprogressphase.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCStorePath">
+	<param name="Local" value="tfcstorepath.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFXCVolumeSize">
+	<param name="Local" value="tfxcvolumesize.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Transaction example">
+	<param name="Local" value="transactionexample.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Trial version restrictions">
+	<param name="Local" value="aboutthetrialversion.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TZipForge">
+	<param name="Local" value="zip64mode.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Zip64Mode">
+	<param name="Local" value="zip64mode.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="UnicodeFilenames">
+	<param name="Local" value="properties2.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="UpdateFiles">
+	<param name="Local" value="updatefiles.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="UpdateFiles">
+	<param name="Local" value="updatefiles.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TFlexCompress">
+	<param name="Local" value="updatefiles.htm">
+	</OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Zip64Mode">
+	<param name="Local" value="zip64mode.htm">
+	</OBJECT>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="Zip64Mode">
+	<param name="Local" value="zip64mode.htm">
+	</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+	<param name="Name" value="TZipForge">
+	<param name="Local" value="zip64mode.htm">
+	</OBJECT>
+</UL>
+</UL>
+</BODY></HTML>

@@ -1,0 +1,23 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="cxEditorsDemoRSC104Sydney">
+    <MSBuild Projects="cxEditorsDemo\cxEditorsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsDemoRSC104Sydney">
+    <MSBuild Projects="EditorsDemo\EditorsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="PuzzleDemoRSC104Sydney">
+    <MSBuild Projects="PuzzleDemo\PuzzleDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="cxEditorsDemoRSC104Sydney;EditorsDemoRSC104Sydney;PuzzleDemoRSC104Sydney" />
+  </Target>
+</Project>

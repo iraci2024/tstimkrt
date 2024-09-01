@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkDXE7">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkDXE7">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkDXE7">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkDXE7">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerDXE7">
+    <MSBuild Projects="ReportExplorer\ReportExplorerDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkDXE7">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLDXE7">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkDXE7">
+    <MSBuild Projects="StandardRL\StandardReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkDXE7">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkDXE7">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkDXE7;FlowChartReportLinkDXE7;LayoutControlReportLinkDXE7;OrgChartReportLinkDXE7;ReportExplorerDXE7;SchedulerLinkDXE7;SpreadSheetRLDXE7;StandardReportLinkDXE7;PivotGridReportLinkDXE7;cxTreeListReportLinkDXE7" />
+  </Target>
+</Project>

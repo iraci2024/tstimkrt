@@ -1,0 +1,218 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ColumnsMultiEditorsDemoD2010">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoD2010">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoD2010">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoD2010">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoD2010">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD2010">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD2010">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoD2010">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD2010">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoD2010">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoD2010">
+    <MSBuild Projects="GridModeDemo\GridModeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoD2010">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="IssueListD2010">
+    <MSBuild Projects="IssueList\IssueListD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoD2010">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoD2010">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoD2010">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoD2010">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoD2010">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD2010">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD2010">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoD2010">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoD2010">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoD2010">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoD2010">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD2010">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoD2010">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoD2010">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoD2010">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoD2010">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewTableSimpleDemoD2010">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoD2010">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoD2010">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoD2010">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoD2010">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoD2010">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoD2010">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoD2010">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoD2010">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoD2010">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoD2010">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoD2010">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoD2010">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoD2010">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD2010">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoD2010">
+    <MSBuild Projects="FilterDemo\FilterDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD2010">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoD2010">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoD2010">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoD2010">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoD2010">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoD2010">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoD2010">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoD2010">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoD2010">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD2010">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoD2010">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoD2010">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoD2010">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoD2010">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingD2010">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoD2010">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoD2010">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoD2010">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoD2010">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD2010">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD2010">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD2010">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowLayoutDemoD2010">
+    <MSBuild Projects="CustomRowLayoutDemo\CustomRowLayoutDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ColumnsMultiEditorsDemoD2010;ColumnsShareDemoD2010;ColumnsSimpleDemoD2010;CustomDrawCardViewDemoD2010;CustomDrawTableViewDemoD2010;DragDropDemoD2010;EditorsInPlaceDemoD2010;FilterByCodeDemoD2010;FilterControlDemoD2010;GridMenuViewsDemoD2010;GridModeDemoD2010;InplaceEditFormDemoD2010;IssueListD2010;MasterDetailCardDemoD2010;MasterDetailDemoD2010;MasterDetailMultiDemoD2010;MasterDetailTableDemoD2010;StylesCardViewDemoD2010;StylesMultiDemoD2010;StylesSimpleDemoD2010;SummaryFooterDemoD2010;SummaryGroupDemoD2010;SummaryMultiDemoD2010;UnboundExternalDataDemoD2010;UnboundModeDemoD2010;UnboundSimpleDemoD2010;ViewBandedDemoD2010;ViewBandedFixedDemoD2010;ViewCardSimpleDemoD2010;ViewTableSimpleDemoD2010;CellLevelMultiselectDemoD2010;CustomRowHeightDemoD2010;Office11GroupRowStyleDemoD2010;UnboundColumnsDemoD2010;UnboundDesignDefinedDemoD2010;ViewCardDemoD2010;ViewNestedBandsDemoD2010;UnboundListDemoD2010;ViewChartDemoD2010;ViewChartStackedDemoD2010;MasterDetailChartDemoD2010;CardLayoutDemoD2010;ChartDataDrillingDemoD2010;FindPanelDemoD2010;FilterDemoD2010;FilterDropDownDemoD2010;LayoutViewDemoD2010;LayoutViewCarouselModeDemoD2010;ServerModeADODemoD2010;ServerModeDBXDemoD2010;ServerModeFireDACDemoD2010;ServerModeADOQueryDemoD2010;ServerModeDBXQueryDemoD2010;ServerModeFireDACQueryDemoD2010;EditorsInPlaceValidationDemoD2010;RatingControlDemoD2010;FixedGroupsDemoD2010;SparklinesDemoD2010;WinExplorerViewDemoD2010;LayoutViewDemoGroupScrollingD2010;MergedGroupsDemoD2010;CheckBoxMultiSelectDemoD2010;FixedDataRowsDemoD2010;ConditionalFormattingDemoD2010;ScrollbarAnnotationsDemoD2010;CalculatedFieldsDemoD2010;CalculatedFilterItemsDemoD2010;CustomRowLayoutDemoD2010" />
+  </Target>
+</Project>

@@ -1,0 +1,63 @@
+package dxCoreRS28;
+
+{$R *.res}
+{$R *.otares}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'ExpressCore Library by Developer Express Inc.'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  dxCore,
+  dxEncoding,
+  dxGenerics,
+  dxThreading,
+  dxDPIAwareUtils,
+  dxHash,
+  dxHashUtils,
+  dxCrypto,
+  dxCryptoApi,
+  dxX509Certificate,
+  dxCoreClasses,
+  dxCoreGraphics,
+  cxGeometry,
+  dxMessages,
+  dxTypeHelpers,
+  dxCustomTree,
+  dxBase64,
+  dxXMLDoc,
+  dxXMLClasses,
+  dxXMLReader,
+  dxXMLWriter,
+  dxCharacters,
+  dxStringHelper,
+  dxUriRecord;
+
+end.

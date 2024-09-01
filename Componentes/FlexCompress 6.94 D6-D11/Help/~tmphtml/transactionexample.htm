@@ -1,0 +1,137 @@
+<html>
+<head>
+   <title>TransactionExample</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_TransactionExample">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>Transaction Example
+<br>
+</b></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">The following example shows how to use transaction system:
+<br>
+
+<br>
+<b>with</b> Archiver <b>do
+<br>
+</b>    <b>begin</b>
+<br>
+        FileName := 'C:\TEST\test.fxc';
+<br>
+<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Create a new archive file</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">
+<br>
+</span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        OpenArchive(fmCreate);
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Set path to folder with some text files to BaseDir
+<br>
+</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><i>        </i>BaseDir := 'C:\SOURCE_FOLDER';
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">  
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Start a transaction</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+        BeginUpdate;
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">    
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add all files and directories from </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">'C:\SOURCE_FOLDER' </span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>to the archive</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>        </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>try</b><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">
+<br>
+</span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">          AddFiles('*.*');
+<br>
+        <b>except
+<br>
+</b></span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">          <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// If errors occurs rollback transaction. All modifications will be cancelled. </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<b>          </b>CancelUpdate;
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">          <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Close archive and exit current procedure </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<b>          </b>CloseArchive;
+<br>
+          <b>Exit;</b>
+<br>
+        <b>end;</b>
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Set path to folder with some HTML files to BaseDir
+<br>
+</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><i>        </i>BaseDir := 'C:\SOURCE_FOLDER1\';
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add all HTML files from </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">'C:\SOURCE_FOLDER1' </span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>to the archive</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>        </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>try</b><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">
+<br>
+</span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">          AddFiles('*.htm?');
+<br>
+        <b>except
+<br>
+</b></span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">          <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// If errors occurs rollback transaction. All modifications will be cancelled. </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<b>          </b>CancelUpdate;
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">          <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Close archive and exit current procedure </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<b>          </b>CloseArchive;
+<br>
+          <b>Exit;</b>
+<br>
+        <b>end;</b>
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Commit a transaction. All modifications will be saved.</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+        EndUpdate;</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+ 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Close the archive</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+        CloseArchive;
+<br>
+<b>    end;</b>
+<br>
+</span></span>
+
+</body>
+</html>

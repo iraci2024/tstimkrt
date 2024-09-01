@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemoD2010">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoD2010">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoD2010">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoD2010">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoD2010">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD2010">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD2010">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoD2010">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartConnectionDemoD2010">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserD2010">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoD2010">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD2010">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoD2010;CompactLayoutDemoD2010;MultipleTotalsDemoD2010;SortBySummaryDemoD2010;UnboundExternalDemoD2010;StylesMultiDemoD2010;CustomDrawDemoD2010;DataSetsDemoD2010;ChartConnectionDemoD2010;OLAPBrowserD2010;PrefilterByCodeDemoD2010;EditorsInPlaceDemoD2010" />
+  </Target>
+</Project>

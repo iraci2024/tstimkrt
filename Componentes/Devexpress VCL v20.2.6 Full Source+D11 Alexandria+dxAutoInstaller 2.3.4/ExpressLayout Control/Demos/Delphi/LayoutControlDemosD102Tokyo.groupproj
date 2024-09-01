@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EditorsDemoD102Tokyo">
+    <MSBuild Projects="EditorsDemo\EditorsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="cxEditorsDemoD102Tokyo">
+    <MSBuild Projects="cxEditorsDemo\cxEditorsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="PuzzleDemoD102Tokyo">
+    <MSBuild Projects="PuzzleDemo\PuzzleDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FlexibleLayoutDemoD102Tokyo">
+    <MSBuild Projects="FlexibleLayoutDemo\FlexibleLayoutDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="GroupScrollingDemoD102Tokyo">
+    <MSBuild Projects="GroupScrollingDemo\GroupScrollingDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EditorsDemoD102Tokyo;cxEditorsDemoD102Tokyo;PuzzleDemoD102Tokyo;FlexibleLayoutDemoD102Tokyo;GroupScrollingDemoD102Tokyo" />
+  </Target>
+</Project>

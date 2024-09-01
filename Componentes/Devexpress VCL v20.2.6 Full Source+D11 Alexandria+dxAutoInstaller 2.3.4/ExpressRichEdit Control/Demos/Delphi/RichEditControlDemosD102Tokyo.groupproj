@@ -1,0 +1,23 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="RibbonRichEditDemoD102Tokyo">
+    <MSBuild Projects="RibbonRichEditDemo\RibbonRichEditDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RichEditSimpleMailMergeDemoD102Tokyo">
+    <MSBuild Projects="RichEditSimpleMailMerge\RichEditSimpleMailMergeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RichEditMasterDetailMailMergeDemoD102Tokyo">
+    <MSBuild Projects="RichEditMasterDetailMailMerge\RichEditMasterDetailMailMergeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="RibbonRichEditDemoD102Tokyo;RichEditSimpleMailMergeDemoD102Tokyo;RichEditMasterDetailMailMergeDemoD102Tokyo" />
+  </Target>
+</Project>

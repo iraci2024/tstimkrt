@@ -1,0 +1,35 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FeaturesDemoRSC104Sydney">
+    <MSBuild Projects="FeaturesDemo\FeaturesDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="AlphaBlendingDemoRSC104Sydney">
+    <MSBuild Projects="AlphaBlendingDemo\AlphaBlendingDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSC104Sydney">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="GroupControlDemoRSC104Sydney">
+    <MSBuild Projects="GroupControlDemo\GroupControlDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Office12ViewsDemoRSC104Sydney">
+    <MSBuild Projects="Office12ViewsDemo\Office12ViewsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="HamburgerMenuDemoRSC104Sydney">
+    <MSBuild Projects="HamburgerMenu\HamburgerMenuDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="FluentDesignDemoRSC104Sydney">
+    <MSBuild Projects="FluentDesignDemo\FluentDesignDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FeaturesDemoRSC104Sydney;AlphaBlendingDemoRSC104Sydney;DragDropDemoRSC104Sydney;GroupControlDemoRSC104Sydney;Office12ViewsDemoRSC104Sydney;HamburgerMenuDemoRSC104Sydney;FluentDesignDemoRSC104Sydney" />
+  </Target>
+</Project>

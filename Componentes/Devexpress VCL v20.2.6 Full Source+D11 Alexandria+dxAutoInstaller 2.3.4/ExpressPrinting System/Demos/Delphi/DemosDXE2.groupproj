@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkDXE2">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkDXE2">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkDXE2">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkDXE2">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerDXE2">
+    <MSBuild Projects="ReportExplorer\ReportExplorerDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkDXE2">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLDXE2">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkDXE2">
+    <MSBuild Projects="StandardRL\StandardReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLinkDXE2">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkDXE2">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkDXE2">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkDXE2;FlowChartReportLinkDXE2;LayoutControlReportLinkDXE2;OrgChartReportLinkDXE2;ReportExplorerDXE2;SchedulerLinkDXE2;SpreadSheetRLDXE2;StandardReportLinkDXE2;TeeChartReportLinkDXE2;PivotGridReportLinkDXE2;cxTreeListReportLinkDXE2" />
+  </Target>
+</Project>

@@ -1,0 +1,38 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EBar2000DemoD100Seattle">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="BackgroundDemoD100Seattle">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemoD100Seattle">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemoD100Seattle">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="BarNotepadDemoD100Seattle">
+    <MSBuild Projects="BarNotepadDemo\BarNotepadDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemoD100Seattle">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="SampleDockingD100Seattle">
+    <MSBuild Projects="SampleDocking\SampleDockingD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="NotesDemoD100Seattle">
+    <MSBuild Projects="NotesDemo\NotesDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EBar2000DemoD100Seattle;BackgroundDemoD100Seattle;DockingMegaDemoD100Seattle;InPlaceEditorsDemoD100Seattle;BarNotepadDemoD100Seattle;RibbonNotepadDemoD100Seattle;SampleDockingD100Seattle;NotesDemoD100Seattle" />
+  </Target>
+</Project>

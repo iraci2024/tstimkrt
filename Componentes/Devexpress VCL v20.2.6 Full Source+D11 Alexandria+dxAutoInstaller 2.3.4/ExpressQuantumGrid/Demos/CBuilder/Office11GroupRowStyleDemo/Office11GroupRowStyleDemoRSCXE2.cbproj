@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7F0D3977-B8D0-4604-97B9-27AD2AFE3A58}</ProjectGuid>
+    <ProjectVersion>12.2</ProjectVersion>
+    <MainSource>Office11GroupRowStyleDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <UsePackages>true</UsePackages>
+    <PackageImports>vcl.bpi;rtl.bpi;vclx.bpi;adortl.bpi;bdertl.bpi;dbrtl.bpi;vcldb.bpi;dsnap.bpi;dxSkinXmas2008BlueRS16.bpi;cxSchedulerTreeBrowserRS16.bpi;dxPSdxFCLnkRS16.bpi;dxMapControlRS16.bpi;dxEMFDataRS16.bpi;dxHttpIndyRequestRS16.bpi;dxSpreadSheetRS16.bpi;dxSkinMetropolisDarkRS16.bpi;dxSkinLilianRS16.bpi;dxSkinOffice2016DarkRS16.bpi;dxBarDBNavRS16.bpi;dxRichEditDocumentModelRS16.bpi;dxSkinMetropolisRS16.bpi;dxRichEditControlHtmlFormatRS16.bpi;cxGridRS16.bpi;dxSkinOffice2010BlackRS16.bpi;dxCoreRS16.bpi;dxSkinDarkSideRS16.bpi;dxBarExtItemsRS16.bpi;dxSkinSevenClassicRS16.bpi;dxSkinDevExpressDarkStyleRS16.bpi;dxSkinLiquidSkyRS16.bpi;dxSkiniMaginaryRS16.bpi;dxPSdxGaugeControlLnkRS16.bpi;cxExportRS16.bpi;dxSkinSilverRS16.bpi;dxSkinPumpkinRS16.bpi;dxSkinVisualStudio2013BlueRS16.bpi;dxPSRichEditControlLnkRS16.bpi;dxSkinTheBezierRS16.bpi;dxEMFRS16.bpi;dxSkinCoffeeRS16.bpi;cxSchedulerWebServiceStorageRS16.bpi;dxWizardControlRS16.bpi;dxdbtrRS16.bpi;dxSkinBlackRS16.bpi;dxPScxVGridLnkRS16.bpi;dxPScxPivotGridLnkRS16.bpi;dxDBOrRS16.bpi;dxPSLnksRS16.bpi;dxSpreadSheetCoreConditionalFormattingDialogsRS16.bpi;dxPSdxDBTVLnkRS16.bpi;dxPScxGridLnkRS16.bpi;dxSkinSevenRS16.bpi;dxPSPrVwAdvRS16.bpi;dxSkinBasicRS16.bpi;dxSkinFoggyRS16.bpi;dxSkinVS2010RS16.bpi;dxRibbonCustomizationFormRS16.bpi;dxRichEditControlCoreRS16.bpi;dxBarRS16.bpi;dxSkinOffice2013LightGrayRS16.bpi;dxRibbonRS16.bpi;dxFlowChartDesignerRS16.bpi;cxSchedulerRS16.bpi;dxNavBarRS16.bpi;dxBarExtDBItemsRS16.bpi;dxPSdxMapControlLnkRS16.bpi;dxSkinOffice2019WhiteRS16.bpi;dxPScxTLLnkRS16.bpi;dxPSCoreRS16.bpi;cxLibraryRS16.bpi;dxSkinOffice2019DarkGrayRS16.bpi;dxGaugeControlRS16.bpi;dxmdsRS16.bpi;dxFlowChartLayoutsRS16.bpi;dxDockingRS16.bpi;dxSkinHighContrastRS16.bpi;cxPivotGridRS16.bpi;dxPScxExtCommonRS16.bpi;dxtrmdRS16.bpi;dxSkinDarkRoomRS16.bpi;cxGridEMFRS16.bpi;dxSpreadSheetCoreRS16.bpi;dxSkinSummer2008RS16.bpi;cxPageControldxBarPopupMenuRS16.bpi;dxSkinOffice2013DarkGrayRS16.bpi;dxSkinOffice2013WhiteRS16.bpi;dxSkinMcSkinRS16.bpi;cxSchedulerRibbonStyleEventEditorRS16.bpi;dxSkinGlassOceansRS16.bpi;dxTabbedMDIRS16.bpi;dxRichEditControlRS16.bpi;dxSpellCheckerRS16.bpi;dxCloudServiceLibraryRS16.bpi;dxGanttControlSchedulerStorageImporterRS16.bpi;dxSkinLondonLiquidSkyRS16.bpi;dxSkinVisualStudio2013DarkRS16.bpi;cxSchedulerGridRS16.bpi;dxADOEMFRS16.bpi;dxSkinOffice2007GreenRS16.bpi;dxSkinOffice2010BlueRS16.bpi;dxServerModeRS16.bpi;dxPSdxDBOCLnkRS16.bpi;dxSkinBlueRS16.bpi;dxSkinDevExpressStyleRS16.bpi;dxPSdxOCLnkRS16.bpi;dxSkinTheAsphaltWorldRS16.bpi;dxRichEditCoreRS16.bpi;dxPSdxLCLnkRS16.bpi;dxSkinWhiteprintRS16.bpi;dxSkinSpringTimeRS16.bpi;dxSkinVisualStudio2013LightRS16.bpi;dxPSdxSpreadSheetLnkRS16.bpi;dxSkinOffice2016ColorfulRS16.bpi;dxRichEditControlOpenXMLFormatRS16.bpi;dxSkinOffice2007SilverRS16.bpi;dxSkinsCoreRS16.bpi;dxOrgCRS16.bpi;dxSkinCaramelRS16.bpi;dxSkinMoneyTwinsRS16.bpi;dxSkinOffice2007BlackRS16.bpi;dxSkinOffice2019BlackRS16.bpi;dxSkinOffice2010SilverRS16.bpi;dxPScxSchedulerLnkRS16.bpi;dxSkinStardustRS16.bpi;dxFlowChartRS16.bpi;cxTreeListRS16.bpi;dxOrgChartAdvancedCustomizeFormRS16.bpi;dxSkinOffice2007PinkRS16.bpi;dxSkinSharpRS16.bpi;dxTileControlRS16.bpi;dxSpreadSheetConditionalFormattingDialogsRS16.bpi;dxSkinSharpPlusRS16.bpi;dxSkinValentineRS16.bpi;cxVerticalGridRS16.bpi;dxSkinBlueprintRS16.bpi;dxSkinOffice2007BlueRS16.bpi;dxSpreadSheetReportDesignerRS16.bpi;dxPSPrVwRibbonRS16.bpi;dxComnRS16.bpi;dxGDIPlusRS16.bpi;cxTreeListdxBarPopupMenuRS16.bpi;dxPSdxPDFViewerLnkRS16.bpi;dxPDFViewerRS16.bpi;dxPScxCommonRS16.bpi;dxFlowChartAdvancedCustomizeFormRS16.bpi;cxPivotGridOLAPRS16.bpi;dxPScxPCProdRS16.bpi;dxGanttControlRS16.bpi;cxPivotGridChartRS16.bpi;dxRichEditControlDocFormatRS16.bpi;dxSkinOffice2019ColorfulRS16.bpi</PackageImports>
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;vclimg.lib;cxLibraryRS16.lib;dxCoreRS16.lib;dxServerModeRS16.lib;cxGridRS16.lib;dsnap.lib;cxExportRS16.lib;dxGDIPlusRS16.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;vclx.lib;dxmdsRS16.lib;dxSpreadSheetRS16.lib;dxSpreadSheetCoreRS16.lib;dxComnRS16.lib;</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\windows\;$(BDS)\include\windows\vcl;$(BDS)\include\windows\rtl;..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(BDS)\lib;$(BDS)\lib\win32\release;$(BDS)\lib\win32\release\psdk;..\Common;..</ILINK_LibraryPath>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="Office11GroupRowStyleDemo.res">
+    </ResFiles>
+    <CppCompile Include="Office11GroupRowStyleDemo.cpp"> </CppCompile>
+    <CppCompile Include="Office11GroupRowStyleDemoMain.cpp">
+      <Form>Office11GroupRowStyleDemoMainForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <CppCompile Include="..\BaseForm.cpp">
+      <Form>fmBaseForm</Form>
+    </CppCompile>
+    <FormResources Include="Office11GroupRowStyleDemoMain.dfm" />
+    <FormResources Include="..\AboutDemoForm.dfm" />
+    <FormResources Include="..\BaseForm.dfm" />  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

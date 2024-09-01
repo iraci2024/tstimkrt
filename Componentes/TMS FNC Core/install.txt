@@ -1,0 +1,83 @@
+
+      ////////////////////////////////////////////////// 
+      //   I M P O R T A N T    R E M A R K  !!!!!    //
+      //                                              //  
+      //  For a successful install of the components, //
+      //       follow  A L L  steps below             //
+      //                                              //   
+      //////////////////////////////////////////////////
+
+
+Automatic installation (FMX and VCL only)
+-----------------------------------------
+
+ Unzip the distribution file TMSFNCCoreSetup.zip into a separate directory,
+ further referred to as {$TMSDIR} 
+
+ Run the setup executable file and install the components for the correct environment.
+ If the setup for FMX or VCL fails follow the manual installation instructions below.
+ The instructions for Lazarus are also explained in the manual installation instructions.
+
+
+Manual installation
+-----------------------------------------
+
+  FMXLinux (tested in Ubuntu 20.04)
+  ---------------------------------
+  FMXLinux is not installed out of the box in RAD Studio. Please follow the instructions here to install FMXLinux.
+  http://docwiki.embarcadero.com/RADStudio/Sydney/en/FireMonkey_for_Linux
+
+  After following the above instructions, please execute the following commands
+
+  sudo apt install joe wget p7zip-full curl openssh-server build-essential zlib1g-dev libcurl4-gnutls-dev libncurses5
+  sudo apt-get install zlib1g-dev
+  sudo apt install libgl1-mesa-glx libglu1-mesa libgtk-3-common libgstreamer1.0-0 libgstreamer-plugins-base1.0-0
+  sudo apt install libwebkit2gtk-4.0-dev
+
+  For TMS WEB Core for Visual Studio Code 1.3 or higher
+  -----------------------------------------------------
+
+  Start Visual Studio Code
+  Browse to the TMS FNC Core folder and open it inside Visual Studio Code
+  In the project manager, select TMSFNCCoreWEB.dproj, right-click and select "Install"
+  Restart Visual Studio Code to load the package
+
+  For Delphi XE7, XE8, 10 Seattle, 10.1 Berlin, 10.2 Tokyo, 10.3 Rio, 10.4 Sydney, 11
+  ------------------------------------------------------------------------------------
+
+  In the IDE, select File, Open and browse for FMXTMSFNCCorePkgD*.dproj
+  From the project manager, right click on the FMXTMSFNCCorePkgD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for VCLTMSFNCCorePkgD*.dproj
+  From the project manager, right click on the VCLTMSFNCCorePkgD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for TMSFNCCorePkgDED*.dproj
+  From the project manager, right click on the TMSFNCCorePkgDED*.dproj project and from the menu, choose install
+
+  (* XE7, XE8, XE9, XE10, XE11, XE12, XE13 or XE14)
+
+  For Lazarus 1.44 or higher
+  --------------------------
+
+  Uninstall previously installed FNC packages and rebuild the Lazarus IDE
+  
+  Remove LIB folders generated in the source directory.
+
+  In the IDE, select File, Open and browse for LCLTMSFNCCorePkg.lpk and select "Open Package" when prompted
+  From the package window select Compile
+
+  In the IDE, select File, Open and browse for LCLTMSFNCCorePkgDE.lpk and select "Open Package" when prompted
+  From the package window select Compile
+
+  For Lazarus 2.0.10 or higher
+  ----------------------------
+  
+  Uninstall previously installed FNC packages and rebuild the Lazarus IDE
+  
+  Remove LIB folders generated in the source directory. During compilation of dependant packages, checksum errors might appear.
+  If this is the case, follow the exact steps below.
+
+  1) LCLTMSFNCCorePkg.lpk >> Install
+  2) LCLTMSFNCCorePkgDE.lpk >> Install >> Error
+  3) LCLTMSFNCCorePkg.lpk >> Only compile
+  4) LCLTMSFNCCorePkgDE.lpk >> Install >> OK 

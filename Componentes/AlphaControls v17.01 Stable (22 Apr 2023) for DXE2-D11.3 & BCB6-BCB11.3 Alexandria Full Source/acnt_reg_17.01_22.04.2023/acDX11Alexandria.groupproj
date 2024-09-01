@@ -1,0 +1,48 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{56F822D3-28D7-4FA2-AA73-D230124CEF89}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="acntDX10Alexandria_R.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="acntDX10Alexandria.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="acntDX11Alexandria_R">
+        <MSBuild Projects="acntDX11Alexandria_R.dproj"/>
+    </Target>
+    <Target Name="acntDX11Alexandria_R:Clean">
+        <MSBuild Projects="acntDX11Alexandria_R.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="acntDX11Alexandria_R:Make">
+        <MSBuild Projects="acntDX11Alexandria_R.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="acntDX11Alexandria">
+        <MSBuild Projects="acntDX11Alexandria.dproj"/>
+    </Target>
+    <Target Name="acntDX11Alexandria:Clean">
+        <MSBuild Projects="acntDX11Alexandria.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="acntDX11Alexandria:Make">
+        <MSBuild Projects="acntDX11Alexandria.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="acntDX11Alexandria_R;acntDX11Alexandria"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="acntDX11Alexandria_R:Clean;acntDX11Alexandria:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="acntDX11Alexandria_R:Make;acntDX11Alexandria:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,50 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{32d4cc75-f9c2-4062-bdd3-73e6de6b996d}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="sgcWebSocketsD2009.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="dclsgcWebSocketsD2009.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<BorlandProject>
+					<Default.Personality/>
+				</BorlandProject>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="sgcWebSocketsD2009">
+			<MSBuild Projects="sgcWebSocketsD2009.dproj"/>
+		</Target>
+		<Target Name="sgcWebSocketsD2009:Clean">
+			<MSBuild Targets="Clean" Projects="sgcWebSocketsD2009.dproj"/>
+		</Target>
+		<Target Name="sgcWebSocketsD2009:Make">
+			<MSBuild Targets="Make" Projects="sgcWebSocketsD2009.dproj"/>
+		</Target>
+		<Target Name="dclsgcWebSocketsD2009">
+			<MSBuild Projects="dclsgcWebSocketsD2009.dproj"/>
+		</Target>
+		<Target Name="dclsgcWebSocketsD2009:Clean">
+			<MSBuild Targets="Clean" Projects="dclsgcWebSocketsD2009.dproj"/>
+		</Target>
+		<Target Name="dclsgcWebSocketsD2009:Make">
+			<MSBuild Targets="Make" Projects="dclsgcWebSocketsD2009.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="sgcWebSocketsD2009;dclsgcWebSocketsD2009"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="sgcWebSocketsD2009:Clean;dclsgcWebSocketsD2009:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="sgcWebSocketsD2009:Make;dclsgcWebSocketsD2009:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

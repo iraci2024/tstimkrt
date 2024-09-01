@@ -1,0 +1,71 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoRSC102Tokyo">
+    <MSBuild Projects="BandedDemo\BandedDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoRSC102Tokyo">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoRSC102Tokyo">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoRSC102Tokyo">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSC102Tokyo">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC102Tokyo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoRSC102Tokyo">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoRSC102Tokyo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoRSC102Tokyo">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoRSC102Tokyo">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC102Tokyo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSC102Tokyo">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoRSC102Tokyo">
+    <MSBuild Projects="SummariesDemo\SummariesDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoRSC102Tokyo">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSC102Tokyo">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoRSC102Tokyo">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSC102Tokyo">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSC102Tokyo">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoRSC102Tokyo;BandedFixedDemoRSC102Tokyo;ColumnsMultiEditorsDemoRSC102Tokyo;CheckGroupsDemoRSC102Tokyo;CustomDrawDemoRSC102Tokyo;DragDropDemoRSC102Tokyo;EditorsInPlaceDemoRSC102Tokyo;VirtualModeDemoRSC102Tokyo;ProviderModeDemoRSC102Tokyo;SimpleListDemoRSC102Tokyo;SimpleTreeDemoRSC102Tokyo;StylesMultiDemoRSC102Tokyo;StylesSimpleDemoRSC102Tokyo;SummariesDemoRSC102Tokyo;UnboundModeDemoRSC102Tokyo;EditorsInPlaceValidationDemoRSC102Tokyo;FilterDropDownDemoRSC102Tokyo;ScrollbarAnnotationsDemoRSC102Tokyo;CalculatedFieldsDemoRSC102Tokyo" />
+  </Target>
+</Project>

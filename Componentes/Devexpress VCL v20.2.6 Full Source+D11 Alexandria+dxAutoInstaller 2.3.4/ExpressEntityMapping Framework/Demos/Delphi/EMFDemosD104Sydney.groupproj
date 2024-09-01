@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EMFTutorialsD104Sydney">
+    <MSBuild Projects="Tutorials\EMFTutorialsD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilmsRS104Sydney">
+    <MSBuild Projects="Demos\Common\FilmsRS104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD104Sydney">
+    <MSBuild Projects="Demos\DragDrop\DragDropDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoD104Sydney">
+    <MSBuild Projects="Demos\MasterDetailCard\MasterDetailCardDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoD104Sydney">
+    <MSBuild Projects="Demos\MasterDetailTable\MasterDetailTableDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldRS104Sydney">
+    <MSBuild Projects="Demos\Common\RealtorWorldRS104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldAgentsDemoD104Sydney">
+    <MSBuild Projects="Demos\RealtorWorldAgents\RealtorWorldAgentsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldLoanCalculatorDemoD104Sydney">
+    <MSBuild Projects="Demos\RealtorWorldLoanCalculator\RealtorWorldLoanCalculatorDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EMFGridDemoRS104Sydney">
+    <MSBuild Projects="Demos\Common\EMFGridDemoRS104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="GridViewADODemoD104Sydney">
+    <MSBuild Projects="Demos\GridViewADODemo\GridViewADODemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="NWindFoodsModelRS104Sydney">
+    <MSBuild Projects="Demos\MasterDetailEMFTable\NWindFoodsModelRS104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailEMFTableDemoD104Sydney">
+    <MSBuild Projects="Demos\MasterDetailEMFTable\MasterDetailEMFTableDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EMFTutorialsD104Sydney;FilmsRS104Sydney;DragDropDemoD104Sydney;MasterDetailCardDemoD104Sydney;MasterDetailTableDemoD104Sydney;RealtorWorldRS104Sydney;RealtorWorldAgentsDemoD104Sydney;RealtorWorldLoanCalculatorDemoD104Sydney;EMFGridDemoRS104Sydney;GridViewADODemoD104Sydney;NWindFoodsModelRS104Sydney;MasterDetailEMFTableDemoD104Sydney" />
+  </Target>
+</Project>

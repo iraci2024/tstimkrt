@@ -1,0 +1,5 @@
+A calculated field uses all its data cells to show results calculated from an expression assigned to the field.
+
+Select "Discount Amount" or "Total" in the Column list and click "Show Expression Editor for selected column" to invoke the Expression Editor dialog. The dialog shows the editable expression that consists of field names separated by operators. The calculated field uses the values from each bracketed field to calculate results for each node.
+
+To edit the displayed expression, select the Fields category and double-click any listed field to add it as a value source at the caret's position within the expression. Alternatively, type the field's name enclosed in square brackets. You can also double-click a built-in constant, operator, or function to add it to the expression. Certain functions accept one or more mandatory parameters - you need to provide them as bracketed fields or constant values. Refer to the selected function's description to the right for details. Click OK to apply all the changes made to the calculated field's expression.

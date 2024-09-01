@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AAD8BD99-3D8B-44C0-8DA3-7E732C59B7D5}</ProjectGuid>
+    <ProjectVersion>12.2</ProjectVersion>
+    <MainSource>AlertWindowCustomDrawDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <UsePackages>true</UsePackages>
+    <PackageImports>vcl.bpi;rtl.bpi;vclx.bpi;adortl.bpi;bdertl.bpi;dbrtl.bpi;vcldb.bpi;dxSkinSharpPlusRS15.bpi;dxPScxCommonRS15.bpi;dxSkinLiquidSkyRS15.bpi;dxSkinOffice2019WhiteRS15.bpi;dxTabbedMDIRS15.bpi;cxSchedulerWebServiceStorageRS15.bpi;dxCloudServiceLibraryRS15.bpi;dxSkinVisualStudio2013BlueRS15.bpi;dxSkinSevenRS15.bpi;dxPScxGridLnkRS15.bpi;dxBarExtItemsRS15.bpi;dxSkinBasicRS15.bpi;dxRibbonCustomizationFormRS15.bpi;dxPSdxFCLnkRS15.bpi;dxSkinSilverRS15.bpi;cxGridRS15.bpi;dxPScxSchedulerLnkRS15.bpi;dxRichEditControlRS15.bpi;dxSkinOffice2019DarkGrayRS15.bpi;dxSkinOffice2007PinkRS15.bpi;dxSpellCheckerRS15.bpi;dxSkinSharpRS15.bpi;dxSpreadSheetReportDesignerRS15.bpi;dxSkinOffice2013WhiteRS15.bpi;dxPScxExtCommonRS15.bpi;cxSchedulerGridRS15.bpi;dxSpreadSheetConditionalFormattingDialogsRS15.bpi;dxRichEditCoreRS15.bpi;dxSkinBlueRS15.bpi;dxSkinCoffeeRS15.bpi;cxVerticalGridRS15.bpi;dxRichEditControlCoreRS15.bpi;dxSkinDevExpressDarkStyleRS15.bpi;dxRichEditControlDocFormatRS15.bpi;dxNavBarRS15.bpi;dxEMFDataRS15.bpi;dxBarDBNavRS15.bpi;dxSkinLilianRS15.bpi;dxHttpIndyRequestRS15.bpi;dxSkinCaramelRS15.bpi;dxSkinSevenClassicRS15.bpi;dxPSdxGaugeControlLnkRS15.bpi;dxPScxPCProdRS15.bpi;dxTileControlRS15.bpi;dxSkinOffice2007BlueRS15.bpi;dxRichEditControlOpenXMLFormatRS15.bpi;dxEMFRS15.bpi;dxSkinsCoreRS15.bpi;dxRichEditControlHtmlFormatRS15.bpi;cxPageControldxBarPopupMenuRS15.bpi;cxSchedulerRibbonStyleEventEditorRS15.bpi;dxFlowChartAdvancedCustomizeFormRS15.bpi;dxDockingRS15.bpi;dxSkinFoggyRS15.bpi;dxSpreadSheetCoreConditionalFormattingDialogsRS15.bpi;dxPDFViewerRS15.bpi;dxSkinTheAsphaltWorldRS15.bpi;dxADOEMFRS15.bpi;dxBarRS15.bpi;dxSkinMetropolisRS15.bpi;dxPSdxOCLnkRS15.bpi;dxSkinSpringTimeRS15.bpi;dxSkinMoneyTwinsRS15.bpi;dxSkinOffice2007GreenRS15.bpi;dxSkinStardustRS15.bpi;dxRichEditDocumentModelRS15.bpi;cxLibraryRS15.bpi;dxDBOrRS15.bpi;dxSkinLondonLiquidSkyRS15.bpi;dxSkinOffice2010BlueRS15.bpi;dxGaugeControlRS15.bpi;dxSkinOffice2013LightGrayRS15.bpi;cxExportRS15.bpi;cxTreeListRS15.bpi;dxdbtrRS15.bpi;dxmdsRS15.bpi;dxSkinOffice2010SilverRS15.bpi;dxPSdxDBTVLnkRS15.bpi;dxSkinBlueprintRS15.bpi;dxFlowChartRS15.bpi;dxFlowChartLayoutsRS15.bpi;dxPSPrVwRibbonRS15.bpi;dxBarExtDBItemsRS15.bpi;cxPivotGridChartRS15.bpi;dxSkinOffice2010BlackRS15.bpi;dxGanttControlSchedulerStorageImporterRS15.bpi;dxRibbonRS15.bpi;dxSpreadSheetCoreRS15.bpi;dxSkinOffice2016DarkRS15.bpi;dxPSdxSpreadSheetLnkRS15.bpi;dxGDIPlusRS15.bpi;dxSkinVS2010RS15.bpi;dxSkinOffice2007SilverRS15.bpi;dxSkinTheBezierRS15.bpi;dxSkinVisualStudio2013LightRS15.bpi;dxSkinXmas2008BlueRS15.bpi;cxTreeListdxBarPopupMenuRS15.bpi;dxGanttControlRS15.bpi;dxSkinMetropolisDarkRS15.bpi;dxPSdxDBOCLnkRS15.bpi;cxSchedulerRS15.bpi;cxPivotGridRS15.bpi;dxSkinOffice2013DarkGrayRS15.bpi;dxMapControlRS15.bpi;dxPScxVGridLnkRS15.bpi;dxSkinWhiteprintRS15.bpi;dxPSRichEditControlLnkRS15.bpi;dxFlowChartDesignerRS15.bpi;dxSkinValentineRS15.bpi;cxGridEMFRS15.bpi;dxSkinHighContrastRS15.bpi;dxOrgChartAdvancedCustomizeFormRS15.bpi;dxSkinOffice2016ColorfulRS15.bpi;dxComnRS15.bpi;dxOrgCRS15.bpi;dxSkinDarkRoomRS15.bpi;dxPSdxLCLnkRS15.bpi;dxCoreRS15.bpi;dxSpreadSheetRS15.bpi;dxSkinDevExpressStyleRS15.bpi;dxWizardControlRS15.bpi;dxSkinDarkSideRS15.bpi;dxSkiniMaginaryRS15.bpi;dxPScxTLLnkRS15.bpi;dxSkinOffice2019BlackRS15.bpi;cxPivotGridOLAPRS15.bpi;dxSkinOffice2007BlackRS15.bpi;cxSchedulerTreeBrowserRS15.bpi;dxPSPrVwAdvRS15.bpi;dxSkinPumpkinRS15.bpi;dxSkinOffice2019ColorfulRS15.bpi;dxPSdxPDFViewerLnkRS15.bpi;dxPScxPivotGridLnkRS15.bpi;dxtrmdRS15.bpi;dxSkinMcSkinRS15.bpi;dxPSCoreRS15.bpi;dxSkinVisualStudio2013DarkRS15.bpi;dxSkinGlassOceansRS15.bpi;dxPSLnksRS15.bpi;dxSkinSummer2008RS15.bpi;dxServerModeRS15.bpi;dxSkinBlackRS15.bpi;dxPSdxMapControlLnkRS15.bpi</PackageImports>
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;vclimg.lib;cxLibraryRS15.lib;dxGDIPlusRS15.lib;vcldb.lib;dbrtl.lib;bdertl.lib;adortl.lib;vclx.lib;dxCoreRS15.lib;</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(BDS)\include;$(BDS)\include\dinkumware;$(BDS)\include\windows\;$(BDS)\include\windows\vcl;$(BDS)\include\windows\rtl;..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(BDS)\lib;$(BDS)\lib\win32\release;$(BDS)\lib\win32\release\psdk;..\Common;..</ILINK_LibraryPath>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="AlertWindowCustomDrawDemo.res">
+    </ResFiles>
+    <CppCompile Include="AlertWindowCustomDrawDemo.cpp"> </CppCompile>
+    <CppCompile Include="AlertWindowCustomDrawDemoMain.cpp">
+      <Form>fmAlertWindowCustomDraw</Form>
+    </CppCompile>
+    <CppCompile Include="..\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <CppCompile Include="..\BaseForm.cpp">
+      <Form>fmBaseForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\DemoUtils.cpp"> </CppCompile>
+    <FormResources Include="AlertWindowCustomDrawDemoMain.dfm" />
+    <FormResources Include="..\AboutDemoForm.dfm" />
+    <FormResources Include="..\BaseForm.dfm" />  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

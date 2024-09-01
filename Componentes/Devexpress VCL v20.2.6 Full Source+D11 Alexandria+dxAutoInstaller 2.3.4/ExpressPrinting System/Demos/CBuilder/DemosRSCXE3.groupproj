@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkRSCXE3">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkRSCXE3">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkRSCXE3">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkRSCXE3">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerRSCXE3">
+    <MSBuild Projects="ReportExplorer\ReportExplorerRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkRSCXE3">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLRSCXE3">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkRSCXE3">
+    <MSBuild Projects="StandardRL\StandardReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="TeeChartReportLinkRSCXE3">
+    <MSBuild Projects="TeeChartRL\TeeChartReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkRSCXE3">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkRSCXE3">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkRSCXE3;FlowChartReportLinkRSCXE3;LayoutControlReportLinkRSCXE3;OrgChartReportLinkRSCXE3;ReportExplorerRSCXE3;SchedulerLinkRSCXE3;SpreadSheetRLRSCXE3;StandardReportLinkRSCXE3;TeeChartReportLinkRSCXE3;PivotGridReportLinkRSCXE3;cxTreeListReportLinkRSCXE3" />
+  </Target>
+</Project>

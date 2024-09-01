@@ -1,0 +1,72 @@
+<html>
+<head>
+   <title>OnExtractFile</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_OnExtractFile;OnExtractFile_Event;OnExtractFile">
+<param name="alink name" value="$topicid_OnExtractFile">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.OnExtractFile</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Occurs when file is being extracted from archive.
+<br>
+
+<br>
+<b>type</b> TFXCOnExtractFileEvent =  <b>procedure </b>(Sender: TObject; <b>var</b> FileName: Widestring; <b>var</b> FileAttr: LongWord; <b>const</b> Comment: String) <b>of</b> <b>object</b>;
+<br>
+<b>property</b> OnExtractFile: TFXCOnExtractFileEvent;
+<br>
+
+<br>
+<b>Description</b>
+<br>
+
+<br>
+Write an OnExtractFile event handler to override default file name or change its attributes before extracting.
+<br>
+The event is fired when ExtractFiles is called.
+<br>
+
+<br>
+The Sender parameter is the object whose event handler is called.  
+<br>
+
+<br>
+FileName specifies the name of the file being extracted.
+<br>
+
+<br>
+FileAttr specifies extracted file attributes.
+<br>
+
+<br>
+Comment parameter indicates extracted file comment.
+<br>
+</span>
+
+</body>
+</html>

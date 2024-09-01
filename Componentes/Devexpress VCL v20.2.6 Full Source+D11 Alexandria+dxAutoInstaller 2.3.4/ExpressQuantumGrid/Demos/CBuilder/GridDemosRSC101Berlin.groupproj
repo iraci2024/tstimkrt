@@ -1,0 +1,212 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ViewTableSimpleDemoRSC101Berlin">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoRSC101Berlin">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoRSC101Berlin">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoRSC101Berlin">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoRSC101Berlin">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoRSC101Berlin">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoRSC101Berlin">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoRSC101Berlin">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoRSC101Berlin">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoRSC101Berlin">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoRSC101Berlin">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoRSC101Berlin">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoRSC101Berlin">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoRSC101Berlin">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoRSC101Berlin">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoRSC101Berlin">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoRSC101Berlin">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoRSC101Berlin">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoRSC101Berlin">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoRSC101Berlin">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoRSC101Berlin">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoRSC101Berlin">
+    <MSBuild Projects="GridModeDemo\GridModeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoRSC101Berlin">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC101Berlin">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoRSC101Berlin">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoRSC101Berlin">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC101Berlin">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoRSC101Berlin">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSC101Berlin">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoRSC101Berlin">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoRSC101Berlin">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoRSC101Berlin">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoRSC101Berlin">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSC101Berlin">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoRSC101Berlin">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoRSC101Berlin">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="IssueListRSC101Berlin">
+    <MSBuild Projects="IssueList\IssueListRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoRSC101Berlin">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoRSC101Berlin">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoRSC101Berlin">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoRSC101Berlin">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoRSC101Berlin">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoRSC101Berlin">
+    <MSBuild Projects="FilterDemo\FilterDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoRSC101Berlin">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoRSC101Berlin">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoRSC101Berlin">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoRSC101Berlin">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoRSC101Berlin">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoRSC101Berlin">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoRSC101Berlin">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSC101Berlin">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoRSC101Berlin">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoRSC101Berlin">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoRSC101Berlin">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoRSC101Berlin">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoRSC101Berlin">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoRSC101Berlin">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoRSC101Berlin">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingRSC101Berlin">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoRSC101Berlin">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoRSC101Berlin">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSC101Berlin">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoRSC101Berlin">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoRSC101Berlin">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSC101Berlin">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSC101Berlin">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ViewTableSimpleDemoRSC101Berlin;ViewBandedDemoRSC101Berlin;ViewBandedFixedDemoRSC101Berlin;ViewNestedBandsDemoRSC101Berlin;ViewCardSimpleDemoRSC101Berlin;ViewCardDemoRSC101Berlin;MasterDetailTableDemoRSC101Berlin;MasterDetailCardDemoRSC101Berlin;MasterDetailDemoRSC101Berlin;MasterDetailMultiDemoRSC101Berlin;UnboundSimpleDemoRSC101Berlin;UnboundListDemoRSC101Berlin;UnboundExternalDataDemoRSC101Berlin;UnboundDesignDefinedDemoRSC101Berlin;UnboundModeDemoRSC101Berlin;UnboundColumnsDemoRSC101Berlin;SummaryFooterDemoRSC101Berlin;SummaryGroupDemoRSC101Berlin;SummaryMultiDemoRSC101Berlin;FilterByCodeDemoRSC101Berlin;FilterControlDemoRSC101Berlin;GridModeDemoRSC101Berlin;ColumnsSimpleDemoRSC101Berlin;EditorsInPlaceDemoRSC101Berlin;ColumnsMultiEditorsDemoRSC101Berlin;ColumnsShareDemoRSC101Berlin;StylesMultiDemoRSC101Berlin;StylesCardViewDemoRSC101Berlin;StylesSimpleDemoRSC101Berlin;CellLevelMultiselectDemoRSC101Berlin;CustomDrawTableViewDemoRSC101Berlin;CustomDrawCardViewDemoRSC101Berlin;Office11GroupRowStyleDemoRSC101Berlin;DragDropDemoRSC101Berlin;CustomRowHeightDemoRSC101Berlin;GridMenuViewsDemoRSC101Berlin;IssueListRSC101Berlin;ViewChartDemoRSC101Berlin;ViewChartStackedDemoRSC101Berlin;MasterDetailChartDemoRSC101Berlin;CardLayoutDemoRSC101Berlin;ChartDataDrillingDemoRSC101Berlin;FilterDemoRSC101Berlin;LayoutViewDemoRSC101Berlin;ServerModeADODemoRSC101Berlin;ServerModeDBXDemoRSC101Berlin;ServerModeFireDACDemoRSC101Berlin;ServerModeADOQueryDemoRSC101Berlin;ServerModeDBXQueryDemoRSC101Berlin;ServerModeFireDACQueryDemoRSC101Berlin;EditorsInPlaceValidationDemoRSC101Berlin;LayoutViewCarouselModeDemoRSC101Berlin;InplaceEditFormDemoRSC101Berlin;FindPanelDemoRSC101Berlin;RatingControlDemoRSC101Berlin;SparklinesDemoRSC101Berlin;FixedGroupsDemoRSC101Berlin;WinExplorerViewDemoRSC101Berlin;LayoutViewDemoGroupScrollingRSC101Berlin;MergedGroupsDemoRSC101Berlin;CheckBoxMultiSelectDemoRSC101Berlin;ConditionalFormattingDemoRSC101Berlin;FixedDataRowsDemoRSC101Berlin;FilterDropDownDemoRSC101Berlin;ScrollbarAnnotationsDemoRSC101Berlin;CalculatedFieldsDemoRSC101Berlin" />
+  </Target>
+</Project>

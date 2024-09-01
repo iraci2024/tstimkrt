@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="WorldTimeRSC101Berlin">
+    <MSBuild Projects="WorldTime\WorldTimeRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoRSC101Berlin">
+    <MSBuild Projects="Styles\StylesDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SampleGaugesRSC101Berlin">
+    <MSBuild Projects="SampleGauges\SampleGaugesRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CarDashboardRSC101Berlin">
+    <MSBuild Projects="CarDashboard\CarDashboardRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="WorldTimeRSC101Berlin;StylesDemoRSC101Berlin;SampleGaugesRSC101Berlin;CarDashboardRSC101Berlin" />
+  </Target>
+</Project>

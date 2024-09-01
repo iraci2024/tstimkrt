@@ -1,0 +1,75 @@
+**********************************************************************
+Author: TMS Software
+        Copyright © 1996-2021
+        E-mail: info@tmssoftware.com
+        Web: https://www.tmssoftware.com
+**********************************************************************
+TMS FNC WebSocket
+-----------------
+
+Bringing web technology to Delphi applications everywhere
+
+Feature Overview
+-----------------
+
+Version History
+-----------------
+
+const
+  MAJ_VER = 1; // Major version nr.
+  MIN_VER = 0; // Minor version nr.
+  REL_VER = 1; // Release nr.
+  BLD_VER = 2; // Build nr.
+  DATE_VER = 'APR, 2023'; // Month version
+
+  //version history
+  //1.0.0.0: New : first release
+  //1.0.0.1: Fixed : Fixed issue with OnWhatsAppMessageReceived in TTMSFNCWhatsAppReceiver
+  //1.0.0.2: Fixed : Component availability
+  //       : Fixed : Missing masked message sending in TTMSFNCWebSocketClient
+  //1.0.0.3: Fixed : Issue with PathName in TTMSFNCWebSocketServer when connecting from JavaScript clients
+  //1.0.0.4: Improved : Core Improvements
+  //1.0.1.0: New : Added AutoSyncEvents property to enable/disable automatic event synchronization to the main thread
+  //1.0.1.1: Improved : Core Improvements
+  //1.0.1.2: Fixed : Missing initialization of AutoCheckInterval in TTMSFNCWebSocketClient
+
+
+Usage:
+------
+ Use of TMS software components in applications requires a license.
+ A license can be obtained by registration. A single developer license
+ registration is available as well as a site license.
+ With the purchase of one single developer license, one developer in
+ the company is entitled to:
+ - use of registered version that contains full source code and no
+   limitations 
+ - free updates for a full version cycle
+ - free email priority support & access to support newsgroups
+ - discounts to purchases of other products
+
+ With a site license, multiple developers in the company are entitled
+ to:
+ - use of registered version that contains full source code and no
+   limitations 
+ - add additional developers at any time who make use of the components
+ - free updates for a full version cycle
+ - free email priority support & access to support newsgroups
+ - discounts to purchases of other products
+
+ Online order information can be found at:
+ https://www.tmssoftware.com/site/orders.asp
+
+
+Help, hints, tips, bug reports:
+-------------------------------
+ Send any questions/remarks/suggestions to : help@tmssoftware.com
+
+ Before contacting support about a possible issue with the component
+ you encounter, make sure that you are using the latest version of the 
+ component.
+ If a problem persists with the latest version, provide information 
+ about which Delphi or C++Builder version you are using as well as
+ the operating system and if possible, steps to reproduce the problem
+ you encounter. That will guarantee the fastest turnaround times for
+ your support case. 
+

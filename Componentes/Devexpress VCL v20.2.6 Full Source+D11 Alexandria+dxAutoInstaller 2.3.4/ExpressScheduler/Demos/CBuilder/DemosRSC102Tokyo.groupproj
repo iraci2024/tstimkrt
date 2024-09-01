@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoRSC102Tokyo">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoRSC102Tokyo">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoRSC102Tokyo">
+    <MSBuild Projects="UnboundDemo\UnboundDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoRSC102Tokyo">
+    <MSBuild Projects="DBDemo\DBDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoRSC102Tokyo">
+    <MSBuild Projects="StylesDemo\StylesDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoRSC102Tokyo">
+    <MSBuild Projects="ResourceDemo\ResourceDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoRSC102Tokyo">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoRSC102Tokyo">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoRSC102Tokyo">
+    <MSBuild Projects="AggregateDemo\AggregateDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoRSC102Tokyo">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoRSC102Tokyo;RangeControlDemoRSC102Tokyo;UnboundDemoRSC102Tokyo;DBDemoRSC102Tokyo;StylesDemoRSC102Tokyo;CustomDrawDemoRSC102Tokyo;ResourceDemoRSC102Tokyo;GanttViewDemoRSC102Tokyo;HolidaysDemoRSC102Tokyo;AggregateDemoRSC102Tokyo;WebServiceDemoRSC102Tokyo" />
+  </Target>
+</Project>

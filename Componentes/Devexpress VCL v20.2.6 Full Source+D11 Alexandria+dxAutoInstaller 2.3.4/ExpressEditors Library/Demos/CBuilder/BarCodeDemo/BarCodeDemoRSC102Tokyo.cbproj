@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{88337717-2DF2-48DF-8D27-CA22A9C7198A}</ProjectGuid>
+    <ProjectVersion>14.6</ProjectVersion>
+    <MainSource>BarCodeDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <DynamicRTL>true</DynamicRTL>
+    <UsePackages>true</UsePackages>
+    <PackageImports>vcl.bpi;rtl.bpi;vclx.bpi;adortl.bpi;dbrtl.bpi;vcldb.bpi;dxDBOrRS25.bpi;dxSkinVS2010RS25.bpi;dxPSdxLCLnkRS25.bpi;dxSpreadSheetRS25.bpi;dxSkinOffice2010BlackRS25.bpi;dxSkinDevExpressStyleRS25.bpi;cxGridRS25.bpi;dxFlowChartAdvancedCustomizeFormRS25.bpi;dxSkinOffice2019DarkGrayRS25.bpi;dxSkinLondonLiquidSkyRS25.bpi;dxSkinOffice2016DarkRS25.bpi;cxPivotGridOLAPRS25.bpi;dxSkinOffice2007BlueRS25.bpi;dxSkinBlueprintRS25.bpi;dxPSdxDBOCLnkRS25.bpi;dxSkinHighContrastRS25.bpi;dxBarDBNavRS25.bpi;dxSpellCheckerRS25.bpi;cxSchedulerRibbonStyleEventEditorRS25.bpi;dxSkinOffice2019ColorfulRS25.bpi;dxPScxVGridLnkRS25.bpi;dxSkinVisualStudio2013DarkRS25.bpi;dxSkinTheBezierRS25.bpi;dxSpreadSheetCoreConditionalFormattingDialogsRS25.bpi;dxSkinDevExpressDarkStyleRS25.bpi;dxSkinOffice2016ColorfulRS25.bpi;dxRibbonCustomizationFormRS25.bpi;dxSkinOffice2013LightGrayRS25.bpi;cxSchedulerGridRS25.bpi;dxDockingRS25.bpi;dxEMFDataRS25.bpi;dxSkinMcSkinRS25.bpi;dxSkinOffice2019BlackRS25.bpi;dxSkinSummer2008RS25.bpi;dxSkiniMaginaryRS25.bpi;cxTreeListdxBarPopupMenuRS25.bpi;dxPScxTLLnkRS25.bpi;dxWizardControlRS25.bpi;dxPSdxFCLnkRS25.bpi;dxSkinMetropolisDarkRS25.bpi;dxSkinXmas2008BlueRS25.bpi;dxTabbedMDIRS25.bpi;dxRichEditControlHtmlFormatRS25.bpi;dxSkinBlueRS25.bpi;dxPSdxGaugeControlLnkRS25.bpi;dxGaugeControlRS25.bpi;dxSkinVisualStudio2013BlueRS25.bpi;dxSpreadSheetConditionalFormattingDialogsRS25.bpi;dxOrgCRS25.bpi;dxFlowChartRS25.bpi;dxSkinMetropolisRS25.bpi;dxSkinLilianRS25.bpi;dxSkinOffice2010BlueRS25.bpi;dxServerModeRS25.bpi;dxPSLnksRS25.bpi;dxTileControlRS25.bpi;dxtrmdRS25.bpi;dxADOEMFRS25.bpi;cxLibraryRS25.bpi;dxSkinMoneyTwinsRS25.bpi;dxSkinCaramelRS25.bpi;dxPScxPCProdRS25.bpi;dxRichEditControlCoreRS25.bpi;dxBarRS25.bpi;dxPScxExtCommonRS25.bpi;cxExportRS25.bpi;dxSkinOffice2010SilverRS25.bpi;cxSchedulerWebServiceStorageRS25.bpi;dxPScxPivotGridLnkRS25.bpi;dxOrgChartAdvancedCustomizeFormRS25.bpi;dxGDIPlusRS25.bpi;dxRichEditCoreRS25.bpi;dxSkinFoggyRS25.bpi;dxCoreRS25.bpi;cxTreeListRS25.bpi;dxRichEditControlOpenXMLFormatRS25.bpi;dxPSRichEditControlLnkRS25.bpi;dxSkinLiquidSkyRS25.bpi;dxNavBarRS25.bpi;dxPScxGridLnkRS25.bpi;dxSkinBlackRS25.bpi;dxBarExtDBItemsRS25.bpi;dxSkinOffice2007GreenRS25.bpi;cxPivotGridChartRS25.bpi;dxPSPrVwRibbonRS25.bpi;cxSchedulerRS25.bpi;dxSkinOffice2013WhiteRS25.bpi;dxSkinTheAsphaltWorldRS25.bpi;dxSkinDarkSideRS25.bpi;dxSkinsCoreRS25.bpi;dxSkinOffice2019WhiteRS25.bpi;dxSkinPumpkinRS25.bpi;dxSkinOffice2007PinkRS25.bpi;dxPSdxMapControlLnkRS25.bpi;dxSkinSevenRS25.bpi;dxGanttControlSchedulerStorageImporterRS25.bpi;dxMapControlRS25.bpi;dxPSdxDBTVLnkRS25.bpi;dxSpreadSheetReportDesignerRS25.bpi;dxSkinSharpRS25.bpi;dxSkinVisualStudio2013LightRS25.bpi;dxPScxSchedulerLnkRS25.bpi;dxmdsRS25.bpi;dxFlowChartLayoutsRS25.bpi;dxPSPrVwAdvRS25.bpi;dxSkinDarkRoomRS25.bpi;dxEMFRS25.bpi;dxSkinValentineRS25.bpi;dxSkinOffice2007SilverRS25.bpi;dxComnRS25.bpi;dxRichEditControlRS25.bpi;dxGanttControlRS25.bpi;dxSkinSilverRS25.bpi;dxPDFViewerRS25.bpi;cxPivotGridRS25.bpi;dxSkinSharpPlusRS25.bpi;cxVerticalGridRS25.bpi;dxRichEditDocumentModelRS25.bpi;dxPSdxOCLnkRS25.bpi;dxSkinOffice2007BlackRS25.bpi;dxSkinStardustRS25.bpi;dxHttpIndyRequestRS25.bpi;dxPSdxSpreadSheetLnkRS25.bpi;dxPScxCommonRS25.bpi;cxGridEMFRS25.bpi;dxSkinGlassOceansRS25.bpi;dxSpreadSheetCoreRS25.bpi;dxPSdxPDFViewerLnkRS25.bpi;dxPSCoreRS25.bpi;dxSkinSpringTimeRS25.bpi;dxSkinSevenClassicRS25.bpi;dxCloudServiceLibraryRS25.bpi;dxSkinCoffeeRS25.bpi;dxRichEditControlDocFormatRS25.bpi;dxdbtrRS25.bpi;cxPageControldxBarPopupMenuRS25.bpi;dxRibbonRS25.bpi;dxFlowChartDesignerRS25.bpi;dxBarExtItemsRS25.bpi;dxSkinWhiteprintRS25.bpi;cxSchedulerTreeBrowserRS25.bpi;dxSkinBasicRS25.bpi;dxSkinOffice2013DarkGrayRS25.bpi</PackageImports>
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;vclimg.lib;cxLibraryRS25.lib;dxGDIPlusRS25.lib;vcldb.lib;dbrtl.lib;adortl.lib;vclx.lib;dxCoreRS25.lib;</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(IncludePath);..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(ILINK_LibraryPath);..\Common;..</ILINK_LibraryPath>
+    <DCC_Namespace>WinApi;Vcl;System;System.Win;Vcl.Imaging;Data;Data.Win;Bde;Xml;Xml.Win;Vcl.Shell;VclTee;Datasnap;IBX;Vcl.Samples;$(DCC_Namespace)</DCC_Namespace>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="BarCodeDemo.res">
+    </ResFiles>
+    <CppCompile Include="BarCodeDemo.cpp"> </CppCompile>
+    <CppCompile Include="BarCodeDemoMain.cpp">
+      <Form>dxBarCodeDemoForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <CppCompile Include="..\BaseForm.cpp">
+      <Form>fmBaseForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\DemoUtils.cpp"> </CppCompile>
+    <FormResources Include="BarCodeDemoMain.dfm" />
+    <FormResources Include="..\AboutDemoForm.dfm" />
+    <FormResources Include="..\BaseForm.dfm" />  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+      <Platforms>
+        <Platform value="Win32">True</Platform>
+        <Platform value="Win64">True</Platform>
+      </Platforms>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

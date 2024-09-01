@@ -1,0 +1,210 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{ea9ec1ce-8ace-4bc6-9d70-dfee1626f110}</ProjectGuid>
+		<MainSource>sbridge230.dpk</MainSource>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		<DCC_DependencyCheckOutputName>sbridge230.bpl</DCC_DependencyCheckOutputName>
+		<ProjectVersion>18.0</ProjectVersion>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Base>True</Base>
+		<AppType>Package</AppType>
+		<FrameworkType>None</FrameworkType>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>7</TargetedPlatforms>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_Release)'!=''">
+		<Cfg_Release>true</Cfg_Release>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_Debug)'!=''">
+		<Cfg_Debug>true</Cfg_Debug>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;$(DCC_Namespace)</DCC_Namespace>
+		<VerInfo_Build>0</VerInfo_Build>
+		<VerInfo_Keys>CompanyName=Devart;FileDescription=;FileVersion=10.0.1.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=SecureBridge;ProductVersion=10.0.1.0</VerInfo_Keys>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_MajorVer>10</VerInfo_MajorVer>
+		<VerInfo_MinorVer>0</VerInfo_MinorVer>
+		<DCC_CBuilderOutput>All</DCC_CBuilderOutput>
+		<DCC_UnitSearchPath>..;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+		<DCC_ResourcePath>..;$(DCC_ResourcePath)</DCC_ResourcePath>
+		<DCC_ObjPath>..;$(DCC_ObjPath)</DCC_ObjPath>
+		<DCC_IncludePath>..;$(DCC_IncludePath)</DCC_IncludePath>
+		<DCC_DependencyCheckOutputName>sbridge230.bpl</DCC_DependencyCheckOutputName>
+		<DCC_Define>sbridge;$(DCC_Define)</DCC_Define>
+		<DCC_Description>Devart SecureBridge Components</DCC_Description>
+		<RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+		<GenPackage>true</GenPackage>
+		<DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+		<GenDll>true</GenDll>
+		<VerInfo_Release>1</VerInfo_Release></PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Release)'!=''">
+		<DCC_DebugInformation>False</DCC_DebugInformation>
+		<DCC_WriteableConstants>True</DCC_WriteableConstants>
+		<DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_Debug)'!=''">
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="rtl.dcp"/>
+		<DCCReference Include="..\ScTypes.pas"/>
+		<DCCReference Include="..\ScFunctions.pas"/>
+		<DCCReference Include="..\ScAlgorithmSupport.pas"/>
+		<DCCReference Include="..\ScASN1.pas"/>
+		<DCCReference Include="..\ScBase64.pas"/>
+		<DCCReference Include="..\ScBigInteger.pas"/>
+		<DCCReference Include="..\ScBridge.pas"/>
+		<DCCReference Include="..\ScEC25519.pas"/>
+		<DCCReference Include="..\ScCMS.pas"/>
+		<DCCReference Include="..\ScCertificateConsts.pas"/>
+		<DCCReference Include="..\ScCertificateExts.pas"/>
+		<DCCReference Include="..\ScCipher.pas"/>
+		<DCCReference Include="..\ScCipherSuites.pas"/>
+		<DCCReference Include="..\ScClient.pas"/>
+		<DCCReference Include="..\ScClientHandshakeLayer.pas"/>
+		<DCCReference Include="..\ScServerHandshakeLayer.pas"/>
+		<DCCReference Include="..\ScCLRClasses.pas"/>
+		<DCCReference Include="..\ScConsts.pas"/>
+		<DCCReference Include="..\ScCryptoAPIIntf.pas"/>
+		<DCCReference Include="..\ScCryptoAPIStorage.pas"/>
+		<DCCReference Include="..\ScCryptoTransformIntf.pas"/>
+		<DCCReference Include="..\ScDECUtil.pas"/>
+		<DCCReference Include="..\ScHash.pas"/>
+		<DCCReference Include="..\ScHashAlgorithm.pas"/>
+		<DCCReference Include="..\ScHMAC.pas"/>
+		<DCCReference Include="..\ScLayers.pas"/>
+		<DCCReference Include="..\ScMD5SHA1CSP.pas"/>
+		<DCCReference Include="..\ScOids.pas"/>
+		<DCCReference Include="..\ScReaderWriter.pas"/>
+		<DCCReference Include="..\ScReceiveBuffer.pas"/>
+		<DCCReference Include="..\ScRNG.pas"/>
+		<DCCReference Include="..\ScSecureSocket.pas"/>
+		<DCCReference Include="..\ScSocketController.pas"/>
+		<DCCReference Include="..\ScSSH2Channel.pas"/>
+		<DCCReference Include="..\ScSSH2Connection.pas"/>
+		<DCCReference Include="..\ScSSH2DataHandler.pas"/>
+		<DCCReference Include="..\ScDataHandler.pas"/>
+		<DCCReference Include="..\ScSSH2ServerConnection.pas"/>
+		<DCCReference Include="..\ScSSHChannel.pas"/>
+		<DCCReference Include="..\ScSSHClient.pas"/>
+		<DCCReference Include="..\ScSSHConnectionParameter.pas"/>
+		<DCCReference Include="..\ScSSHServer.pas"/>
+		<DCCReference Include="..\ScSSHSocket.pas"/>
+		<DCCReference Include="..\ScSSHUtils.pas"/>
+		<DCCReference Include="..\ScSSHConsts.pas"/>
+		<DCCReference Include="..\ScSSL3HandshakeLayer.pas"/>
+		<DCCReference Include="..\ScSSLClient.pas"/>
+		<DCCReference Include="..\ScSSLServer.pas"/>
+		<DCCReference Include="..\ScTCPServer.pas"/>
+		<DCCReference Include="..\ScSSLMessages.pas"/>
+		<DCCReference Include="..\ScSSLExtensions.pas"/>
+		<DCCReference Include="..\ScSSLTypes.pas"/>
+		<DCCReference Include="..\ScSymmetricAlgorithm.pas"/>
+		<DCCReference Include="..\ScThread.pas"/>
+		<DCCReference Include="..\ScTLS1HandshakeLayer.pas"/>
+		<DCCReference Include="..\ScTLS13HandshakeLayer.pas"/>
+		<DCCReference Include="..\ScUtils.pas"/>
+		<DCCReference Include="..\ScVio.pas"/>
+		<DCCReference Include="..\ScVioSocket.pas"/>
+		<DCCReference Include="..\ScVioTcp.pas"/>
+		<DCCReference Include="..\ScSecureConnection.pas"/>
+		<DCCReference Include="..\ScHttp.pas"/>
+		<DCCReference Include="..\ScVioHttp.pas"/>
+		<DCCReference Include="..\ScFTPUtils.pas"/>
+		<DCCReference Include="..\ScFTPListParser.pas"/>
+		<DCCReference Include="..\ScFTPClient.pas"/>
+		<DCCReference Include="..\ScWebSocketClient.pas"/>
+		<DCCReference Include="..\ScSFTPConsts.pas"/>
+		<DCCReference Include="..\ScSFTPPacket.pas"/>
+		<DCCReference Include="..\ScSFTPUtils.pas"/>
+		<DCCReference Include="..\ScSFTPClient.pas"/>
+		<DCCReference Include="..\ScSFTPServer.pas"/>
+		<DCCReference Include="..\ScParser.pas"/>
+		<DCCReference Include="..\ScJson.pas"/>
+		<DCCReference Include="..\ScJsonSerializator.pas"/>
+		<DCCReference Include="..\ScPipe.pas"/>
+		<DCCReference Include="..\ScSignalRConsts.pas"/>
+		<DCCReference Include="..\ScSignalRMessages.pas"/>
+		<DCCReference Include="..\ScSignalRProtocol.pas"/>
+		<DCCReference Include="..\ScSignalRHttpConnection.pas"/>
+		<DCCReference Include="..\ScSignalRHttpTransports.pas"/>
+		<DCCReference Include="..\ScSignalRHubConnection.pas"/>
+		<DCCReference Include="..\ScCoders.pas"/>
+		<DCCReference Include="..\ScSMTPUtils.pas"/>
+		<DCCReference Include="..\ScMailMessage.pas"/>
+		<DCCReference Include="..\ScSMTPClient.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_Release</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_Debug</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
+	<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType>Package</Borland.ProjectType>
+		<BorlandProject>
+			<Delphi.Personality>
+				<Parameters/>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Type="Integer" Name="MajorVer">10</VersionInfo>
+					<VersionInfo Type="Integer" Name="MinorVer">0</VersionInfo>
+					<VersionInfo Type="Integer" Name="Release">1</VersionInfo>
+					<VersionInfo Type="Integer" Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName">Devart</VersionInfoKeys>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Type="String" Name="FileVersion">10.0.1.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName">SecureBridge</VersionInfoKeys>
+					<VersionInfoKeys Type="String" Name="ProductVersion">10.0.1.0</VersionInfoKeys>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">sbridge230.dpk</Source>
+				</Source>
+			</Delphi.Personality>
+			<Platforms>
+				<Platform value="Android">True</Platform>
+				<Platform value="iOSDevice32">True</Platform>
+				<Platform value="iOSDevice64">True</Platform>
+				<Platform value="iOSSimulator">True</Platform>
+				<Platform value="OSX32">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="Win64">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+</Project>

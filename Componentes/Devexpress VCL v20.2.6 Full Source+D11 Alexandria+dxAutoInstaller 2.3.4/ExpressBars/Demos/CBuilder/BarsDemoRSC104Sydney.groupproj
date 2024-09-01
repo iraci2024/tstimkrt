@@ -1,0 +1,35 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BackgroundDemoRSC104Sydney">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemoRSC104Sydney">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBar2000DemoRSC104Sydney">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemoRSC104Sydney">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="BarNotepadDemoRSC104Sydney">
+    <MSBuild Projects="BarNotepadDemo\BarNotepadDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemoRSC104Sydney">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="SampleDockingRSC104Sydney">
+    <MSBuild Projects="SampleDocking\SampleDockingRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BackgroundDemoRSC104Sydney;DockingMegaDemoRSC104Sydney;EBar2000DemoRSC104Sydney;InPlaceEditorsDemoRSC104Sydney;BarNotepadDemoRSC104Sydney;RibbonNotepadDemoRSC104Sydney;SampleDockingRSC104Sydney" />
+  </Target>
+</Project>

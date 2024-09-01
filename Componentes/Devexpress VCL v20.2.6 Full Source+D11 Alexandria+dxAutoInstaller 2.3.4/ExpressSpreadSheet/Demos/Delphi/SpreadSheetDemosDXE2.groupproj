@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoDXE2">
+    <MSBuild Projects="Invoice\InvoiceDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomFunctionDemoDXE2">
+    <MSBuild Projects="CustomFunction\CustomFunctionDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoDXE2">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoDXE2">
+    <MSBuild Projects="Outline\OutlineDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoDXE2">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoDXE2">
+    <MSBuild Projects="Comments\CommentsDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoDXE2">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoDXE2">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoDXE2">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoDXE2">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoDXE2;CustomFunctionDemoDXE2;CustomDrawDemoDXE2;OutlineDemoDXE2;ConditionalFormattingDemoDXE2;CommentsDemoDXE2;SimpleReportDemoDXE2;HorizontalReportDemoDXE2;MasterDetailReportDemoDXE2;InvoiceReportDemoDXE2" />
+  </Target>
+</Project>

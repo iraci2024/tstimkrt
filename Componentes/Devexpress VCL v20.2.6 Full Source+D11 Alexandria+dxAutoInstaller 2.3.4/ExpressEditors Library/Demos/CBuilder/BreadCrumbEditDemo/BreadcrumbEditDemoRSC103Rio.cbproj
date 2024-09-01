@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{052A1930-9A80-472F-B7C2-EF439F090F5F}</ProjectGuid>
+    <ProjectVersion>14.6</ProjectVersion>
+    <MainSource>BreadcrumbEditDemo.cpp</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+    <AppType>Application</AppType>
+    <FrameworkType>VCL</FrameworkType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <DynamicRTL>true</DynamicRTL>
+    <UsePackages>true</UsePackages>
+    <PackageImports>vcl.bpi;rtl.bpi;vclx.bpi;adortl.bpi;dbrtl.bpi;vcldb.bpi;dxSkinHighContrastRS26.bpi;dxSkinMetropolisDarkRS26.bpi;dxPSdxLCLnkRS26.bpi;dxPSdxFCLnkRS26.bpi;dxPSCoreRS26.bpi;dxSkinBlueRS26.bpi;dxSpreadSheetCoreRS26.bpi;dxFlowChartLayoutsRS26.bpi;cxPivotGridChartRS26.bpi;dxSpreadSheetReportDesignerRS26.bpi;dxSkinVS2010RS26.bpi;dxGanttControlRS26.bpi;dxSpellCheckerRS26.bpi;dxSpreadSheetRS26.bpi;dxPSRichEditControlLnkRS26.bpi;dxPSdxSpreadSheetLnkRS26.bpi;dxSkinLondonLiquidSkyRS26.bpi;dxSkinOffice2019DarkGrayRS26.bpi;dxServerModeRS26.bpi;dxSkinOffice2007GreenRS26.bpi;dxPDFViewerRS26.bpi;dxPSdxDBTVLnkRS26.bpi;dxPScxVGridLnkRS26.bpi;dxDBOrRS26.bpi;dxSkinDevExpressStyleRS26.bpi;dxMapControlRS26.bpi;dxEMFDataRS26.bpi;dxRichEditControlRS26.bpi;cxSchedulerRS26.bpi;dxRichEditControlOpenXMLFormatRS26.bpi;dxSkinTheAsphaltWorldRS26.bpi;dxSkinOffice2019WhiteRS26.bpi;dxRichEditControlHtmlFormatRS26.bpi;dxSkinTheBezierRS26.bpi;dxSkinOffice2016DarkRS26.bpi;cxExportRS26.bpi;dxFlowChartRS26.bpi;dxBarDBNavRS26.bpi;dxPSdxGaugeControlLnkRS26.bpi;dxRibbonRS26.bpi;dxGaugeControlRS26.bpi;dxRichEditControlDocFormatRS26.bpi;dxComnRS26.bpi;dxWizardControlRS26.bpi;dxBarRS26.bpi;dxFlowChartDesignerRS26.bpi;dxPScxExtCommonRS26.bpi;dxSkinDevExpressDarkStyleRS26.bpi;dxSkinOffice2013DarkGrayRS26.bpi;dxSkinDarkRoomRS26.bpi;dxSkinCoffeeRS26.bpi;dxRichEditCoreRS26.bpi;dxCoreRS26.bpi;dxSkinLilianRS26.bpi;cxGridEMFRS26.bpi;dxPSPrVwRibbonRS26.bpi;dxSkinSummer2008RS26.bpi;cxVerticalGridRS26.bpi;cxSchedulerTreeBrowserRS26.bpi;dxSpreadSheetCoreConditionalFormattingDialogsRS26.bpi;dxGDIPlusRS26.bpi;dxSkinMetropolisRS26.bpi;dxPSLnksRS26.bpi;dxSkinBlueprintRS26.bpi;dxSkinOffice2010BlackRS26.bpi;dxSkinDarkSideRS26.bpi;dxSkinCaramelRS26.bpi;cxSchedulerRibbonStyleEventEditorRS26.bpi;dxADOEMFRS26.bpi;dxSkinOffice2013LightGrayRS26.bpi;dxPScxSchedulerLnkRS26.bpi;dxSkinOffice2010SilverRS26.bpi;dxPSPrVwAdvRS26.bpi;cxPageControldxBarPopupMenuRS26.bpi;dxSkinVisualStudio2013DarkRS26.bpi;dxSkinBlackRS26.bpi;dxSkinSpringTimeRS26.bpi;dxPScxGridLnkRS26.bpi;dxmdsRS26.bpi;cxPivotGridOLAPRS26.bpi;dxBarExtDBItemsRS26.bpi;dxSkinOffice2007PinkRS26.bpi;dxPSdxMapControlLnkRS26.bpi;dxSkinOffice2019ColorfulRS26.bpi;dxSkinFoggyRS26.bpi;dxPScxPCProdRS26.bpi;dxSkinWhiteprintRS26.bpi;dxSkinOffice2013WhiteRS26.bpi;dxDockingRS26.bpi;dxSkinMcSkinRS26.bpi;dxSkinGlassOceansRS26.bpi;cxTreeListRS26.bpi;dxPSdxPDFViewerLnkRS26.bpi;dxSkinSharpRS26.bpi;dxSkinXmas2008BlueRS26.bpi;cxLibraryRS26.bpi;dxRibbonCustomizationFormRS26.bpi;cxGridRS26.bpi;dxSkinMoneyTwinsRS26.bpi;dxRichEditDocumentModelRS26.bpi;dxSkinOffice2016ColorfulRS26.bpi;dxSkinValentineRS26.bpi;dxPScxTLLnkRS26.bpi;dxSkinSilverRS26.bpi;dxtrmdRS26.bpi;dxSkinBasicRS26.bpi;dxSkinPumpkinRS26.bpi;dxSkinSevenClassicRS26.bpi;cxSchedulerWebServiceStorageRS26.bpi;dxSkinLiquidSkyRS26.bpi;dxOrgCRS26.bpi;dxEMFRS26.bpi;dxPScxPivotGridLnkRS26.bpi;dxdbtrRS26.bpi;dxSkinOffice2007BlueRS26.bpi;dxNavBarRS26.bpi;dxTileControlRS26.bpi;dxSkinOffice2007SilverRS26.bpi;dxSkinOffice2019BlackRS26.bpi;cxTreeListdxBarPopupMenuRS26.bpi;dxSkinsCoreRS26.bpi;dxSkiniMaginaryRS26.bpi;dxPSdxOCLnkRS26.bpi;dxSkinSevenRS26.bpi;dxBarExtItemsRS26.bpi;dxSkinVisualStudio2013BlueRS26.bpi;dxSkinOffice2010BlueRS26.bpi;dxOrgChartAdvancedCustomizeFormRS26.bpi;dxPScxCommonRS26.bpi;dxCloudServiceLibraryRS26.bpi;dxRichEditControlCoreRS26.bpi;dxSkinStardustRS26.bpi;dxGanttControlSchedulerStorageImporterRS26.bpi;dxSpreadSheetConditionalFormattingDialogsRS26.bpi;dxFlowChartAdvancedCustomizeFormRS26.bpi;dxPSdxDBOCLnkRS26.bpi;cxPivotGridRS26.bpi;dxSkinVisualStudio2013LightRS26.bpi;dxSkinSharpPlusRS26.bpi;dxHttpIndyRequestRS26.bpi;dxTabbedMDIRS26.bpi;cxSchedulerGridRS26.bpi;dxSkinOffice2007BlackRS26.bpi</PackageImports>
+    <Multithreaded>true</Multithreaded>
+    <AllPackageLibs>rtl.lib;vcl.lib;vclwinx.lib;vclimg.lib;cxLibraryRS26.lib;dxGDIPlusRS26.lib;vcldb.lib;dbrtl.lib;adortl.lib;vclx.lib;dxCoreRS26.lib;</AllPackageLibs>
+    <LinkPackageImports></LinkPackageImports>
+    <ProjectType>CppVCLApplication</ProjectType>
+    <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+   <IncludePath>$(IncludePath);..\Common;..</IncludePath>
+   <ILINK_LibraryPath>$(ILINK_LibraryPath);..\Common;..</ILINK_LibraryPath>
+    <DCC_Namespace>WinApi;Vcl;System;System.Win;Vcl.Imaging;Data;Data.Win;Bde;Xml;Xml.Win;Vcl.Shell;VclTee;Datasnap;IBX;Vcl.Samples;$(DCC_Namespace)</DCC_Namespace>
+    <BCC_wpar>false</BCC_wpar>
+  </PropertyGroup>
+  <ItemGroup>
+    <ResFiles Include="BreadcrumbEditDemo.res">
+    </ResFiles>
+    <CppCompile Include="BreadcrumbEditDemo.cpp"> </CppCompile>
+    <CppCompile Include="BreadcrumbEditDemoMain.cpp">
+      <Form>dxBreadcrumbEditDemoForm</Form>
+    </CppCompile>
+    <CppCompile Include="BreadcrumbEditDemoRecentPaths.cpp">
+      <Form>dxBreadcrumbEditDemoRecentPathsForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\DemoUtils.cpp"> </CppCompile>
+    <CppCompile Include="..\BaseForm.cpp">
+      <Form>fmBaseForm</Form>
+    </CppCompile>
+    <CppCompile Include="..\AboutDemoForm.cpp">
+      <Form>formAboutDemo</Form>
+    </CppCompile>
+    <FormResources Include="BreadcrumbEditDemoMain.dfm" />
+    <FormResources Include="BreadcrumbEditDemoRecentPaths.dfm" />
+    <FormResources Include="..\BaseForm.dfm" />
+    <FormResources Include="..\AboutDemoForm.dfm" />  </ItemGroup>
+  <Import Project="$(BDS)\Bin\CodeGear.Cpp.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')"/>
+  <ProjectExtensions>
+    <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+    <Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <CPlusPlusBuilder.Personality>
+      </CPlusPlusBuilder.Personality>
+      <Platforms>
+        <Platform value="Win32">True</Platform>
+        <Platform value="Win64">True</Platform>
+      </Platforms>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

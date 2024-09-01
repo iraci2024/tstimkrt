@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sgcWebSockets - Protocol: wamp.esegece.com</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name = "viewport" content = "width = 320, initial-scale = 1.0, user-scalable = yes"> 
+<script type="text/javascript" src="http{%ssl%}://{%host%}:{%port%}/sgcWebSockets.js"></script>
+<script type="text/javascript" src="http{%ssl%}://{%host%}:{%port%}/wamp.esegece.com.js"></script>
+<style>
+body {
+	font-family:Verdana,Arial,"Times New Roman";
+}
+
+#status {
+  padding: 5px;
+  color: #fff;
+  background: #ccc;
+}
+#status.error {
+  background: #c00;
+  font-weight: bold;
+}
+#status.offline {
+  background: #c00;
+  font-weight: bold;
+}
+#status.online {
+  background: #0c0;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>sgcWebSockets</h1>
+<h3>wamp.esegece.com</h3>
+<table width="100%">
+	<tr>
+		<td>
+			Status
+		</td>
+		<td>
+			<p id="status"></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<h3>WebSocket Methods</h3>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="
+			javascript:var socket = new sgcws_wamp('ws{%ssl%}://{%host%}:{%port%}'); 
+
+			socket.on('open', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#connected</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Open';
+					document.getElementById('status').className = 'online';
+				}
+			);
+			socket.on('close', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#disconnected:' + event.clean + '</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Closed';
+					document.getElementById('status').className = 'offline';
+				}
+			);
+			socket.on('sgcmessage', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#messsage:' + event.message + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('wampwelcome', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#welcome:' + event.SessionId + ' - ' + event.ProtocolVersion + ' - ' + event.ServerIdent + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('wampcallresult', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#call result:' + event.CallId + ' - ' + event.CallResult + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('wampcallerror', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#call error:' + event.CallId + ' - ' + event.ErrorURI + ' - ' + event.ErrorDesc + ' - ' + event.ErrorDetails  + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('wampevent', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#event:' + event.TopicURI + ' - ' + event.Event + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);			
+			socket.on('error', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#disconnected:' + event.message + '</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Error';
+					document.getElementById('status').className = 'error';
+				}
+			);
+			">Open</a>	
+		</td>
+		<td>
+			Open WebSocket Connection.	
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.close();">Close</a>
+		</td>
+		<td>
+			Closes WebSocket Connection.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:document.getElementById('log').innerHTML = '<li><b>#status:' + socket.state() + '</b></li>' + document.getElementById('log').innerHTML;
+			">Status</a>
+		</td>
+		<td>
+			Get Status WebSocket Connection.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.prefix('sgc', 'http://www.esegece.com');">Prefix</a>
+		</td>
+		<td>
+			Send Prefix 'sgc' --> 'http://www.esegece.com'.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.call('', 'sgc:CallTest', '1');">Call</a>
+		</td>
+		<td>
+			Remote Call Procedure 'CallTest' with Param '1'.
+		</td>		
+	</tr>	
+	<tr>
+		<td>
+			<a href="javascript:socket.subscribe('sgc:channel');">Subscribe</a>
+		</td>
+		<td>
+			Subscribe to Channel Test.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.unsubscribe('sgc:channel');">UnSubscribe</a>
+		</td>
+		<td>
+			UnSubscribe to Channel Test.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.publish('sgc:channel', 'Test Message', [], []);">Publish</a>
+		</td>
+		<td>
+			Publish message to clients subscribed to sgc:channel
+		</td>		
+	</tr>		
+	<tr>
+		<td colspan="2">
+			<h3>Log</h3>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<ul id="log" style="overflow: auto; list-style: none; padding:0; background:#ffffff; font-size:small; border-style:solid; border-color:#c0c0c0"></ul>
+		</td>
+	</tr>	
+</table>
+
+</body>
+</html>
+
+

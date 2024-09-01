@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoRSCXE2">
+    <MSBuild Projects="Invoice\InvoiceDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSCXE2">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoRSCXE2">
+    <MSBuild Projects="Outline\OutlineDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSCXE2">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoRSCXE2">
+    <MSBuild Projects="Comments\CommentsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoRSCXE2">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoRSCXE2">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoRSCXE2">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoRSCXE2">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoRSCXE2;CustomDrawDemoRSCXE2;OutlineDemoRSCXE2;ConditionalFormattingDemoRSCXE2;CommentsDemoRSCXE2;SimpleReportDemoRSCXE2;HorizontalReportDemoRSCXE2;MasterDetailReportDemoRSCXE2;InvoiceReportDemoRSCXE2" />
+  </Target>
+</Project>

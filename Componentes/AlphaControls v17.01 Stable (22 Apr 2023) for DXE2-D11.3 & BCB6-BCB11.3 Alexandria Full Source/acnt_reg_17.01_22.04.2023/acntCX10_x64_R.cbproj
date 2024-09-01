@@ -1,0 +1,669 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{1428089F-6B9F-4526-A0A8-FF7A9C88E85B}</ProjectGuid>
+        <ProjectVersion>18.0</ProjectVersion>
+        <MainSource>acntCX10_x64_R.cpp</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Release</Config>
+        <AppType>Library</AppType>
+        <FrameworkType>None</FrameworkType>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <TargetedPlatforms>3</TargetedPlatforms>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <SanitizedProjectName>acntCX10_x64_R</SanitizedProjectName>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Locale>1049</VerInfo_Locale>
+        <RuntimeOnlyPackage>true</RuntimeOnlyPackage>
+        <OutputExt>bpl</OutputExt>
+        <ProjectType>CppPackage</ProjectType>
+        <PackageImports>vclimg.bpi;vcl.bpi;vclx.bpi;dbrtl.bpi;Rave90VCL.bpi;bdertl.bpi;rtl.bpi;bcbie.bpi;xmlrtl.bpi;vclactnband.bpi;bcbsmp.bpi;VclSmp.bpi;svnui.bpi;svn.bpi;TeeUI.bpi;TeeDB.bpi;Tee.bpi;vcldb.bpi;vcldbx.bpi;vcltouch.bpi;dsnap.bpi;dsnapcon.bpi;vclib.bpi;ibxpress.bpi;adortl.bpi;IndyCore.bpi;IndySystem.bpi;IndyProtocols.bpi;inet.bpi;intrawebdb_110_150.bpi;Intraweb_110_150.bpi;websnap.bpi;webdsnap.bpi;inetdb.bpi;inetdbbde.bpi;inetdbxpress.bpi;soaprtl.bpi;vclribbon.bpi;dbexpress.bpi;DbxCommonDriver.bpi;DataSnapIndy10ServerTransport.bpi;DataSnapProviderClient.bpi;DbxClientDriver.bpi;DataSnapClient.bpi;dbxcds.bpi;DataSnapServer.bpi;AzureCloud.bpi;DBXInterBaseDriver.bpi;DBXMySQLDriver.bpi;DBXFirebirdDriver.bpi;DBXSybaseASEDriver.bpi;DBXSybaseASADriver.bpi;DBXOracleDriver.bpi;DBXMSSQLDriver.bpi;DBXInformixDriver.bpi;DBXDb2Driver.bpi;CodeSiteExpressVcl.bpi;$(PackageImports)</PackageImports>
+        <_TCHARMapping>wchar_t</_TCHARMapping>
+        <ILINK_GenerateLibFile>true</ILINK_GenerateLibFile>
+        <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
+        <LinkPackageImports>rtl.bpi;vcl.bpi</LinkPackageImports>
+        <AllPackageLibs>rtl.lib;vcl.lib</AllPackageLibs>
+        <Multithreaded>true</Multithreaded>
+        <DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+        <DynamicRTL>true</DynamicRTL>
+        <UsePackages>true</UsePackages>
+        <BCC_wpar>false</BCC_wpar>
+        <BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+        <BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+        <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+        <TLIB_PageSize>64</TLIB_PageSize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;Vcl.Imaging;Vcl;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+        <BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+        <BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+        <DCC_Define>DEBUG</DCC_Define>
+        <BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+        <TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+        <BCC_StackFrames>true</BCC_StackFrames>
+        <ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+        <TASM_Debugging>Full</TASM_Debugging>
+        <BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+        <ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <Defines>_DEBUG;$(Defines)</Defines>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;Vcl.Imaging;Vcl;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <TASM_Debugging>None</TASM_Debugging>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <ILINK_GenerateLibFile>true</ILINK_GenerateLibFile>
+        <ILINK_LibraryPath>$(BDS)\lib\win32\release\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <Defines>NDEBUG;$(Defines)</Defines>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;Vcl.Imaging;Vcl;$(DCC_Namespace)</DCC_Namespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="acAlphaHints.pas">
+            <BuildOrder>5</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acAlphaImageList.pas">
+            <BuildOrder>6</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acAnimation.pas">
+            <BuildOrder>7</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acArcControls.pas">
+            <BuildOrder>8</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acCoolBar.pas">
+            <BuildOrder>9</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acDials.pas">
+            <BuildOrder>10</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acFloatCtrls.pas">
+            <BuildOrder>11</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acFontStore.pas">
+            <BuildOrder>12</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acGlow.pas">
+            <BuildOrder>13</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acgpUtils.pas">
+            <BuildOrder>14</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acHeaderControl.pas">
+            <BuildOrder>15</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acImage.pas">
+            <BuildOrder>16</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acMagn.pas">
+            <Form>acMagnForm</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>17</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acMeter.pas">
+            <BuildOrder>18</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acNotebook.pas">
+            <BuildOrder>19</BuildOrder>
+        </DelphiCompile>
+        <CppCompile Include="acntCX10_R.cpp">
+            <BuildOrder>0</BuildOrder>
+        </CppCompile>
+        <DelphiCompile Include="acntTypes.pas">
+            <BuildOrder>20</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acntUtils.pas">
+            <BuildOrder>21</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acPageScroller.pas">
+            <BuildOrder>22</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acPathDialog.pas">
+            <Form>PathDialogForm</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>23</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acPNG.pas">
+            <BuildOrder>24</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acPopupController.pas">
+            <BuildOrder>25</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acPopupCtrls.pas">
+            <BuildOrder>26</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acProgressBar.pas">
+            <BuildOrder>27</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acSBUtils.pas">
+            <BuildOrder>28</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acSelectSkin.pas">
+            <Form>FormSkinSelect</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>29</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acShellCtrls.pas">
+            <BuildOrder>30</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acSkinPreview.pas">
+            <BuildOrder>104</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acSlider.pas">
+            <BuildOrder>31</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acThdTimer.pas">
+            <BuildOrder>32</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acThumbForm.pas">
+            <Form>MagnifierOwner</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>33</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acTitleBar.pas">
+            <BuildOrder>34</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="acZLibEx.pas">
+            <BuildOrder>35</BuildOrder>
+        </DelphiCompile>
+        <PackageImport Include="rtl.bpi">
+            <BuildOrder>1</BuildOrder>
+        </PackageImport>
+        <DelphiCompile Include="sAlphaGraph.pas">
+            <BuildOrder>36</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sBevel.pas">
+            <BuildOrder>37</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sBitBtn.pas">
+            <BuildOrder>38</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sBorders.pas">
+            <BuildOrder>39</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sButton.pas">
+            <BuildOrder>40</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCalculator.pas">
+            <BuildOrder>41</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCalcUnit.pas">
+            <Form>sCalcForm</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>42</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCheckBox.pas">
+            <BuildOrder>43</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCheckListBox.pas">
+            <BuildOrder>44</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sColorDialog.pas">
+            <Form>sColorDialogForm</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>45</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sColorSelect.pas">
+            <BuildOrder>46</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sComboBox.pas">
+            <BuildOrder>47</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sComboBoxes.pas">
+            <BuildOrder>48</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sComboEdit.pas">
+            <BuildOrder>49</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCommonData.pas">
+            <BuildOrder>50</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sConst.pas">
+            <BuildOrder>51</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCurrEdit.pas">
+            <BuildOrder>52</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCurrencyEdit.pas">
+            <BuildOrder>53</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sCustomComboEdit.pas">
+            <BuildOrder>54</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sDateUtils.pas">
+            <BuildOrder>55</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sDefaults.pas">
+            <BuildOrder>56</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sDialogs.pas">
+            <BuildOrder>57</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sEdit.pas">
+            <BuildOrder>58</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sFileCtrl.pas">
+            <BuildOrder>60</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sFontCtrls.pas">
+            <BuildOrder>61</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sFrameAdapter.pas">
+            <BuildOrder>62</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sFrameBar.pas">
+            <BuildOrder>63</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sGauge.pas">
+            <BuildOrder>64</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sGlyphUtils.pas">
+            <BuildOrder>65</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sGradient.pas">
+            <BuildOrder>66</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sGraphUtils.pas">
+            <BuildOrder>67</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sGroupBox.pas">
+            <BuildOrder>68</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sHtmlParse.pas">
+            <BuildOrder>69</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sLabel.pas">
+            <BuildOrder>70</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sListBox.pas">
+            <BuildOrder>71</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sListView.pas">
+            <BuildOrder>72</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sMaskData.pas">
+            <BuildOrder>73</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sMaskEdit.pas">
+            <BuildOrder>74</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sMDIForm.pas">
+            <BuildOrder>75</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sMemo.pas">
+            <BuildOrder>76</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sMessages.pas">
+            <BuildOrder>77</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sMonthCalendar.pas">
+            <BuildOrder>78</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sPageControl.pas">
+            <BuildOrder>79</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sPanel.pas">
+            <BuildOrder>80</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sPopupClndr.pas">
+            <Form>sPopupCalendar</Form>
+            <FormType>dfm</FormType>
+            <BuildOrder>81</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sRadioButton.pas">
+            <BuildOrder>82</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sRichEdit.pas">
+            <BuildOrder>83</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sScrollBar.pas">
+            <BuildOrder>84</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sScrollBox.pas">
+            <BuildOrder>85</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSkinManager.pas">
+            <BuildOrder>86</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSkinMenus.pas">
+            <BuildOrder>87</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSkinProps.pas">
+            <BuildOrder>88</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSkinProvider.pas">
+            <BuildOrder>89</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSpeedButton.pas">
+            <BuildOrder>90</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSpinEdit.pas">
+            <BuildOrder>91</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sSplitter.pas">
+            <BuildOrder>92</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sStatusBar.pas">
+            <BuildOrder>93</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sStoreUtils.pas">
+            <BuildOrder>94</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sStrings.pas">
+            <BuildOrder>95</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sStyleSimply.pas">
+            <BuildOrder>96</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sTabControl.pas">
+            <BuildOrder>97</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sThirdParty.pas">
+            <BuildOrder>98</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sToolBar.pas">
+            <BuildOrder>99</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sToolEdit.pas">
+            <BuildOrder>100</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sTrackBar.pas">
+            <BuildOrder>101</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sTreeView.pas">
+            <BuildOrder>102</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sUpDown.pas">
+            <BuildOrder>103</BuildOrder>
+        </DelphiCompile>
+        <DelphiCompile Include="sVclUtils.pas">
+            <BuildOrder>104</BuildOrder>
+        </DelphiCompile>
+        <PackageImport Include="vcl.bpi">
+            <BuildOrder>9</BuildOrder>
+        </PackageImport>
+        <PackageImport Include="vclimg.bpi">
+            <BuildOrder>18</BuildOrder>
+        </PackageImport>
+        <PackageImport Include="vclx.bpi">
+            <BuildOrder>30</BuildOrder>
+        </PackageImport>
+        <FormResources Include="acMagn.dfm"/>
+        <FormResources Include="acPathDialog.dfm"/>
+        <FormResources Include="acSelectSkin.dfm"/>
+        <FormResources Include="acThumbForm.dfm"/>
+        <FormResources Include="sCalcUnit.dfm"/>
+        <FormResources Include="sColorDialog.dfm"/>
+        <FormResources Include="sPopupClndr.dfm"/>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')" Project="$(BDS)\Bin\CodeGear.Cpp.Targets"/>
+    <ProjectExtensions>
+        <Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+        <Borland.ProjectType>CppPackage</Borland.ProjectType>
+        <BorlandProject>
+            <CPlusPlusBuilder.Personality>
+                <Source>
+                    <Source Name="MainSource">acntCX10_x64_R.cpp</Source>
+                </Source>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1049</VersionInfo>
+                    <VersionInfo Name="CodePage">1251</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <ProjectProperties>
+                    <ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+                    <ProjectProperties Name="ManagePaths">True</ProjectProperties>
+                    <ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+                    <ProjectProperties Name="IndexFiles">False</ProjectProperties>
+                </ProjectProperties>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfs23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfs23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfsDB23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfsDB23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfsADO23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfsADO23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfrx23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfrx23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfrxDB23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclfrxDB23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxCoreRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxCoreRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxLibraryRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxLibraryRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxHttpIndyRequestRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxHttpIndyRequestRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxServerModeRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxServerModeRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxADOServerModeRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxADOServerModeRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxDBXServerModeRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxDBXServerModeRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxFireDACServerModeRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxFireDACServerModeRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxmdsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxmdsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxEditorsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxEditorsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxEditorFieldLinkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxEditorFieldLinkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPageControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPageControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxLayoutControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxLayoutControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxDockingRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxDockingRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxRichEditCoreRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxRichEditCoreRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxRichEditDocumentModelRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxRichEditDocumentModelRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxRichEditControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxRichEditControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetReportDesignerRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetReportDesignerRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSpreadSheetInplaceRichEditRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSpreadSheetInplaceRichEditRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxNavBarRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxNavBarRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxWizardControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxWizardControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxGridRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxGridRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxGridWizardRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxGridWizardRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPivotGridRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPivotGridRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPivotGridChartRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPivotGridChartRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPivotGridOLAPRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPivotGridOLAPRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxTreeListRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxTreeListRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxRibbonRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxRibbonRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxRibbonCustomizationFormRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxRibbonCustomizationFormRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxTabbedMDIRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxTabbedMDIRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarExtItemsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarExtItemsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarExtDBItemsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarExtDBItemsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarDBNavRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxBarDBNavRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerGridRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerGridRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerTreeBrowserRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerTreeBrowserRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerRibbonStyleEventEditorRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxSchedulerRibbonStyleEventEditorRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxVerticalGridRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxVerticalGridRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxdbtrRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxdbtrRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxtrmdRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxtrmdRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSkinsCoreRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSkinsCoreRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSkinsDesignHelperRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSkinsDesignHelperRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSkinscxEditorsHelperRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSkinscxEditorsHelperRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxPScxPCProdRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxPScxPCProdRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSCoreRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSCoreRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSLnksRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSLnksRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxCommonRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxCommonRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxExtCommonRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxExtCommonRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSPrVwAdvRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSPrVwAdvRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSPrVwRibbonRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSPrVwRibbonRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpellCheckerRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpellCheckerRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxFlowChartRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxFlowChartRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxFlowChartAdvancedCustomizeFormRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxFlowChartAdvancedCustomizeFormRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxOrgChartAdvancedCustomizeFormRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxOrgChartAdvancedCustomizeFormRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxOrgCRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxOrgCRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxDBOrRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxDBOrRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxTileControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxTileControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxGaugeControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxGaugeControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxMapControlRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxMapControlRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPDFViewerRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPDFViewerRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxIconLibraryRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxIconLibraryRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPageControldxBarPopupMenuRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxPageControldxBarPopupMenuRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetCoreConditionalFormattingDialogsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetCoreConditionalFormattingDialogsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetConditionalFormattingDialogsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxSpreadSheetConditionalFormattingDialogsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxTreeListdxBarPopupMenuRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dclcxTreeListdxBarPopupMenuRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinBlackRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinBlackRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinBlueprintRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinBlueprintRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinBlueRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinBlueRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinCaramelRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinCaramelRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinCoffeeRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinCoffeeRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDarkRoomRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDarkRoomRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDarkSideRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDarkSideRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDevExpressDarkStyleRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDevExpressDarkStyleRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDevExpressStyleRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinDevExpressStyleRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinFoggyRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinFoggyRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinGlassOceansRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinGlassOceansRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinHighContrastRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinHighContrastRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkiniMaginaryRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkiniMaginaryRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinLilianRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinLilianRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinLiquidSkyRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinLiquidSkyRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinLondonLiquidSkyRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinLondonLiquidSkyRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMcSkinRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMcSkinRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMetropolisDarkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMetropolisDarkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMetropolisRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMetropolisRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMoneyTwinsRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinMoneyTwinsRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007BlackRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007BlackRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007BlueRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007BlueRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007GreenRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007GreenRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007PinkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007PinkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007SilverRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2007SilverRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2010BlackRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2010BlackRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2010BlueRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2010BlueRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2010SilverRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2010SilverRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2013DarkGrayRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2013DarkGrayRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2013LightGrayRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2013LightGrayRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2013WhiteRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2013WhiteRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinPumpkinRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinPumpkinRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSevenClassicRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSevenClassicRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSevenRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSevenRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSharpPlusRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSharpPlusRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSharpRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSharpRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSilverRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSilverRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSpringTimeRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSpringTimeRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinStardustRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinStardustRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSummer2008RS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinSummer2008RS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinTheAsphaltWorldRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinTheAsphaltWorldRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinValentineRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinValentineRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVS2010RS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVS2010RS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinWhiteprintRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinWhiteprintRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinXmas2008BlueRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinXmas2008BlueRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2016ColorfulRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2016ColorfulRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2016DarkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinOffice2016DarkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVisualStudio2013BlueRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVisualStudio2013BlueRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVisualStudio2013DarkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVisualStudio2013DarkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVisualStudio2013LightRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dxSkinVisualStudio2013LightRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxLCLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxLCLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxSpreadSheetLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxSpreadSheetLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxGridLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxGridLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxPivotGridLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxPivotGridLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxSchedulerLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxSchedulerLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxTLLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxTLLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxVGridLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPScxVGridLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxOCLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxOCLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxDBOCLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxDBOCLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxDBTVLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxDBTVLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxFCLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxFCLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxGaugeControlLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxGaugeControlLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSRichEditControlLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSRichEditControlLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxMapControlLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxMapControlLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxPDFViewerLnkRS23.bpl">File C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\dcldxPSdxPDFViewerLnkRS23.bpl not found</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k230.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp230.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k230.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp230.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </CPlusPlusBuilder.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+<!-- EurekaLog First Line
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+DeleteMapAfterCompile=0
+Encrypt Password=""
+EurekaLog Last Line -->
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+</Project>

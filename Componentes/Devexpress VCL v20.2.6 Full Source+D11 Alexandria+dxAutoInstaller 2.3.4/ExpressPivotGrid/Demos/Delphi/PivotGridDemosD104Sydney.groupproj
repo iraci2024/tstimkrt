@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemoD104Sydney">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoD104Sydney">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoD104Sydney">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoD104Sydney">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoD104Sydney">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD104Sydney">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD104Sydney">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoD104Sydney">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartConnectionDemoD104Sydney">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserD104Sydney">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoD104Sydney">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoD104Sydney;CompactLayoutDemoD104Sydney;MultipleTotalsDemoD104Sydney;SortBySummaryDemoD104Sydney;UnboundExternalDemoD104Sydney;StylesMultiDemoD104Sydney;CustomDrawDemoD104Sydney;DataSetsDemoD104Sydney;ChartConnectionDemoD104Sydney;OLAPBrowserD104Sydney;PrefilterByCodeDemoD104Sydney;EditorsInPlaceDemoD104Sydney" />
+  </Target>
+</Project>

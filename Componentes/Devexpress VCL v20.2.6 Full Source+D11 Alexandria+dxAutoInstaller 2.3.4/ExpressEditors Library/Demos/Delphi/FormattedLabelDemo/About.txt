@@ -1,0 +1,6 @@
+In this demo, you can:
+
+- Enter the text to be formatted in the Markup Editor and add/modify markup tags as plain text.
+- Select text in the Markup Editor and click toolbar buttons to enclose the text in markup tags.
+- Try the options displayed in the Properties group box to adjust the formatted text's appearance.
+- Apply different paint styles to a form (the Look&Feel menu item).

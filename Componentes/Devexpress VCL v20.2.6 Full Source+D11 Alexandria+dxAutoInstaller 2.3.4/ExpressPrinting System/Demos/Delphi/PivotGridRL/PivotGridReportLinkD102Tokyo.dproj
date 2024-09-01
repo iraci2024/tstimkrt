@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3D8008DB-9B82-447D-ADA1-B7CFFDDA5586}</ProjectGuid>
+    <MainSource>PivotGridReportLinkD102Tokyo.dpr</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <ProjectVersion>13.4</ProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <UsePackages>true</UsePackages>
+    <DCC_UsePackage>;dxDBOrRS25;dxSkinVS2010RS25;dxPSdxLCLnkRS25;dxSpreadSheetRS25;dxSkinOffice2010BlackRS25;dxSkinDevExpressStyleRS25;cxGridRS25;dxFlowChartAdvancedCustomizeFormRS25;dxSkinOffice2019DarkGrayRS25;dxSkinLondonLiquidSkyRS25;dxSkinOffice2016DarkRS25;cxPivotGridOLAPRS25;dxSkinOffice2007BlueRS25;dxSkinBlueprintRS25;dxPSdxDBOCLnkRS25;dxSkinHighContrastRS25;dxBarDBNavRS25;dxSpellCheckerRS25;cxSchedulerRibbonStyleEventEditorRS25;dxSkinOffice2019ColorfulRS25;dxPScxVGridLnkRS25;dxSkinVisualStudio2013DarkRS25;dxSkinTheBezierRS25;dxSpreadSheetCoreConditionalFormattingDialogsRS25;dxSkinDevExpressDarkStyleRS25;dxSkinOffice2016ColorfulRS25;dxRibbonCustomizationFormRS25;dxSkinOffice2013LightGrayRS25;cxSchedulerGridRS25;dxDockingRS25;dxEMFDataRS25;dxSkinMcSkinRS25;dxSkinOffice2019BlackRS25;dxSkinSummer2008RS25;dxSkiniMaginaryRS25;cxTreeListdxBarPopupMenuRS25;dxPScxTLLnkRS25;dxWizardControlRS25;dxPSdxFCLnkRS25;dxSkinMetropolisDarkRS25;dxSkinXmas2008BlueRS25;dxTabbedMDIRS25;dxRichEditControlHtmlFormatRS25;dxSkinBlueRS25;dxPSdxGaugeControlLnkRS25;dxGaugeControlRS25;dxSkinVisualStudio2013BlueRS25;dxSpreadSheetConditionalFormattingDialogsRS25;dxOrgCRS25;dxFlowChartRS25;dxSkinMetropolisRS25;dxSkinLilianRS25;dxSkinOffice2010BlueRS25;dxServerModeRS25;dxPSLnksRS25;dxTileControlRS25;dxtrmdRS25;dxADOEMFRS25;cxLibraryRS25;dxSkinMoneyTwinsRS25;dxSkinCaramelRS25;dxPScxPCProdRS25;dxRichEditControlCoreRS25;dxBarRS25;dxPScxExtCommonRS25;cxExportRS25;dxSkinOffice2010SilverRS25;cxSchedulerWebServiceStorageRS25;dxPScxPivotGridLnkRS25;dxOrgChartAdvancedCustomizeFormRS25;dxGDIPlusRS25;dxRichEditCoreRS25;dxSkinFoggyRS25;dxCoreRS25;cxTreeListRS25;dxRichEditControlOpenXMLFormatRS25;dxPSRichEditControlLnkRS25;dxSkinLiquidSkyRS25;dxNavBarRS25;dxPScxGridLnkRS25;dxSkinBlackRS25;dxBarExtDBItemsRS25;dxSkinOffice2007GreenRS25;cxPivotGridChartRS25;dxPSPrVwRibbonRS25;cxSchedulerRS25;dxSkinOffice2013WhiteRS25;dxSkinTheAsphaltWorldRS25;dxSkinDarkSideRS25;dxSkinsCoreRS25;dxSkinOffice2019WhiteRS25;dxSkinPumpkinRS25;dxSkinOffice2007PinkRS25;dxPSdxMapControlLnkRS25;dxSkinSevenRS25;dxGanttControlSchedulerStorageImporterRS25;dxMapControlRS25;dxPSdxDBTVLnkRS25;dxSpreadSheetReportDesignerRS25;dxSkinSharpRS25;dxSkinVisualStudio2013LightRS25;dxPScxSchedulerLnkRS25;dxmdsRS25;dxFlowChartLayoutsRS25;dxPSPrVwAdvRS25;dxSkinDarkRoomRS25;dxEMFRS25;dxSkinValentineRS25;dxSkinOffice2007SilverRS25;dxComnRS25;dxRichEditControlRS25;dxGanttControlRS25;dxSkinSilverRS25;dxPDFViewerRS25;cxPivotGridRS25;dxSkinSharpPlusRS25;cxVerticalGridRS25;dxRichEditDocumentModelRS25;dxPSdxOCLnkRS25;dxSkinOffice2007BlackRS25;dxSkinStardustRS25;dxHttpIndyRequestRS25;dxPSdxSpreadSheetLnkRS25;dxPScxCommonRS25;cxGridEMFRS25;dxSkinGlassOceansRS25;dxSpreadSheetCoreRS25;dxPSdxPDFViewerLnkRS25;dxPSCoreRS25;dxSkinSpringTimeRS25;dxSkinSevenClassicRS25;dxCloudServiceLibraryRS25;dxSkinCoffeeRS25;dxRichEditControlDocFormatRS25;dxdbtrRS25;cxPageControldxBarPopupMenuRS25;dxRibbonRS25;dxFlowChartDesignerRS25;dxBarExtItemsRS25;dxSkinWhiteprintRS25;cxSchedulerTreeBrowserRS25;dxSkinBasicRS25;dxSkinOffice2013DarkGrayRS25</DCC_UsePackage>
+    <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+    <DCC_Namespace>WinApi;Vcl;System;System.Win;Vcl.Imaging;Data;Data.Win;Bde;Xml;Xml.Win;Vcl.Shell;VclTee;Datasnap;IBX;Vcl.Samples;$(DCC_Namespace)</DCC_Namespace>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <Delphi.Personality>
+        <Source>
+          <Source Name="MainSource">PivotGridReportLinkD102Tokyo.dpr</Source>
+        </Source>
+      </Delphi.Personality>
+      <Platforms>
+        <Platform value="Win32">True</Platform>
+        <Platform value="Win64">True</Platform>
+      </Platforms>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,82 @@
+<html>
+<head>
+   <title>OnConfirmOverwrite</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_OnConfirmOverwrite;OnConfirmOverwrite_Event;OnConfirmOverwrite">
+<param name="alink name" value="$topicid_OnConfirmOverwrite">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.OnConfirmOverwrite</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Occurs before application will overwrite existing file.
+<br>
+
+<br>
+<b>type</b> TFXCConfirmOverwriteEvent =  procedure(
+<br>
+                                      Sender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TObject;
+<br>
+                                      SourceFileName : &nbsp;&nbsp;&nbsp;WideString;
+<br>
+                                      <b>var</b> DestFileName: &nbsp;&nbsp;&nbsp;WideString;
+<br>
+                                      <b>var</b> Confirm: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boolean
+<br>
+                                      ) of <b>object</b>;
+<br>
+<b>property</b> OnConfirmOverwrite: TFXCConfirmOverwriteEvent;
+<br>
+
+<br>
+<b>Description</b>
+<br>
+
+<br>
+Write a OnConfirmOverwrite event handler to perform some specific actions before overwriting file or to cancel it. OnConfirmOverwrite event can be triggered by <a href=addfiles.htm>AddFiles</a>, <a href=movefiles.htm>MoveFiles</a>, <a href=updatefiles.htm>UpdateFiles</a> or <a href=extractfiles.htm>ExtractFiles</a> before overwriting existing file if <a href=options.htm>Options</a>.OverwriteMode = omPrompt.
+<br>
+
+<br>
+The Sender parameter is the object whose event handler is called.  
+<br>
+
+<br>
+SourceFileName indicates the name of the file that will overwrite existing file.
+<br>
+
+<br>
+DestFileName indicates the name of the file being overwritten. Set DestFileName if you want to save this file with different name instead of overwriting existing file.
+<br>
+
+<br>
+Confirm determines if file will be overwritten. Set Confirm to False if you want to cancel overwriting existing file. Default value for Confirm is True.
+<br>
+
+<br>
+</span>
+
+</body>
+</html>

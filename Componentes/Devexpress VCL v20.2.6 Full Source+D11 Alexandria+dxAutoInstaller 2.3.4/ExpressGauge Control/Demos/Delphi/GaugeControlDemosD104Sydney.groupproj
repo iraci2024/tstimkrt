@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="WorldTimeD104Sydney">
+    <MSBuild Projects="WorldTime\WorldTimeD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoD104Sydney">
+    <MSBuild Projects="Styles\StylesDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SampleGaugesD104Sydney">
+    <MSBuild Projects="SampleGauges\SampleGaugesD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CarDashboardD104Sydney">
+    <MSBuild Projects="CarDashboard\CarDashboardD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="WorldTimeD104Sydney;StylesDemoD104Sydney;SampleGaugesD104Sydney;CarDashboardD104Sydney" />
+  </Target>
+</Project>

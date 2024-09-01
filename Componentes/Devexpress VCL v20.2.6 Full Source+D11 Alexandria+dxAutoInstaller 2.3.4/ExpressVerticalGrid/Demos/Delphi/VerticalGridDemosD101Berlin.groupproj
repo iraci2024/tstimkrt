@@ -1,0 +1,56 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoD101Berlin">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD101Berlin">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD101Berlin">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoD101Berlin">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoD101Berlin">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD101Berlin">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD101Berlin">
+    <MSBuild Projects="STYLESSIMPLEDEMO\StylesSimpleDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoD101Berlin">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD101Berlin">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD101Berlin">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD101Berlin">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD101Berlin">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD101Berlin">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD101Berlin">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoD101Berlin;EditorsInPlaceDemoD101Berlin;ProviderModeDemoD101Berlin;RTTIInspectorDemoD101Berlin;SimpleVerticalGridDemoD101Berlin;StylesMultiDemoD101Berlin;StylesSimpleDemoD101Berlin;RowsMultiEditorsDemoD101Berlin;EditorsInPlaceValidationDemoD101Berlin;FindPanelDemoD101Berlin;FilterDropDownDemoD101Berlin;ScrollbarAnnotationsDemoD101Berlin;CalculatedFieldsDemoD101Berlin;CalculatedFilterItemsDemoD101Berlin" />
+  </Target>
+</Project>

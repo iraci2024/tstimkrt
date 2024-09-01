@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sgcWebSockets - Protocol: dataset.esegece.com</title>
+<script type="text/javascript" src="http{%ssl%}://{%host%}:{%port%}/sgcWebSockets.js"></script>
+<script type="text/javascript" src="http{%ssl%}://{%host%}:{%port%}/webrtc.esegece.com.js"></script>
+<style>
+body {
+	font-family:Verdana,Arial,"Times New Roman";
+}
+#status {
+  padding: 5px;
+  color: #fff;
+  background: #ccc;
+}
+#status.error {
+  background: #c00;
+  font-weight: bold;
+}
+#status.offline {
+  background: #c00;
+  font-weight: bold;
+}
+#status.online {
+  background: #0c0;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>sgcWebSockets - Protocol: webrtc.esegece.com</h1>
+<h3>webrtc.segece.com</h3>
+<table width="100%">
+	<tr>
+		<td>
+			Status
+		</td>
+		<td>
+			<p id="status"></p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div id="local">LocalVideo<video width="100%" height="100%" id="localVideo" autoplay="autoplay"/></bideo>
+			</div>
+		</td>
+		<td>
+			<div id="remote">RemoteVideo<video width="100%" height="100%" id="remoteVideo" autoplay="autoplay"></video>		
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<h3>WebSocket Methods</h3>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="
+			javascript: socket = new sgcws_webrtc('ws{%ssl%}://{%host%}:{%port%}'); 
+
+			socket.on('open', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#connected</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Open';
+					document.getElementById('status').className = 'online';
+				}
+			);
+			socket.on('close', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#disconnected:' + event.clean + '</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Closed';
+					document.getElementById('status').className = 'offline';
+				}
+			);
+			socket.on('sgcmessage', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#received:' + event.message + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('sgcsubscribe', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#subscribed:' + event.channel + ' - ' + event.users + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('sgcunsubscribe', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#unsubscribed:' + event.channel + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('error', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#disconnected:' + event.message + '</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Error';
+					document.getElementById('status').className = 'error';
+				}
+			);
+			socket.on('sgcmediastart', function(event)
+				{  
+				    document.getElementById('localVideo').src = webkitURL.createObjectURL(event.stream);
+					document.getElementById('log').innerHTML = '<li><b>#sgcmediastart</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);	
+			socket.on('sgcmediastop', function(event)
+				{  
+					document.getElementById('localVideo').src = '';
+					document.getElementById('log').innerHTML = '<li><b>#sgcmediastop</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);	
+			socket.on('sgcmediaerror', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#sgcmediaerror:' + event.code + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);	
+			socket.on('sgcsessionconnecting', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#sgcsessionconnecting</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);	
+			socket.on('sgcsessionopen', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#sgcsessionopen</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);	
+			socket.on('sgcsessionclose', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#sgcsessionclose</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);				
+			socket.on('sgcaddstream', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#sgcaddstream</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);	
+			socket.on('sgcremovestream', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#sgcremovestream</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);				
+			">Open</a>	
+		</td>
+		<td>
+			Open WebSocket Connection.	
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.close();">Close</a>
+		</td>
+		<td>
+			Closes WebSocket Connection.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:document.getElementById('log').innerHTML = '<li><b>#status:' + socket.state() + '</b></li>' + document.getElementById('log').innerHTML;
+			">Status</a>
+		</td>
+		<td>
+			Get Status WebSocket Connection.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.broadcast('Test');">Send</a>
+		</td>
+		<td>
+			Broadcast Message to all Connected Clients;
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.webrtc_connect('test');">Connect</a>
+		</td>
+		<td>
+			Connect to Test Channel.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.webrtc_disconnect('test');">Disconnect</a>
+		</td>
+		<td>
+			Disconnect from Test Channel.
+		</td>		
+	</tr>
+	<tr>
+		<td colspan="2">
+			<h3>Log</h3>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<ul id="log" style="overflow: auto; list-style: none; padding:0; background:#ffffff; font-size:small; border-style:solid; border-color:#c0c0c0"></ul>
+		</td>
+	</tr>	
+</table>
+
+</body>
+</html>
+
+
+

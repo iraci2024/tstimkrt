@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>sgcWebSockets</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name = "viewport" content = "width = 320, initial-scale = 1.0, user-scalable = yes"> 
+<script type="text/javascript" src="http{%ssl%}://{%host%}:{%port%}/sgcWebSockets.js"></script>
+<style>
+body {
+	font-family:Verdana,Arial,"Times New Roman";
+}
+
+#status {
+  padding: 5px;
+  color: #fff;
+  background: #ccc;
+}
+#status.error {
+  background: #c00;
+  font-weight: bold;
+}
+#status.offline {
+  background: #c00;
+  font-weight: bold;
+}
+#status.online {
+  background: #0c0;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>sgcWebSockets</h1>
+<table width="100%">
+	<tr>
+		<td>
+			Status
+		</td>
+		<td>
+			<p id="status"></p>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<h3>WebSocket Methods</h3>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="
+			javascript:var socket = new sgcWebSocket('ws{%ssl%}://{%host%}:{%port%}'); 
+
+			socket.on('open', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#connected</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Open';
+					document.getElementById('status').className = 'online';
+				}
+			);
+			socket.on('close', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#disconnected:' + event.clean + '</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Closed';
+					document.getElementById('status').className = 'offline';
+				}
+			);
+			socket.on('message', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#received:' + event.message + '</b></li>' + document.getElementById('log').innerHTML;
+				}
+			);
+			socket.on('error', function(event)
+				{  
+					document.getElementById('log').innerHTML = '<li><b>#disconnected:' + event.message + '</b></li>' + document.getElementById('log').innerHTML;
+					document.getElementById('status').innerHTML = 'Socket Error';
+					document.getElementById('status').className = 'error';
+				}
+			);
+			">Open</a>	
+		</td>
+		<td>
+			Open WebSocket Connection.	
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.close();">Close</a>
+		</td>
+		<td>
+			Closes WebSocket Connection.
+		</td>		
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:document.getElementById('log').innerHTML = '<li><b>#status:' + socket.state() + '</b></li>' + document.getElementById('log').innerHTML;
+			">Status</a>
+		</td>
+		<td>
+			Get Status WebSocket Connection.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:socket.send('Test');">Send</a>
+		</td>
+		<td>
+			Send Message To Server;
+		</td>		
+	</tr>
+	<tr>
+		<td colspan="2">
+			<h3>Log</h3>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<ul id="log" style="overflow: auto; list-style: none; padding:0; background:#ffffff; font-size:small; border-style:solid; border-color:#c0c0c0"></ul>
+		</td>
+	</tr>	
+</table>
+
+</body>
+</html>
+

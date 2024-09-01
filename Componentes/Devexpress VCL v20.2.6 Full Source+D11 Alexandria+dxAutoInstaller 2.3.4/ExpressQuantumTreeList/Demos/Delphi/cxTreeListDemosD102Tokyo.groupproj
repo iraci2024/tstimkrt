@@ -1,0 +1,80 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoD102Tokyo">
+    <MSBuild Projects="BandedDemo\BandedDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoD102Tokyo">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoD102Tokyo">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD102Tokyo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD102Tokyo">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoD102Tokyo">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoD102Tokyo">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD102Tokyo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD102Tokyo">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoD102Tokyo">
+    <MSBuild Projects="SummariesDemo\SummariesDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD102Tokyo">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoD102Tokyo">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD102Tokyo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD102Tokyo">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoD102Tokyo">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD102Tokyo">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD102Tokyo">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD102Tokyo">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD102Tokyo">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD102Tokyo">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD102Tokyo">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoD102Tokyo;BandedFixedDemoD102Tokyo;CheckGroupsDemoD102Tokyo;CustomDrawDemoD102Tokyo;EditorsInPlaceDemoD102Tokyo;EditorsInPlaceValidationDemoD102Tokyo;SimpleListDemoD102Tokyo;SimpleTreeDemoD102Tokyo;StylesMultiDemoD102Tokyo;StylesSimpleDemoD102Tokyo;SummariesDemoD102Tokyo;UnboundModeDemoD102Tokyo;VirtualModeDemoD102Tokyo;ProviderModeDemoD102Tokyo;DragDropDemoD102Tokyo;ColumnsMultiEditorsDemoD102Tokyo;FindPanelDemoD102Tokyo;FilterControlDemoD102Tokyo;FilterDropDownDemoD102Tokyo;ScrollbarAnnotationsDemoD102Tokyo;CalculatedFieldsDemoD102Tokyo;CalculatedFilterItemsDemoD102Tokyo" />
+  </Target>
+</Project>

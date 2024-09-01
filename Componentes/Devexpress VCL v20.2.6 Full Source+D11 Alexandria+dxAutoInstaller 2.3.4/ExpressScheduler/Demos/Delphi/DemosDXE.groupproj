@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoDXE">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoDXE">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoDXE">
+    <MSBuild Projects="UnboundDemo\UnboundDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoDXE">
+    <MSBuild Projects="DBDemo\DBDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoDXE">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoDXE">
+    <MSBuild Projects="StylesDemo\StylesDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoDXE">
+    <MSBuild Projects="ResourceDemo\ResourceDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoDXE">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoDXE">
+    <MSBuild Projects="AggregateDemo\AggregateDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoDXE">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoDXE">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoDXE;RangeControlDemoDXE;UnboundDemoDXE;DBDemoDXE;CustomDrawDemoDXE;StylesDemoDXE;ResourceDemoDXE;GanttViewDemoDXE;AggregateDemoDXE;HolidaysDemoDXE;WebServiceDemoDXE" />
+  </Target>
+</Project>

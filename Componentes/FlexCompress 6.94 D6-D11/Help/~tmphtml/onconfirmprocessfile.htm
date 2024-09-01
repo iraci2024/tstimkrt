@@ -1,0 +1,80 @@
+<html>
+<head>
+   <title>OnConfirmProcessFile</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_OnConfirmProcessFile;OnConfirmProcessFile_Event;OnConfirmProcessFile">
+<param name="alink name" value="$topicid_OnConfirmProcessFile">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.OnConfirmProcessFile</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Occurs before archive group operations.
+<br>
+
+<br>
+<b>type</b> TFXCConfirmProcessFileEvent =  procedure(
+<br>
+                                      Sender: &nbsp;&nbsp;&nbsp;TObject;
+<br>
+                                      FileName: &nbsp;&nbsp;&nbsp;WideString;
+<br>
+                                      Operation: &nbsp;&nbsp;&nbsp;<a href=tfcprocessoperation.htm>TFXCProcessOperation</a>;
+<br>
+                                      <b>var</b> Confirm: &nbsp;&nbsp;&nbsp;Boolean
+<br>
+                                      ) of <b>object</b>;
+<br>
+<b>property</b> OnConfirmProcessFile: TFXCConfirmProcessFileEvent;
+<br>
+
+<br>
+<b>Description</b>
+<br>
+
+<br>
+Write an OnConfirmProcessFile event handler to perform some specific actions before executing archive operation or to cancel it. OnConfirmProcessFile event can be triggered by <a href=addfiles.htm>AddFiles</a>, <a href=movefiles.htm>MoveFiles</a>, <a href=updatefiles.htm>UpdateFiles</a>, <a href=deletefiles.htm>DeleteFiles</a>, <a href=testfiles.htm>TestFiles</a> or <a href=extractfiles.htm>ExtractFiles</a> before executing operation on the current file.
+<br>
+
+<br>
+The Sender parameter is the object whose event handler is called.  
+<br>
+
+<br>
+FileName indicates current file name.
+<br>
+
+<br>
+Operation indicates current archive operation.
+<br>
+
+<br>
+Confirm determines if current operation on the current file will be executed. Set Confirm to False if you want to cancel executing of the current operation on the file. Default value for Confirm is True.
+<br>
+</span>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+package dclsgcWebSocketsD10_4;
+
+{$R *.res}
+{$R 'sgcWebSocket.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'SGC WebSockets'}
+{$WARN IMPLICIT_IMPORT OFF}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+{$I ..\source\sgcVer.inc}
+
+requires
+  designide,
+  sgcWebSocketsD10_4,
+  rtl,
+  vcl,
+  vclx;
+
+contains
+  sgcWebSocket_Reg in '..\Source\sgcWebSocket_Reg.pas',
+  sgcWebSocket_Protocols_Reg in '..\Source\sgcWebSocket_Protocols_Reg.pas',
+  sgcWebSocket_APIs_Reg in '..\Source\sgcWebSocket_APIs_Reg.pas',
+  sgcIoT_Reg in '..\Source\sgcIoT_Reg.pas',
+  sgcP2P_Reg in '..\Source\sgcP2P_Reg.pas',
+  sgcHTTP_Reg in '..\Source\sgcHTTP_Reg.pas';
+
+end.

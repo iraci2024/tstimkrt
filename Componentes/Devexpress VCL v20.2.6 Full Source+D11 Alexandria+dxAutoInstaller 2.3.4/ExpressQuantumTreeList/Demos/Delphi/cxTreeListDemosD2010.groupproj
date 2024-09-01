@@ -1,0 +1,80 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoD2010">
+    <MSBuild Projects="BandedDemo\BandedDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoD2010">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoD2010">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD2010">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD2010">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD2010">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoD2010">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoD2010">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD2010">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD2010">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoD2010">
+    <MSBuild Projects="SummariesDemo\SummariesDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD2010">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoD2010">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD2010">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD2010">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoD2010">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD2010">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD2010">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD2010">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD2010">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD2010">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD2010">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoD2010;BandedFixedDemoD2010;CheckGroupsDemoD2010;CustomDrawDemoD2010;EditorsInPlaceDemoD2010;EditorsInPlaceValidationDemoD2010;SimpleListDemoD2010;SimpleTreeDemoD2010;StylesMultiDemoD2010;StylesSimpleDemoD2010;SummariesDemoD2010;UnboundModeDemoD2010;VirtualModeDemoD2010;ProviderModeDemoD2010;DragDropDemoD2010;ColumnsMultiEditorsDemoD2010;FindPanelDemoD2010;FilterControlDemoD2010;FilterDropDownDemoD2010;ScrollbarAnnotationsDemoD2010;CalculatedFieldsDemoD2010;CalculatedFilterItemsDemoD2010" />
+  </Target>
+</Project>

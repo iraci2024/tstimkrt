@@ -1,0 +1,56 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoD104Sydney">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD104Sydney">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoD104Sydney">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoD104Sydney">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD104Sydney">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD104Sydney">
+    <MSBuild Projects="STYLESSIMPLEDEMO\StylesSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoD104Sydney">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD104Sydney">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD104Sydney">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD104Sydney">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD104Sydney">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD104Sydney">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoD104Sydney;EditorsInPlaceDemoD104Sydney;ProviderModeDemoD104Sydney;RTTIInspectorDemoD104Sydney;SimpleVerticalGridDemoD104Sydney;StylesMultiDemoD104Sydney;StylesSimpleDemoD104Sydney;RowsMultiEditorsDemoD104Sydney;EditorsInPlaceValidationDemoD104Sydney;FindPanelDemoD104Sydney;FilterDropDownDemoD104Sydney;ScrollbarAnnotationsDemoD104Sydney;CalculatedFieldsDemoD104Sydney;CalculatedFilterItemsDemoD104Sydney" />
+  </Target>
+</Project>

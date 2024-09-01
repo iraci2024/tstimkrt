@@ -1,0 +1,212 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ViewTableSimpleDemoRSCXE2">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoRSCXE2">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoRSCXE2">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoRSCXE2">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoRSCXE2">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoRSCXE2">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoRSCXE2">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoRSCXE2">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoRSCXE2">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoRSCXE2">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoRSCXE2">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoRSCXE2">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoRSCXE2">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoRSCXE2">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoRSCXE2">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoRSCXE2">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoRSCXE2">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoRSCXE2">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoRSCXE2">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoRSCXE2">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoRSCXE2">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoRSCXE2">
+    <MSBuild Projects="GridModeDemo\GridModeDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoRSCXE2">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSCXE2">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoRSCXE2">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoRSCXE2">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSCXE2">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoRSCXE2">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSCXE2">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoRSCXE2">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoRSCXE2">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoRSCXE2">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoRSCXE2">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSCXE2">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoRSCXE2">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoRSCXE2">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="IssueListRSCXE2">
+    <MSBuild Projects="IssueList\IssueListRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoRSCXE2">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoRSCXE2">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoRSCXE2">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoRSCXE2">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoRSCXE2">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoRSCXE2">
+    <MSBuild Projects="FilterDemo\FilterDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoRSCXE2">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoRSCXE2">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoRSCXE2">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoRSCXE2">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoRSCXE2">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoRSCXE2">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoRSCXE2">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSCXE2">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoRSCXE2">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoRSCXE2">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoRSCXE2">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoRSCXE2">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoRSCXE2">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoRSCXE2">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoRSCXE2">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingRSCXE2">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoRSCXE2">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoRSCXE2">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSCXE2">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoRSCXE2">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoRSCXE2">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSCXE2">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSCXE2">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSCXE2.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ViewTableSimpleDemoRSCXE2;ViewBandedDemoRSCXE2;ViewBandedFixedDemoRSCXE2;ViewNestedBandsDemoRSCXE2;ViewCardSimpleDemoRSCXE2;ViewCardDemoRSCXE2;MasterDetailTableDemoRSCXE2;MasterDetailCardDemoRSCXE2;MasterDetailDemoRSCXE2;MasterDetailMultiDemoRSCXE2;UnboundSimpleDemoRSCXE2;UnboundListDemoRSCXE2;UnboundExternalDataDemoRSCXE2;UnboundDesignDefinedDemoRSCXE2;UnboundModeDemoRSCXE2;UnboundColumnsDemoRSCXE2;SummaryFooterDemoRSCXE2;SummaryGroupDemoRSCXE2;SummaryMultiDemoRSCXE2;FilterByCodeDemoRSCXE2;FilterControlDemoRSCXE2;GridModeDemoRSCXE2;ColumnsSimpleDemoRSCXE2;EditorsInPlaceDemoRSCXE2;ColumnsMultiEditorsDemoRSCXE2;ColumnsShareDemoRSCXE2;StylesMultiDemoRSCXE2;StylesCardViewDemoRSCXE2;StylesSimpleDemoRSCXE2;CellLevelMultiselectDemoRSCXE2;CustomDrawTableViewDemoRSCXE2;CustomDrawCardViewDemoRSCXE2;Office11GroupRowStyleDemoRSCXE2;DragDropDemoRSCXE2;CustomRowHeightDemoRSCXE2;GridMenuViewsDemoRSCXE2;IssueListRSCXE2;ViewChartDemoRSCXE2;ViewChartStackedDemoRSCXE2;MasterDetailChartDemoRSCXE2;CardLayoutDemoRSCXE2;ChartDataDrillingDemoRSCXE2;FilterDemoRSCXE2;LayoutViewDemoRSCXE2;ServerModeADODemoRSCXE2;ServerModeDBXDemoRSCXE2;ServerModeFireDACDemoRSCXE2;ServerModeADOQueryDemoRSCXE2;ServerModeDBXQueryDemoRSCXE2;ServerModeFireDACQueryDemoRSCXE2;EditorsInPlaceValidationDemoRSCXE2;LayoutViewCarouselModeDemoRSCXE2;InplaceEditFormDemoRSCXE2;FindPanelDemoRSCXE2;RatingControlDemoRSCXE2;SparklinesDemoRSCXE2;FixedGroupsDemoRSCXE2;WinExplorerViewDemoRSCXE2;LayoutViewDemoGroupScrollingRSCXE2;MergedGroupsDemoRSCXE2;CheckBoxMultiSelectDemoRSCXE2;ConditionalFormattingDemoRSCXE2;FixedDataRowsDemoRSCXE2;FilterDropDownDemoRSCXE2;ScrollbarAnnotationsDemoRSCXE2;CalculatedFieldsDemoRSCXE2" />
+  </Target>
+</Project>

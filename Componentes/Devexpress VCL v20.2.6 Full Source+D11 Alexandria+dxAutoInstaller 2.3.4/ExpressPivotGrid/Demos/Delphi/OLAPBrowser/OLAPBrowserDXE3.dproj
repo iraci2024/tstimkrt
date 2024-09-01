@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{8C591204-E299-49E2-BC28-0CC9E63B8AA7}</ProjectGuid>
+    <MainSource>OLAPBrowserDXE3.dpr</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <ProjectVersion>13.4</ProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <UsePackages>true</UsePackages>
+    <DCC_UsePackage>dxSkinOffice2010BlackRS17;dxtrmdRS17;dxSkinSevenRS17;dxPSCoreRS17;dxSkinSharpPlusRS17;dxDBOrRS17;dxdbtrRS17;dxRichEditControlRS17;dxRichEditControlHtmlFormatRS17;dxBarExtDBItemsRS17;dxPSdxGaugeControlLnkRS17;dxCloudServiceLibraryRS17;dxSkinSummer2008RS17;dxSkinMetropolisDarkRS17;dxGDIPlusRS17;cxLibraryRS17;dxSkinBlueRS17;dxSkinOffice2007BlackRS17;dxSkinOffice2019BlackRS17;dxPScxCommonRS17;dxSkinBlackRS17;dxPSPrVwRibbonRS17;dxPSdxMapControlLnkRS17;dxOrgCRS17;dxSkinOffice2010SilverRS17;cxPivotGridChartRS17;dxSkinSharpRS17;dxPScxExtCommonRS17;cxPageControldxBarPopupMenuRS17;dxSkinOffice2016DarkRS17;dxEMFDataRS17;cxSchedulerRibbonStyleEventEditorRS17;dxDockingRS17;dxRichEditCoreRS17;dxSkinVisualStudio2013DarkRS17;cxSchedulerWebServiceStorageRS17;dxSkinCoffeeRS17;dxBarDBNavRS17;dxSkinMcSkinRS17;cxGridEMFRS17;dxPSRichEditControlLnkRS17;dxADOEMFRS17;dxSkinPumpkinRS17;dxRichEditControlDocFormatRS17;dxSkinsCoreRS17;dxGanttControlSchedulerStorageImporterRS17;dxSkinMoneyTwinsRS17;cxSchedulerGridRS17;dxSkinOffice2007GreenRS17;dxGanttControlRS17;dxBarRS17;dxSkinHighContrastRS17;dxSkinOffice2010BlueRS17;cxTreeListRS17;dxGaugeControlRS17;dxRibbonCustomizationFormRS17;dxSkinOffice2019WhiteRS17;dxFlowChartDesignerRS17;dxMapControlRS17;dxPSdxSpreadSheetLnkRS17;dxPScxPivotGridLnkRS17;dxPScxPCProdRS17;dxPSdxOCLnkRS17;dxPSLnksRS17;dxSkinOffice2013LightGrayRS17;dxPSdxDBOCLnkRS17;cxExportRS17;dxSkiniMaginaryRS17;dxSkinLiquidSkyRS17;dxSkinStardustRS17;dxPDFViewerRS17;dxSkinVS2010RS17;dxPScxGridLnkRS17;dxServerModeRS17;dxSkinFoggyRS17;dxSkinSilverRS17;cxTreeListdxBarPopupMenuRS17;dxSkinOffice2007SilverRS17;dxPScxTLLnkRS17;dxSkinLilianRS17;dxWizardControlRS17;dxSpreadSheetCoreRS17;dxSpreadSheetConditionalFormattingDialogsRS17;dxSkinDevExpressStyleRS17;dxSkinGlassOceansRS17;dxSkinDarkSideRS17;dxSkinOffice2019ColorfulRS17;dxRichEditControlCoreRS17;dxPSdxFCLnkRS17;cxPivotGridOLAPRS17;dxSkinValentineRS17;dxSkinSpringTimeRS17;dxSkinBasicRS17;cxGridRS17;dxSkinOffice2013WhiteRS17;dxSkinSevenClassicRS17;dxSpreadSheetCoreConditionalFormattingDialogsRS17;dxSkinOffice2019DarkGrayRS17;dxTabbedMDIRS17;dxSkinMetropolisRS17;dxSkinVisualStudio2013BlueRS17;cxVerticalGridRS17;dxFlowChartLayoutsRS17;dxFlowChartRS17;dxPSdxLCLnkRS17;dxmdsRS17;dxSkinOffice2016ColorfulRS17;dxSkinOffice2007PinkRS17;dxRibbonRS17;dxSkinBlueprintRS17;dxFlowChartAdvancedCustomizeFormRS17;dxTileControlRS17;dxBarExtItemsRS17;dxRichEditControlOpenXMLFormatRS17;dxNavBarRS17;dxSkinLondonLiquidSkyRS17;dxPSdxDBTVLnkRS17;dxSpreadSheetRS17;cxSchedulerRS17;dxComnRS17;dxPScxSchedulerLnkRS17;dxSpellCheckerRS17;dxSkinCaramelRS17;dxHttpIndyRequestRS17;cxSchedulerTreeBrowserRS17;dxCoreRS17;dxSkinTheAsphaltWorldRS17;dxSkinWhiteprintRS17;dxPSPrVwAdvRS17;dxSpreadSheetReportDesignerRS17;dxSkinOffice2013DarkGrayRS17;dxPScxVGridLnkRS17;dxSkinVisualStudio2013LightRS17;cxPivotGridRS17;dxOrgChartAdvancedCustomizeFormRS17;dxSkinDarkRoomRS17;dxEMFRS17;dxSkinXmas2008BlueRS17;dxSkinDevExpressDarkStyleRS17;dxSkinOffice2007BlueRS17;dxSkinTheBezierRS17;dxPSdxPDFViewerLnkRS17;dxRichEditDocumentModelRS17</DCC_UsePackage>
+    <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+    <DCC_Namespace>WinApi;Vcl;System;System.Win;Vcl.Imaging;Data;Data.Win;Bde;Xml;Xml.Win;Vcl.Shell;VclTee;Datasnap;IBX;Vcl.Samples;$(DCC_Namespace)</DCC_Namespace>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <Delphi.Personality>
+        <Source>
+          <Source Name="MainSource">OLAPBrowserDXE3.dpr</Source>
+        </Source>
+      </Delphi.Personality>
+      <Platforms>
+        <Platform value="Win32">True</Platform>
+        <Platform value="Win64">True</Platform>
+      </Platforms>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

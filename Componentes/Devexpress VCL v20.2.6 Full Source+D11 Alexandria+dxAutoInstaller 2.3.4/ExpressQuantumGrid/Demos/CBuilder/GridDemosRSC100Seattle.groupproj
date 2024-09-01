@@ -1,0 +1,212 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ViewTableSimpleDemoRSC100Seattle">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoRSC100Seattle">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoRSC100Seattle">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoRSC100Seattle">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoRSC100Seattle">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoRSC100Seattle">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoRSC100Seattle">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoRSC100Seattle">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoRSC100Seattle">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoRSC100Seattle">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoRSC100Seattle">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoRSC100Seattle">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoRSC100Seattle">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoRSC100Seattle">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoRSC100Seattle">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoRSC100Seattle">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoRSC100Seattle">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoRSC100Seattle">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoRSC100Seattle">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoRSC100Seattle">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoRSC100Seattle">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoRSC100Seattle">
+    <MSBuild Projects="GridModeDemo\GridModeDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoRSC100Seattle">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC100Seattle">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoRSC100Seattle">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoRSC100Seattle">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC100Seattle">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoRSC100Seattle">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSC100Seattle">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoRSC100Seattle">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoRSC100Seattle">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoRSC100Seattle">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoRSC100Seattle">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSC100Seattle">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoRSC100Seattle">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoRSC100Seattle">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="IssueListRSC100Seattle">
+    <MSBuild Projects="IssueList\IssueListRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoRSC100Seattle">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoRSC100Seattle">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoRSC100Seattle">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoRSC100Seattle">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoRSC100Seattle">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoRSC100Seattle">
+    <MSBuild Projects="FilterDemo\FilterDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoRSC100Seattle">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoRSC100Seattle">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoRSC100Seattle">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoRSC100Seattle">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoRSC100Seattle">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoRSC100Seattle">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoRSC100Seattle">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSC100Seattle">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoRSC100Seattle">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoRSC100Seattle">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoRSC100Seattle">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoRSC100Seattle">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoRSC100Seattle">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoRSC100Seattle">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoRSC100Seattle">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingRSC100Seattle">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoRSC100Seattle">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoRSC100Seattle">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSC100Seattle">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoRSC100Seattle">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoRSC100Seattle">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSC100Seattle">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSC100Seattle">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ViewTableSimpleDemoRSC100Seattle;ViewBandedDemoRSC100Seattle;ViewBandedFixedDemoRSC100Seattle;ViewNestedBandsDemoRSC100Seattle;ViewCardSimpleDemoRSC100Seattle;ViewCardDemoRSC100Seattle;MasterDetailTableDemoRSC100Seattle;MasterDetailCardDemoRSC100Seattle;MasterDetailDemoRSC100Seattle;MasterDetailMultiDemoRSC100Seattle;UnboundSimpleDemoRSC100Seattle;UnboundListDemoRSC100Seattle;UnboundExternalDataDemoRSC100Seattle;UnboundDesignDefinedDemoRSC100Seattle;UnboundModeDemoRSC100Seattle;UnboundColumnsDemoRSC100Seattle;SummaryFooterDemoRSC100Seattle;SummaryGroupDemoRSC100Seattle;SummaryMultiDemoRSC100Seattle;FilterByCodeDemoRSC100Seattle;FilterControlDemoRSC100Seattle;GridModeDemoRSC100Seattle;ColumnsSimpleDemoRSC100Seattle;EditorsInPlaceDemoRSC100Seattle;ColumnsMultiEditorsDemoRSC100Seattle;ColumnsShareDemoRSC100Seattle;StylesMultiDemoRSC100Seattle;StylesCardViewDemoRSC100Seattle;StylesSimpleDemoRSC100Seattle;CellLevelMultiselectDemoRSC100Seattle;CustomDrawTableViewDemoRSC100Seattle;CustomDrawCardViewDemoRSC100Seattle;Office11GroupRowStyleDemoRSC100Seattle;DragDropDemoRSC100Seattle;CustomRowHeightDemoRSC100Seattle;GridMenuViewsDemoRSC100Seattle;IssueListRSC100Seattle;ViewChartDemoRSC100Seattle;ViewChartStackedDemoRSC100Seattle;MasterDetailChartDemoRSC100Seattle;CardLayoutDemoRSC100Seattle;ChartDataDrillingDemoRSC100Seattle;FilterDemoRSC100Seattle;LayoutViewDemoRSC100Seattle;ServerModeADODemoRSC100Seattle;ServerModeDBXDemoRSC100Seattle;ServerModeFireDACDemoRSC100Seattle;ServerModeADOQueryDemoRSC100Seattle;ServerModeDBXQueryDemoRSC100Seattle;ServerModeFireDACQueryDemoRSC100Seattle;EditorsInPlaceValidationDemoRSC100Seattle;LayoutViewCarouselModeDemoRSC100Seattle;InplaceEditFormDemoRSC100Seattle;FindPanelDemoRSC100Seattle;RatingControlDemoRSC100Seattle;SparklinesDemoRSC100Seattle;FixedGroupsDemoRSC100Seattle;WinExplorerViewDemoRSC100Seattle;LayoutViewDemoGroupScrollingRSC100Seattle;MergedGroupsDemoRSC100Seattle;CheckBoxMultiSelectDemoRSC100Seattle;ConditionalFormattingDemoRSC100Seattle;FixedDataRowsDemoRSC100Seattle;FilterDropDownDemoRSC100Seattle;ScrollbarAnnotationsDemoRSC100Seattle;CalculatedFieldsDemoRSC100Seattle" />
+  </Target>
+</Project>

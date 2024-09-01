@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B1EA77E1-70AB-4D40-989C-E45D0F16DAF3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="dclZipForged28.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="vclZipForged28.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="dclZipForged28">
+        <MSBuild Projects="dclZipForged28.dproj"/>
+    </Target>
+    <Target Name="dclZipForged28:Clean">
+        <MSBuild Projects="dclZipForged28.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclZipForged28:Make">
+        <MSBuild Projects="dclZipForged28.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="vclZipForged28">
+        <MSBuild Projects="vclZipForged28.dproj"/>
+    </Target>
+    <Target Name="vclZipForged28:Clean">
+        <MSBuild Projects="vclZipForged28.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="vclZipForged28:Make">
+        <MSBuild Projects="vclZipForged28.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="dclZipForged28;vclZipForged28"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="dclZipForged28:Clean;vclZipForged28:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="dclZipForged28:Make;vclZipForged28:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

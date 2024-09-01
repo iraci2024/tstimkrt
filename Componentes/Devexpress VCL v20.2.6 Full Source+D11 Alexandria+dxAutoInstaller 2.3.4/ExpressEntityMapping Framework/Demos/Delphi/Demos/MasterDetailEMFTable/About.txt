@@ -1,0 +1,13 @@
+The demo uses the TdxEMFDataSource component shipped with the ExpressEntityMapping Framework to bind each grid View to an entity. The detail grid View uses the DataController.DetailKeyFieldNames and DataController.MasterKeyFieldNames properties to establish a master-detail relationship.
+ 
+In this demo, you can:
+
+ - Use the New Item Row under column headers, or press Insert or Ctrl+Del to manage records;
+
+ - Modify cell data via in-place editors;
+
+ - Drag one or more column headers to the Group By box to group records;
+
+ - Use the options that the filter buttons provide in column headers to filter records;
+
+ - Click column headers while pressing Shift or Ctrl to sort records.

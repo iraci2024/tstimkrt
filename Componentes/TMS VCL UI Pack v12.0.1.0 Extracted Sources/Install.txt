@@ -1,0 +1,42 @@
+
+      ////////////////////////////////////////////////// 
+      //   I M P O R T A N T    R E M A R K  !!!!!    //
+      //                                              //  
+      //  For a successful install of the components, //
+      //       follow  A L L  steps below             //
+      //                                              //   
+      //////////////////////////////////////////////////
+
+
+Automatic installation
+-----------------------------------------
+
+ Unzip the distribution file TMSVCLUIPackSetup.zip into a separate directory,
+ further referred to as {$TMSDIR} 
+
+ Run the setup executable file and install the components for the correct environment.
+
+ If the setup fails follow the manual installation instructions below.
+
+Manual installation
+-----------------------------------------
+
+  For Delphi 7, 2007, 2009, 2010, 2011, XE2, XE3, XE4, XE5, XE6, XE7, XE8, 10 Seattle, 10.1 Berlin, 10.2 Tokyo, 10.3 Rio, 10.4 Sydney
+  -----------------------------------------------------------------------------------------------------------------------------------
+
+  In the IDE, select File, Open and browse for TMSVCLUIPackPkgD*.dproj
+  From the project manager, right click on the TMSVCLUIPackPkgD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for TMSVCLUIPackPkgExD*.dproj
+  From the project manager, right click on the TMSVCLUIPackPkgExD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for TMSVCLUIPackPkgXlsD*.dproj
+  From the project manager, right click on the TMSVCLUIPackPkgXlsD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for TMSVCLUIPackPkgWizD*.dproj
+  From the project manager, right click on the TMSVCLUIPackPkgWizD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for TMSVCLUIPackPkgDED*.dproj
+  From the project manager, right click on the TMSVCLUIPackPkgDED*.dproj project and from the menu, choose install
+
+  (* 7, 2007, 2009, 2010, XE2, XE3, XE4, XE5, XE6, XE7, XE8, XE9, XE10, XE11, XE12, XE13)

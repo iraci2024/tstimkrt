@@ -1,0 +1,80 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoDXE4">
+    <MSBuild Projects="BandedDemo\BandedDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoDXE4">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoDXE4">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoDXE4">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoDXE4">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoDXE4">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoDXE4">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoDXE4">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoDXE4">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoDXE4">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoDXE4">
+    <MSBuild Projects="SummariesDemo\SummariesDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoDXE4">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoDXE4">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoDXE4">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoDXE4">
+    <MSBuild Projects="DragDropDemo\DragDropDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoDXE4">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoDXE4">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoDXE4">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoDXE4">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoDXE4">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoDXE4">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoDXE4">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoDXE4.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoDXE4;BandedFixedDemoDXE4;CheckGroupsDemoDXE4;CustomDrawDemoDXE4;EditorsInPlaceDemoDXE4;EditorsInPlaceValidationDemoDXE4;SimpleListDemoDXE4;SimpleTreeDemoDXE4;StylesMultiDemoDXE4;StylesSimpleDemoDXE4;SummariesDemoDXE4;UnboundModeDemoDXE4;VirtualModeDemoDXE4;ProviderModeDemoDXE4;DragDropDemoDXE4;ColumnsMultiEditorsDemoDXE4;FindPanelDemoDXE4;FilterControlDemoDXE4;FilterDropDownDemoDXE4;ScrollbarAnnotationsDemoDXE4;CalculatedFieldsDemoDXE4;CalculatedFilterItemsDemoDXE4" />
+  </Target>
+</Project>

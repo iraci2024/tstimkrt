@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EMFTutorialsDXE6">
+    <MSBuild Projects="Tutorials\EMFTutorialsDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="FilmsRSXE6">
+    <MSBuild Projects="Demos\Common\FilmsRSXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoDXE6">
+    <MSBuild Projects="Demos\DragDrop\DragDropDemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoDXE6">
+    <MSBuild Projects="Demos\MasterDetailCard\MasterDetailCardDemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoDXE6">
+    <MSBuild Projects="Demos\MasterDetailTable\MasterDetailTableDemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldRSXE6">
+    <MSBuild Projects="Demos\Common\RealtorWorldRSXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldAgentsDemoDXE6">
+    <MSBuild Projects="Demos\RealtorWorldAgents\RealtorWorldAgentsDemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldLoanCalculatorDemoDXE6">
+    <MSBuild Projects="Demos\RealtorWorldLoanCalculator\RealtorWorldLoanCalculatorDemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="EMFGridDemoRSXE6">
+    <MSBuild Projects="Demos\Common\EMFGridDemoRSXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="GridViewADODemoDXE6">
+    <MSBuild Projects="Demos\GridViewADODemo\GridViewADODemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="NWindFoodsModelRSXE6">
+    <MSBuild Projects="Demos\MasterDetailEMFTable\NWindFoodsModelRSXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailEMFTableDemoDXE6">
+    <MSBuild Projects="Demos\MasterDetailEMFTable\MasterDetailEMFTableDemoDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EMFTutorialsDXE6;FilmsRSXE6;DragDropDemoDXE6;MasterDetailCardDemoDXE6;MasterDetailTableDemoDXE6;RealtorWorldRSXE6;RealtorWorldAgentsDemoDXE6;RealtorWorldLoanCalculatorDemoDXE6;EMFGridDemoRSXE6;GridViewADODemoDXE6;NWindFoodsModelRSXE6;MasterDetailEMFTableDemoDXE6" />
+  </Target>
+</Project>

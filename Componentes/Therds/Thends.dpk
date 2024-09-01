@@ -1,0 +1,10 @@
+package Thends;
+
+requires
+  rtl,
+  vcl;
+
+contains
+  Thend in 'Thend.pas';
+
+end.

@@ -1,0 +1,686 @@
+<html>
+<head>
+<title>SecureBridge Components - History</title>
+<meta name="description" content="SecureBridge Components History. View product improvements and new features made in each new build and release version." />
+<meta name="keywords" content="SecureBridge Components history" />
+<meta name="author" content="Devart" />
+<meta name="copyright" content="&copy; 2021 Devart" />
+<style type="text/css">
+body
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: #ffffff;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	width: 100%;
+}
+p
+{
+	margin: .5em 0em .5em 0em;
+}
+ol, ul
+{
+	margin: .2em 0em 0em 2em;
+}
+li
+{
+	margin-bottom: .1em;
+	margin-top: 0em;
+}
+ul p, ol p, dl p
+{
+	margin-left: 0em;
+}
+h1, h4, h2
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: .4em;
+	margin-top: 1em;
+	font-weight: bold;
+	margin-top: 0em;
+	margin-left: 0px;
+}
+h5
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: 0px;
+	margin-top: .4em;
+	font-weight: normal;
+	font-style: italic;
+	margin-left: 0px;
+	font-size: 100%;
+}
+h1, h2
+{
+	font-size: 120%;
+}
+h4
+{
+	font-size: 100%;
+	margin-top: 2em;
+}
+hr
+{
+	width: 300px;
+	text-align: left;
+	margin-left: 0;
+}
+pre
+{
+	font-family: Courier New;
+	font-size: 100%;
+	color: #000060;
+}
+div#pagetop
+{
+	position: relative;
+	left: 0px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid #999999;
+}
+div#projectnamebanner
+{
+	background-color: #99ccff;
+}
+div#pagebody
+{
+	padding: 5px 10px 0px 22px;
+}
+table.projectnametable
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	height: 21px;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0px;
+	background-color: #99ccff;
+	font-size: 100%;
+}
+table.projectnametable td
+{
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	border-width: 0px;
+	border-color: #999999;
+	background: transparent;
+	font-style: normal;
+	font-weight: normal;
+}
+.i
+{
+margin-top: 10px;
+}
+</style>
+</head>
+<body id="dxBody">
+	<!-- begin header -->
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellspacing="0">
+<tr>
+<td>
+<h1>SecureBridge Components</h1>
+<h2>History</h2>
+</td>
+<td align="right">
+<i><a href="mailto:sbridge@devart.com">sbridge@devart.com</a></i>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="pagebody">
+<!-- end header -->
+<!-- begin content -->
+
+<h4>10.0.1 17-Sep-21</h4>
+<ul>
+  <li>RAD Studio 11 Alexandria is supported
+  <li>macOS ARM is supported
+  <li>Added the anonymous Diffie-Hellman cipher suites in the TLS protocol
+  <li>Added the TScSSHCustomChannel.ExitStatusCode property for getting the command status code
+  <li>Added the TScHubConnection.InvokeTimeout property
+  <li>Fixed bug with importing the ecdsa-sha2-nistp256 key
+  <li>Fixed bug with file locking when opening a file for reading
+  <li>Fixed bug with encoding international characters in message headers in TScSMTPClient
+  <li>Fixed bug with sending an attachment in TScSMTPClient
+  <li>Fixed bug with inability to change a password in TScSMTPClient
+  <li>Fixed bug with receiving large amount of data in TScWebSocketClient over TLS
+  <li>Fixed bug in the TScCMSProcessor.Sign method
+  <li>Fixed bug with socket handles leak
+  <li>Fixed bug with sending TransferType in TScFTPClient
+  <li>Fixed bug with encoding international characters in file names in TScFTPClient
+  <li>Fixed bug with an AV failure on freeing TScHttpWebRequest
+  <li>Fixed bug in the GetLocalTimeZoneOffset function
+</ul>
+
+<h4>9.5.1 30-Mar-21</h4>
+<ul>
+  <li>RAD Studio 10.4.2 Sydney is supported
+  <li>macOS 11 Big Sur is supported
+  <li>iOS 14 is supported
+  <li>Android 11 is supported
+  <li>Lazarus 2.0.12 is supported
+  <li>Support for the TLS/SSL server in the TScSSLServerConnection component is added
+  <li>Support for the TCP/IP server in the TScTCPServer component is added
+  <li>The BeforeReadData and BeforeWriteDataEx events in the TScSFTPClient component are added
+  <li>The ability to interrupt instance of a connection in TScSSHServer is added
+  <li>Bug with verifying the RSA key and rsa2-sha256 signature algorithm in TScSSHServer is fixed
+  <li>Bug with negotiating the ssh-ed25519 key algorithm in TScSSHClient is fixed
+  <li>Bug with establishing a secure connection in TScFTPClient is fixed
+  <li>Bug with incorrect HTTP/HTTPS redirects is fixed
+  <li>Bug with TScHttpWebRequest hanging when service unavailable is fixed
+  <li>Bug with extra line breaks in the SMTP message is fixed
+</ul>
+
+<h4>9.4.1 11-Nov-20</h4>
+<ul>
+  <li>Support for the SMTP protocol by the TScSMTPClient component is added
+  <li>Lazarus 2.0.10 and FPC 3.2.0 are supported
+  <li>The BeforeConnect, AfterConnect, BeforeDisconnect, and AfterDisconnect events in the TScFTPClient component are added
+  <li>The OnSendCommand and OnReadReply events for logging incoming and outgoing data in the TScFTPClient component are added
+  <li>The TScFTPClient.CEncoding and TScFTPClient.UseUTF8 properties are added
+  <li>Bug in the TScSFTPClient.DownloadFile method on iOS is fixed
+  <li>Bug with converting path names in the TScSFTPServer component is fixed
+  <li>Bug with an AV failure when closing an application in Trial Edition is fixed
+</ul>
+
+<h4>9.3.1 26-Jun-20</h4>
+<ul>
+  <li>RAD Studio 10.4 Sydney is supported
+  <li>Lazarus 2.0.8 is supported
+  <li>macOS 64-bit in Lazarus is supported
+  <li>Support for the Socks4 and Socks5 protocols is added
+  <li>Support for importing from PKCS #12 format in the TScPKCS12Processor class is added
+  <li>Support for the Signed Certificate Timestamp (SCT) certificate extension is added
+  <li>Support for SSH dynamic port forwarding in TScSSHChannel is added
+  <li>The TScHttpWebResponse.OnProgress event is added
+  <li>Bug with object serialization in TScHubConnection is fixed
+  <li>Bug with message processing in TScHubConnection is fixed
+  <li>Bug with file reload when TScFTPClient.TransferType = ttBinary is fixed
+  <li>Bug with SSH client freezing on Linux is fixed
+  <li>Bug with an AV failure on Android is fixed
+</ul>
+
+<h4>9.2.4 26-Dec-19</h4>
+<ul>
+  <li>Android 64-bit is supported
+  <li>Lazarus 2.0.6 is supported
+  <li>The TScSFTPClient.ReadDirectoryToList method to retrieve a directory listing is added
+  <li>Support for keyboard-interactive authentication in TScSSHServer is added
+  <li>Server certificate validation in the TLS/SSL protocol on Android is improved
+  <li>Bug in TScCryptoAPIStorage on iOS is fixed
+  <li>Bug with the ECDSA public key authentication via SSH connection is fixed
+  <li>Bug with the ed25519 public key authentication via SSH connection is fixed
+  <li>Bug with using ECDSA host key in SSH server is fixed
+  <li>Bug with object serialization in TScHubConnection is fixed
+</ul>
+
+<h4>9.1.3 05-Sep-19</h4>
+<ul>
+  <li>macOS 64-bit is supported
+  <li>Release 2 for RAD Studio 10.3 Rio, Delphi 10.3 Rio, and C++Builder 10.3 Rio is now required
+  <li>Lazarus 2.0.4 is supported
+  <li>Support for the SignalR protocol version 2.2 is added
+  <li>The TScHubConnection component to support the SignalR client is added
+  <li>Support for the x25519 algorithm for the TLS/SSL protocol is added
+  <li>Support for Certificate Revocation List (CRL) is added
+  <li>Server certificate validation in the TLS/SSL protocol is improved
+  <li>The chunked transfer encoding for sending out data via HTTP/HTTPS is added  
+  <li>The TScHttpWebRequest.BeforeSendData event is added
+  <li>Bug with importing and exporting Elliptic-Curve keys is fixed
+  <li>Bug with the SSH server host key verification is fixed
+  <li>Bug with establishing an FTPS connection is fixed
+  <li>Bug in the TScSFTPClient.ReadFile method is fixed
+  <li>Bug with getting server error messages when using Transfer-Encoding is fixed
+  <li>Bug with the "Packet size is invalid" error in TScSSHClient when connecting to a server is fixed
+  <li>Bug in the TScHttpWebResponse.ReadAsBytes method is fixed
+  <li>Bug with sending data in TScWebSocketClient when data size is more than MaxFragmentSize is fixed
+  <li>Bug that occurred in design time in Lazarus on Linux is fixed
+</ul>
+
+<h4>9.0.2 21-Feb-19</h4>
+<ul>
+  <li>Support for login to FTP server as Anonymous is added
+  <li>Bug with using ECDSA host key in SSH protocol is fixed
+  <li>Bug with validation of certificate with wrong identity DNS name is fixed
+  <li>Bug in TScSFTPServer.GetFullPath method for Linux is fixed
+  <li>Bug with SSH channel threads termination is fixed
+</ul>
+
+<h4>9.0.1 14-Dec-18</h4>
+<ul>
+  <li>RAD Studio 10.3 Rio is supported
+  <li>Lazarus 1.8.4 is supported
+  <li>Support for the TLS 1.3 protocol is added
+  <li>Support for the WebSocket protocol by the TScWebSocketClient component is added
+  <li>Support for Elliptic-Curve keys and certificates is added
+  <li>Support for ECDSA algorithm for TLS/SSL protocol is added
+  <li>Support for GCM encryption mode is added
+  <li>Security for SSL client is improved
+  <li>The TScUser.SSHChannelPermissions property to manage available user permissions is added 
+  <li>Interface for the OnData, BeforeWriteData, and AfterWriteData events in the TScSFTPClient component is changed
+  <li>Several bugs in TScHttpWebRequest are fixed
+  <li>Bug with loading a key in TScCryptoAPIStorage is fixed
+  <li>Bug with resetting TScSFTPClient.EOF when calling the OpenDirectory method is fixed
+  <li>Bug with decoding the destination file name containing international characters in the TScSFTPClient.DownloadFile method is fixed
+  <li>Bug in the MatchesMask function is fixed
+</ul>
+
+<h4>8.2.4 24-Apr-18</h4>
+<ul>
+  <li>Support for the FTP and FTPS protocols is added
+  <li>The TScFTPClient component to support access to remote files using FTP protocol is added
+  <li>Possibility to connect to a remote host through a proxy server is added
+  <li>Now TScStorage is thread-safe
+  <li>TScSSHConnectionInfo.LocalSockAddr to retrieve a local IP address is added
+  <li>The TScSSHServerOptions.MaxConnections property to limit the number of active connections is added
+  <li>The TScSSHServer.BeforeClientConnect event is added
+  <li>Bug with uploading an empty file is fixed
+</ul>
+
+<h4>8.1.3 27-Feb-18</h4>
+<ul>
+  <li>Lazarus 1.8 and FPC 3.0.4 are supported
+  <li>Possibility to set the Direct mode for a shell session in the TScSSHServer.BeforeChannelConnect event handler is added
+  <li>Bug in TScSFTPServer with uploading a file in the text mode is fixed
+  <li>Bug with the "Operation unsupported" error in TScSFTPClient when downloading a file is fixed
+  <li>Bug in TScHttpWebRequest with executing the POST request is fixed 
+  <li>Bug with importing SSH keys is fixed
+</ul>
+
+<h4>8.1.2 05-Oct-17</h4>
+<ul>
+  <li>Support for the HTTP and HTTPS protocols is added
+  <li>The TScHttpWebRequest component to support the request/response model for accessing data using HTTP protocol is added
+  <li>Performance of downloading and uploading a file using TScSFTPClient is improved
+  <li>The TScSFTPClient.PipelineLength property to indicate the number of pending requests is added
+  <li>The TScSSHClientOptions.SocketReceiveBufferSize and SocketSendBufferSize properties to increase socket performance is added
+  <li>Bug in the TScFileStorage.ChangePassword method is fixed
+  <li>Bug in the TScSSLClient.WaitForData method is fixed
+  <li>Bug with reusing TCP/IP port for Android is fixed
+</ul>
+
+<h4>8.0.1 24-Apr-17</h4>
+<ul>
+  <li>RAD Studio 10.2 Tokyo is supported
+  <li>Linux in RAD Studio 10.2 Tokyo is supported
+  <li>Lazarus 1.6.4 and Free Pascal 3.0.2 is supported
+  <li>The TScCMSProcessor component for encrypting, decrypting, signing, and verifying data and files is added
+  <li>The TScCMSSignedData class for signing and verifying of CMS/PKCS #7 messages is added
+  <li>The TScCMSEnvelopedData class for representing encrypted data in CMS/PKCS #7 structure is added
+  <li>Elliptic Curve Key Exchange algorithm in SSH protocol is supported
+  <li>Bug with setting the EOF parameter in the TScSFTPClient.BeforeWriteData and TScSFTPClient.AfterWriteData event handlers on uploading file is fixed
+  <li>Bug in SSL protocol under iOS is fixed
+  <li>Bug with importing public keys in the OpenSSL format is fixed
+  <li>Bug with creating the TEvent object in multithreaded application is fixed
+</ul>
+
+<h4>7.3.4 16-Jan-17</h4>
+<ul>
+  <li>Elliptic Curve Cryptography cipher suites is supported
+  <li>TScSSLClient.ClientHelloExtensions property allowing to add additional information to the client hello message is added
+  <li>TScSSLClient.ServerHelloExtensions property for additional information processing from the server hello message is added
+  <li>TTLSServerNameExtension class for support the server name indication extension is added
+  <li>TTLSExtendedMasterSecretExtension class for support the session hash and extended master secret extension is added
+  <li>TTLSSignatureAlgorithmsExtension class for support the signature algorithms extension is added
+  <li>TTLSEllipticCurvePointFormatsExtension and TTLSEllipticCurvesExtension classes for setting supported Elliptic Curves algorithms is added
+  <li>TTLSRenegotiationIndicationExtension for support the renegotiation indication extension is added
+  <li>The TScSSLClient.OnServerCertValidate event declaration is changed
+  <li>Bug with server certificate verifying is fixed
+</ul>
+
+<h4>7.2.3 10-Nov-16</h4>
+<ul>
+  <li>Support for the TLS 1.1 and TLS 1.2 protocols is added
+  <li>Support for the Diffie-Hellman Group and Key Exchange algorithm is added
+  <li>TScSFTPServer.OnRequestFileSecurityAttributes event for an ability to increase a directory reading speed is added 
+  <li>TScSFTPServer.DefaultRootPath property is added
+  <li>TScSFTPServer.OnGetFullPath event is added
+  <li>TScSSHServerOptions.ListenBacklog property is added
+  <li>Import a key from the Putty format is added
+  <li>Error message when creating the TEvent object incorrectly is specified
+  <li>Bug with raising the TScSSHServer.AfterClientDisconnect event when connection is emergently closed is fixed
+  <li>Bug with the "Protocol error: unexpected packet type" error when failed authentication is fixed
+  <li>Bug with import a key in TScKey is fixed
+  <li>Bug with reading a private key of a stored certificate in TScCryptoAPIStorage is fixed
+  <li>Bug with closing a file after raising the TScSFTPClient.OnSuccess event handler is fixed
+  <li>Bug with processing a channel when Direct was set in the TScSSHServer.BeforeChannelConnect event handler is fixed
+  <li>Bug with a port release on non Windows OS on local port forwarding is fixed
+  <li>Bug with processing of commands by a shell session in TScSSHServer is fixed
+  <li>Bug with the "Unknown reply extension packet type" in the TScSFTPClient.CheckFile method is fixed
+  <li>Several bugs in C++Builder are fixed
+</ul>
+
+<h4>7.1.2 29-Jun-16</h4>
+<ul>
+  <li>RAD Studio 10.1 Berlin is supported
+  <li>Performance file download is improved
+  <li>Bug with the "Target buffer is too small" error on compressing data is fixed
+  <li>Bug with hanging connection when downloading large file is fixed
+</ul>
+
+<h4>7.0.1 24-Mar-16</h4>
+<ul>
+  <li>Lazarus 1.6 and FPC 3.0 is supported
+  <li>TScMemoryStorage component for storing information about keys, users and certificates in virtual memory is added
+  <li>Working with certificates avoiding CryptoAPI is supported
+  <li>Working with certificates on Mobile platforms is supported
+  <li>The SHA-2-256, SHA-2-512, SHA-2-224, SHA-2-384, and MD5 hash algorithms are supported
+  <li>The 'hmac-sha2' HMAC algorithms for using in SSH protocol are supported
+  <li>The TScSSHClient.HMACAlgorithms property for specifying the list of acceptable HMAC algorithms is added
+  <li>The TScSSHServer.HMACs property for specifying the list of the used HMAC algorithms is added
+  <li>The TScSFTPClient.BeforeWriteData event is added
+  <li>The capability to import a private key encrypted with AES-CBC algorithm is added
+  <li>Bug with SSL connection is fixed
+  <li>Bug with Blowfish-ctr encryption algorithm is fixed
+  <li>Bug with repeated calls to the TScStorage.OnCheckUserKey event handler is fixed
+  <li>Bug with SSH version negotiation is fixed
+</ul>
+
+<h4>6.6.9 16-Oct-15</h4>
+<ul>
+  <li>RAD Studio 10 Seattle is supported
+  <li>Added property TScSSHClient.HttpOptions that contains settings for HTTP connection
+  <li>Added property TScSSLClient.HttpOptions that contains settings for HTTP connection
+  <li>Support for CTR encryption mode is added
+  <li>Now Trial for Win64 is a fully functional Professional Edition
+  <li>Bug with the 'Unexpected Packet type' error on connecting to SSH server is fixed
+  <li>Bug with uploading files larger than 1 GB is fixed
+</ul>
+
+<h4>6.5.8 05-May-15</h4>
+<ul>
+  <li>RAD Studio XE8 is supported
+  <li>Support for simultaneous usage of public key and password authentication on connecting to SSH server is added
+  <li>Bug with the 'Unexpected Packet type' error on connecting to SSH server is fixed</ul>
+</ul>
+
+<h4>6.4.7 10-Feb-15</h4>
+<ul>
+  <li>Support for SSL client for iOS platform is added
+  <li>The TScSFTPClient.DownloadToStream and TScSFTPClient.UploadFromStream methods are added
+  <li>The TScSFTPClient.AfterWriteData event is added
+  <li>The EScError.ErrorCode property is added
+  <li>Performance of TScSSLClient is improved
+  <li>Bug on connection establishing with processing server certificate by TScSSLClient is fixed
+  <li>Bug with detecting the buffer size in the TScSSLClient.WriteBuffer method is fixed
+  <li>Bug with losing handlers in TScSSHServer is fixed
+  <li>Bug with TScSFTPClient in the multi-threaded mode is fixed
+  <li>Bug with filling in file permissions by TScSFTPServer is fixed
+  <li>Bug with the "Verifying failed" error on connecting to the Bitvise SSH Server is fixed
+</ul>
+
+<h4>6.4.6 30-Sep-14</h4>
+<ul>
+  <li>RAD Studio XE7 is supported
+  <li>Lazarus 1.2.4 is supported
+  <li>Several bugs with TScSSHClient in multi-thread mode are fixed
+  <li>Bug with premature socket closing before the TScSSHServer.AfterClientDisconnect event is handled is fixed
+</ul>
+
+<h4>6.3.5 08-Jul-14</h4>
+<ul>
+  <li>Support for the Diffie-Hellman algorithm for key exchange in SSL client is added
+  <li>Now request for setting terminal info on opening TScSSHShell is not sent when TerminalType is empty
+  <li>Bug with hanging application in SSL client is fixed
+  <li>Bug with file downloading by TScSFTPClient is fixed
+  <li>Bug with returning absolute path by SFTP server is fixed
+</ul>
+
+<h4>6.3.4 20-May-14</h4>
+<ul>
+  <li>RAD Studio XE6 is supported
+  <li>Android in C++Builder XE6 is supported
+  <li>Lazarus 1.2.2 and FPC 2.6.4 is supported
+  <li>Bug with the publickey authentication is fixed
+</ul>
+
+<h4>6.2.3 04-Feb-14</h4>
+<ul>
+  <li>iOS in C++Builder XE5 is supported
+  <li>RAD Studio XE5 Update 2 is now required
+  <li>Bug with the publickey authentication on SSH connection is fixed
+  <li>Bug with memory leak on TScSSHClient.Disconnect on iOS is fixed
+  <li>Bug with suspend after sending the quit command by SFTP client is fixed
+</ul>
+
+<h4>6.1.2 11-Oct-13</h4>
+<ul>
+  <li>RAD Studio XE5 is supported 
+  <li>Application development for Android is supported 
+  <li>IPv6 protocol support is added 
+  <li>Bug with hanging application when connection error arises on iOS is fixed
+  <li>Bug in TScSSHChannel on local port forwarding is fixed
+</ul>
+
+<h4>6.0.1 08-Jul-13</h4>
+<ul>
+  <li>Rad Studio XE4 is supported
+  <li>NEXTGEN compiler is supported
+  <li>Application development for iOS is supported
+  <li>Bug with the SSH_MSG_CHANNEL_OPEN_CONFIRMATION package is fixed
+  <li>Bug with changing the standard date and time format in Delphi 5 is fixed
+  <li>Bug with connecting to the ProFTPD server is fixed
+  <li>Bug with compilation on C++Builder is fixed
+</ul>
+
+<h4>5.5.1 04-Feb-13</h4>
+<ul>
+  <li>TScSFTPServer component is added
+  <li>Bug with processing shell session on server side by TScSSHServer is fixed
+  <li>Bug with compilation of FireMonkey Application is fixed
+</ul>
+
+<h4>5.0.2 15-Nov-12</h4>
+<ul>
+  <li>Bug with sending data using TScSSHChannel is fixed
+  <li>Bug with setting attributes of a remote file via SFTP protocol is fixed
+  <li>Bug with processing the keep-alive request from SSH server is fixed
+  <li>Bug with compilation of FireMonkey Application on C++Builder is fixed
+  <li>Bug with compilation on Lazarus is fixed
+</ul>
+
+<h4>5.0.1 02-Oct-12</h4>
+<ul>
+  <li>Rad Studio XE3 is supported 
+  <li>Lazarus 1.0 and FPC 2.6.0 are supported
+  <li>Mac OS X in Lazarus is supported
+  <li>Linux x32 in Lazarus is supported (excluding certificate support)
+  <li>Linux x64 in Lazarus is supported (excluding certificate support)
+  <li>FreeBSD in Lazarus is supported (excluding certificate support)
+  <li>Windows 8 is supported
+  <li>Bug with setting attributes of a remote file via SFTP protocol is fixed
+  <li>Bug with sending data using TScSSHChannel is fixed
+</ul>
+
+<h4>4.1.3 15-Mar-12</h4>
+<ul>
+  <li>Update 4 for RAD Studio XE2, Delphi XE2, and C++Builder XE2 is now required 
+  <li>Certificate support for Mac OS X in RAD Studio XE2 is added
+  <li>The TScSSHShell.Resize method is added for changing terminal info during a session
+  <li>Several bugs in design-time editors are fixed
+</ul>
+
+<h4>4.1.2 28-Dec-11</h4>
+<ul>
+  <li>Update 2 for RAD Studio XE2, Delphi XE2, and C++Builder XE2 is now required 
+  <li>Mac OS X in RAD Studio XE2 is supported (excluding certificate support)
+  <li>The TScSSHChannel.UseUnicode property is added
+  <li>Bug with proccessing of channel opening failure is fixed
+  <li>Bug on connection establishment with some versions of SSH server in C++Builder 5 is fixed
+  <li>Several bugs with compilation on C++ Builder are fixed
+</ul>
+
+<h4>4.0.1 13-Oct-11</h4>
+<ul>
+  <li>Embarcadero RAD Studio XE2 is supported 
+  <li>Application development for 64-bit Windows is supported 
+  <li>FireMonkey application development platform is supported 
+</ul>
+
+<h4>3.00.0.6 05-Sep-11</h4>
+<ul>
+  <li>The capability of importing a certificate from the pfx-format is added
+  <li>The TScSSHChannel.GetListenedPort method is added
+  <li>Bug with downloading a large data amount is fixed
+</ul>
+
+<h4>3.00.0.4 27-Jul-11</h4>
+<ul>
+  <li>Bug on connection establishment with some versions of SSH server is fixed
+</ul>
+
+<h4>3.00.0.3 20-Jun-11</h4>
+<ul>
+  <li>Bug with BigInteger overflow is fixed
+  <li>Bug with transmitting values of TScTerminalInfo to SSH server is fixed
+  <li>Bug with freeing memory on local port forwarding is fixed
+</ul>
+
+<h4>3.00.0.2 23-Nov-10</h4>
+<ul>
+  <li>Fixed bug with AV failure when downloading a large file
+  <li>Fixed bug with processing events on file uploading
+</ul>
+
+<h4>3.00.0.1 04-Oct-10</h4>
+<ul>
+  <li>Embarcadero RAD Studio XE suppored 
+  <li>Added automatic conversion of EOL symbols for text files
+  <li>Fixed bug with file downloading in the OnDirectoryList event handler
+  <li>Fixed bug with freeing memory when error arises in SSL connection
+</ul>
+
+<h4>2.60.0.15 07-Jun-10</h4>
+<ul>
+  <li>Added ability to compress transferred data for SSH client and SSH server
+  <li>Added support for aes-192 and aes-256 encryption algorithms
+  <li>Improved performance of data transferring
+  <li>Fixed bug with closing uploaded/downloaded file handle 
+  <li>Fixed bug with reading directory list in the NonBlocking mode
+</ul>
+
+<h4>2.60.0.14 06-Apr-10</h4>
+<ul>
+  <li>Added the TScSFTPClient.UseUnicode property
+  <li>Fixed bug with attempting to connect two times when authentication failed
+  <li>Fixed bug with installing IOHandler component for Delphi 2009 and higher
+  <li>Fixed bug on connection establishment with some versions of SSH server
+  <li>Fixed bug with renegotiating of session key
+  <li>Fixed bug with compilation on C++ Builder
+</ul>
+
+<h4>2.60.0.13 10-Dec-09</h4>
+<ul>
+  <li>Added the TScSSHServer.ClientInfos property to represent information about connected clients
+  <li>Added the TScSSHServer.ChannelInfos property to represent information about opened channels
+  <li>Fixed bug with sending data with TScSSHShell in the NonBlocking mode after reconnecting
+  <li>Fixed bug with arising the TScSSHClient.OnServerKeyValidate event twice when authentication failed
+</ul>
+
+<h4>2.60.0.12 04-Nov-09</h4>
+<ul>
+  <li>Added the TScSSHShell.TerminalInfo property
+  <li>Fixed bug with file download when file size = 0
+</ul>
+
+<h4>2.60.0.11 23-Sep-09</h4>
+<ul>
+  <li>Embarcadero RAD Studio 2010 suppored
+  <li>Improved stability of TScSSHChannel on local port forwarding
+  <li>TScSSHClient.Timeout is now used when resolving the host name and on connection establishing
+  <li>Added SSH client demo with extended functionality
+  <li>Fixed bug with the TScSSHClient.OnAuthenticationPrompt event under C++Builder
+  <li>Breaking change: declaration of TScSSHClient.OnAuthenticationPrompt changed
+</ul>
+
+<h4>2.50.0.9 02-Jul-09</h4>
+<ul>
+  <li>Added support of Unicode characters in file names for SFTP
+  <li>Added the TScUser.Domain property to support OSAuthentication in Windows
+  <li>Added the TScStorage.StoreUserPassword property storing only user password hash without plain password
+  <li>Completely restructured and improved SSHServer demo
+  <li>Fixed bug with SSHClient demo
+</ul>
+
+<h4>2.50.0.8 09-Jun-09</h4>
+<ul>
+  <li>Added the full support for SFTP protocols versions from 1 to 6
+  <li>Added the SFTP client with extended setting abilities
+  <li>Added support of keyboard-interactive authentication method
+  <li>Fixed bug with assertion failure on calling the TScSSHShell.ExecuteCommand method in NonBlocking mode
+</ul>
+
+<h4>2.20.0.7 06-Mar-09</h4>
+<ul>
+  <li>Fixed problem with using IOHandler for MyDAC and PgDAC
+  <li>Fixed bug with hanging of TScSSHChannel on LocalPortForwarding
+  <li>Fixed bug with AV failure in TSSHServer for Delphi 5
+</ul>
+
+<h4>2.20.0.6 06-Jan-09</h4>
+<ul>
+  <li>Added support of TScSSLClient for PgDAC components
+</ul>
+
+<h4>2.20.0.5 02-Dec-08</h4>
+<ul>
+  <li>Added support for Indy10 for Delphi 2009
+  <li>Added usage possibility TScIdIOHandler with the TIdFTP component of Indy
+  <li>Fixed bug with hanging of the TScIdIOHandler component
+  <li>Fixed bug with hanging of TScSSHServer
+</ul>
+
+<h4>2.20.0.4 10-Oct-08</h4>
+<ul>
+  <li>Support for Delphi 2009 for Win32 and C++Builder 2009 added 
+  <li>Improved stability of the TScSSHServer component 
+  <li>Improved work of the SSH Server demo
+  <li>Fixed bug with hanging of the TScSSLClient component 
+</ul>
+
+<h4>2.00.0.2 14-Nov-07</h4>
+<ul>
+  <li>Added the full support for SSL 3.0 and TLS 1.0 protocols with no external units</li>
+  <li>Added the SSL client with extended setting abilities</li>
+  <li>Added ability to work with [X.509] certificates</li>
+  <li>Added ability to access system and external certificate storages through CryptoAPI</li>
+  <li>Remote commands execution with SSH server supported</li>
+  <li>Improved security with ability to send SSH_MSG_IGNORE packages</li>
+  <li>Added ability to make storages read only</li>
+  <li>Added ability to erase underlying physical storages</li>
+  <li>Added new events to TScSSHCustomChannel and TScSSHServer classes</li>
+</ul>
+
+<h4>1.10.0.3 23-Jul-07</h4>
+<ul>
+  <li>C++Builder 2007 supported</li>
+  <li>SSHClient demo for C++Builder added</li>
+  <li>General stability improved</li>
+  <li>Minor bugs in TScStorage design-time editor fixed</li>
+</ul>
+
+<h4>1.00.0.2 22-May-07</h4>
+<ul>
+  <li>Initial release of SecureBridge 1.00</li>
+</ul>
+<!-- end content -->
+<!-- some line breaks -->
+<br />
+<br />
+<hr />
+<p>
+&copy; 1997-2021 Devart. All rights reserved.</p>
+</div>
+</body>
+</html>
+

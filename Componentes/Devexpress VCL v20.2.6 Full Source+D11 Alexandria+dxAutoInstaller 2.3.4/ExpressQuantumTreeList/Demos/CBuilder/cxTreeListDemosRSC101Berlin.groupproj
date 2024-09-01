@@ -1,0 +1,71 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoRSC101Berlin">
+    <MSBuild Projects="BandedDemo\BandedDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoRSC101Berlin">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoRSC101Berlin">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoRSC101Berlin">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC101Berlin">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSC101Berlin">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC101Berlin">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoRSC101Berlin">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoRSC101Berlin">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoRSC101Berlin">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoRSC101Berlin">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC101Berlin">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSC101Berlin">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoRSC101Berlin">
+    <MSBuild Projects="SummariesDemo\SummariesDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoRSC101Berlin">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSC101Berlin">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoRSC101Berlin">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSC101Berlin">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSC101Berlin">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSC101Berlin.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoRSC101Berlin;BandedFixedDemoRSC101Berlin;ColumnsMultiEditorsDemoRSC101Berlin;CheckGroupsDemoRSC101Berlin;CustomDrawDemoRSC101Berlin;DragDropDemoRSC101Berlin;EditorsInPlaceDemoRSC101Berlin;VirtualModeDemoRSC101Berlin;ProviderModeDemoRSC101Berlin;SimpleListDemoRSC101Berlin;SimpleTreeDemoRSC101Berlin;StylesMultiDemoRSC101Berlin;StylesSimpleDemoRSC101Berlin;SummariesDemoRSC101Berlin;UnboundModeDemoRSC101Berlin;EditorsInPlaceValidationDemoRSC101Berlin;FilterDropDownDemoRSC101Berlin;ScrollbarAnnotationsDemoRSC101Berlin;CalculatedFieldsDemoRSC101Berlin" />
+  </Target>
+</Project>

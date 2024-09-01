@@ -1,0 +1,105 @@
+<html>
+<head>
+   <title>TFXCStorePath</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_TFCStorePath">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>TFXCStorePath type</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Describes how path infromation will be stored for the file or directory within the archive file.<b>
+<br>
+</b><b>
+<br>
+Unit</b>
+<br>
+FlexCompress
+<br>
+
+<br>
+<b>type </b>TFXCStorePath = (spNoPath, spRelativePath, spFullPath, spFullPathWithDrive);<b>
+<br>
+</b>
+<br>
+<b>Description</b>
+<br>
+
+<br>
+TFXCStorePath value defines how path information will be stored for the file or directory within the archive file. If you need to store all files and directories without path you should use spNoPath value. For example, <a href=addfiles.htm>AddFiles</a>('C:\TEST\test.txt') adds file test.txt to the archive. If you will extract it by <a href=extractfiles.htm>ExtractFiles</a>('*.*') and BaseDir will be 'C:\', file test.txt will be extracted to 'C\':, not to 'C:\TEST'. 
+<br>
+
+<br>
+If you need to store path relative to certain directory you should set <a href=basedir.htm>BaseDir</a> before adding file to archive and set <a href=options.htm>Options</a>.StorePath to spRelative. In this case if you will set BaseDir to 'C:\' and call AddFiles('C:\TEST\test.txt') the file test.txt will be stored as 'TEST\test.txt' within the archive. If you will extract it by ExtractFiles('*.*') it will be extracted to 'C:\TEST\test.txt', not to 'C:\' as in previous example.
+<br>
+
+<br>
+If you need to store full path you should set Options.StorePath to spFullPath. Previous example will store test.txt within the archive file as '\TEST\test.txt' and file will be extracted to disk specified by BaseDir.
+<br>
+
+<br>
+If you need to store absolute path with drive you should set Options.StorePath to spFullPathWithDrive. Previous AddFiles example will store test.txt within the archive file as 'C:\TEST\test.txt' and the file will be extracted to disk using stored absolute path regardless of BaseDir.
+<br>
+
+<br>
+<a href=options.htm>Options</a>.StorePath can be set to any of the following values:
+<br>
+<table border="0" cellpadding="1" cellspacing="0"><tr><td align="left" valign="top" width="129">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Value                             </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="437">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Meaning                                                                                   </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="129">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">spNoPath<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="437">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">No path information stored<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="129">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">spRelativePath<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="437">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Path information stored relatively BaseDir<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="129">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">spFullPath<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="437">
+<span style="font-family:MS Sans Serif; font-size:10pt; color:#000000">Path information stored relatively disk specified by BaseDir<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="129">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">spFullPathWithDrive
+<br>
+</span></td><td align="left" valign="top" width="437">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Absolute path with drive letter stored
+<br>
+</span></td></tr></table>
+<br>
+</span>
+
+</body>
+</html>

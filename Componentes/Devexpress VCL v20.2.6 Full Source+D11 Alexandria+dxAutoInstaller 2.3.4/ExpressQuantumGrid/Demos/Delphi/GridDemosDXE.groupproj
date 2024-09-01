@@ -1,0 +1,218 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ColumnsMultiEditorsDemoDXE">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoDXE">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoDXE">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoDXE">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoDXE">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoDXE">
+    <MSBuild Projects="DragDropDemo\DragDropDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoDXE">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoDXE">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoDXE">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoDXE">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoDXE">
+    <MSBuild Projects="GridModeDemo\GridModeDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoDXE">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="IssueListDXE">
+    <MSBuild Projects="IssueList\IssueListDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoDXE">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoDXE">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoDXE">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoDXE">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoDXE">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoDXE">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoDXE">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoDXE">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoDXE">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoDXE">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoDXE">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoDXE">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoDXE">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoDXE">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoDXE">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoDXE">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewTableSimpleDemoDXE">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoDXE">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoDXE">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoDXE">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoDXE">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoDXE">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoDXE">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoDXE">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoDXE">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoDXE">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoDXE">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoDXE">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoDXE">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoDXE">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoDXE">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoDXE">
+    <MSBuild Projects="FilterDemo\FilterDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoDXE">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoDXE">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoDXE">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoDXE">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoDXE">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoDXE">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoDXE">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoDXE">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoDXE">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoDXE">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoDXE">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoDXE">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoDXE">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoDXE">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingDXE">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoDXE">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoDXE">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoDXE">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoDXE">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoDXE">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoDXE">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoDXE">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowLayoutDemoDXE">
+    <MSBuild Projects="CustomRowLayoutDemo\CustomRowLayoutDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ColumnsMultiEditorsDemoDXE;ColumnsShareDemoDXE;ColumnsSimpleDemoDXE;CustomDrawCardViewDemoDXE;CustomDrawTableViewDemoDXE;DragDropDemoDXE;EditorsInPlaceDemoDXE;FilterByCodeDemoDXE;FilterControlDemoDXE;GridMenuViewsDemoDXE;GridModeDemoDXE;InplaceEditFormDemoDXE;IssueListDXE;MasterDetailCardDemoDXE;MasterDetailDemoDXE;MasterDetailMultiDemoDXE;MasterDetailTableDemoDXE;StylesCardViewDemoDXE;StylesMultiDemoDXE;StylesSimpleDemoDXE;SummaryFooterDemoDXE;SummaryGroupDemoDXE;SummaryMultiDemoDXE;UnboundExternalDataDemoDXE;UnboundModeDemoDXE;UnboundSimpleDemoDXE;ViewBandedDemoDXE;ViewBandedFixedDemoDXE;ViewCardSimpleDemoDXE;ViewTableSimpleDemoDXE;CellLevelMultiselectDemoDXE;CustomRowHeightDemoDXE;Office11GroupRowStyleDemoDXE;UnboundColumnsDemoDXE;UnboundDesignDefinedDemoDXE;ViewCardDemoDXE;ViewNestedBandsDemoDXE;UnboundListDemoDXE;ViewChartDemoDXE;ViewChartStackedDemoDXE;MasterDetailChartDemoDXE;CardLayoutDemoDXE;ChartDataDrillingDemoDXE;FindPanelDemoDXE;FilterDemoDXE;FilterDropDownDemoDXE;LayoutViewDemoDXE;LayoutViewCarouselModeDemoDXE;ServerModeADODemoDXE;ServerModeDBXDemoDXE;ServerModeFireDACDemoDXE;ServerModeADOQueryDemoDXE;ServerModeDBXQueryDemoDXE;ServerModeFireDACQueryDemoDXE;EditorsInPlaceValidationDemoDXE;RatingControlDemoDXE;FixedGroupsDemoDXE;SparklinesDemoDXE;WinExplorerViewDemoDXE;LayoutViewDemoGroupScrollingDXE;MergedGroupsDemoDXE;CheckBoxMultiSelectDemoDXE;FixedDataRowsDemoDXE;ConditionalFormattingDemoDXE;ScrollbarAnnotationsDemoDXE;CalculatedFieldsDemoDXE;CalculatedFilterItemsDemoDXE;CustomRowLayoutDemoDXE" />
+  </Target>
+</Project>

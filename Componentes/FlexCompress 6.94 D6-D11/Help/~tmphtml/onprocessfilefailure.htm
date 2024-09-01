@@ -1,0 +1,106 @@
+<html>
+<head>
+   <title>OnProcessFileFailure</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_OnProcessFileFailure;OnProcessFileFailure_Event;OnProcessFileFailure">
+<param name="alink name" value="$topicid_OnProcessFileFailure">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.OnProcessFileFailure</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Occurs in case of failure of the current operation.
+<br>
+
+<br>
+<b>type</b> TFXCProcessFileFailureEvent =  procedure(
+<br>
+                                      Sender: &nbsp;&nbsp;&nbsp;TObject;
+<br>
+                                      FileName: &nbsp;&nbsp;&nbsp;String;
+<br>
+                                      Operation: &nbsp;&nbsp;&nbsp;<a href=tfcprocessoperation.htm>TFXCProcessOperation</a>;
+<br>
+                                      NativeError:&nbsp;&nbsp;&nbsp;Integer;
+<br>
+                                      ErrorCode: &nbsp;&nbsp;&nbsp;Integer;
+<br>
+                                      ErrorMessage:&nbsp;&nbsp;&nbsp;String;
+<br>
+                                      <b>var</b> Action:&nbsp;&nbsp;&nbsp;TZFAction
+<br>
+                                      ) of <b>object</b>;
+<br>
+
+<br>
+<b>type</b> TFXCAction = (fxaRetry, fxaIgnore, fxaAbort);
+<br>
+
+<br>
+<b>property</b> OnProcessFileFailure: TFXCProcessFileFailureEvent;
+<br>
+
+<br>
+<b>Description</b>
+<br>
+
+<br>
+Write an OnProcessFileFailure event handler to perform some specific actions when archive operation failes. OnProcessFileFailure event is triggered by <a href=addfiles.htm>AddFiles</a>, <a href=movefiles.htm>MoveFiles</a>, <a href=updatefiles.htm>UpdateFiles</a>, <a href=deletefiles.htm>DeleteFiles</a>, <a href=testfiles.htm>TestFiles</a> or by <a href=extractfiles.htm>ExtractFiles</a> if any file error occurs in the listed methods. If you will not specify event handler for OnProcessFileFailure any error will raise an exception.
+<br>
+
+<br>
+The Sender parameter is the object whose event handler is called.  
+<br>
+
+<br>
+FileName indicates current file name.
+<br>
+
+<br>
+Operation indicates current archive operation.
+<br>
+
+<br>
+NativeError indicates internal error code that is unique for each error handled by <b>FlexCompress</b>. If OnProcessFileFailure triggers due to unknown internal error, please report about your problem to <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><u><span class="weblink"><a href="mailto:support@componentace.com">support@componentace.com</a></span></u></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">.
+<br>
+
+<br>
+ErrorCode indicates common type of the error. You can find error codes list at FXCConst unit supplied with product. 
+<br>
+
+<br>
+ErrorMessage indicates error message text.
+<br>
+
+<br>
+Action specifies whether the operation with the file should be retried, aborted or the error is to be ignored to process the next file.
+<br>
+
+<br>
+</span></span>
+
+</body>
+</html>

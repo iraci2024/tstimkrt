@@ -1,0 +1,65 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="TokenEditDemoRSCXE">
+    <MSBuild Projects="TokenEditDemo\TokenEditDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="BarCodeDemoRSCXE">
+    <MSBuild Projects="BarCodeDemo\BarCodeDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoRSCXE">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="ActivityIndicatorDemoRSCXE">
+    <MSBuild Projects="ActivityIndicatorDemo\ActivityIndicatorDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="AlertWindowDemoRSCXE">
+    <MSBuild Projects="AlertWindowDemo\AlertWindowDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="AlertWindowCustomDrawDemoRSCXE">
+    <MSBuild Projects="AlertWindowCustomDrawDemo\AlertWindowCustomDrawDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemoRSCXE">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemoRSCXE">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsStylesDemoRSCXE">
+    <MSBuild Projects="EditorsStylesDemo\EditorsStylesDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="BreadcrumbEditDemoRSCXE">
+    <MSBuild Projects="BreadcrumbEditDemo\BreadcrumbEditDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBBreadcrumbEditDemoRSCXE">
+    <MSBuild Projects="DBBreadcrumbEditDemo\DBBreadcrumbEditDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="ShellBreadcrumbEditDemoRSCXE">
+    <MSBuild Projects="ShellBreadcrumbEditDemo\ShellBreadcrumbEditDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsValidationDemoRSCXE">
+    <MSBuild Projects="EditorsValidationDemo\EditorsValidationDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="ImageViewerDemoRSCXE">
+    <MSBuild Projects="ImageViewerDemo\ImageViewerDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="CloudStorageDemoRSCXE">
+    <MSBuild Projects="CloudStorageDemo\CloudStorageDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="FormattedLabelDemoRSCXE">
+    <MSBuild Projects="FormattedLabelDemo\FormattedLabelDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="ImageSliderDemoRSCXE">
+    <MSBuild Projects="ImageSliderDemo\ImageSliderDemoRSCXE.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="TokenEditDemoRSCXE;BarCodeDemoRSCXE;RangeControlDemoRSCXE;ActivityIndicatorDemoRSCXE;AlertWindowDemoRSCXE;AlertWindowCustomDrawDemoRSCXE;EditorsLookupDemoRSCXE;EditorsMaskDemoRSCXE;EditorsStylesDemoRSCXE;BreadcrumbEditDemoRSCXE;DBBreadcrumbEditDemoRSCXE;ShellBreadcrumbEditDemoRSCXE;EditorsValidationDemoRSCXE;ImageViewerDemoRSCXE;CloudStorageDemoRSCXE;FormattedLabelDemoRSCXE;ImageSliderDemoRSCXE" />
+  </Target>
+</Project>

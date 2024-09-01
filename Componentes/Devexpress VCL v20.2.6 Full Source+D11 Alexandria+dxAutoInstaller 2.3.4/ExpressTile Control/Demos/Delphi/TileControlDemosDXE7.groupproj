@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="RealtorWorldDXE7">
+    <MSBuild Projects="RealtorWorld\RealtorWorldDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="FrameAnimationDemoDXE7">
+    <MSBuild Projects="FrameAnimationDemo\FrameAnimationDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="DesktopDemoDXE7">
+    <MSBuild Projects="DesktopDemo\DesktopDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="HybridAppDXE7">
+    <MSBuild Projects="HybridDemo\HybridAppDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="RealtorWorldDXE7;FrameAnimationDemoDXE7;DesktopDemoDXE7;HybridAppDXE7" />
+  </Target>
+</Project>

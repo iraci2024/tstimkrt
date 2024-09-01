@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoRSCXE5">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSCXE5">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoRSCXE5">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoRSCXE5">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoRSCXE5">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoRSCXE5">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSCXE5">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSCXE5">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSCXE5">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSCXE5">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSCXE5">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSCXE5.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoRSCXE5;EditorsInPlaceDemoRSCXE5;ProviderModeDemoRSCXE5;RowsMultiEditorsDemoRSCXE5;RTTIInspectorDemoRSCXE5;SimpleVerticalGridDemoRSCXE5;StylesMultiDemoRSCXE5;StylesSimpleDemoRSCXE5;EditorsInPlaceValidationDemoRSCXE5;ScrollbarAnnotationsDemoRSCXE5;CalculatedFieldsDemoRSCXE5" />
+  </Target>
+</Project>

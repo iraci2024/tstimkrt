@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EMFTutorialsD102Tokyo">
+    <MSBuild Projects="Tutorials\EMFTutorialsD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FilmsRS102Tokyo">
+    <MSBuild Projects="Demos\Common\FilmsRS102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD102Tokyo">
+    <MSBuild Projects="Demos\DragDrop\DragDropDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoD102Tokyo">
+    <MSBuild Projects="Demos\MasterDetailCard\MasterDetailCardDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoD102Tokyo">
+    <MSBuild Projects="Demos\MasterDetailTable\MasterDetailTableDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldRS102Tokyo">
+    <MSBuild Projects="Demos\Common\RealtorWorldRS102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldAgentsDemoD102Tokyo">
+    <MSBuild Projects="Demos\RealtorWorldAgents\RealtorWorldAgentsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RealtorWorldLoanCalculatorDemoD102Tokyo">
+    <MSBuild Projects="Demos\RealtorWorldLoanCalculator\RealtorWorldLoanCalculatorDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EMFGridDemoRS102Tokyo">
+    <MSBuild Projects="Demos\Common\EMFGridDemoRS102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="GridViewADODemoD102Tokyo">
+    <MSBuild Projects="Demos\GridViewADODemo\GridViewADODemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="NWindFoodsModelRS102Tokyo">
+    <MSBuild Projects="Demos\MasterDetailEMFTable\NWindFoodsModelRS102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailEMFTableDemoD102Tokyo">
+    <MSBuild Projects="Demos\MasterDetailEMFTable\MasterDetailEMFTableDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EMFTutorialsD102Tokyo;FilmsRS102Tokyo;DragDropDemoD102Tokyo;MasterDetailCardDemoD102Tokyo;MasterDetailTableDemoD102Tokyo;RealtorWorldRS102Tokyo;RealtorWorldAgentsDemoD102Tokyo;RealtorWorldLoanCalculatorDemoD102Tokyo;EMFGridDemoRS102Tokyo;GridViewADODemoD102Tokyo;NWindFoodsModelRS102Tokyo;MasterDetailEMFTableDemoD102Tokyo" />
+  </Target>
+</Project>

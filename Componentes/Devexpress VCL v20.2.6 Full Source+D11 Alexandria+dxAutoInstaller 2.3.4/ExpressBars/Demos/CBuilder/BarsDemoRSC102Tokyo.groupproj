@@ -1,0 +1,35 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BackgroundDemoRSC102Tokyo">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemoRSC102Tokyo">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="EBar2000DemoRSC102Tokyo">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemoRSC102Tokyo">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="BarNotepadDemoRSC102Tokyo">
+    <MSBuild Projects="BarNotepadDemo\BarNotepadDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemoRSC102Tokyo">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SampleDockingRSC102Tokyo">
+    <MSBuild Projects="SampleDocking\SampleDockingRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BackgroundDemoRSC102Tokyo;DockingMegaDemoRSC102Tokyo;EBar2000DemoRSC102Tokyo;InPlaceEditorsDemoRSC102Tokyo;BarNotepadDemoRSC102Tokyo;RibbonNotepadDemoRSC102Tokyo;SampleDockingRSC102Tokyo" />
+  </Target>
+</Project>

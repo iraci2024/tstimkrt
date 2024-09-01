@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoRSC100Seattle">
+    <MSBuild Projects="Invoice\InvoiceDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC100Seattle">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoRSC100Seattle">
+    <MSBuild Projects="Outline\OutlineDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSC100Seattle">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoRSC100Seattle">
+    <MSBuild Projects="Comments\CommentsDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoRSC100Seattle">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoRSC100Seattle">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoRSC100Seattle">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoRSC100Seattle">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoRSC100Seattle;CustomDrawDemoRSC100Seattle;OutlineDemoRSC100Seattle;ConditionalFormattingDemoRSC100Seattle;CommentsDemoRSC100Seattle;SimpleReportDemoRSC100Seattle;HorizontalReportDemoRSC100Seattle;MasterDetailReportDemoRSC100Seattle;InvoiceReportDemoRSC100Seattle" />
+  </Target>
+</Project>

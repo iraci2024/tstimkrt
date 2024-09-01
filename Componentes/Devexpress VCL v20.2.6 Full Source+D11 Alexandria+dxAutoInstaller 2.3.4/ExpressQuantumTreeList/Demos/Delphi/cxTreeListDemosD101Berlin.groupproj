@@ -1,0 +1,80 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoD101Berlin">
+    <MSBuild Projects="BandedDemo\BandedDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoD101Berlin">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoD101Berlin">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD101Berlin">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD101Berlin">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD101Berlin">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoD101Berlin">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoD101Berlin">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD101Berlin">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD101Berlin">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoD101Berlin">
+    <MSBuild Projects="SummariesDemo\SummariesDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD101Berlin">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoD101Berlin">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD101Berlin">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD101Berlin">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoD101Berlin">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD101Berlin">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD101Berlin">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD101Berlin">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD101Berlin">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD101Berlin">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD101Berlin">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoD101Berlin;BandedFixedDemoD101Berlin;CheckGroupsDemoD101Berlin;CustomDrawDemoD101Berlin;EditorsInPlaceDemoD101Berlin;EditorsInPlaceValidationDemoD101Berlin;SimpleListDemoD101Berlin;SimpleTreeDemoD101Berlin;StylesMultiDemoD101Berlin;StylesSimpleDemoD101Berlin;SummariesDemoD101Berlin;UnboundModeDemoD101Berlin;VirtualModeDemoD101Berlin;ProviderModeDemoD101Berlin;DragDropDemoD101Berlin;ColumnsMultiEditorsDemoD101Berlin;FindPanelDemoD101Berlin;FilterControlDemoD101Berlin;FilterDropDownDemoD101Berlin;ScrollbarAnnotationsDemoD101Berlin;CalculatedFieldsDemoD101Berlin;CalculatedFilterItemsDemoD101Berlin" />
+  </Target>
+</Project>

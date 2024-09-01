@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoDXE3">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoDXE3">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoDXE3">
+    <MSBuild Projects="UnboundDemo\UnboundDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoDXE3">
+    <MSBuild Projects="DBDemo\DBDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoDXE3">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoDXE3">
+    <MSBuild Projects="StylesDemo\StylesDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoDXE3">
+    <MSBuild Projects="ResourceDemo\ResourceDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoDXE3">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoDXE3">
+    <MSBuild Projects="AggregateDemo\AggregateDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoDXE3">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoDXE3">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoDXE3.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoDXE3;RangeControlDemoDXE3;UnboundDemoDXE3;DBDemoDXE3;CustomDrawDemoDXE3;StylesDemoDXE3;ResourceDemoDXE3;GanttViewDemoDXE3;AggregateDemoDXE3;HolidaysDemoDXE3;WebServiceDemoDXE3" />
+  </Target>
+</Project>

@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoD2010">
+    <MSBuild Projects="Invoice\InvoiceDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomFunctionDemoD2010">
+    <MSBuild Projects="CustomFunction\CustomFunctionDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD2010">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoD2010">
+    <MSBuild Projects="Outline\OutlineDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoD2010">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoD2010">
+    <MSBuild Projects="Comments\CommentsDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoD2010">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoD2010">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoD2010">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoD2010">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoD2010.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoD2010;CustomFunctionDemoD2010;CustomDrawDemoD2010;OutlineDemoD2010;ConditionalFormattingDemoD2010;CommentsDemoD2010;SimpleReportDemoD2010;HorizontalReportDemoD2010;MasterDetailReportDemoD2010;InvoiceReportDemoD2010" />
+  </Target>
+</Project>

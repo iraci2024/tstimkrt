@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DataProvidersD104Sydney">
+    <MSBuild Projects="DataProviders\DataProvidersD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="WorldWeatherD104Sydney">
+    <MSBuild Projects="WorldWeather\WorldWeatherD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="BingServicesD104Sydney">
+    <MSBuild Projects="BingServices\BingServicesD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ShapefileSupportD104Sydney">
+    <MSBuild Projects="ShapefileSupport\ShapefileSupportD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DataProvidersD104Sydney;WorldWeatherD104Sydney;BingServicesD104Sydney;ShapefileSupportD104Sydney" />
+  </Target>
+</Project>

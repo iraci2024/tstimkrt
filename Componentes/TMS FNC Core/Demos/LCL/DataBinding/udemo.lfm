@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 583
+  Height = 603
+  Top = 193
+  Width = 704
+  Caption = 'TMS FNC PDFLib'
+  ClientHeight = 603
+  ClientWidth = 704
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.2.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 41
+    Top = 0
+    Width = 704
+    Align = alTop
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 37
+    ClientWidth = 700
+    TabOrder = 0
+    object Button1: TButton
+      Left = 5
+      Height = 27
+      Top = 5
+      Width = 75
+      Align = alLeft
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      BorderSpacing.Bottom = 5
+      Caption = 'Activate'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 85
+      Height = 27
+      Top = 5
+      Width = 75
+      Align = alLeft
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      BorderSpacing.Bottom = 5
+      Caption = 'Edit'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 455
+      Height = 27
+      Top = 5
+      Width = 240
+      Align = alRight
+      BevelOuter = bvNone
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 5
+      BorderSpacing.Bottom = 5
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 27
+      ClientWidth = 240
+      DataSource = DataSource1
+      Options = []
+      TabOrder = 2
+    end
+  end
+  object TMSFNCDataBinder1: TTMSFNCDataBinder
+    Left = 432
+    Height = 26
+    Top = 416
+    Width = 26
+    Visible = True
+    Items = <>
+  end
+  object ListBox1: TListBox
+    Left = 10
+    Height = 200
+    Top = 50
+    Width = 200
+    ItemHeight = 0
+    TabOrder = 2
+  end
+  object DataSource1: TDataSource
+    DataSet = MemDataset1
+    left = 524
+    top = 364
+  end
+  object MemDataset1: TMemDataset
+    FieldDefs = <>
+    left = 490
+    top = 157
+  end
+end

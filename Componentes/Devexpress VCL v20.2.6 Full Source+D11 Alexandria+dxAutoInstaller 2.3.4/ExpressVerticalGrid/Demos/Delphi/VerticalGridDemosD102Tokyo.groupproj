@@ -1,0 +1,56 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoD102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD102Tokyo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD102Tokyo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoD102Tokyo">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoD102Tokyo">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD102Tokyo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD102Tokyo">
+    <MSBuild Projects="STYLESSIMPLEDEMO\StylesSimpleDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoD102Tokyo">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD102Tokyo">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD102Tokyo">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD102Tokyo">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD102Tokyo">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD102Tokyo">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD102Tokyo">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoD102Tokyo;EditorsInPlaceDemoD102Tokyo;ProviderModeDemoD102Tokyo;RTTIInspectorDemoD102Tokyo;SimpleVerticalGridDemoD102Tokyo;StylesMultiDemoD102Tokyo;StylesSimpleDemoD102Tokyo;RowsMultiEditorsDemoD102Tokyo;EditorsInPlaceValidationDemoD102Tokyo;FindPanelDemoD102Tokyo;FilterDropDownDemoD102Tokyo;ScrollbarAnnotationsDemoD102Tokyo;CalculatedFieldsDemoD102Tokyo;CalculatedFilterItemsDemoD102Tokyo" />
+  </Target>
+</Project>

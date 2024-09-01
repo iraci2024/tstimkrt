@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoD100Seattle">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoD100Seattle">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoD100Seattle">
+    <MSBuild Projects="UnboundDemo\UnboundDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoD100Seattle">
+    <MSBuild Projects="DBDemo\DBDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD100Seattle">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoD100Seattle">
+    <MSBuild Projects="StylesDemo\StylesDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoD100Seattle">
+    <MSBuild Projects="ResourceDemo\ResourceDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoD100Seattle">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoD100Seattle">
+    <MSBuild Projects="AggregateDemo\AggregateDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoD100Seattle">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoD100Seattle">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoD100Seattle;RangeControlDemoD100Seattle;UnboundDemoD100Seattle;DBDemoD100Seattle;CustomDrawDemoD100Seattle;StylesDemoD100Seattle;ResourceDemoD100Seattle;GanttViewDemoD100Seattle;AggregateDemoD100Seattle;HolidaysDemoD100Seattle;WebServiceDemoD100Seattle" />
+  </Target>
+</Project>

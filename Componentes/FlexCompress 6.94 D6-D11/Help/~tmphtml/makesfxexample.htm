@@ -1,0 +1,65 @@
+<html>
+<head>
+   <title>MakeSFXExample</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_MakeSFXExample">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>MakeSFX Example
+<br>
+</b></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">The following example shows how to create self-extracting (SFX) archive:
+<br>
+
+<br>
+<b>with</b> Archiver <b>do
+<br>
+</b>    <b>begin</b>
+<br>
+        FileName := 'C:\TEST\test.fxc';
+<br>
+<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+ 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Specify executable stub file from the installation folder
+<br>
+</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><i>        </i>SFXStub := 
+<br>
+<i>          </i>'C:\PROGRAM FILES\ComponentAce\FLEXCOMPRESS\SFXStub\SFXstub.exe';
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">  
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">Create SFX archive</span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+        MakeSFX('C:\TEST\SFXArchive.exe');
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">  </span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>   end;</b>
+<br>
+
+<br>
+</span></span>
+
+</body>
+</html>

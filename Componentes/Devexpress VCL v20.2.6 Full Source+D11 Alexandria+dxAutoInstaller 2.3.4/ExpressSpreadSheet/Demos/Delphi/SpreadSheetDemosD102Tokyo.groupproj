@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoD102Tokyo">
+    <MSBuild Projects="Invoice\InvoiceDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomFunctionDemoD102Tokyo">
+    <MSBuild Projects="CustomFunction\CustomFunctionDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD102Tokyo">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoD102Tokyo">
+    <MSBuild Projects="Outline\OutlineDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoD102Tokyo">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoD102Tokyo">
+    <MSBuild Projects="Comments\CommentsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoD102Tokyo">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoD102Tokyo">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoD102Tokyo">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoD102Tokyo">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoD102Tokyo;CustomFunctionDemoD102Tokyo;CustomDrawDemoD102Tokyo;OutlineDemoD102Tokyo;ConditionalFormattingDemoD102Tokyo;CommentsDemoD102Tokyo;SimpleReportDemoD102Tokyo;HorizontalReportDemoD102Tokyo;MasterDetailReportDemoD102Tokyo;InvoiceReportDemoD102Tokyo" />
+  </Target>
+</Project>

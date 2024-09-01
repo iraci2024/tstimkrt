@@ -1,0 +1,80 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoD104Sydney">
+    <MSBuild Projects="BandedDemo\BandedDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoD104Sydney">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoD104Sydney">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD104Sydney">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoD104Sydney">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoD104Sydney">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD104Sydney">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD104Sydney">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoD104Sydney">
+    <MSBuild Projects="SummariesDemo\SummariesDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD104Sydney">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoD104Sydney">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD104Sydney">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD104Sydney">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoD104Sydney">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD104Sydney">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD104Sydney">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD104Sydney">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD104Sydney">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD104Sydney">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD104Sydney">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoD104Sydney;BandedFixedDemoD104Sydney;CheckGroupsDemoD104Sydney;CustomDrawDemoD104Sydney;EditorsInPlaceDemoD104Sydney;EditorsInPlaceValidationDemoD104Sydney;SimpleListDemoD104Sydney;SimpleTreeDemoD104Sydney;StylesMultiDemoD104Sydney;StylesSimpleDemoD104Sydney;SummariesDemoD104Sydney;UnboundModeDemoD104Sydney;VirtualModeDemoD104Sydney;ProviderModeDemoD104Sydney;DragDropDemoD104Sydney;ColumnsMultiEditorsDemoD104Sydney;FindPanelDemoD104Sydney;FilterControlDemoD104Sydney;FilterDropDownDemoD104Sydney;ScrollbarAnnotationsDemoD104Sydney;CalculatedFieldsDemoD104Sydney;CalculatedFilterItemsDemoD104Sydney" />
+  </Target>
+</Project>

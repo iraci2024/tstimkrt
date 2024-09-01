@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="sgcWebSocketsLazarus"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="sgcWebSockets"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\Source;..\Lazarus\Indy"/>
+        <UnitOutputDirectory Value="..\Lazarus"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+        </SyntaxOptions>
+      </Parsing>
+    </CompilerOptions>
+    <Description Value="sgcWebSockets"/>
+    <Version Major="4" Minor="5"/>
+    <Files Count="190">
+      <Item1>
+        <Filename Value="..\Source\sgcJSON.pas"/>
+        <UnitName Value="sgcJSON"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\Source\sgcWebSocket.pas"/>
+        <UnitName Value="sgcWebSocket"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\Source\sgcWebSocket_Classes.pas"/>
+        <UnitName Value="sgcWebSocket_Classes"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\Source\sgcWebSocket_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Client"/>
+      </Item4>
+      <Item6>
+        <Filename Value="..\Source\sgcWebSocket_Const.pas"/>
+        <UnitName Value="sgcWebSocket_Const"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\Source\sgcWebSocket_CustomClient.pas"/>
+        <UnitName Value="sgcWebSocket_CustomClient"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\Source\sgcWebSocket_CustomServer.pas"/>
+        <UnitName Value="sgcWebSocket_CustomServer"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\Source\sgcWebSocket_Extension_Base.pas"/>
+        <UnitName Value="sgcWebSocket_Extension_Base"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\Source\sgcWebSocket_Extension_DeflateFrame.pas"/>
+        <UnitName Value="sgcWebSocket_Extension_DeflateFrame"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\Source\sgcWebSocket_Extensions.pas"/>
+        <UnitName Value="sgcWebSocket_Extensions"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\Source\sgcWebSocket_Helpers.pas"/>
+        <UnitName Value="sgcWebSocket_Helpers"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\Source\sgcWebSocket_HTTPResponse.pas"/>
+        <UnitName Value="sgcWebSocket_HTTPResponse"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Base_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Base_Client"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Base_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Base_Message"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Base_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Base_Server"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Dataset_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Dataset_Client"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Dataset_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Dataset_Message"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Dataset_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Dataset_Server"/>
+      </Item19>
+      <Item20>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_sgc_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_sgc_Client"/>
+      </Item20>
+      <Item21>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_sgc_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_sgc_Message"/>
+      </Item21>
+      <Item22>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_sgc_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_sgc_Server"/>
+      </Item22>
+      <Item23>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_WAMP_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_WAMP_Client"/>
+      </Item23>
+      <Item24>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_WAMP_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_WAMP_Message"/>
+      </Item24>
+      <Item25>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_WAMP_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_WAMP_Server"/>
+      </Item25>
+      <Item26>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_WebRTC_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_WebRTC_Message"/>
+      </Item26>
+      <Item27>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_WebRTC_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_WebRTC_Server"/>
+      </Item27>
+      <Item28>
+        <Filename Value="..\Source\sgcWebSocket_Protocols.pas"/>
+        <UnitName Value="sgcWebSocket_Protocols"/>
+      </Item28>
+      <Item29>
+        <Filename Value="..\Source\sgcWebSocket_Resources.pas"/>
+        <UnitName Value="sgcWebSocket_Resources"/>
+      </Item29>
+      <Item30>
+        <Filename Value="..\Source\sgcWebSocket_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Server"/>
+      </Item30>
+      <Item31>
+        <Filename Value="..\Source\sgcWebSocket_Types.pas"/>
+        <UnitName Value="sgcWebSocket_Types"/>
+      </Item31>
+      <Item32>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Broker_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Broker_Client"/>
+      </Item32>
+      <Item33>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Broker_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Broker_Server"/>
+      </Item33>
+      <Item34>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Broker_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Broker_Message"/>
+      </Item34>
+      <Item35>
+        <Filename Value="..\Source\sgcWebSocket_Protocols_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="sgcWebSocket_Protocols_Reg"/>
+      </Item35>
+      <Item36>
+        <Filename Value="..\Source\sgcWebSocket_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="sgcWebSocket_Reg"/>
+      </Item36>
+      <Item37>
+        <Filename Value="..\Source\sgcWebSocket_Extension_PerMessage_Deflate.pas"/>
+        <UnitName Value="sgcWebSocket_Extension_PerMessage_Deflate"/>
+      </Item37>
+      <Item38>
+        <Filename Value="..\Source\sgcWebSocket_Server_Proxy.pas"/>
+        <UnitName Value="sgcWebSocket_Server_Proxy"/>
+      </Item38>
+      <Item39>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Files_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Files_Server"/>
+      </Item39>
+      <Item40>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Files_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Files_Client"/>
+      </Item40>
+      <Item41>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Files_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Files_Message"/>
+      </Item41>
+      <Item42>
+        <Filename Value="..\Source\sgcWebSocket_LoadBalancer_Client.pas"/>
+        <UnitName Value="sgcWebSocket_LoadBalancer_Client"/>
+      </Item42>
+      <Item43>
+        <Filename Value="..\Source\sgcWebSocket_LoadBalancer_Message.pas"/>
+        <UnitName Value="sgcWebSocket_LoadBalancer_Message"/>
+      </Item43>
+      <Item44>
+        <Filename Value="..\Source\sgcWebSocket_LoadBalancer_Server.pas"/>
+        <UnitName Value="sgcWebSocket_LoadBalancer_Server"/>
+      </Item44>
+      <Item45>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_MQTT_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_MQTT_Client"/>
+      </Item45>
+      <Item46>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_MQTT_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_MQTT_Message"/>
+      </Item46>
+      <Item47>
+        <Filename Value="..\Source\sgcWebSocket_API_Bitfinex.pas"/>
+        <UnitName Value="sgcWebSocket_API_Bitfinex"/>
+      </Item47>
+      <Item48>
+        <Filename Value="..\Source\sgcWebSocket_API_Blockchain.pas"/>
+        <UnitName Value="sgcWebSocket_API_Blockchain"/>
+      </Item48>
+      <Item49>
+        <Filename Value="..\Source\sgcWebSocket_API_Pusher.pas"/>
+        <UnitName Value="sgcWebSocket_API_Pusher"/>
+      </Item49>
+      <Item50>
+        <Filename Value="..\Source\sgcWebSocket_APIs.pas"/>
+        <UnitName Value="sgcWebSocket_APIs"/>
+      </Item50>
+      <Item51>
+        <Filename Value="..\Source\sgcWebSocket_APIs_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="sgcWebSocket_APIs_Reg"/>
+      </Item51>
+      <Item52>
+        <Filename Value="..\Source\sgcSTOMP.pas"/>
+        <UnitName Value="sgcSTOMP"/>
+      </Item52>
+      <Item53>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_STOMP_ActiveMQ_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_STOMP_ActiveMQ_Client"/>
+      </Item53>
+      <Item54>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_STOMP_Broker_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_STOMP_Broker_Client"/>
+      </Item54>
+      <Item55>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_STOMP_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_STOMP_Client"/>
+      </Item55>
+      <Item56>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_STOMP_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_STOMP_Message"/>
+      </Item56>
+      <Item57>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_STOMP_RabbitMQ_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_STOMP_RabbitMQ_Client"/>
+      </Item57>
+      <Item58>
+        <Filename Value="..\Source\sgcWebSocket_API_SignalR.pas"/>
+        <UnitName Value="sgcWebSocket_API_SignalR"/>
+      </Item58>
+      <Item59>
+        <Filename Value="..\Source\sgcWebSocket_API_Bittrex.pas"/>
+        <UnitName Value="sgcWebSocket_API_Bittrex"/>
+      </Item59>
+      <Item60>
+        <Filename Value="..\Source\sgcWebSocket_API_Binance.pas"/>
+        <UnitName Value="sgcWebSocket_API_Binance"/>
+      </Item60>
+      <Item61>
+        <Filename Value="..\Source\sgcWebSocket_API_Bitstamp.pas"/>
+        <UnitName Value="sgcWebSocket_API_Bitstamp"/>
+      </Item61>
+      <Item62>
+        <Filename Value="..\Source\sgcWebSocket_Classes_Sockets.pas"/>
+        <UnitName Value="sgcWebSocket_Classes_Sockets"/>
+      </Item62>
+      <Item63>
+        <Filename Value="..\Source\sgcWebSocket_Server_Base.pas"/>
+        <UnitName Value="sgcWebSocket_Server_Base"/>
+      </Item63>
+      <Item64>
+        <Filename Value="..\Source\sgcHTTP.pas"/>
+        <UnitName Value="sgcHTTP"/>
+      </Item64>
+      <Item65>
+        <Filename Value="..\Source\sgcTCP_Classes_Indy.pas"/>
+        <UnitName Value="sgcTCP_Classes_Indy"/>
+      </Item65>
+      <Item70>
+        <Filename Value="..\Source\sgcHTTP_Const.pas"/>
+        <UnitName Value="sgcHTTP_Const"/>
+      </Item70>
+      <Item73>
+        <Filename Value="..\Source\sgcWebSocket_API_Huobi.pas"/>
+        <UnitName Value="sgcWebSocket_API_Huobi"/>
+      </Item73>
+      <Item75>
+        <Filename Value="..\Source\sgcHTTP_OAuth_Client.pas"/>
+        <UnitName Value="sgcHTTP_OAuth_Client"/>
+      </Item75>
+      <Item76>
+        <Filename Value="..\Source\sgcHTTP_OAuth2_Client.pas"/>
+        <UnitName Value="sgcHTTP_OAuth2_Client"/>
+      </Item76>
+      <Item77>
+        <Filename Value="..\Source\sgcHTTP_Helpers.pas"/>
+        <UnitName Value="sgcHTTP_Helpers"/>
+      </Item77>
+      <Item78>
+        <Filename Value="..\Source\sgcWebSocket_API_Cex.pas"/>
+        <UnitName Value="sgcWebSocket_API_Cex"/>
+      </Item78>
+      <Item79>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_AppRTC_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_AppRTC_Server"/>
+      </Item79>
+      <Item80>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Presence_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Presence_Client"/>
+      </Item80>
+      <Item81>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Presence_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Presence_Message"/>
+      </Item81>
+      <Item82>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_Presence_Server.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_Presence_Server"/>
+      </Item82>
+      <Item83>
+        <Filename Value="..\Source\sgcWebSocket_API_Bitmex.pas"/>
+        <UnitName Value="sgcWebSocket_API_Bitmex"/>
+      </Item83>
+      <Item84>
+        <Filename Value="..\Source\sgcWebSocket_Classes_SyncObjs.pas"/>
+        <UnitName Value="sgcWebSocket_Classes_SyncObjs"/>
+      </Item84>
+      <Item85>
+        <Filename Value="..\Source\sgcWebSocket_Classes_Queues.pas"/>
+        <UnitName Value="sgcWebSocket_Classes_Queues"/>
+      </Item85>
+      <Item86>
+        <Filename Value="..\Source\sgcWebSocket_API_SignalRCore.pas"/>
+        <UnitName Value="sgcWebSocket_API_SignalRCore"/>
+      </Item86>
+      <Item87>
+        <Filename Value="..\Source\sgcWebSocket_API_Kraken.pas"/>
+        <UnitName Value="sgcWebSocket_API_Kraken"/>
+      </Item87>
+      <Item88>
+        <Filename Value="..\Source\sgcBase_Classes.pas"/>
+        <UnitName Value="sgcBase_Classes"/>
+      </Item88>
+      <Item89>
+        <Filename Value="..\Source\sgcBase_Const.pas"/>
+        <UnitName Value="sgcBase_Const"/>
+      </Item89>
+      <Item90>
+        <Filename Value="..\Source\sgcBase_Helpers.pas"/>
+        <UnitName Value="sgcBase_Helpers"/>
+      </Item90>
+      <Item91>
+        <Filename Value="..\Source\sgcIoT.pas"/>
+        <UnitName Value="sgcIoT"/>
+      </Item91>
+      <Item92>
+        <Filename Value="..\Source\sgcIoT_Classes.pas"/>
+        <UnitName Value="sgcIoT_Classes"/>
+      </Item92>
+      <Item94>
+        <Filename Value="..\Source\sgcHTTP_API_Coinbase.pas"/>
+        <UnitName Value="sgcHTTP_API_Coinbase"/>
+      </Item94>
+      <Item95>
+        <Filename Value="..\Source\sgcIoT_Client.pas"/>
+        <UnitName Value="sgcIoT_Client"/>
+      </Item95>
+      <Item96>
+        <Filename Value="..\Source\sgcIoT_MQTT_Client.pas"/>
+        <UnitName Value="sgcIoT_MQTT_Client"/>
+      </Item96>
+      <Item97>
+        <Filename Value="..\Source\sgcIoT_Amazon_MQTT_Client.pas"/>
+        <UnitName Value="sgcIoT_Amazon_MQTT_Client"/>
+      </Item97>
+      <Item98>
+        <Filename Value="..\Source\sgcIoT_Azure_MQTT_Client.pas"/>
+        <UnitName Value="sgcIoT_Azure_MQTT_Client"/>
+      </Item98>
+      <Item99>
+        <Filename Value="..\Source\sgcWebSocket_API_Coinbase.pas"/>
+        <UnitName Value="sgcWebSocket_API_Coinbase"/>
+      </Item99>
+      <Item100>
+        <Filename Value="..\Source\sgcIoT_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="sgcIoT_Reg"/>
+      </Item100>
+      <Item101>
+        <Filename Value="..\Source\sgcTCP_Classes.pas"/>
+        <UnitName Value="sgcTCP_Classes"/>
+      </Item101>
+      <Item102>
+        <Filename Value="..\Source\sgcBase_Sync.pas"/>
+        <UnitName Value="sgcBase_Sync"/>
+      </Item102>
+      <Item104>
+        <Filename Value="..\Source\sgcTCP_Client.pas"/>
+        <UnitName Value="sgcTCP_Client"/>
+      </Item104>
+      <Item106>
+        <Filename Value="..\Source\sgcWebSocket_API_FXCM.pas"/>
+        <UnitName Value="sgcWebSocket_API_FXCM"/>
+      </Item106>
+      <Item107>
+        <Filename Value="..\Source\sgcSSL_SChannel.pas"/>
+        <UnitName Value="sgcSSL_SChannel"/>
+      </Item107>
+      <Item108>
+        <Filename Value="..\Source\sgcSSL_SChannel_Indy.pas"/>
+        <UnitName Value="sgcSSL_SChannel_Indy"/>
+      </Item108>
+      <Item109>
+        <Filename Value="..\Source\sgcSSL_WinSSPI.pas"/>
+        <UnitName Value="sgcSSL_WinSSPI"/>
+      </Item109>
+      <Item110>
+        <Filename Value="..\Source\sgcHTTP_Classes.pas"/>
+        <UnitName Value="sgcHTTP_Classes"/>
+      </Item110>
+      <Item111>
+        <Filename Value="..\Source\sgcHTTP_Client.pas"/>
+        <UnitName Value="sgcHTTP_Client"/>
+      </Item111>
+      <Item112>
+        <Filename Value="..\Source\sgcHTTP_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="sgcHTTP_Reg"/>
+      </Item112>
+      <Item113>
+        <Filename Value="..\Source\sgcHTTP_Amazon_AWS.pas"/>
+        <UnitName Value="sgcHTTP_Amazon_AWS"/>
+      </Item113>
+      <Item114>
+        <Filename Value="..\Source\sgcHTTP_Amazon_SQS.pas"/>
+        <UnitName Value="sgcHTTP_Amazon_SQS"/>
+      </Item114>
+      <Item115>
+        <Filename Value="..\Source\sgcHTTP_Amazon_AWS_Signature.pas"/>
+        <UnitName Value="sgcHTTP_Amazon_AWS_Signature"/>
+      </Item115>
+      <Item116>
+        <Filename Value="..\Source\sgcWebSocket_API_Discord.pas"/>
+        <UnitName Value="sgcWebSocket_API_Discord"/>
+      </Item116>
+      <Item117>
+        <Filename Value="..\Source\sgcHTTP_API_Binance.pas"/>
+        <UnitName Value="sgcHTTP_API_Binance"/>
+      </Item117>
+      <Item118>
+        <Filename Value="..\Source\sgcHTTP_API.pas"/>
+        <UnitName Value="sgcHTTP_API"/>
+      </Item118>
+      <Item119>
+        <Filename Value="..\Source\sgcHTTP_Google_Cloud.pas"/>
+        <UnitName Value="sgcHTTP_Google_Cloud"/>
+      </Item119>
+      <Item120>
+        <Filename Value="..\Source\sgcHTTP_Google_PubSub.pas"/>
+        <UnitName Value="sgcHTTP_Google_PubSub"/>
+      </Item120>
+      <Item121>
+        <Filename Value="..\Source\sgcHTTP_API_Kraken.pas"/>
+        <UnitName Value="sgcHTTP_API_Kraken"/>
+      </Item121>
+      <Item122>
+        <Filename Value="..\Source\sgcLib_Telegram.pas"/>
+        <UnitName Value="sgcLib_Telegram"/>
+      </Item122>
+      <Item123>
+        <Filename Value="..\Source\sgcLib_Telegram_Client.pas"/>
+        <UnitName Value="sgcLib_Telegram_Client"/>
+      </Item123>
+      <Item132>
+        <Filename Value="..\Source\sgcHTTP_Google_Calendar.pas"/>
+        <UnitName Value="sgcHTTP_Google_Calendar"/>
+      </Item132>
+      <Item135>
+        <Filename Value="..\Source\sgcHTTP_JWT_Classes.pas"/>
+        <UnitName Value="sgcHTTP_JWT_Classes"/>
+      </Item135>
+      <Item136>
+        <Filename Value="..\Source\sgcHTTP_JWT_Client.pas"/>
+        <UnitName Value="sgcHTTP_JWT_Client"/>
+      </Item136>
+      <Item137>
+        <Filename Value="..\Source\sgcHTTP_JWT_RSA.pas"/>
+        <UnitName Value="sgcHTTP_JWT_RSA"/>
+      </Item137>
+      <Item138>
+        <Filename Value="..\Source\sgcHTTP_JWT_Helpers.pas"/>
+        <UnitName Value="sgcHTTP_JWT_Helpers"/>
+      </Item138>
+      <Item140>
+        <Filename Value="..\Source\sgcHTTP_JWT_Types.pas"/>
+        <UnitName Value="sgcHTTP_JWT_Types"/>
+      </Item140>
+      <Item141>
+        <Filename Value="..\Source\sgcUDP_Classes.pas"/>
+        <UnitName Value="sgcUDP_Classes"/>
+      </Item141>
+      <Item142>
+        <Filename Value="..\Source\sgcUDP_Classes_Indy.pas"/>
+        <UnitName Value="sgcUDP_Classes_Indy"/>
+      </Item142>
+      <Item143>
+        <Filename Value="..\Source\sgcUDP_Client.pas"/>
+        <UnitName Value="sgcUDP_Client"/>
+      </Item143>
+      <Item145>
+        <Filename Value="..\Source\sgcP2P.pas"/>
+        <UnitName Value="sgcP2P"/>
+      </Item145>
+      <Item146>
+        <Filename Value="..\Source\sgcUDP_Server.pas"/>
+        <UnitName Value="sgcUDP_Server"/>
+      </Item146>
+      <Item153>
+        <Filename Value="..\Source\sgcSocket_Classes.pas"/>
+        <UnitName Value="sgcSocket_Classes"/>
+      </Item153>
+      <Item154>
+        <Filename Value="..\Source\sgcSocket_Classes_Indy.pas"/>
+        <UnitName Value="sgcSocket_Classes_Indy"/>
+      </Item154>
+      <Item155>
+        <Filename Value="..\Source\sgcHTTP_JWT_HMAC.pas"/>
+        <UnitName Value="sgcHTTP_JWT_HMAC"/>
+      </Item155>
+      <Item156>
+        <Filename Value="..\Source\sgcSocket_Const.pas"/>
+        <UnitName Value="sgcSocket_Const"/>
+      </Item156>
+      <Item157>
+        <Filename Value="..\Source\sgcHTTP_MultipartFormData.pas"/>
+        <UnitName Value="sgcHTTP_MultipartFormData"/>
+      </Item157>
+      <Item158>
+        <Filename Value="..\Source\sgcHTTP_JWT_ES.pas"/>
+        <UnitName Value="sgcHTTP_JWT_ES"/>
+      </Item158>
+      <Item159>
+        <Filename Value="..\Source\sgcP2P_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="sgcP2P_Reg"/>
+      </Item159>	
+      <Item160>
+        <Filename Value="..\Source\sgcP2P.pas"/>
+        <UnitName Value="sgcP2P"/>
+      </Item160>	  
+      <Item161>
+        <Filename Value="..\Source\sgcP2P_STUN_Classes.pas"/>
+        <UnitName Value="sgcP2P_STUN_Classes"/>
+      </Item161>
+      <Item162>
+        <Filename Value="..\Source\sgcP2P_STUN_Client.pas"/>
+        <UnitName Value="sgcP2P_STUN_Client"/>
+      </Item162>
+      <Item163>
+        <Filename Value="..\Source\sgcP2P_STUN_Helpers.pas"/>
+        <UnitName Value="sgcP2P_STUN_Helpers"/>
+      </Item163>
+      <Item164>
+        <Filename Value="..\Source\sgcP2P_STUN_Server.pas"/>
+        <UnitName Value="sgcP2P_STUN_Server"/>
+      </Item164>
+      <Item165>
+        <Filename Value="..\Source\sgcP2P_STUN_Types.pas"/>
+        <UnitName Value="sgcP2P_STUN_Types"/>
+      </Item165>
+      <Item171>
+        <Filename Value="..\Source\sgcWebSocket_API_FTX.pas"/>
+        <UnitName Value="sgcWebSocket_API_FTX"/>
+      </Item171>
+      <Item172>
+        <Filename Value="..\Source\sgcHTTP_API_FTX.pas"/>
+        <UnitName Value="sgcHTTP_API_FTX"/>
+      </Item172>
+      <Item173>
+        <Filename Value="..\Source\sgcLib_RCON_Client.pas"/>
+        <UnitName Value="sgcLib_RCON_Client"/>
+      </Item173>
+      <Item174>
+        <Filename Value="..\Source\sgcHTTP_API_Cryptohopper.pas"/>
+        <UnitName Value="sgcHTTP_API_Cryptohopper"/>
+      </Item174>
+      <Item175>
+        <Filename Value="..\Source\sgcLibs.pas"/>
+        <UnitName Value="sgcLibs"/>
+      </Item175>
+      <Item176>
+        <Filename Value="..\Source\sgcWebSocket_Server_API_RTCMultiConnection.pas"/>
+        <UnitName Value="sgcWebSocket_Server_API_RTCMultiConnection"/>
+      </Item176>
+      <Item177>
+        <Filename Value="..\Source\sgcWebSocket_Server_API_Base.pas"/>
+        <UnitName Value="sgcWebSocket_Server_API_Base"/>
+      </Item177>
+      <Item178>
+        <Filename Value="..\Source\sgcWebSocket_Server_API_SocketIO.pas"/>
+        <UnitName Value="sgcWebSocket_Server_API_SocketIO"/>
+      </Item178>
+      <Item179>
+        <Filename Value="..\Source\sgcWebSocket_Server_APIs.pas"/>
+        <UnitName Value="sgcWebSocket_Server_APIs"/>
+      </Item179>
+      <Item180>
+        <Filename Value="..\Source\sgcAMQP.pas"/>
+        <UnitName Value="sgcAMQP"/>
+      </Item180>
+      <Item181>
+        <Filename Value="..\Source\sgcAMQP_Classes.pas"/>
+        <UnitName Value="sgcAMQP_Classes"/>
+      </Item181>
+      <Item182>
+        <Filename Value="..\Source\sgcAMQP_Client.pas"/>
+        <UnitName Value="sgcAMQP_Client"/>
+      </Item182>
+      <Item183>
+        <Filename Value="..\Source\sgcAMQP_Const.pas"/>
+        <UnitName Value="sgcAMQP_Const"/>
+      </Item183>
+      <Item184>
+        <Filename Value="..\Source\sgcAMQP_Helpers.pas"/>
+        <UnitName Value="sgcAMQP_Helpers"/>
+      </Item184>
+      <Item185>
+        <Filename Value="..\Source\sgcHTTP_API_Bitmex.pas"/>
+        <UnitName Value="sgcHTTP_API_Bitmex"/>
+      </Item185>
+	  <Item188>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_AMQP_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_AMQP_Client"/>
+      </Item188>
+      <Item189>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_AMQP_Message.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_AMQP_Message"/>
+      </Item189>	
+      <Item190>
+        <Filename Value="..\Source\sgcWebSocket_Protocol_AMQP_RabbitMQ_Client.pas"/>
+        <UnitName Value="sgcWebSocket_Protocol_AMQP_RabbitMQ_Client"/>
+      </Item190>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

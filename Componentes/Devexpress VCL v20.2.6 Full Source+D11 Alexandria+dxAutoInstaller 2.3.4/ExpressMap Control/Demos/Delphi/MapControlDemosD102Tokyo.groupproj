@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DataProvidersD102Tokyo">
+    <MSBuild Projects="DataProviders\DataProvidersD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="WorldWeatherD102Tokyo">
+    <MSBuild Projects="WorldWeather\WorldWeatherD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="BingServicesD102Tokyo">
+    <MSBuild Projects="BingServices\BingServicesD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ShapefileSupportD102Tokyo">
+    <MSBuild Projects="ShapefileSupport\ShapefileSupportD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DataProvidersD102Tokyo;WorldWeatherD102Tokyo;BingServicesD102Tokyo;ShapefileSupportD102Tokyo" />
+  </Target>
+</Project>

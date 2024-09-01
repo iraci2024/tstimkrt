@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="DataProvidersDXE6">
+    <MSBuild Projects="DataProviders\DataProvidersDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="WorldWeatherDXE6">
+    <MSBuild Projects="WorldWeather\WorldWeatherDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="BingServicesDXE6">
+    <MSBuild Projects="BingServices\BingServicesDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="ShapefileSupportDXE6">
+    <MSBuild Projects="ShapefileSupport\ShapefileSupportDXE6.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="DataProvidersDXE6;WorldWeatherDXE6;BingServicesDXE6;ShapefileSupportDXE6" />
+  </Target>
+</Project>

@@ -1,0 +1,23 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="Dbtree_D100Seattle">
+    <MSBuild Projects="DBTree\Dbtree_D100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Dbtree_fD100Seattle">
+    <MSBuild Projects="DBTree_F\Dbtree_fD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="DbtreditD100Seattle">
+    <MSBuild Projects="TreeEdit\DbtreditD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="Dbtree_D100Seattle;Dbtree_fD100Seattle;DbtreditD100Seattle" />
+  </Target>
+</Project>

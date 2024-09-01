@@ -1,0 +1,56 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoDXE2">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoDXE2">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoDXE2">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoDXE2">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoDXE2">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoDXE2">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoDXE2">
+    <MSBuild Projects="STYLESSIMPLEDEMO\StylesSimpleDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoDXE2">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoDXE2">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoDXE2">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoDXE2">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoDXE2">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoDXE2">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoDXE2">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoDXE2;EditorsInPlaceDemoDXE2;ProviderModeDemoDXE2;RTTIInspectorDemoDXE2;SimpleVerticalGridDemoDXE2;StylesMultiDemoDXE2;StylesSimpleDemoDXE2;RowsMultiEditorsDemoDXE2;EditorsInPlaceValidationDemoDXE2;FindPanelDemoDXE2;FilterDropDownDemoDXE2;ScrollbarAnnotationsDemoDXE2;CalculatedFieldsDemoDXE2;CalculatedFilterItemsDemoDXE2" />
+  </Target>
+</Project>

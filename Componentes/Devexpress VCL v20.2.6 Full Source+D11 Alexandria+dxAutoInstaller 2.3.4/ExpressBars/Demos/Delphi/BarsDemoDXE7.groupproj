@@ -1,0 +1,38 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EBar2000DemoDXE7">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="BackgroundDemoDXE7">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemoDXE7">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemoDXE7">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="BarNotepadDemoDXE7">
+    <MSBuild Projects="BarNotepadDemo\BarNotepadDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemoDXE7">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="SampleDockingDXE7">
+    <MSBuild Projects="SampleDocking\SampleDockingDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="NotesDemoDXE7">
+    <MSBuild Projects="NotesDemo\NotesDemoDXE7.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EBar2000DemoDXE7;BackgroundDemoDXE7;DockingMegaDemoDXE7;InPlaceEditorsDemoDXE7;BarNotepadDemoDXE7;RibbonNotepadDemoDXE7;SampleDockingDXE7;NotesDemoDXE7" />
+  </Target>
+</Project>

@@ -1,0 +1,70 @@
+package dclcxGridWizardEMFExtensionRS26;
+
+{$R *.res}
+{$IFDEF DXDEBUGMODE}
+  {$DEBUGINFO ON}
+  {$LOCALSYMBOLS ON}
+  {$OPTIMIZATION OFF}
+  {$STACKFRAMES ON}
+{$ELSE}
+  {$DEBUGINFO OFF}
+  {$LOCALSYMBOLS OFF}
+  {$OPTIMIZATION ON}
+  {$STACKFRAMES OFF}
+{$ENDIF}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ExpressEntityMapping Framework Extension for ExpressQuantumGrid Wizard by Developer Express Inc.'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vcldb,
+  vclwinx,
+  vclimg,
+  vclx,
+  dxCoreRS26,
+  dxServerModeRS26,
+  dxGDIPlusRS26,
+  cxLibraryRS26,
+  cxExportRS26,
+  cxGridRS26,
+  dxWizardControlRS26,
+  dcldb,
+  designide,
+  vcldesigner,
+  dcldxCoreRS26,
+  dcldxServerModeRS26,
+  dclcxLibraryRS26,
+  dclcxGridRS26,
+  dcldxWizardControlRS26,
+  dbrtl,
+  dcldxEMFRS26,
+  dxEMFRS26,
+  cxGridEMFRS26,
+  dclcxGridWizardRS26,
+  dclcxGridEMFRS26;
+
+contains
+  cxGridWizardEMFTableViewHelper,
+  cxGridWizardEMFViewsDataSourcePage,
+  cxGridWizardEMFViewsSelectItemsForDisplayPage;
+
+end.

@@ -1,0 +1,218 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ColumnsMultiEditorsDemoD104Sydney">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoD104Sydney">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoD104Sydney">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoD104Sydney">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoD104Sydney">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD104Sydney">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoD104Sydney">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD104Sydney">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoD104Sydney">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoD104Sydney">
+    <MSBuild Projects="GridModeDemo\GridModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoD104Sydney">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="IssueListD104Sydney">
+    <MSBuild Projects="IssueList\IssueListD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoD104Sydney">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoD104Sydney">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoD104Sydney">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoD104Sydney">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoD104Sydney">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD104Sydney">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD104Sydney">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoD104Sydney">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoD104Sydney">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoD104Sydney">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoD104Sydney">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD104Sydney">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoD104Sydney">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoD104Sydney">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoD104Sydney">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoD104Sydney">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewTableSimpleDemoD104Sydney">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoD104Sydney">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoD104Sydney">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoD104Sydney">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoD104Sydney">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoD104Sydney">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoD104Sydney">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoD104Sydney">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoD104Sydney">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoD104Sydney">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoD104Sydney">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoD104Sydney">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoD104Sydney">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoD104Sydney">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD104Sydney">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoD104Sydney">
+    <MSBuild Projects="FilterDemo\FilterDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD104Sydney">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoD104Sydney">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoD104Sydney">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoD104Sydney">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoD104Sydney">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoD104Sydney">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoD104Sydney">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoD104Sydney">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoD104Sydney">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD104Sydney">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoD104Sydney">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoD104Sydney">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoD104Sydney">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoD104Sydney">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingD104Sydney">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoD104Sydney">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoD104Sydney">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoD104Sydney">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoD104Sydney">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD104Sydney">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD104Sydney">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD104Sydney">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowLayoutDemoD104Sydney">
+    <MSBuild Projects="CustomRowLayoutDemo\CustomRowLayoutDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ColumnsMultiEditorsDemoD104Sydney;ColumnsShareDemoD104Sydney;ColumnsSimpleDemoD104Sydney;CustomDrawCardViewDemoD104Sydney;CustomDrawTableViewDemoD104Sydney;DragDropDemoD104Sydney;EditorsInPlaceDemoD104Sydney;FilterByCodeDemoD104Sydney;FilterControlDemoD104Sydney;GridMenuViewsDemoD104Sydney;GridModeDemoD104Sydney;InplaceEditFormDemoD104Sydney;IssueListD104Sydney;MasterDetailCardDemoD104Sydney;MasterDetailDemoD104Sydney;MasterDetailMultiDemoD104Sydney;MasterDetailTableDemoD104Sydney;StylesCardViewDemoD104Sydney;StylesMultiDemoD104Sydney;StylesSimpleDemoD104Sydney;SummaryFooterDemoD104Sydney;SummaryGroupDemoD104Sydney;SummaryMultiDemoD104Sydney;UnboundExternalDataDemoD104Sydney;UnboundModeDemoD104Sydney;UnboundSimpleDemoD104Sydney;ViewBandedDemoD104Sydney;ViewBandedFixedDemoD104Sydney;ViewCardSimpleDemoD104Sydney;ViewTableSimpleDemoD104Sydney;CellLevelMultiselectDemoD104Sydney;CustomRowHeightDemoD104Sydney;Office11GroupRowStyleDemoD104Sydney;UnboundColumnsDemoD104Sydney;UnboundDesignDefinedDemoD104Sydney;ViewCardDemoD104Sydney;ViewNestedBandsDemoD104Sydney;UnboundListDemoD104Sydney;ViewChartDemoD104Sydney;ViewChartStackedDemoD104Sydney;MasterDetailChartDemoD104Sydney;CardLayoutDemoD104Sydney;ChartDataDrillingDemoD104Sydney;FindPanelDemoD104Sydney;FilterDemoD104Sydney;FilterDropDownDemoD104Sydney;LayoutViewDemoD104Sydney;LayoutViewCarouselModeDemoD104Sydney;ServerModeADODemoD104Sydney;ServerModeDBXDemoD104Sydney;ServerModeFireDACDemoD104Sydney;ServerModeADOQueryDemoD104Sydney;ServerModeDBXQueryDemoD104Sydney;ServerModeFireDACQueryDemoD104Sydney;EditorsInPlaceValidationDemoD104Sydney;RatingControlDemoD104Sydney;FixedGroupsDemoD104Sydney;SparklinesDemoD104Sydney;WinExplorerViewDemoD104Sydney;LayoutViewDemoGroupScrollingD104Sydney;MergedGroupsDemoD104Sydney;CheckBoxMultiSelectDemoD104Sydney;FixedDataRowsDemoD104Sydney;ConditionalFormattingDemoD104Sydney;ScrollbarAnnotationsDemoD104Sydney;CalculatedFieldsDemoD104Sydney;CalculatedFilterItemsDemoD104Sydney;CustomRowLayoutDemoD104Sydney" />
+  </Target>
+</Project>

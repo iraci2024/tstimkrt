@@ -1,0 +1,70 @@
+package dclcxGridWizardEMFExtensionRS27;
+
+{$R *.res}
+{$IFDEF DXDEBUGMODE}
+  {$DEBUGINFO ON}
+  {$LOCALSYMBOLS ON}
+  {$OPTIMIZATION OFF}
+  {$STACKFRAMES ON}
+{$ELSE}
+  {$DEBUGINFO OFF}
+  {$LOCALSYMBOLS OFF}
+  {$OPTIMIZATION ON}
+  {$STACKFRAMES OFF}
+{$ENDIF}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ExpressEntityMapping Framework Extension for ExpressQuantumGrid Wizard by Developer Express Inc.'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vcldb,
+  vclwinx,
+  vclimg,
+  vclx,
+  dxCoreRS27,
+  dxServerModeRS27,
+  dxGDIPlusRS27,
+  cxLibraryRS27,
+  cxExportRS27,
+  cxGridRS27,
+  dxWizardControlRS27,
+  dcldb,
+  designide,
+  vcldesigner,
+  dcldxCoreRS27,
+  dcldxServerModeRS27,
+  dclcxLibraryRS27,
+  dclcxGridRS27,
+  dcldxWizardControlRS27,
+  dbrtl,
+  dcldxEMFRS27,
+  dxEMFRS27,
+  cxGridEMFRS27,
+  dclcxGridWizardRS27,
+  dclcxGridEMFRS27;
+
+contains
+  cxGridWizardEMFTableViewHelper,
+  cxGridWizardEMFViewsDataSourcePage,
+  cxGridWizardEMFViewsSelectItemsForDisplayPage;
+
+end.

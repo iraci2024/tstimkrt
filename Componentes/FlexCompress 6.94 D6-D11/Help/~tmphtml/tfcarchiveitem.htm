@@ -1,0 +1,133 @@
+<html>
+<head>
+   <title>TFXCArchiveItem</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_TFCArchiveItem">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>TFXCArchiveItem
+<br>
+</b></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Describes parameters of the file stored within the archive file.<b>
+<br>
+</b><b>
+<br>
+Unit</b>
+<br>
+FlexCompress
+<br>
+
+<br>
+<b>type </b>TFXCArchiveItem = <b>packed record
+<br>
+</b>  FileName:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WideString;
+<br>
+  StoredPath:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WideString;
+<br>
+  CompressedSize:&nbsp;&nbsp;&nbsp;Integer;
+<br>
+  UncompressedSize:&nbsp;&nbsp;&nbsp;Integer;
+<br>
+  CompressionRate:&nbsp;&nbsp;&nbsp;Double;
+<br>
+  Encrypted:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boolean;
+<br>
+  LastModFileDate:&nbsp;&nbsp;&nbsp;Word;
+<br>
+  LastModFileTime:&nbsp;&nbsp;&nbsp;Word;
+<br>
+  CRC:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LongInt;
+<br>
+  ExternalFileAttributes:&nbsp;&nbsp;&nbsp;LongWord;
+<br>
+  Comment:                   String;
+<br>
+  Handle:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TInternalSearchRec;&nbsp;&nbsp;&nbsp;
+<br>
+<b>end;
+<br>
+</b>
+<br>
+<b>Description</b>
+<br>
+
+<br>
+TFXCArchiveItem value indicates parameters of the file found by <a href=findfirst.htm>FindFirst</a> or <a href=findnext.htm>FindNext</a>.
+<br>
+
+<br>
+FileName is a name of the file stored within the archive.
+<br>
+
+<br>
+StoredPath is a path to this file inside the archive. 
+<br>
+
+<br>
+CompressedSize is a size in bytes of the compressed file.
+<br>
+
+<br>
+UncompressedSize is a size in bytes of the uncompressed file.
+<br>
+
+<br>
+CompressionRate indicate compression rate for this file. 
+<br>
+CompressionRate = (1 - CompressedSize / UncompressedSize) * 100.0
+<br>
+
+<br>
+Encrypted indicates if file is encrypted with <a href=password.htm>Password</a>.
+<br>
+
+<br>
+LastModFileDate and LastModFileTime indicates a last modification date of the file. These values stored in DOS date format. It can be converted to a TDateTime value using FileDateToDateTime. Here is small example of such conversion:
+<br>
+  FileDate := ArchiveItem.LastModFileDate shl 16 +
+<br>
+    ArchiveItem.LastModFileTime;
+<br>
+  ShowMessage(DateTimeToStr(FileDateToDateTime(FileDate)));
+<br>
+
+<br>
+CRC is a CRC32 check sum of the compressed file.
+<br>
+
+<br>
+ExternalFileAttributes indicates extermal file attributes. This value can be any combination of faReadOnly, faHidden, faSysFile, faVolumeID, faDirectory, faArchive constants defined in SysUtils. If <a href=options.htm>Options</a>.SetAttributes is set to True then ExtractFiles will set these attributes to the extracted file.
+<br>
+
+<br>
+Comment is a comment of the file stored in the archive.
+<br>
+
+<br>
+<b>Note:</b>    Do not modify Handle field of this record. It is used by <a href=findfirst.htm>FindFirst</a> and <a href=findnext.htm>FindNext</a> methods.
+<br>
+</span>
+
+</body>
+</html>

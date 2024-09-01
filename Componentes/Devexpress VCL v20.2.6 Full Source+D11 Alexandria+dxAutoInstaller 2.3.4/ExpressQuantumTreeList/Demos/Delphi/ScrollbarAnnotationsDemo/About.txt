@@ -1,0 +1,5 @@
+Scrollbar annotations are clickable colored marks that speed up navigation between specific visible nodes. Predefined annotations denote validation errors, selected nodes, search results, and the focused node. This demo also includes custom scrollbar annotations designed to mark up nodes that meet specific criteria.
+
+Click a scrollbar annotation to move focus to the corresponding node. The Shift+F4 and F4 keystrokes specifically move focus back and forth between validation errors.
+
+To reduce the number of simultaneously visible annotations, uncheck various options in the "Scrollbar Annotation Options" menu. The menu includes visibility options for all predefined and custom annotations. Click Scrollbar Annotation Options | Custom Annotation Settings... to invoke the "Custom Annotation Settings" dialog that includes color, alignment and other settings of all custom annotations in this demo. 

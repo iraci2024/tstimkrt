@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{84581324-8C30-4FAF-B089-7167B8B8DEE9}</ProjectGuid>
+    <MainSource>SummaryGroupDemoDXE8.dpr</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <ProjectVersion>13.4</ProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <UsePackages>true</UsePackages>
+    <DCC_UsePackage>dxPScxPCProdRS22;dxPSdxFCLnkRS22;dxPDFViewerRS22;cxPivotGridRS22;dxFlowChartRS22;dxSkinOffice2016DarkRS22;dxSkinLondonLiquidSkyRS22;cxSchedulerWebServiceStorageRS22;dxSkinOffice2010SilverRS22;cxPageControldxBarPopupMenuRS22;dxSkinMoneyTwinsRS22;dxSkinPumpkinRS22;dxSkinOffice2013DarkGrayRS22;dxGaugeControlRS22;dxPSdxMapControlLnkRS22;dxNavBarRS22;dxFlowChartAdvancedCustomizeFormRS22;dxSkinDarkRoomRS22;dxSkinHighContrastRS22;dxPSdxDBTVLnkRS22;dxSkinSevenClassicRS22;dxSpreadSheetCoreConditionalFormattingDialogsRS22;dxPSdxGaugeControlLnkRS22;dxSkinOffice2007PinkRS22;dxSkinOffice2010BlackRS22;cxLibraryRS22;cxExportRS22;dxSkinSharpPlusRS22;dxSkinSevenRS22;dxPSCoreRS22;dxRibbonRS22;dxFlowChartLayoutsRS22;dxBarRS22;dxRichEditControlOpenXMLFormatRS22;dxRichEditControlDocFormatRS22;dxOrgChartAdvancedCustomizeFormRS22;dxSkinStardustRS22;dxSpreadSheetReportDesignerRS22;dxPSRichEditControlLnkRS22;dxSkinOffice2013WhiteRS22;dxSkinGlassOceansRS22;dxBarDBNavRS22;dxSkinOffice2019BlackRS22;dxRichEditDocumentModelRS22;dxDockingRS22;dxSkinSpringTimeRS22;dxSkinSummer2008RS22;dxWizardControlRS22;dxRichEditControlHtmlFormatRS22;cxGridEMFRS22;dxSkinValentineRS22;dxSkinBlackRS22;dxPScxTLLnkRS22;dxGDIPlusRS22;dxPSdxLCLnkRS22;dxPScxVGridLnkRS22;dxRichEditCoreRS22;dxSkinWhiteprintRS22;dxBarExtItemsRS22;dxSkinOffice2007SilverRS22;dxPSdxDBOCLnkRS22;dxCoreRS22;dxGanttControlRS22;cxVerticalGridRS22;dxSkinBlueRS22;dxSkinSharpRS22;dxPSLnksRS22;dxSkinOffice2019ColorfulRS22;dxSkinMetropolisRS22;cxGridRS22;dxPSdxOCLnkRS22;cxSchedulerTreeBrowserRS22;dxtrmdRS22;dxSkinCaramelRS22;dxSkinFoggyRS22;dxSpreadSheetRS22;dxEMFDataRS22;dxGanttControlSchedulerStorageImporterRS22;dxEMFRS22;dxSkinDarkSideRS22;dxBarExtDBItemsRS22;cxSchedulerRibbonStyleEventEditorRS22;cxTreeListRS22;dxPSdxSpreadSheetLnkRS22;dxPScxSchedulerLnkRS22;dxHttpIndyRequestRS22;dxMapControlRS22;dxADOEMFRS22;dxRichEditControlCoreRS22;dxServerModeRS22;dxSkinBlueprintRS22;dxSkinOffice2019DarkGrayRS22;dxCloudServiceLibraryRS22;dxRibbonCustomizationFormRS22;dxSkinOffice2007BlueRS22;dxPSdxPDFViewerLnkRS22;dxSkinOffice2010BlueRS22;dxDBOrRS22;dxSpreadSheetConditionalFormattingDialogsRS22;dxSkinMetropolisDarkRS22;dxPScxExtCommonRS22;dxSkinCoffeeRS22;dxSkinOffice2007BlackRS22;dxSkinsCoreRS22;dxSkinVisualStudio2013BlueRS22;dxSkiniMaginaryRS22;dxSkinXmas2008BlueRS22;dxRichEditControlRS22;dxSkinTheAsphaltWorldRS22;dxSkinVisualStudio2013DarkRS22;dxSkinOffice2019WhiteRS22;dxSkinVisualStudio2013LightRS22;dxSkinDevExpressDarkStyleRS22;dxdbtrRS22;dxSkinOffice2013LightGrayRS22;dxPSPrVwRibbonRS22;dxPScxCommonRS22;dxSpreadSheetCoreRS22;dxSkinLiquidSkyRS22;dxSkinOffice2007GreenRS22;cxPivotGridChartRS22;dxOrgCRS22;dxSkinVS2010RS22;dxPSPrVwAdvRS22;dxmdsRS22;dxFlowChartDesignerRS22;dxSkinSilverRS22;dxSkinBasicRS22;dxSkinOffice2016ColorfulRS22;cxPivotGridOLAPRS22;cxTreeListdxBarPopupMenuRS22;dxSkinLilianRS22;dxSpellCheckerRS22;dxPScxGridLnkRS22;dxSkinTheBezierRS22;cxSchedulerRS22;dxTabbedMDIRS22;cxSchedulerGridRS22;dxSkinMcSkinRS22;dxComnRS22;dxTileControlRS22;dxSkinDevExpressStyleRS22;dxPScxPivotGridLnkRS22</DCC_UsePackage>
+    <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+    <DCC_Namespace>WinApi;Vcl;System;System.Win;Vcl.Imaging;Data;Data.Win;Bde;Xml;Xml.Win;Vcl.Shell;VclTee;Datasnap;IBX;Vcl.Samples;$(DCC_Namespace)</DCC_Namespace>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <Delphi.Personality>
+        <Source>
+          <Source Name="MainSource">SummaryGroupDemoDXE8.dpr</Source>
+        </Source>
+      </Delphi.Personality>
+      <Platforms>
+        <Platform value="Win32">True</Platform>
+        <Platform value="Win64">True</Platform>
+      </Platforms>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

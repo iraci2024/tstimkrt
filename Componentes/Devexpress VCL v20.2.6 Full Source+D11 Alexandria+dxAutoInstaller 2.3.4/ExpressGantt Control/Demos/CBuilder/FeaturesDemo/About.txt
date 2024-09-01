@@ -1,0 +1,22 @@
+The control consists of three views:
+- Chart View
+- Resource Sheet
+- Timeline
+
+In this demo you can switch between tabs to change the view (Options | Active View).
+
+The Chart View consists of the task sheet and chart. Sheet cells store task information (schedule mode, name, duration, etc). The Chart displays horizontal bars whose appearance depends on the sheet's content.
+In the Chart View, you can:
+- Add tasks. Right-click an empty row in the sheet and select the "Insert Task" menu item, or press the Insert key. This creates an empty task. Specify task duration in the sheet's cell to display a horizontal bar in the chart.
+- Customize task settings. Double click a task in the chart or sheet to invoke the "Task Information" dialog where you can specify the task name, start/finish dates, progress, etc.
+- Group tasks with summaries. A summary task is a task with subtasks and is shown as a horizontal square bracket that groups related tasks. To convert a task to a summary task, indent (Shift+Alt+Right Arrow) the task that follows a task you want to make a summary task. The target task becomes a summary task.
+- Denote important dates in a project with milestones. You should create a milestone as a task with zero duration. To do this, input "0" into the "Duration" column's cell or the same field in the "Task Information dialog".
+- Create dependencies between tasks. Hover the mouse pointer over a task you want make a predecessor and drag a connector to a successor task. This creates the "Finish-To-Start" dependency.
+- Adjust dependency settings. Double-click a dependency to invoke the "Task Dependency" dialog where you can specify the dependency type and lag time.
+
+The Resource Sheet View allows you to manage task resources. You can add custom resources or modify/delete existing resources. To append a new resource to the list, press the "Insert" key. To delete a resource, click a cell that contains a row number and press the "Delete" key.
+
+The Timeline View allows you to track project progress. The timeline displays project events in chronological order. You can track which tasks are completed, in progress, or due to finish in the future.
+
+Miscellaneous:
+The control can import and export Gantt charts in XML format. Click File | Open... to load a Gantt chart created in a third-party application. To save changes, click File | Save As...

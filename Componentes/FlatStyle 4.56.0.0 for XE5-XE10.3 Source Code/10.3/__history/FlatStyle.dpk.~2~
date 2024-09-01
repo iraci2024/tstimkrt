@@ -1,0 +1,61 @@
+package FlatStyle;
+
+{$R *.res}
+{$R 'FlatEnrol.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'FlatStyle 4.5x Components'}
+{$IMPLICITBUILD ON}
+
+requires
+  VCL,
+  VCLDB,
+  VCLIMG,
+  RTL,
+  DSNAP,
+  VCLACTNBAND,
+  VCLX,
+  DESIGNIDE,
+  DBRTL,
+  VclSmp;
+
+contains
+  FlatUtils in 'FlatUtils.pas',
+  FlatSkins in 'FlatSkins.pas',
+  FlatEnrol in 'FlatEnrol.pas',
+  FlatVersion in 'FlatVersion.pas' {VersionForm},
+  FlatEditor in 'FlatEditor.pas',
+  FlatAttrib in 'FlatAttrib.pas' {MaskForm},
+  FlatWatfm in 'FlatWatfm.pas' {WaterForm},
+  FlatSysex in 'FlatSysex.pas',
+  FlatExcfm in 'FlatExcfm.pas' {ExcelForm},
+  FlatExcpt in 'FlatExcpt.pas' {FieldForm},
+  FlatCnsts in 'FlatCnsts.pas',
+  FlatVideo in 'FlatVideo.pas',
+  FlatWatet in 'FlatWatet.pas',
+  FlatCtrdb in 'FlatCtrdb.pas',
+  FlatCtrls in 'FlatCtrls.pas';
+
+end.

@@ -1,0 +1,99 @@
+<html>
+<head>
+   <title>TFXCFileShareMode</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_TFCFileShareMode">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>TFXCFileShareMode type</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Describes how the files being added to the archive will be opened for simulatenous access.<b>
+<br>
+</b><b>
+<br>
+Unit</b>
+<br>
+FlexCompress
+<br>
+
+<br>
+<b>type </b>TFXCFileShareMode = (smShareCompat, smShareExclusive, smShareDenyWrite,
+<br>
+                      smShareDenyRead, smShareDenyNone); 
+<br>
+<b>Description</b>
+<br>
+
+<br>
+TFXCFileShareMode value specifies how the files being <a href=addfiles.htm>added</a> to the archive will be opened for simulatenous access. This type corresponds open file mode constants defined in Classes unit for TFileStream.Create.
+<br>
+<b>
+<br>
+</b><a href=options.htm>Options</a>.ShareMode can be set to any of the following values:
+<br>
+<table border="0" cellpadding="1" cellspacing="0"><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Value                             </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Meaning                                                                                   </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">smShareCompat<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:MS Sans Serif; font-size:10pt; color:#000000">Sharing is compatible with the way FCBs are opened<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">smShareExclusive<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Other applications can not open the file for any reason<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">smShareDenyWrite<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:MS Sans Serif; font-size:10pt; color:#000000">Other applications can open the file for reading but not for writing<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">smShareDenyRead
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Other applications can open the file for writing but not for reading
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">smShareDenyNone
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">No attempt is made to prevent other applications from reading from or writing to the file
+<br>
+</span></td></tr></table>
+<br>
+</span>
+
+</body>
+</html>

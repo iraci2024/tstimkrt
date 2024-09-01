@@ -1,0 +1,77 @@
+package sgcWebSocketsAppMethod;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'SGC WebSockets'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl
+  ,dbrtl
+  ,IndyCore,
+  ,IndySystem,
+  ,IndyProtocols
+  ;
+
+contains
+  sgcJSON in '..\Source\sgcJSON.pas',
+  sgcWebSocket_Protocols in '..\Source\sgcWebSocket_Protocols.pas',
+  sgcWebSocket_Classes in '..\Source\sgcWebSocket_Classes.pas',
+  sgcWebSocket_Client in '..\Source\sgcWebSocket_Client.pas',
+  sgcWebSocket_Const in '..\Source\sgcWebSocket_Const.pas',
+  sgcWebSocket_CustomClient in '..\Source\sgcWebSocket_CustomClient.pas',
+  sgcWebSocket_CustomServer in '..\Source\sgcWebSocket_CustomServer.pas',
+  sgcWebSocket_Extensions in '..\Source\sgcWebSocket_Extensions.pas',
+  sgcWebSocket_Extension_Base in '..\Source\sgcWebSocket_Extension_Base.pas',
+  sgcWebSocket_Extension_DeflateFrame in '..\Source\sgcWebSocket_Extension_DeflateFrame.pas',
+  sgcWebSocket_Extension_PerMessage_Deflate in '..\Source\sgcWebSocket_Extension_PerMessage_Deflate.pas',
+  sgcWebSocket_Helpers in '..\Source\sgcWebSocket_Helpers.pas',
+  sgcWebSocket_HTTPResponse in '..\Source\sgcWebSocket_HTTPResponse.pas',
+  sgcWebSocket_Protocol_Base_Message in '..\Source\sgcWebSocket_Protocol_Base_Message.pas',
+  sgcWebSocket_Protocol_Broker_Client in '..\Source\sgcWebSocket_Protocol_Broker_Client.pas',
+  sgcWebSocket_Protocol_Broker_Message in '..\Source\sgcWebSocket_Protocol_Broker_Message.pas',
+  sgcWebSocket_Protocol_Broker_Server in '..\Source\sgcWebSocket_Protocol_Broker_Server.pas',
+  sgcWebSocket_Protocol_Dataset_Client in '..\Source\sgcWebSocket_Protocol_Dataset_Client.pas',
+  sgcWebSocket_Protocol_Dataset_Message in '..\Source\sgcWebSocket_Protocol_Dataset_Message.pas',
+  sgcWebSocket_Protocol_Dataset_Server in '..\Source\sgcWebSocket_Protocol_Dataset_Server.pas',
+  sgcWebSocket_Protocol_sgc_Client in '..\Source\sgcWebSocket_Protocol_sgc_Client.pas',
+  sgcWebSocket_Protocol_sgc_Message in '..\Source\sgcWebSocket_Protocol_sgc_Message.pas',
+  sgcWebSocket_Protocol_sgc_Server in '..\Source\sgcWebSocket_Protocol_sgc_Server.pas',
+  sgcWebSocket_Protocol_WebRTC_Message in '..\Source\sgcWebSocket_Protocol_WebRTC_Message.pas',
+  sgcWebSocket_Protocol_WebRTC_Server in '..\Source\sgcWebSocket_Protocol_WebRTC_Server.pas',
+  sgcWebSocket_Protocol_WAMP_Client in '..\Source\sgcWebSocket_Protocol_WAMP_Client.pas',
+  sgcWebSocket_Protocol_WAMP_Message in '..\Source\sgcWebSocket_Protocol_WAMP_Message.pas',
+  sgcWebSocket_Protocol_WAMP_Server in '..\Source\sgcWebSocket_Protocol_WAMP_Server.pas',
+  sgcWebSocket_Server in '..\Source\sgcWebSocket_Server.pas',
+  sgcWebSocket_Server_Proxy in '..\Source\sgcWebSocket_Server_Proxy.pas',
+  sgcWebSocket_Types in '..\Source\sgcWebSocket_Types.pas',
+  sgcWebSocket_Protocol_Base_Client in '..\Source\sgcWebSocket_Protocol_Base_Client.pas',
+  sgcWebSocket_Protocol_Base_Server in '..\Source\sgcWebSocket_Protocol_Base_Server.pas',
+  sgcWebSocket_Resources in '..\Source\sgcWebSocket_Resources.pas',
+  sgcWebSocket in '..\Source\sgcWebSocket.pas';
+
+end.
+

@@ -1,0 +1,56 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoD100Seattle">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD100Seattle">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoD100Seattle">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoD100Seattle">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoD100Seattle">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD100Seattle">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD100Seattle">
+    <MSBuild Projects="STYLESSIMPLEDEMO\StylesSimpleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoD100Seattle">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD100Seattle">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD100Seattle">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD100Seattle">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD100Seattle">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD100Seattle">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD100Seattle">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoD100Seattle;EditorsInPlaceDemoD100Seattle;ProviderModeDemoD100Seattle;RTTIInspectorDemoD100Seattle;SimpleVerticalGridDemoD100Seattle;StylesMultiDemoD100Seattle;StylesSimpleDemoD100Seattle;RowsMultiEditorsDemoD100Seattle;EditorsInPlaceValidationDemoD100Seattle;FindPanelDemoD100Seattle;FilterDropDownDemoD100Seattle;ScrollbarAnnotationsDemoD100Seattle;CalculatedFieldsDemoD100Seattle;CalculatedFilterItemsDemoD100Seattle" />
+  </Target>
+</Project>

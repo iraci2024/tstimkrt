@@ -1,0 +1,131 @@
+<html>
+<head>
+   <title>TFXCVolumeSize</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_TFXCVolumeSize">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>TFXCVolumeSize type</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Specifies the size of the multi-spanning archive volumes.<b>
+<br>
+</b><b>
+<br>
+Unit</b>
+<br>
+FlexCompress
+<br>
+
+<br>
+<b>type </b>TFXCVolumeSize = (vsAutoDetect, vsCustom, vs1_44MB, vs100MB, vs200MB, vs600MB, vs650MB, vs700MB, vs4700MB);<b>
+<br>
+</b>
+<br>
+<b>Description</b>
+<br>
+
+<br>
+TFXCVolumeSize value specifies the size of each multi-disk archive volume. Set <a href=spanningoptions.htm>SpanningOptions</a>.VolumeSize to vsAutoDetect for automatic detection of the volume size (default value). You can also use vsCustom value and specify the volume size by setting <a href=spanningoptions.htm>SpanningOptions</a>.CustomVolumeSize.
+<br>
+
+<br>
+
+<br>
+<a href=spanningoptions.htm>SpanningOptions</a>.VolumeSize can be set to any of the following values:
+<br>
+<table border="0" cellpadding="1" cellspacing="0"><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Value                             </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Meaning                                                                                   </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vsAutoDetect<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Autodetect of the volume size<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vsCustom<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Custom volume size<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs1_44MB<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 1.44 Mb (3.5" floppy disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs100MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 100 Mb (IOMEGA disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs200MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 200 Mb (MO disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs250MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 250 Mb (MO disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs600MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 600 Mb (MO disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs650MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 650 Mb (74 Min. compact disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs700MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 700 Mb (80 Min. compact disk)
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">vs4700MB
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Volume size is 4700 Mb (DVD disk)
+<br>
+</span></td></tr></table>
+<br>
+</span>
+
+</body>
+</html>

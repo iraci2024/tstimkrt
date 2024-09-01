@@ -1,0 +1,161 @@
+<html>
+<head>
+   <title>SearchExample</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_SearchExample">
+</object><object id=hhctrl_1 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="Main"><param name="Item1" value=""><param name="Item2" value="$topicid_TFCArchiveItem"></object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>Search Example
+<br>
+</b></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">The following example shows how to search files stored within the archive:
+<br>
+
+<br>
+<b>procedure </b>TForm1.FormCreate(Sender: TObject);<b>
+<br>
+var</b> ArchiveItem: <a href=javascript:hhctrl_1.hhclick()>TFXCArchiveItem</a>;
+<br>
+      NewColumn: TListColumn;
+<br>
+      ListItem: &nbsp;&nbsp;&nbsp; TListItem;
+<br>
+      ListView: &nbsp;&nbsp;&nbsp; TListView;
+<br>
+      FileDate:&nbsp;&nbsp;&nbsp; Integer;
+<br>
+<b>begin
+<br>
+</b> <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Prepare list view for storing archive files</i></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>
+<br>
+</b> ListView := TListView.Create(Self);
+<br>
+ ListView.Parent := Self;
+<br>
+ ListView.Align := alClient;
+<br>
+ ListView.ViewStyle := vsReport;
+<br>
+ NewColumn := ListView.Columns.Add;
+<br>
+ NewColumn.Caption := 'Name'; 
+<br>
+ NewColumn := ListView.Columns.Add;
+<br>
+ NewColumn.Caption := 'Modified'; 
+<br>
+ NewColumn := ListView.Columns.Add;
+<br>
+ NewColumn.Caption := 'Size'; 
+<br>
+ NewColumn := ListView.Columns.Add;
+<br>
+ NewColumn.Caption := 'Rate'; 
+<br>
+ NewColumn := ListView.Columns.Add;
+<br>
+ NewColumn.Caption := 'Packed'; 
+<br>
+ NewColumn := ListView.Columns.Add;
+<br>
+ NewColumn.Caption := 'Path'; 
+<br>
+<b> with</b> Archiver <b>do
+<br>
+</b>    <b>begin</b>
+<br>
+        FileName := 'C:\TEST\test.fxc';
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Open existing archive file</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF">
+<br>
+</span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        OpenArchive(fmOpenRead);
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Search text files stored inside the archive
+<br>
+</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><i>        </i><b>if </b>(FindFirst('*.*',ArchiveItem,faAnyFile-faDirectory)) <b>then</b>
+<br>
+           <b>repeat
+<br>
+</b>&nbsp;&nbsp;&nbsp;      <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add file name </i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>
+<br>
+</b>&nbsp;&nbsp;&nbsp;      ListItem := ListView.Items.Add;
+<br>
+&nbsp;&nbsp;&nbsp;      ListItem.Caption := ArchiveItem.FileName;
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;&nbsp;&nbsp;      <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add modification date
+<br>
+</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;&nbsp;&nbsp;      FileDate := ArchiveItem.LastModFileDate <b>shl</b> 16 + 
+<br>
+&nbsp;&nbsp;&nbsp;        ArchiveItem.LastModFileTime;<b>
+<br>
+</b>&nbsp;&nbsp;&nbsp;      ListItem.SubItems.Add(DateToStr(
+<br>
+&nbsp;&nbsp;&nbsp;            FileDateToDateTime(FileDate)));
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;&nbsp;&nbsp;      <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add file size</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>
+<br>
+</b>&nbsp;&nbsp;&nbsp;      ListItem.SubItems.Add(IntToStr(ArchiveItem.UncompressedSize)); 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;&nbsp;&nbsp;      <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add compression rate</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>
+<br>
+</b>&nbsp;&nbsp;&nbsp;      ListItem.SubItems.Add(FloatToStr(ArchiveItem.CompressionRate)); 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;&nbsp;&nbsp;      <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add compressed file size</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>
+<br>
+</b>&nbsp;&nbsp;&nbsp;      ListItem.SubItems.Add(IntToStr(ArchiveItem.CompressedSize)); 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">&nbsp;&nbsp;&nbsp;      <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Add file path</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b>
+<br>
+</b>&nbsp;&nbsp;&nbsp;      ListItem.SubItems.Add(ArchiveItem.StoredPath)); 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> </span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">           <b>until</b> (<b>not</b> FindNext(ArchiveItem));</span><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+  
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">        <span style="font-family:Helvetica,Arial; font-size:10pt; color:#0000FF"><i>// Close the archive</i></span></span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+        CloseArchive;
+<br>
+<b>    end;
+<br>
+</b><b>end;</b>
+<br>
+</span></span>
+
+</body>
+</html>

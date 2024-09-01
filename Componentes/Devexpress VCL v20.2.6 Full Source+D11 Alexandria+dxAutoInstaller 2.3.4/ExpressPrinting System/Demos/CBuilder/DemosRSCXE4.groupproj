@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkRSCXE4">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkRSCXE4">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkRSCXE4">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkRSCXE4">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerRSCXE4">
+    <MSBuild Projects="ReportExplorer\ReportExplorerRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkRSCXE4">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLRSCXE4">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkRSCXE4">
+    <MSBuild Projects="StandardRL\StandardReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkRSCXE4">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkRSCXE4">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkRSCXE4;FlowChartReportLinkRSCXE4;LayoutControlReportLinkRSCXE4;OrgChartReportLinkRSCXE4;ReportExplorerRSCXE4;SchedulerLinkRSCXE4;SpreadSheetRLRSCXE4;StandardReportLinkRSCXE4;PivotGridReportLinkRSCXE4;cxTreeListReportLinkRSCXE4" />
+  </Target>
+</Project>

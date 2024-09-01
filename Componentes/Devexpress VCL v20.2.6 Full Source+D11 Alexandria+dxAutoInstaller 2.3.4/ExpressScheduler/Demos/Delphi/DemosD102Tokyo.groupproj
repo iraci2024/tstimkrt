@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoD102Tokyo">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoD102Tokyo">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoD102Tokyo">
+    <MSBuild Projects="UnboundDemo\UnboundDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoD102Tokyo">
+    <MSBuild Projects="DBDemo\DBDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoD102Tokyo">
+    <MSBuild Projects="StylesDemo\StylesDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoD102Tokyo">
+    <MSBuild Projects="ResourceDemo\ResourceDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoD102Tokyo">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoD102Tokyo">
+    <MSBuild Projects="AggregateDemo\AggregateDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoD102Tokyo">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoD102Tokyo">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoD102Tokyo;RangeControlDemoD102Tokyo;UnboundDemoD102Tokyo;DBDemoD102Tokyo;CustomDrawDemoD102Tokyo;StylesDemoD102Tokyo;ResourceDemoD102Tokyo;GanttViewDemoD102Tokyo;AggregateDemoD102Tokyo;HolidaysDemoD102Tokyo;WebServiceDemoD102Tokyo" />
+  </Target>
+</Project>

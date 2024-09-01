@@ -1,0 +1,29 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EditorsDemoD104Sydney">
+    <MSBuild Projects="EditorsDemo\EditorsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="cxEditorsDemoD104Sydney">
+    <MSBuild Projects="cxEditorsDemo\cxEditorsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="PuzzleDemoD104Sydney">
+    <MSBuild Projects="PuzzleDemo\PuzzleDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="FlexibleLayoutDemoD104Sydney">
+    <MSBuild Projects="FlexibleLayoutDemo\FlexibleLayoutDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="GroupScrollingDemoD104Sydney">
+    <MSBuild Projects="GroupScrollingDemo\GroupScrollingDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EditorsDemoD104Sydney;cxEditorsDemoD104Sydney;PuzzleDemoD104Sydney;FlexibleLayoutDemoD104Sydney;GroupScrollingDemoD104Sydney" />
+  </Target>
+</Project>

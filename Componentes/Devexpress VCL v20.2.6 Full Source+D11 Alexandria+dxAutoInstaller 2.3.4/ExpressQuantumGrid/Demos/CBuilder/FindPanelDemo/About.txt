@@ -1,0 +1,16 @@
+Enter text within the Find Panel's box and the grid will highlight all found text matches. The Find box shows the ordinal number of the search result corresponding to the current focus position and the total number of search results.
+
+Use the Behavior combo box to switch the Find Panel from Search to Filter mode. In the latter case, the grid also filters out all data rows that do not meet the specified critera.
+
+Check the "Search In Group Rows" and/or "Search in Preview" options to include the content of group rows and/or preview sections into search results.
+
+Check the "Use Extended Syntax" option to provide multiple search or filter criteria in a search string. The grid interprets words separated by a spacebar character as individual criteria joined with the OR logical operator. The grid highlights matching text in all data rows that meet at least one of these criteria. To search a string including one or more spacebars as a single criterion, enclose the string in quotation marks. In addition to spacebars, the extended syntax allows you to use the following specifiers and wildcards to narrow search results:
+
+- The "+" specifier. Preceding a criterion with this specifier causes the grid to highlight or display only those data rows that match this criterion. The "+" specifier implements the logical AND operator. There should be no space character between the "+" sign and the criterion.
+- The "–" specifier. Preceding a criterion with "–" excludes data rows that match this criterion from search results. There should be no space between the "–" sign and the criterion.
+- The percent ("%") wildcard. This wildcard substitutes any number of characters in a criterion.
+- The underscore ("_") wildcard. This wildcard substitutes any single character in a criterion.
+
+Try various options to adjust the Find Panel's look & feel.
+
+All the editing, filtering, grouping, and layout customization capabilities are enabled in this demo for you to try them out in combination with the Find Panel.

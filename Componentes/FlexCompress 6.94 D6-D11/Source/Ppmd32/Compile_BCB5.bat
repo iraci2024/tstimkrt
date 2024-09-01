@@ -1,0 +1,1 @@
+"C:\BCC55\Bin\bcc32" -c -V?- ppmd.cpp

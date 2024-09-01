@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoRSCXE3">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoRSCXE3">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoRSCXE3">
+    <MSBuild Projects="UnboundDemo\UnboundDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoRSCXE3">
+    <MSBuild Projects="DBDemo\DBDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoRSCXE3">
+    <MSBuild Projects="StylesDemo\StylesDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSCXE3">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoRSCXE3">
+    <MSBuild Projects="ResourceDemo\ResourceDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoRSCXE3">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoRSCXE3">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoRSCXE3">
+    <MSBuild Projects="AggregateDemo\AggregateDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoRSCXE3">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoRSCXE3.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoRSCXE3;RangeControlDemoRSCXE3;UnboundDemoRSCXE3;DBDemoRSCXE3;StylesDemoRSCXE3;CustomDrawDemoRSCXE3;ResourceDemoRSCXE3;GanttViewDemoRSCXE3;HolidaysDemoRSCXE3;AggregateDemoRSCXE3;WebServiceDemoRSCXE3" />
+  </Target>
+</Project>

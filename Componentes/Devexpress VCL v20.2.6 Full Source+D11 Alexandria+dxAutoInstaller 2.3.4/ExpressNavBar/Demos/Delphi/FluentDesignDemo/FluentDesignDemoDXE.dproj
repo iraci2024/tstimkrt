@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{81C109BA-BDCD-4623-9ACC-0FB700F74FD9}</ProjectGuid>
+    <MainSource>FluentDesignDemoDXE.dpr</MainSource>
+    <Config Condition="'$(Config)'==''">Base</Config>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <ProjectVersion>12.2</ProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+    <Base>true</Base>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Base)'!=''">
+    <UsePackages>true</UsePackages>
+    <DCC_UsePackage>;dxSkinSharpPlusRS15;dxPScxCommonRS15;dxSkinLiquidSkyRS15;dxSkinOffice2019WhiteRS15;dxTabbedMDIRS15;cxSchedulerWebServiceStorageRS15;dxCloudServiceLibraryRS15;dxSkinVisualStudio2013BlueRS15;dxSkinSevenRS15;dxPScxGridLnkRS15;dxBarExtItemsRS15;dxSkinBasicRS15;dxRibbonCustomizationFormRS15;dxPSdxFCLnkRS15;dxSkinSilverRS15;cxGridRS15;dxPScxSchedulerLnkRS15;dxRichEditControlRS15;dxSkinOffice2019DarkGrayRS15;dxSkinOffice2007PinkRS15;dxSpellCheckerRS15;dxSkinSharpRS15;dxSpreadSheetReportDesignerRS15;dxSkinOffice2013WhiteRS15;dxPScxExtCommonRS15;cxSchedulerGridRS15;dxSpreadSheetConditionalFormattingDialogsRS15;dxRichEditCoreRS15;dxSkinBlueRS15;dxSkinCoffeeRS15;cxVerticalGridRS15;dxRichEditControlCoreRS15;dxSkinDevExpressDarkStyleRS15;dxRichEditControlDocFormatRS15;dxNavBarRS15;dxEMFDataRS15;dxBarDBNavRS15;dxSkinLilianRS15;dxHttpIndyRequestRS15;dxSkinCaramelRS15;dxSkinSevenClassicRS15;dxPSdxGaugeControlLnkRS15;dxPScxPCProdRS15;dxTileControlRS15;dxSkinOffice2007BlueRS15;dxRichEditControlOpenXMLFormatRS15;dxEMFRS15;dxSkinsCoreRS15;dxRichEditControlHtmlFormatRS15;cxPageControldxBarPopupMenuRS15;cxSchedulerRibbonStyleEventEditorRS15;dxFlowChartAdvancedCustomizeFormRS15;dxDockingRS15;dxSkinFoggyRS15;dxSpreadSheetCoreConditionalFormattingDialogsRS15;dxPDFViewerRS15;dxSkinTheAsphaltWorldRS15;dxADOEMFRS15;dxBarRS15;dxSkinMetropolisRS15;dxPSdxOCLnkRS15;dxSkinSpringTimeRS15;dxSkinMoneyTwinsRS15;dxSkinOffice2007GreenRS15;dxSkinStardustRS15;dxRichEditDocumentModelRS15;cxLibraryRS15;dxDBOrRS15;dxSkinLondonLiquidSkyRS15;dxSkinOffice2010BlueRS15;dxGaugeControlRS15;dxSkinOffice2013LightGrayRS15;cxExportRS15;cxTreeListRS15;dxdbtrRS15;dxmdsRS15;dxSkinOffice2010SilverRS15;dxPSdxDBTVLnkRS15;dxSkinBlueprintRS15;dxFlowChartRS15;dxFlowChartLayoutsRS15;dxPSPrVwRibbonRS15;dxBarExtDBItemsRS15;cxPivotGridChartRS15;dxSkinOffice2010BlackRS15;dxGanttControlSchedulerStorageImporterRS15;dxRibbonRS15;dxSpreadSheetCoreRS15;dxSkinOffice2016DarkRS15;dxPSdxSpreadSheetLnkRS15;dxGDIPlusRS15;dxSkinVS2010RS15;dxSkinOffice2007SilverRS15;dxSkinTheBezierRS15;dxSkinVisualStudio2013LightRS15;dxSkinXmas2008BlueRS15;cxTreeListdxBarPopupMenuRS15;dxGanttControlRS15;dxSkinMetropolisDarkRS15;dxPSdxDBOCLnkRS15;cxSchedulerRS15;cxPivotGridRS15;dxSkinOffice2013DarkGrayRS15;dxMapControlRS15;dxPScxVGridLnkRS15;dxSkinWhiteprintRS15;dxPSRichEditControlLnkRS15;dxFlowChartDesignerRS15;dxSkinValentineRS15;cxGridEMFRS15;dxSkinHighContrastRS15;dxOrgChartAdvancedCustomizeFormRS15;dxSkinOffice2016ColorfulRS15;dxComnRS15;dxOrgCRS15;dxSkinDarkRoomRS15;dxPSdxLCLnkRS15;dxCoreRS15;dxSpreadSheetRS15;dxSkinDevExpressStyleRS15;dxWizardControlRS15;dxSkinDarkSideRS15;dxSkiniMaginaryRS15;dxPScxTLLnkRS15;dxSkinOffice2019BlackRS15;cxPivotGridOLAPRS15;dxSkinOffice2007BlackRS15;cxSchedulerTreeBrowserRS15;dxPSPrVwAdvRS15;dxSkinPumpkinRS15;dxSkinOffice2019ColorfulRS15;dxPSdxPDFViewerLnkRS15;dxPScxPivotGridLnkRS15;dxtrmdRS15;dxSkinMcSkinRS15;dxPSCoreRS15;dxSkinVisualStudio2013DarkRS15;dxSkinGlassOceansRS15;dxPSLnksRS15;dxSkinSummer2008RS15;dxServerModeRS15;dxSkinBlackRS15;dxPSdxMapControlLnkRS15</DCC_UsePackage>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+      <Delphi.Personality>
+        <Source>
+          <Source Name="MainSource">FluentDesignDemoDXE.dpr</Source>
+        </Source>
+      </Delphi.Personality>
+    </BorlandProject>
+    <ProjectFileVersion>12</ProjectFileVersion>
+  </ProjectExtensions>
+</Project>

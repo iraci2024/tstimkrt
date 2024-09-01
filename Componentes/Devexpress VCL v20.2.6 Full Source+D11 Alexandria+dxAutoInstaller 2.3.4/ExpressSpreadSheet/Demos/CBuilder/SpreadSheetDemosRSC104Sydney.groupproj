@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoRSC104Sydney">
+    <MSBuild Projects="Invoice\InvoiceDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC104Sydney">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoRSC104Sydney">
+    <MSBuild Projects="Outline\OutlineDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSC104Sydney">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoRSC104Sydney">
+    <MSBuild Projects="Comments\CommentsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoRSC104Sydney">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoRSC104Sydney">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoRSC104Sydney">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoRSC104Sydney">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoRSC104Sydney;CustomDrawDemoRSC104Sydney;OutlineDemoRSC104Sydney;ConditionalFormattingDemoRSC104Sydney;CommentsDemoRSC104Sydney;SimpleReportDemoRSC104Sydney;HorizontalReportDemoRSC104Sydney;MasterDetailReportDemoRSC104Sydney;InvoiceReportDemoRSC104Sydney" />
+  </Target>
+</Project>

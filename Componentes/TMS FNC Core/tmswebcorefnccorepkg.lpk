@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="TMSWebCoreFNCCorePkg"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)\"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Files Count="15">
+      <Item1>
+        <Filename Value="WEBLib.TMSFNCBitmapContainer.pas"/>
+        <UnitName Value="WEBLib.TMSFNCBitmapContainer"/>
+      </Item1>
+      <Item2>
+        <Filename Value="WEBLib.TMSFNCCoreWEBReg.pas"/>
+        <UnitName Value="WEBLib.TMSFNCCoreWEBReg"/>
+      </Item2>
+      <Item3>
+        <Filename Value="WEBLib.TMSFNCCustomComponent.pas"/>
+        <UnitName Value="WEBLib.TMSFNCCustomComponent"/>
+      </Item3>
+      <Item4>
+        <Filename Value="WEBLib.TMSFNCCustomControl.pas"/>
+        <UnitName Value="WEBLib.TMSFNCCustomControl"/>
+      </Item4>
+      <Item5>
+        <Filename Value="WEBLib.TMSFNCCustomScrollControl.pas"/>
+        <UnitName Value="WEBLib.TMSFNCCustomScrollControl"/>
+      </Item5>
+      <Item6>
+        <Filename Value="WEBLib.TMSFNCGraphics.General.pas"/>
+        <UnitName Value="WEBLib.TMSFNCGraphics.General"/>
+      </Item6>
+      <Item7>
+        <Filename Value="WEBLib.TMSFNCGraphics.pas"/>
+        <UnitName Value="WEBLib.TMSFNCGraphics"/>
+      </Item7>
+      <Item8>
+        <Filename Value="WEBLib.TMSFNCGraphics.WEB.pas"/>
+        <UnitName Value="WEBLib.TMSFNCGraphics.WEB"/>
+      </Item8>
+      <Item9>
+        <Filename Value="WEBLib.TMSFNCGraphicsTypes.pas"/>
+        <UnitName Value="WEBLib.TMSFNCGraphicsTypes"/>
+      </Item9>
+      <Item10>
+        <Filename Value="WEBLib.TMSFNCHTMLEngine.pas"/>
+        <UnitName Value="WEBLib.TMSFNCHTMLEngine"/>
+      </Item10>
+      <Item11>
+        <Filename Value="WEBLib.TMSFNCPopup.pas"/>
+        <UnitName Value="WEBLib.TMSFNCPopup"/>
+      </Item11>
+      <Item12>
+        <Filename Value="WEBLib.TMSFNCScrollBar.pas"/>
+        <UnitName Value="WEBLib.TMSFNCScrollBar"/>
+      </Item12>
+      <Item13>
+        <Filename Value="WEBLib.TMSFNCStyles.pas"/>
+        <UnitName Value="WEBLib.TMSFNCStyles"/>
+      </Item13>
+      <Item14>
+        <Filename Value="WEBLib.TMSFNCTypes.pas"/>
+        <UnitName Value="WEBLib.TMSFNCTypes"/>
+      </Item14>
+      <Item15>
+        <Filename Value="WEBLib.TMSFNCUtils.pas"/>
+        <UnitName Value="WEBLib.TMSFNCUtils"/>
+      </Item15>
+    </Files>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <Provides Count="1">
+      <Item1 Value="LCLTMSFNCCorePkg"/>
+    </Provides>
+  </Package>
+</CONFIG>

@@ -1,0 +1,93 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'EdgeWebBrowser Print Demo'
+  ClientHeight = 542
+  ClientWidth = 690
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TMSFNCEdgeWebBrowser1: TTMSFNCEdgeWebBrowser
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 16.000000000000000000
+    Position.Y = 54.000000000000000000
+    Size.Width = 654.000000000000000000
+    Size.Height = 428.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnInitialized = TMSFNCEdgeWebBrowser1Initialized
+    URL = 'https://www.tmssoftware.com'
+    Settings.EnableContextMenu = True
+    Settings.EnableShowDebugConsole = True
+    Settings.EnableAcceleratorKeys = True
+    Settings.UsePopupMenuAsContextMenu = False
+    OnGetPrintPDFStream = TMSFNCEdgeWebBrowser1GetPrintPDFStream
+  end
+  object PrintUIBtn: TButton
+    Anchors = [akLeft, akBottom]
+    Position.X = 16.000000000000000000
+    Position.Y = 490.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Print UI'
+    OnClick = PrintUIBtnClick
+  end
+  object NavigateBtn: TButton
+    Anchors = [akTop, akRight]
+    Position.X = 605.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Go'
+    OnClick = NavigateBtnClick
+  end
+  object PrintToPDFStreamBtn: TButton
+    Anchors = [akRight, akBottom]
+    Position.X = 184.000000000000000000
+    Position.Y = 490.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Print to PDF Stream'
+    OnClick = PrintToPDFStreamBtnClick
+  end
+  object PrintBtn: TButton
+    Anchors = [akRight, akBottom]
+    Position.X = 352.000000000000000000
+    Position.Y = 490.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Print'
+    OnClick = PrintBtnClick
+  end
+  object PrintToPDFBtn: TButton
+    Anchors = [akRight, akBottom]
+    Position.X = 520.000000000000000000
+    Position.Y = 490.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Print to PDF'
+    OnClick = PrintToPDFBtnClick
+  end
+  object URLEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 6
+    Text = 'https://www.tmssoftware.com'
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 581.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

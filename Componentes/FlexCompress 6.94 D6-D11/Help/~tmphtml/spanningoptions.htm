@@ -1,0 +1,100 @@
+<html>
+<head>
+   <title>SpanningOptions</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_SpanningOptions;SpanningOptions_Property;SpanningOptions">
+<param name="alink name" value="$topicid_SpanningOptions">
+</object><object id=hhctrl_1 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="Main"><param name="Item1" value=""><param name="Item2" value="$topicid_SpanningMode"></object><object id=hhctrl_2 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="Main"><param name="Item1" value=""><param name="Item2" value="$topicid_SpanningMode"></object><object id=hhctrl_3 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="Main"><param name="Item1" value=""><param name="Item2" value="$topicid_OnRequestBlankVolume"></object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.SpanningOptions</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> &nbsp;&nbsp;&nbsp;
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Describes how the archive file will be splitted or spanned.
+<br>
+
+<br>
+<b>type </b>TFXCSpanningOptions = <b>class</b>(TPersistent)
+<br>
+<b>published</b>
+<br>
+  <b>property</b> AdvancedNaming: Boolean <b>default</b> True;
+<br>
+  <b>property</b> FirstVolumeSize: Int64 <b>default</b> 0;
+<br>
+  <b>property</b> VolumeSize: <a href=tfxcvolumesize.htm>TFXCVolumeSize</a> <b>default</b> vsAutoDetect;
+<br>
+  <b>property</b> CustomVolumeSize: Int64 <b>default</b> 0;
+<br>
+<b>end;</b>
+<br>
+
+<br>
+<b>property</b> SpanningOptions: TFXCSpanningOptions;
+<br>
+
+<br>
+<b>Description
+<br>
+</b>SpanningOptions property determines how the archive file will be splitted or spanned.
+<br>
+
+<br>
+The AdvancedNaming determines how the archive volumes will be named. 
+<br>
+If AdvancedNaming is set to True then archive volumes will be named like archive_001.fxc, archive_002.fxc, ... ,
+<br>
+archive_999.fxc. 
+<br>
+If AdvancedNaming is set to False and <a href=javascript:hhctrl_1.hhclick()>SpanningMode</a> is set to smSpanning then archive volumes will be named like archive.fxc on each removable disk.
+<br>
+If AdvancedNaming is set to False and <a href=javascript:hhctrl_2.hhclick()>SpanningMode</a> is set to smSplitting then archive volumes will be named like archive.f01,
+<br>
+archive.f02, ... , archive.f99. 
+<br>
+You can also specify custom name for each volume using <a href=javascript:hhctrl_3.hhclick()>OnRequestBlankVolume</a> event handler.
+<br>
+
+<br>
+The FirstVolumeSize specifies the size of first volume, minimum size is 64 Kb. If the FirstVolumeSize is set to 0 the size of the first volume will be the same as other volumes and will be defined by VolumeSize value.
+<br>
+
+<br>
+The VolumeSize specifies the size of the volumes for archive splitting or spanning. If the VolumeSize is set to vsCustom, then CustomVolumeSize will be used.
+<br>
+
+<br>
+The CustomVolumeSize specifies the custom size of the volumes for archive splitting or spanning. This parameter can be used only when VolumeSize is set to vsCustom.
+<br>
+
+<br>
+
+<br>
+
+<br>
+</span>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+[OPTIONS]
+Compatibility=1.1
+Compiled file=S:\DelphiComponents\FlexCompress\Help\FlexCompress.chm
+Contents file=FlexCompress.hhc
+Default Window=Main
+Default topic=overview.htm
+Default font=MS Sans Serif,8,0
+Index file=FlexCompress.hhk
+Auto Index=No
+Display compile progress=No
+Full-text search=Yes
+Language=0x0409
+Title=FlexCompress Reference
+Error log file=S:\DelphiComponents\FlexCompress\Help\~tmphtml\FlexCompress.log
+
+[WINDOWS]
+Main="FlexCompress Developer's Guide","FlexCompress.hhc","FlexCompress.hhk","overview.htm","overview.htm","","","","",0x061520,200,0x00304E,[240,0,790,570],0xb0000,,,,,,0
+Example="Example","","","overview.htm","overview.htm","","","","",0x040100,0,0x0,[250,90,780,555],0x830000,,,,2,,0
+PropWin="FlexCompress Developer's Guide","","","overview.htm","overview.htm","","","","",0x040100,0,0x0,[0,0,240,570],0x830000,,,,2,,0
+PropWin2="ZipForge Developer's Guide","","","overview.htm","overview.htm","","","","",0x040100,0,0x0,[0,0,240,570],0x830000,,,,2,,0
+
+[FILES]
+overview.htm
+benefits.htm
+features.htm
+gettinghelpfromtechnicalsu.htm
+howtoorder.htm
+flexcompressvszipforge.htm
+aboutthetrialversion.htm
+otherproductsbycomponentace.htm
+gettingstarted.htm
+creatingopeningandclosing.htm
+archivehandling.htm
+searchingfileswithinthearc.htm
+makingsfxarchives.htm
+usingatransactionsystem.htm
+tflexcompress.htm
+flexcompressfaq.htm
+compressionalgorithms.htm
+encryptionalgorithms.htm
+memoryconsumption.htm
+limitations.htm
+active.htm
+addfiles.htm
+addfrombuffer.htm
+addfromstream.htm
+addfromstring.htm
+afteropen.htm
+basedir.htm
+basicexample.htm
+advancedexample.htm
+makesfxexample.htm
+transactionexample.htm
+searchexample.htm
+beginupdate.htm
+cancelupdate.htm
+changefilesattr.htm
+changefilescomment.htm
+closearchive.htm
+comment.htm
+compressionalgorithm.htm
+compressionlevel.htm
+compressionmode.htm
+cryptoalgorithm.htm
+currentversion.htm
+deletefiles.htm
+endupdate.htm
+events.htm
+events2.htm
+exclusionmasks.htm
+exists.htm
+extractcorruptedfiles.htm
+extractfiles.htm
+extracttobuffer.htm
+extracttostream.htm
+extracttostring.htm
+filecount.htm
+filemasks.htm
+filename.htm
+findfirst.htm
+findnext.htm
+tfcarchiveitem.htm
+inmemory.htm
+inupdate.htm
+isfilepasswordvalid.htm
+isvalidarchivefile.htm
+makesfx.htm
+methods.htm
+methods2.htm
+movefiles.htm
+nocompressmasks.htm
+onconfirmoverwrite.htm
+onconfirmprocessfile.htm
+oncopytempfileprogress.htm
+ondiskfull.htm
+onextractfile.htm
+onfileprogress.htm
+onoverallprogress.htm
+onpassword.htm
+onprocessfilefailure.htm
+onrequestblankvolume.htm
+onrequestfirstvolume.htm
+onrequestlastvolume.htm
+onrequestmiddlevolume.htm
+onstorefile.htm
+openarchive.htm
+opencorruptedarchives.htm
+options.htm
+spanningmode.htm
+spanningoptions.htm
+tfxcvolumesize.htm
+tfcstorepath.htm
+tfcfilesharemode.htm
+tfcoverwritemode.htm
+tfcprocessoperation.htm
+tfcprogressphase.htm
+password.htm
+properties.htm
+properties2.htm
+renamefile.htm
+repairarchive.htm
+sfxstub.htm
+signature.htm
+size.htm
+tempdir.htm
+testfiles.htm
+updatefiles.htm
+nocompressionmasks.htm
+zip64mode.htm
+PopupTopics.js
+[ALIAS]
+#include .\FlexCompress.h
+[MAP]
+#include .\FlexCompress.hm
+[TEXT POPUPS]
+CSHelp.txt

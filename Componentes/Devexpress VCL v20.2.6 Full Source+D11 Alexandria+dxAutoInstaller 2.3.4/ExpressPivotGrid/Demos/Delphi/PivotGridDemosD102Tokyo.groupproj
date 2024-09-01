@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemoD102Tokyo">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoD102Tokyo">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoD102Tokyo">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoD102Tokyo">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoD102Tokyo">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD102Tokyo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoD102Tokyo">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartConnectionDemoD102Tokyo">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserD102Tokyo">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoD102Tokyo">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD102Tokyo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoD102Tokyo;CompactLayoutDemoD102Tokyo;MultipleTotalsDemoD102Tokyo;SortBySummaryDemoD102Tokyo;UnboundExternalDemoD102Tokyo;StylesMultiDemoD102Tokyo;CustomDrawDemoD102Tokyo;DataSetsDemoD102Tokyo;ChartConnectionDemoD102Tokyo;OLAPBrowserD102Tokyo;PrefilterByCodeDemoD102Tokyo;EditorsInPlaceDemoD102Tokyo" />
+  </Target>
+</Project>

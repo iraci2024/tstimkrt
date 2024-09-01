@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ChartConnectionDemoRSC102Tokyo">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoRSC102Tokyo">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoRSC102Tokyo">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoRSC102Tokyo">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserRSC102Tokyo">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrderReportsDemoRSC102Tokyo">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoRSC102Tokyo">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC102Tokyo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoRSC102Tokyo">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoRSC102Tokyo">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC102Tokyo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ChartConnectionDemoRSC102Tokyo;CompactLayoutDemoRSC102Tokyo;CustomDrawDemoRSC102Tokyo;DataSetsDemoRSC102Tokyo;MultipleTotalsDemoRSC102Tokyo;OLAPBrowserRSC102Tokyo;OrderReportsDemoRSC102Tokyo;SortBySummaryDemoRSC102Tokyo;StylesMultiDemoRSC102Tokyo;UnboundExternalDemoRSC102Tokyo;PrefilterByCodeDemoRSC102Tokyo;EditorsInPlaceDemoRSC102Tokyo" />
+  </Target>
+</Project>

@@ -1,0 +1,938 @@
+object Form20: TForm20
+  Left = 0
+  Top = 0
+  Caption = 'TMS FNC Responsive Manager Demo'
+  ClientHeight = 516
+  ClientWidth = 648
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'What is Lorem Ipsum?'
+      ''
+      
+        'Lorem Ipsum is simply dummy text of the printing and typesetting' +
+        ' industry. Lorem Ipsum has been the industry'#39's standard dummy te' +
+        'xt ever since the 1500s, when an unknown printer took a galley o' +
+        'f type and scrambled it to make a type specimen book. It has sur' +
+        'vived not only five centuries, but also the leap into electronic' +
+        ' typesetting, remaining essentially unchanged. It was popularise' +
+        'd in the 1960s with the release of Letraset sheets containing Lo' +
+        'rem Ipsum passages, and more recently with desktop publishing so' +
+        'ftware like Aldus PageMaker including versions of Lorem Ipsum.'
+      ''
+      'Where does it come from?'
+      ''
+      
+        'Contrary to popular belief, Lorem Ipsum is not simply random tex' +
+        't. It has roots in a piece of classical Latin literature from 45' +
+        ' BC, making it over 2000 years old. Richard McClintock, a Latin ' +
+        'professor at Hampden-Sydney College in Virginia, looked up one o' +
+        'f the more obscure Latin words, consectetur, from a Lorem Ipsum ' +
+        'passage, and going through the cites of the word in classical li' +
+        'terature, discovered the undoubtable source. Lorem Ipsum comes f' +
+        'rom sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malor' +
+        'um" (The Extremes of Good and Evil) by Cicero, written in 45 BC.' +
+        ' This book is a treatise on the theory of ethics, very popular d' +
+        'uring the Renaissance. The first line of Lorem Ipsum, "Lorem ips' +
+        'um dolor sit amet..", comes from a line in section 1.10.32.')
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.WordWrap = True
+    Align = Client
+    Size.Width = 648.000000000000000000
+    Size.Height = 459.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 644.000000000000000000
+    Viewport.Height = 455.000000000000000000
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 648.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Images = ImageList1
+      ImageIndex = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Open'
+      TextSettings.Font.Size = 15.000000000000000000
+    end
+    object Button2: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Images = ImageList1
+      ImageIndex = 1
+      Position.X = 164.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Save'
+      TextSettings.Font.Size = 15.000000000000000000
+    end
+    object Button3: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Images = ImageList1
+      ImageIndex = 2
+      Position.X = 322.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Copy'
+      TextSettings.Font.Size = 15.000000000000000000
+    end
+    object Button4: TButton
+      StyledSettings = [Family, Style, FontColor]
+      Images = ImageList1
+      ImageIndex = 3
+      Position.X = 480.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Paste'
+      TextSettings.Font.Size = 15.000000000000000000
+    end
+  end
+  object TMSFNCResponsiveManager1: TTMSFNCResponsiveManager
+    Size.Width = 32.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    Position.X = 32.000000000000000000
+    Position.Y = 272.000000000000000000
+    ActiveState = 2
+    States = <
+      item
+        Name = 'State 1'
+        Content = 
+          '{"components":[{"Memo1":{"content":{"$type":"TMemo","Align":9,"A' +
+          'nchors":15,"AutoHide":2,"AutoSelect":false,"Bounces":2,"CanFocus' +
+          '":true,"CanParentFocus":false,"Caret":{"$type":"TCaret","Color":' +
+          '"gcNull","Interval":0,"Width":0},"CharCase":0,"CheckSpelling":fa' +
+          'lse,"ClipChildren":false,"ClipParent":false,"ControlType":0,"Cur' +
+          'sor":-4,"DataDetectorTypes":0,"DisableFocusEffect":false,"Disabl' +
+          'eMouseWheel":false,"DragMode":0,"Enabled":true,"EnableDragHighli' +
+          'ght":true,"EnabledScroll":true,"Height":331,"HelpContext":0,"Hel' +
+          'pKeyword":"","HelpType":1,"HideSelectionOnExit":true,"Hint":"","' +
+          'HitTest":true,"ImeMode":0,"KeyboardType":0,"Lines":["What is Lor' +
+          'em Ipsum?","","Lorem Ipsum is simply dummy text of the printing ' +
+          'and typesetting industry. Lorem Ipsum has been the industry'#39's st' +
+          'andard dummy text ever since the 1500s, when an unknown printer ' +
+          'took a galley of type and scrambled it to make a type specimen b' +
+          'ook. It has survived not only five centuries, but also the leap ' +
+          'into electronic typesetting, remaining essentially unchanged. It' +
+          ' was popularised in the 1960s with the release of Letraset sheet' +
+          's containing Lorem Ipsum passages, and more recently with deskto' +
+          'p publishing software like Aldus PageMaker including versions of' +
+          ' Lorem Ipsum.","","Where does it come from?","","Contrary to pop' +
+          'ular belief, Lorem Ipsum is not simply random text. It has roots' +
+          ' in a piece of classical Latin literature from 45 BC, making it ' +
+          'over 2000 years old. Richard McClintock, a Latin professor at Ha' +
+          'mpden-Sydney College in Virginia, looked up one of the more obsc' +
+          'ure Latin words, consectetur, from a Lorem Ipsum passage, and go' +
+          'ing through the cites of the word in classical literature, disco' +
+          'vered the undoubtable source. Lorem Ipsum comes from sections 1.' +
+          '10.32 and 1.10.33 of \u0022de Finibus Bonorum et Malorum\u0022 (' +
+          'The Extremes of Good and Evil) by Cicero, written in 45 BC. This' +
+          ' book is a treatise on the theory of ethics, very popular during' +
+          ' the Renaissance. The first line of Lorem Ipsum, \u0022Lorem ips' +
+          'um dolor sit amet..\u0022, comes from a line in section 1.10.32.' +
+          '"],"Locked":false,"Margins":{"$type":"TBounds","Bottom":0,"Left"' +
+          ':0,"Right":0,"Top":0},"MaxLength":0,"Name":"Memo1","Opacity":1,"' +
+          'Padding":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":' +
+          '0},"ParentShowHint":true,"PopupMenu":"","Position":{"$type":"TPo' +
+          'sition","X":0,"Y":41},"ReadOnly":false,"RotationAngle":0,"Rotati' +
+          'onCenter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type"' +
+          ':"TPosition","X":1,"Y":1},"ShowHint":false,"ShowScrollBars":true' +
+          ',"ShowSizeGrip":false,"Size":{"$type":"TControlSize","Height":33' +
+          '1,"PlatformDefault":false,"Width":360},"StyledSettings":15,"Styl' +
+          'eLookup":"","StyleName":"","TabOrder":0,"TabStop":true,"Tag":0,"' +
+          'TextSettings":{"$type":"TMemoTextSettings","Font":{"$type":"TSet' +
+          'tingsFont","Family":"Segoe UI","Size":12,"IsFMX":true,"Style":0}' +
+          ',"FontColor":"#000000","HorzAlign":1,"WordWrap":true},"Touch":{"' +
+          '$type":"TTouchManager","GestureManager":"","InteractiveGestures"' +
+          ':98},"TouchTargetExpansion":{"$type":"TBounds","Bottom":0,"Left"' +
+          ':0,"Right":0,"Top":0},"Visible":true,"Width":360}, "parent":"For' +
+          'm20"}},{"Panel1":{"content":{"$type":"TPanel","Action":"","Align' +
+          '":1,"Anchors":7,"ClipChildren":false,"ClipParent":false,"Control' +
+          'Type":0,"Cursor":0,"DragMode":0,"Enabled":true,"EnableDragHighli' +
+          'ght":true,"Height":41,"HelpContext":0,"HelpKeyword":"","HelpType' +
+          '":1,"Hint":"","HitTest":true,"Locked":false,"Margins":{"$type":"' +
+          'TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Name":"Panel1",' +
+          '"Opacity":1,"Padding":{"$type":"TBounds","Bottom":0,"Left":0,"Ri' +
+          'ght":0,"Top":0},"ParentShowHint":true,"PopupMenu":"","Position":' +
+          '{"$type":"TPosition","X":0,"Y":0},"RotationAngle":0,"RotationCen' +
+          'ter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPo' +
+          'sition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlS' +
+          'ize","Height":41,"PlatformDefault":false,"Width":360},"StyleLook' +
+          'up":"","StyleName":"","TabOrder":2,"TabStop":true,"Tag":0,"Touch' +
+          '":{"$type":"TTouchManager","GestureManager":"","InteractiveGestu' +
+          'res":0},"TouchTargetExpansion":{"$type":"TBounds","Bottom":0,"Le' +
+          'ft":0,"Right":0,"Top":0},"Visible":true,"Width":360}, "parent":"' +
+          'Form20"}},{"Button1":{"content":{"$type":"TButton","Action":"","' +
+          'Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":false,"CanFoc' +
+          'us":true,"CanParentFocus":false,"ClipChildren":false,"ClipParent' +
+          '":false,"ControlType":0,"Cursor":0,"Default":false,"DisableFocus' +
+          'Effect":false,"DragMode":0,"Enabled":true,"EnableDragHighlight":' +
+          'true,"Height":22,"HelpContext":0,"HelpKeyword":"","HelpType":1,"' +
+          'Hint":"","HitTest":true,"IconTintColor":"gcNull","ImageIndex":0,' +
+          '"Images":"ImageList1","IsPressed":false,"Locked":false,"Margins"' +
+          ':{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Moda' +
+          'lResult":0,"Name":"Button1","Opacity":1,"Padding":{"$type":"TBou' +
+          'nds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShowHint":tru' +
+          'e,"PopupMenu":"","Position":{"$type":"TPosition","X":8,"Y":8},"R' +
+          'epeatClick":false,"RotationAngle":0,"RotationCenter":{"$type":"T' +
+          'Position","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition","X":1,"Y' +
+          '":1},"ShowHint":false,"Size":{"$type":"TControlSize","Height":22' +
+          ',"PlatformDefault":false,"Width":80},"StaysPressed":false,"Style' +
+          'dSettings":15,"StyleLookup":"","StyleName":"","TabOrder":5,"TabS' +
+          'top":true,"Tag":0,"Text":"Open","TextSettings":{"$type":"TButton' +
+          'Settings","Font":{"$type":"TSettingsFont","Family":"Segoe UI","S' +
+          'ize":12,"IsFMX":true,"Style":0},"FontColor":"#000000","FontColor' +
+          'ForState":{"$type":"TButtonFontColors","Focused":"gcNull","Hot":' +
+          '"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAlign":0,"Tr' +
+          'imming":1,"VertAlign":0,"WordWrap":false},"TintColor":"gcNull","' +
+          'Touch":{"$type":"TTouchManager","GestureManager":"","Interactive' +
+          'Gestures":0},"TouchTargetExpansion":{"$type":"TBounds","Bottom":' +
+          '0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":80}, "paren' +
+          't":"Panel1"}},{"Button2":{"content":{"$type":"TButton","Action":' +
+          '"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":false,"Ca' +
+          'nFocus":true,"CanParentFocus":false,"ClipChildren":false,"ClipPa' +
+          'rent":false,"ControlType":0,"Cursor":0,"Default":false,"DisableF' +
+          'ocusEffect":false,"DragMode":0,"Enabled":true,"EnableDragHighlig' +
+          'ht":true,"Height":22,"HelpContext":0,"HelpKeyword":"","HelpType"' +
+          ':1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","ImageIndex' +
+          '":1,"Images":"ImageList1","IsPressed":false,"Locked":false,"Marg' +
+          'ins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"' +
+          'ModalResult":0,"Name":"Button2","Opacity":1,"Padding":{"$type":"' +
+          'TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShowHint"' +
+          ':true,"PopupMenu":"","Position":{"$type":"TPosition","X":96,"Y":' +
+          '8},"RepeatClick":false,"RotationAngle":0,"RotationCenter":{"$typ' +
+          'e":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition","X"' +
+          ':1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlSize","Heigh' +
+          't":22,"PlatformDefault":false,"Width":80},"StaysPressed":false,"' +
+          'StyledSettings":15,"StyleLookup":"","StyleName":"","TabOrder":4,' +
+          '"TabStop":true,"Tag":0,"Text":"Save","TextSettings":{"$type":"TB' +
+          'uttonSettings","Font":{"$type":"TSettingsFont","Family":"Segoe U' +
+          'I","Size":12,"IsFMX":true,"Style":0},"FontColor":"#000000","Font' +
+          'ColorForState":{"$type":"TButtonFontColors","Focused":"gcNull","' +
+          'Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAlign":' +
+          '0,"Trimming":1,"VertAlign":0,"WordWrap":false},"TintColor":"gcNu' +
+          'll","Touch":{"$type":"TTouchManager","GestureManager":"","Intera' +
+          'ctiveGestures":0},"TouchTargetExpansion":{"$type":"TBounds","Bot' +
+          'tom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":80}, "' +
+          'parent":"Panel1"}},{"Button3":{"content":{"$type":"TButton","Act' +
+          'ion":"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":fals' +
+          'e,"CanFocus":true,"CanParentFocus":false,"ClipChildren":false,"C' +
+          'lipParent":false,"ControlType":0,"Cursor":0,"Default":false,"Dis' +
+          'ableFocusEffect":false,"DragMode":0,"Enabled":true,"EnableDragHi' +
+          'ghlight":true,"Height":22,"HelpContext":0,"HelpKeyword":"","Help' +
+          'Type":1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","Image' +
+          'Index":2,"Images":"ImageList1","IsPressed":false,"Locked":false,' +
+          '"Margins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top"' +
+          ':0},"ModalResult":0,"Name":"Button3","Opacity":1,"Padding":{"$ty' +
+          'pe":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShow' +
+          'Hint":true,"PopupMenu":"","Position":{"$type":"TPosition","X":18' +
+          '4,"Y":8},"RepeatClick":false,"RotationAngle":0,"RotationCenter":' +
+          '{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPositio' +
+          'n","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlSize",' +
+          '"Height":22,"PlatformDefault":false,"Width":80},"StaysPressed":f' +
+          'alse,"StyledSettings":15,"StyleLookup":"","StyleName":"","TabOrd' +
+          'er":3,"TabStop":true,"Tag":0,"Text":"Copy","TextSettings":{"$typ' +
+          'e":"TButtonSettings","Font":{"$type":"TSettingsFont","Family":"S' +
+          'egoe UI","Size":12,"IsFMX":true,"Style":0},"FontColor":"#000000"' +
+          ',"FontColorForState":{"$type":"TButtonFontColors","Focused":"gcN' +
+          'ull","Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzA' +
+          'lign":0,"Trimming":1,"VertAlign":0,"WordWrap":false},"TintColor"' +
+          ':"gcNull","Touch":{"$type":"TTouchManager","GestureManager":"","' +
+          'InteractiveGestures":0},"TouchTargetExpansion":{"$type":"TBounds' +
+          '","Bottom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":' +
+          '80}, "parent":"Panel1"}},{"Button4":{"content":{"$type":"TButton' +
+          '","Action":"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel' +
+          '":false,"CanFocus":true,"CanParentFocus":false,"ClipChildren":fa' +
+          'lse,"ClipParent":false,"ControlType":0,"Cursor":0,"Default":fals' +
+          'e,"DisableFocusEffect":false,"DragMode":0,"Enabled":true,"Enable' +
+          'DragHighlight":true,"Height":22,"HelpContext":0,"HelpKeyword":""' +
+          ',"HelpType":1,"Hint":"","HitTest":true,"IconTintColor":"gcNull",' +
+          '"ImageIndex":3,"Images":"ImageList1","IsPressed":false,"Locked":' +
+          'false,"Margins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0' +
+          ',"Top":0},"ModalResult":0,"Name":"Button4","Opacity":1,"Padding"' +
+          ':{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Pare' +
+          'ntShowHint":true,"PopupMenu":"","Position":{"$type":"TPosition",' +
+          '"X":272,"Y":8},"RepeatClick":false,"RotationAngle":0,"RotationCe' +
+          'nter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TP' +
+          'osition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControl' +
+          'Size","Height":22,"PlatformDefault":false,"Width":80},"StaysPres' +
+          'sed":false,"StyledSettings":15,"StyleLookup":"","StyleName":"","' +
+          'TabOrder":2,"TabStop":true,"Tag":0,"Text":"Paste","TextSettings"' +
+          ':{"$type":"TButtonSettings","Font":{"$type":"TSettingsFont","Fam' +
+          'ily":"Segoe UI","Size":12,"IsFMX":true,"Style":0},"FontColor":"#' +
+          '000000","FontColorForState":{"$type":"TButtonFontColors","Focuse' +
+          'd":"gcNull","Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"}' +
+          ',"HorzAlign":0,"Trimming":1,"VertAlign":0,"WordWrap":false},"Tin' +
+          'tColor":"gcNull","Touch":{"$type":"TTouchManager","GestureManage' +
+          'r":"","InteractiveGestures":0},"TouchTargetExpansion":{"$type":"' +
+          'TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"' +
+          'Width":80}, "parent":"Panel1"}}]}'
+        Default = True
+        Constraint.Width = 360.000000000000000000
+        Constraint.Height = 372.000000000000000000
+      end
+      item
+        Name = 'State 2'
+        Content = 
+          '{"components":[{"Memo1":{"content":{"$type":"TMemo","Align":9,"A' +
+          'nchors":15,"AutoHide":2,"AutoSelect":false,"Bounces":2,"CanFocus' +
+          '":true,"CanParentFocus":false,"Caret":{"$type":"TCaret","Color":' +
+          '"gcNull","Interval":0,"Width":0},"CharCase":0,"CheckSpelling":fa' +
+          'lse,"ClipChildren":false,"ClipParent":false,"ControlType":0,"Cur' +
+          'sor":-4,"DataDetectorTypes":0,"DisableFocusEffect":false,"Disabl' +
+          'eMouseWheel":false,"DragMode":0,"Enabled":true,"EnableDragHighli' +
+          'ght":true,"EnabledScroll":true,"Height":299,"HelpContext":0,"Hel' +
+          'pKeyword":"","HelpType":1,"HideSelectionOnExit":true,"Hint":"","' +
+          'HitTest":true,"ImeMode":0,"KeyboardType":0,"Lines":["What is Lor' +
+          'em Ipsum?","","Lorem Ipsum is simply dummy text of the printing ' +
+          'and typesetting industry. Lorem Ipsum has been the industry'#39's st' +
+          'andard dummy text ever since the 1500s, when an unknown printer ' +
+          'took a galley of type and scrambled it to make a type specimen b' +
+          'ook. It has survived not only five centuries, but also the leap ' +
+          'into electronic typesetting, remaining essentially unchanged. It' +
+          ' was popularised in the 1960s with the release of Letraset sheet' +
+          's containing Lorem Ipsum passages, and more recently with deskto' +
+          'p publishing software like Aldus PageMaker including versions of' +
+          ' Lorem Ipsum.","","Where does it come from?","","Contrary to pop' +
+          'ular belief, Lorem Ipsum is not simply random text. It has roots' +
+          ' in a piece of classical Latin literature from 45 BC, making it ' +
+          'over 2000 years old. Richard McClintock, a Latin professor at Ha' +
+          'mpden-Sydney College in Virginia, looked up one of the more obsc' +
+          'ure Latin words, consectetur, from a Lorem Ipsum passage, and go' +
+          'ing through the cites of the word in classical literature, disco' +
+          'vered the undoubtable source. Lorem Ipsum comes from sections 1.' +
+          '10.32 and 1.10.33 of \u0022de Finibus Bonorum et Malorum\u0022 (' +
+          'The Extremes of Good and Evil) by Cicero, written in 45 BC. This' +
+          ' book is a treatise on the theory of ethics, very popular during' +
+          ' the Renaissance. The first line of Lorem Ipsum, \u0022Lorem ips' +
+          'um dolor sit amet..\u0022, comes from a line in section 1.10.32.' +
+          '"],"Locked":false,"Margins":{"$type":"TBounds","Bottom":0,"Left"' +
+          ':0,"Right":0,"Top":0},"MaxLength":0,"Name":"Memo1","Opacity":1,"' +
+          'Padding":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":' +
+          '0},"ParentShowHint":true,"PopupMenu":"","Position":{"$type":"TPo' +
+          'sition","X":0,"Y":73},"ReadOnly":false,"RotationAngle":0,"Rotati' +
+          'onCenter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type"' +
+          ':"TPosition","X":1,"Y":1},"ShowHint":false,"ShowScrollBars":true' +
+          ',"ShowSizeGrip":false,"Size":{"$type":"TControlSize","Height":29' +
+          '9,"PlatformDefault":false,"Width":184},"StyledSettings":13,"Styl' +
+          'eLookup":"","StyleName":"","TabOrder":0,"TabStop":true,"Tag":0,"' +
+          'TextSettings":{"$type":"TMemoTextSettings","Font":{"$type":"TSet' +
+          'tingsFont","Family":"Segoe UI","Size":12,"IsFMX":true,"Style":0}' +
+          ',"FontColor":"#000000","HorzAlign":1,"WordWrap":true},"Touch":{"' +
+          '$type":"TTouchManager","GestureManager":"","InteractiveGestures"' +
+          ':98},"TouchTargetExpansion":{"$type":"TBounds","Bottom":0,"Left"' +
+          ':0,"Right":0,"Top":0},"Visible":true,"Width":184}, "parent":"For' +
+          'm20"}},{"Panel1":{"content":{"$type":"TPanel","Action":"","Align' +
+          '":1,"Anchors":7,"ClipChildren":false,"ClipParent":false,"Control' +
+          'Type":0,"Cursor":0,"DragMode":0,"Enabled":true,"EnableDragHighli' +
+          'ght":true,"Height":73,"HelpContext":0,"HelpKeyword":"","HelpType' +
+          '":1,"Hint":"","HitTest":true,"Locked":false,"Margins":{"$type":"' +
+          'TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Name":"Panel1",' +
+          '"Opacity":1,"Padding":{"$type":"TBounds","Bottom":0,"Left":0,"Ri' +
+          'ght":0,"Top":0},"ParentShowHint":true,"PopupMenu":"","Position":' +
+          '{"$type":"TPosition","X":0,"Y":0},"RotationAngle":0,"RotationCen' +
+          'ter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPo' +
+          'sition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlS' +
+          'ize","Height":73,"PlatformDefault":false,"Width":184},"StyleLook' +
+          'up":"","StyleName":"","TabOrder":1,"TabStop":true,"Tag":0,"Touch' +
+          '":{"$type":"TTouchManager","GestureManager":"","InteractiveGestu' +
+          'res":0},"TouchTargetExpansion":{"$type":"TBounds","Bottom":0,"Le' +
+          'ft":0,"Right":0,"Top":0},"Visible":true,"Width":184}, "parent":"' +
+          'Form20"}},{"Button1":{"content":{"$type":"TButton","Action":"","' +
+          'Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":false,"CanFoc' +
+          'us":true,"CanParentFocus":false,"ClipChildren":false,"ClipParent' +
+          '":false,"ControlType":0,"Cursor":0,"Default":false,"DisableFocus' +
+          'Effect":false,"DragMode":0,"Enabled":true,"EnableDragHighlight":' +
+          'true,"Height":22,"HelpContext":0,"HelpKeyword":"","HelpType":1,"' +
+          'Hint":"","HitTest":true,"IconTintColor":"gcNull","ImageIndex":0,' +
+          '"Images":"ImageList1","IsPressed":false,"Locked":false,"Margins"' +
+          ':{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Moda' +
+          'lResult":0,"Name":"Button1","Opacity":1,"Padding":{"$type":"TBou' +
+          'nds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShowHint":tru' +
+          'e,"PopupMenu":"","Position":{"$type":"TPosition","X":8,"Y":8},"R' +
+          'epeatClick":false,"RotationAngle":0,"RotationCenter":{"$type":"T' +
+          'Position","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition","X":1,"Y' +
+          '":1},"ShowHint":false,"Size":{"$type":"TControlSize","Height":22' +
+          ',"PlatformDefault":false,"Width":80},"StaysPressed":false,"Style' +
+          'dSettings":15,"StyleLookup":"","StyleName":"","TabOrder":4,"TabS' +
+          'top":true,"Tag":0,"Text":"Open","TextSettings":{"$type":"TButton' +
+          'Settings","Font":{"$type":"TSettingsFont","Family":"Segoe UI","S' +
+          'ize":12,"IsFMX":true,"Style":0},"FontColor":"#000000","FontColor' +
+          'ForState":{"$type":"TButtonFontColors","Focused":"gcNull","Hot":' +
+          '"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAlign":0,"Tr' +
+          'imming":1,"VertAlign":0,"WordWrap":false},"TintColor":"gcNull","' +
+          'Touch":{"$type":"TTouchManager","GestureManager":"","Interactive' +
+          'Gestures":0},"TouchTargetExpansion":{"$type":"TBounds","Bottom":' +
+          '0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":80}, "paren' +
+          't":"Panel1"}},{"Button2":{"content":{"$type":"TButton","Action":' +
+          '"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":false,"Ca' +
+          'nFocus":true,"CanParentFocus":false,"ClipChildren":false,"ClipPa' +
+          'rent":false,"ControlType":0,"Cursor":0,"Default":false,"DisableF' +
+          'ocusEffect":false,"DragMode":0,"Enabled":true,"EnableDragHighlig' +
+          'ht":true,"Height":22,"HelpContext":0,"HelpKeyword":"","HelpType"' +
+          ':1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","ImageIndex' +
+          '":1,"Images":"ImageList1","IsPressed":false,"Locked":false,"Marg' +
+          'ins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"' +
+          'ModalResult":0,"Name":"Button2","Opacity":1,"Padding":{"$type":"' +
+          'TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShowHint"' +
+          ':true,"PopupMenu":"","Position":{"$type":"TPosition","X":96,"Y":' +
+          '8},"RepeatClick":false,"RotationAngle":0,"RotationCenter":{"$typ' +
+          'e":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition","X"' +
+          ':1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlSize","Heigh' +
+          't":22,"PlatformDefault":false,"Width":80},"StaysPressed":false,"' +
+          'StyledSettings":15,"StyleLookup":"","StyleName":"","TabOrder":3,' +
+          '"TabStop":true,"Tag":0,"Text":"Save","TextSettings":{"$type":"TB' +
+          'uttonSettings","Font":{"$type":"TSettingsFont","Family":"Segoe U' +
+          'I","Size":12,"IsFMX":true,"Style":0},"FontColor":"#000000","Font' +
+          'ColorForState":{"$type":"TButtonFontColors","Focused":"gcNull","' +
+          'Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAlign":' +
+          '0,"Trimming":1,"VertAlign":0,"WordWrap":false},"TintColor":"gcNu' +
+          'll","Touch":{"$type":"TTouchManager","GestureManager":"","Intera' +
+          'ctiveGestures":0},"TouchTargetExpansion":{"$type":"TBounds","Bot' +
+          'tom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":80}, "' +
+          'parent":"Panel1"}},{"Button3":{"content":{"$type":"TButton","Act' +
+          'ion":"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":fals' +
+          'e,"CanFocus":true,"CanParentFocus":false,"ClipChildren":false,"C' +
+          'lipParent":false,"ControlType":0,"Cursor":0,"Default":false,"Dis' +
+          'ableFocusEffect":false,"DragMode":0,"Enabled":true,"EnableDragHi' +
+          'ghlight":true,"Height":22,"HelpContext":0,"HelpKeyword":"","Help' +
+          'Type":1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","Image' +
+          'Index":2,"Images":"ImageList1","IsPressed":false,"Locked":false,' +
+          '"Margins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top"' +
+          ':0},"ModalResult":0,"Name":"Button3","Opacity":1,"Padding":{"$ty' +
+          'pe":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShow' +
+          'Hint":true,"PopupMenu":"","Position":{"$type":"TPosition","X":8,' +
+          '"Y":38},"RepeatClick":false,"RotationAngle":0,"RotationCenter":{' +
+          '"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition' +
+          '","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlSize","' +
+          'Height":22,"PlatformDefault":false,"Width":80},"StaysPressed":fa' +
+          'lse,"StyledSettings":15,"StyleLookup":"","StyleName":"","TabOrde' +
+          'r":2,"TabStop":true,"Tag":0,"Text":"Copy","TextSettings":{"$type' +
+          '":"TButtonSettings","Font":{"$type":"TSettingsFont","Family":"Se' +
+          'goe UI","Size":12,"IsFMX":true,"Style":0},"FontColor":"#000000",' +
+          '"FontColorForState":{"$type":"TButtonFontColors","Focused":"gcNu' +
+          'll","Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAl' +
+          'ign":0,"Trimming":1,"VertAlign":0,"WordWrap":false},"TintColor":' +
+          '"gcNull","Touch":{"$type":"TTouchManager","GestureManager":"","I' +
+          'nteractiveGestures":0},"TouchTargetExpansion":{"$type":"TBounds"' +
+          ',"Bottom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":8' +
+          '0}, "parent":"Panel1"}},{"Button4":{"content":{"$type":"TButton"' +
+          ',"Action":"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel"' +
+          ':false,"CanFocus":true,"CanParentFocus":false,"ClipChildren":fal' +
+          'se,"ClipParent":false,"ControlType":0,"Cursor":0,"Default":false' +
+          ',"DisableFocusEffect":false,"DragMode":0,"Enabled":true,"EnableD' +
+          'ragHighlight":true,"Height":22,"HelpContext":0,"HelpKeyword":"",' +
+          '"HelpType":1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","' +
+          'ImageIndex":3,"Images":"ImageList1","IsPressed":false,"Locked":f' +
+          'alse,"Margins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,' +
+          '"Top":0},"ModalResult":0,"Name":"Button4","Opacity":1,"Padding":' +
+          '{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Paren' +
+          'tShowHint":true,"PopupMenu":"","Position":{"$type":"TPosition","' +
+          'X":96,"Y":38},"RepeatClick":false,"RotationAngle":0,"RotationCen' +
+          'ter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPo' +
+          'sition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlS' +
+          'ize","Height":22,"PlatformDefault":false,"Width":80},"StaysPress' +
+          'ed":false,"StyledSettings":15,"StyleLookup":"","StyleName":"","T' +
+          'abOrder":1,"TabStop":true,"Tag":0,"Text":"Paste","TextSettings":' +
+          '{"$type":"TButtonSettings","Font":{"$type":"TSettingsFont","Fami' +
+          'ly":"Segoe UI","Size":12,"IsFMX":true,"Style":0},"FontColor":"#0' +
+          '00000","FontColorForState":{"$type":"TButtonFontColors","Focused' +
+          '":"gcNull","Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},' +
+          '"HorzAlign":0,"Trimming":1,"VertAlign":0,"WordWrap":false},"Tint' +
+          'Color":"gcNull","Touch":{"$type":"TTouchManager","GestureManager' +
+          '":"","InteractiveGestures":0},"TouchTargetExpansion":{"$type":"T' +
+          'Bounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"W' +
+          'idth":80}, "parent":"Panel1"}}]}'
+        Constraint.Width = 184.000000000000000000
+        Constraint.Height = 372.000000000000000000
+      end
+      item
+        Name = 'State 3'
+        Content = 
+          '{"components":[{"Memo1":{"content":{"$type":"TMemo","Align":9,"A' +
+          'nchors":15,"AutoHide":2,"AutoSelect":false,"Bounces":2,"CanFocus' +
+          '":true,"CanParentFocus":false,"Caret":{"$type":"TCaret","Color":' +
+          '"gcNull","Interval":0,"Width":0},"CharCase":0,"CheckSpelling":fa' +
+          'lse,"ClipChildren":false,"ClipParent":false,"ControlType":0,"Cur' +
+          'sor":-4,"DataDetectorTypes":0,"DisableFocusEffect":false,"Disabl' +
+          'eMouseWheel":false,"DragMode":0,"Enabled":true,"EnableDragHighli' +
+          'ght":true,"EnabledScroll":true,"Height":459,"HelpContext":0,"Hel' +
+          'pKeyword":"","HelpType":1,"HideSelectionOnExit":true,"Hint":"","' +
+          'HitTest":true,"ImeMode":0,"KeyboardType":0,"Lines":["What is Lor' +
+          'em Ipsum?","","Lorem Ipsum is simply dummy text of the printing ' +
+          'and typesetting industry. Lorem Ipsum has been the industry'#39's st' +
+          'andard dummy text ever since the 1500s, when an unknown printer ' +
+          'took a galley of type and scrambled it to make a type specimen b' +
+          'ook. It has survived not only five centuries, but also the leap ' +
+          'into electronic typesetting, remaining essentially unchanged. It' +
+          ' was popularised in the 1960s with the release of Letraset sheet' +
+          's containing Lorem Ipsum passages, and more recently with deskto' +
+          'p publishing software like Aldus PageMaker including versions of' +
+          ' Lorem Ipsum.","","Where does it come from?","","Contrary to pop' +
+          'ular belief, Lorem Ipsum is not simply random text. It has roots' +
+          ' in a piece of classical Latin literature from 45 BC, making it ' +
+          'over 2000 years old. Richard McClintock, a Latin professor at Ha' +
+          'mpden-Sydney College in Virginia, looked up one of the more obsc' +
+          'ure Latin words, consectetur, from a Lorem Ipsum passage, and go' +
+          'ing through the cites of the word in classical literature, disco' +
+          'vered the undoubtable source. Lorem Ipsum comes from sections 1.' +
+          '10.32 and 1.10.33 of \u0022de Finibus Bonorum et Malorum\u0022 (' +
+          'The Extremes of Good and Evil) by Cicero, written in 45 BC. This' +
+          ' book is a treatise on the theory of ethics, very popular during' +
+          ' the Renaissance. The first line of Lorem Ipsum, \u0022Lorem ips' +
+          'um dolor sit amet..\u0022, comes from a line in section 1.10.32.' +
+          '"],"Locked":false,"Margins":{"$type":"TBounds","Bottom":0,"Left"' +
+          ':0,"Right":0,"Top":0},"MaxLength":0,"Name":"Memo1","Opacity":1,"' +
+          'Padding":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":' +
+          '0},"ParentShowHint":true,"PopupMenu":"","Position":{"$type":"TPo' +
+          'sition","X":0,"Y":57},"ReadOnly":false,"RotationAngle":0,"Rotati' +
+          'onCenter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type"' +
+          ':"TPosition","X":1,"Y":1},"ShowHint":false,"ShowScrollBars":true' +
+          ',"ShowSizeGrip":false,"Size":{"$type":"TControlSize","Height":45' +
+          '9,"PlatformDefault":false,"Width":648},"StyledSettings":13,"Styl' +
+          'eLookup":"","StyleName":"","TabOrder":0,"TabStop":true,"Tag":0,"' +
+          'TextSettings":{"$type":"TMemoTextSettings","Font":{"$type":"TSet' +
+          'tingsFont","Family":"Segoe UI","Size":15,"IsFMX":true,"Style":0}' +
+          ',"FontColor":"#000000","HorzAlign":1,"WordWrap":true},"Touch":{"' +
+          '$type":"TTouchManager","GestureManager":"","InteractiveGestures"' +
+          ':98},"TouchTargetExpansion":{"$type":"TBounds","Bottom":0,"Left"' +
+          ':0,"Right":0,"Top":0},"Visible":true,"Width":648}, "parent":"For' +
+          'm20"}},{"Panel1":{"content":{"$type":"TPanel","Action":"","Align' +
+          '":1,"Anchors":7,"ClipChildren":false,"ClipParent":false,"Control' +
+          'Type":0,"Cursor":0,"DragMode":0,"Enabled":true,"EnableDragHighli' +
+          'ght":true,"Height":57,"HelpContext":0,"HelpKeyword":"","HelpType' +
+          '":1,"Hint":"","HitTest":true,"Locked":false,"Margins":{"$type":"' +
+          'TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Name":"Panel1",' +
+          '"Opacity":1,"Padding":{"$type":"TBounds","Bottom":0,"Left":0,"Ri' +
+          'ght":0,"Top":0},"ParentShowHint":true,"PopupMenu":"","Position":' +
+          '{"$type":"TPosition","X":0,"Y":0},"RotationAngle":0,"RotationCen' +
+          'ter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPo' +
+          'sition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlS' +
+          'ize","Height":57,"PlatformDefault":false,"Width":648},"StyleLook' +
+          'up":"","StyleName":"","TabOrder":2,"TabStop":true,"Tag":0,"Touch' +
+          '":{"$type":"TTouchManager","GestureManager":"","InteractiveGestu' +
+          'res":0},"TouchTargetExpansion":{"$type":"TBounds","Bottom":0,"Le' +
+          'ft":0,"Right":0,"Top":0},"Visible":true,"Width":648}, "parent":"' +
+          'Form20"}},{"Button1":{"content":{"$type":"TButton","Action":"","' +
+          'Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":false,"CanFoc' +
+          'us":true,"CanParentFocus":false,"ClipChildren":false,"ClipParent' +
+          '":false,"ControlType":0,"Cursor":0,"Default":false,"DisableFocus' +
+          'Effect":false,"DragMode":0,"Enabled":true,"EnableDragHighlight":' +
+          'true,"Height":35,"HelpContext":0,"HelpKeyword":"","HelpType":1,"' +
+          'Hint":"","HitTest":true,"IconTintColor":"gcNull","ImageIndex":0,' +
+          '"Images":"ImageList1","IsPressed":false,"Locked":false,"Margins"' +
+          ':{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Moda' +
+          'lResult":0,"Name":"Button1","Opacity":1,"Padding":{"$type":"TBou' +
+          'nds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShowHint":tru' +
+          'e,"PopupMenu":"","Position":{"$type":"TPosition","X":8,"Y":8},"R' +
+          'epeatClick":false,"RotationAngle":0,"RotationCenter":{"$type":"T' +
+          'Position","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition","X":1,"Y' +
+          '":1},"ShowHint":false,"Size":{"$type":"TControlSize","Height":35' +
+          ',"PlatformDefault":false,"Width":150},"StaysPressed":false,"Styl' +
+          'edSettings":13,"StyleLookup":"","StyleName":"","TabOrder":5,"Tab' +
+          'Stop":true,"Tag":0,"Text":"Open","TextSettings":{"$type":"TButto' +
+          'nSettings","Font":{"$type":"TSettingsFont","Family":"Segoe UI","' +
+          'Size":15,"IsFMX":true,"Style":0},"FontColor":"#000000","FontColo' +
+          'rForState":{"$type":"TButtonFontColors","Focused":"gcNull","Hot"' +
+          ':"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAlign":0,"T' +
+          'rimming":1,"VertAlign":0,"WordWrap":false},"TintColor":"gcNull",' +
+          '"Touch":{"$type":"TTouchManager","GestureManager":"","Interactiv' +
+          'eGestures":0},"TouchTargetExpansion":{"$type":"TBounds","Bottom"' +
+          ':0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":150}, "par' +
+          'ent":"Panel1"}},{"Button2":{"content":{"$type":"TButton","Action' +
+          '":"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel":false,"' +
+          'CanFocus":true,"CanParentFocus":false,"ClipChildren":false,"Clip' +
+          'Parent":false,"ControlType":0,"Cursor":0,"Default":false,"Disabl' +
+          'eFocusEffect":false,"DragMode":0,"Enabled":true,"EnableDragHighl' +
+          'ight":true,"Height":35,"HelpContext":0,"HelpKeyword":"","HelpTyp' +
+          'e":1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","ImageInd' +
+          'ex":1,"Images":"ImageList1","IsPressed":false,"Locked":false,"Ma' +
+          'rgins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0}' +
+          ',"ModalResult":0,"Name":"Button2","Opacity":1,"Padding":{"$type"' +
+          ':"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"ParentShowHin' +
+          't":true,"PopupMenu":"","Position":{"$type":"TPosition","X":164,"' +
+          'Y":8},"RepeatClick":false,"RotationAngle":0,"RotationCenter":{"$' +
+          'type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPosition",' +
+          '"X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlSize","He' +
+          'ight":35,"PlatformDefault":false,"Width":150},"StaysPressed":fal' +
+          'se,"StyledSettings":13,"StyleLookup":"","StyleName":"","TabOrder' +
+          '":4,"TabStop":true,"Tag":0,"Text":"Save","TextSettings":{"$type"' +
+          ':"TButtonSettings","Font":{"$type":"TSettingsFont","Family":"Seg' +
+          'oe UI","Size":15,"IsFMX":true,"Style":0},"FontColor":"#000000","' +
+          'FontColorForState":{"$type":"TButtonFontColors","Focused":"gcNul' +
+          'l","Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},"HorzAli' +
+          'gn":0,"Trimming":1,"VertAlign":0,"WordWrap":false},"TintColor":"' +
+          'gcNull","Touch":{"$type":"TTouchManager","GestureManager":"","In' +
+          'teractiveGestures":0},"TouchTargetExpansion":{"$type":"TBounds",' +
+          '"Bottom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"Width":15' +
+          '0}, "parent":"Panel1"}},{"Button3":{"content":{"$type":"TButton"' +
+          ',"Action":"","Align":0,"Anchors":3,"AutoTranslate":true,"Cancel"' +
+          ':false,"CanFocus":true,"CanParentFocus":false,"ClipChildren":fal' +
+          'se,"ClipParent":false,"ControlType":0,"Cursor":0,"Default":false' +
+          ',"DisableFocusEffect":false,"DragMode":0,"Enabled":true,"EnableD' +
+          'ragHighlight":true,"Height":35,"HelpContext":0,"HelpKeyword":"",' +
+          '"HelpType":1,"Hint":"","HitTest":true,"IconTintColor":"gcNull","' +
+          'ImageIndex":2,"Images":"ImageList1","IsPressed":false,"Locked":f' +
+          'alse,"Margins":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,' +
+          '"Top":0},"ModalResult":0,"Name":"Button3","Opacity":1,"Padding":' +
+          '{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Paren' +
+          'tShowHint":true,"PopupMenu":"","Position":{"$type":"TPosition","' +
+          'X":322,"Y":8},"RepeatClick":false,"RotationAngle":0,"RotationCen' +
+          'ter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$type":"TPo' +
+          'sition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"TControlS' +
+          'ize","Height":35,"PlatformDefault":false,"Width":150},"StaysPres' +
+          'sed":false,"StyledSettings":13,"StyleLookup":"","StyleName":"","' +
+          'TabOrder":3,"TabStop":true,"Tag":0,"Text":"Copy","TextSettings":' +
+          '{"$type":"TButtonSettings","Font":{"$type":"TSettingsFont","Fami' +
+          'ly":"Segoe UI","Size":15,"IsFMX":true,"Style":0},"FontColor":"#0' +
+          '00000","FontColorForState":{"$type":"TButtonFontColors","Focused' +
+          '":"gcNull","Hot":"gcNull","Normal":"gcNull","Pressed":"gcNull"},' +
+          '"HorzAlign":0,"Trimming":1,"VertAlign":0,"WordWrap":false},"Tint' +
+          'Color":"gcNull","Touch":{"$type":"TTouchManager","GestureManager' +
+          '":"","InteractiveGestures":0},"TouchTargetExpansion":{"$type":"T' +
+          'Bounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Visible":true,"W' +
+          'idth":150}, "parent":"Panel1"}},{"Button4":{"content":{"$type":"' +
+          'TButton","Action":"","Align":0,"Anchors":3,"AutoTranslate":true,' +
+          '"Cancel":false,"CanFocus":true,"CanParentFocus":false,"ClipChild' +
+          'ren":false,"ClipParent":false,"ControlType":0,"Cursor":0,"Defaul' +
+          't":false,"DisableFocusEffect":false,"DragMode":0,"Enabled":true,' +
+          '"EnableDragHighlight":true,"Height":35,"HelpContext":0,"HelpKeyw' +
+          'ord":"","HelpType":1,"Hint":"","HitTest":true,"IconTintColor":"g' +
+          'cNull","ImageIndex":3,"Images":"ImageList1","IsPressed":false,"L' +
+          'ocked":false,"Margins":{"$type":"TBounds","Bottom":0,"Left":0,"R' +
+          'ight":0,"Top":0},"ModalResult":0,"Name":"Button4","Opacity":1,"P' +
+          'adding":{"$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0' +
+          '},"ParentShowHint":true,"PopupMenu":"","Position":{"$type":"TPos' +
+          'ition","X":480,"Y":8},"RepeatClick":false,"RotationAngle":0,"Rot' +
+          'ationCenter":{"$type":"TPosition","X":0.5,"Y":0.5},"Scale":{"$ty' +
+          'pe":"TPosition","X":1,"Y":1},"ShowHint":false,"Size":{"$type":"T' +
+          'ControlSize","Height":35,"PlatformDefault":false,"Width":150},"S' +
+          'taysPressed":false,"StyledSettings":13,"StyleLookup":"","StyleNa' +
+          'me":"","TabOrder":2,"TabStop":true,"Tag":0,"Text":"Paste","TextS' +
+          'ettings":{"$type":"TButtonSettings","Font":{"$type":"TSettingsFo' +
+          'nt","Family":"Segoe UI","Size":15,"IsFMX":true,"Style":0},"FontC' +
+          'olor":"#000000","FontColorForState":{"$type":"TButtonFontColors"' +
+          ',"Focused":"gcNull","Hot":"gcNull","Normal":"gcNull","Pressed":"' +
+          'gcNull"},"HorzAlign":0,"Trimming":1,"VertAlign":0,"WordWrap":fal' +
+          'se},"TintColor":"gcNull","Touch":{"$type":"TTouchManager","Gestu' +
+          'reManager":"","InteractiveGestures":0},"TouchTargetExpansion":{"' +
+          '$type":"TBounds","Bottom":0,"Left":0,"Right":0,"Top":0},"Visible' +
+          '":true,"Width":150}, "parent":"Panel1"}}]}'
+        Constraint.Width = 648.000000000000000000
+        Constraint.Height = 516.000000000000000000
+      end>
+    Control = Owner
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060B427574746F6E7374796C65035B0E0054
+          50463007544C61796F757400095374796C654E616D65060B427574746F6E7374
+          796C6505416C69676E070643656E7465720A53697A652E576964746805000000
+          000000009606400B53697A652E48656967687405000000000000008C04401453
+          697A652E506C6174666F726D44656661756C7408085461624F72646572020400
+          1254427574746F6E5374796C654F626A65637400095374796C654E616D65060A
+          6261636B67726F756E6405416C69676E0708436F6E74656E74730C536F757263
+          654C6F6F6B7570061B57696E646F7773203130204465736B746F707374796C65
+          2E706E670A53697A652E576964746805000000000000009606400B53697A652E
+          48656967687405000000000000008C04401453697A652E506C6174666F726D44
+          656661756C740807486F744C696E6B0E010E436170496E736574732E4C656674
+          0500000000000000C000400D436170496E736574732E546F7005000000000000
+          00C000400F436170496E736574732E52696768740500000000000000C0004010
+          436170496E736574732E426F74746F6D0500000000000000C000400F536F7572
+          6365526563742E4C65667405000000000000008001400E536F75726365526563
+          742E546F700500000000000000C7064010536F75726365526563742E52696768
+          740500000000000000A8054011536F75726365526563742E426F74746F6D0500
+          000000000000E4064000010E436170496E736574732E4C656674050000000000
+          00008001400D436170496E736574732E546F7005000000000000008001400F43
+          6170496E736574732E5269676874050000000000000080014010436170496E73
+          6574732E426F74746F6D0500000000000000800140055363616C650500000000
+          000000C0FF3F0F536F75726365526563742E4C6566740500000000000000C001
+          400E536F75726365526563742E546F70050000000000000095074010536F7572
+          6365526563742E52696768740500000000000000FC054011536F757263655265
+          63742E426F74746F6D0500000000000000AB074000010E436170496E73657473
+          2E4C6566740500000000000000C001400D436170496E736574732E546F700500
+          000000000000C001400F436170496E736574732E526967687405000000000000
+          00C0014010436170496E736574732E426F74746F6D0500000000000000C00140
+          055363616C6505000000000000008000400F536F75726365526563742E4C6566
+          7405000000000000008002400E536F75726365526563742E546F700500000000
+          000000C7074010536F75726365526563742E52696768740500000000000000A8
+          064011536F75726365526563742E426F74746F6D0500000000000000E4074000
+          000B466F63757365644C696E6B0E010E436170496E736574732E4C6566740500
+          000000000000C000400D436170496E736574732E546F700500000000000000C0
+          00400F436170496E736574732E52696768740500000000000000C00040104361
+          70496E736574732E426F74746F6D0500000000000000C000400F536F75726365
+          526563742E4C65667405000000000000008001400E536F75726365526563742E
+          546F70050000000000008082074010536F75726365526563742E526967687405
+          00000000000000A8054011536F75726365526563742E426F74746F6D05000000
+          0000000091074000010E436170496E736574732E4C6566740500000000000000
+          8001400D436170496E736574732E546F7005000000000000008001400F436170
+          496E736574732E5269676874050000000000000080014010436170496E736574
+          732E426F74746F6D0500000000000000800140055363616C6505000000000000
+          00C0FF3F0F536F75726365526563742E4C6566740500000000000000C001400E
+          536F75726365526563742E546F700500000000000080C3074010536F75726365
+          526563742E52696768740500000000000000FC054011536F7572636552656374
+          2E426F74746F6D0500000000000080D9074000010E436170496E736574732E4C
+          6566740500000000000000C001400D436170496E736574732E546F7005000000
+          00000000C001400F436170496E736574732E52696768740500000000000000C0
+          014010436170496E736574732E426F74746F6D0500000000000000C001400553
+          63616C6505000000000000008000400F536F75726365526563742E4C65667405
+          000000000000008002400E536F75726365526563742E546F7005000000000000
+          8082084010536F75726365526563742E52696768740500000000000000A80640
+          11536F75726365526563742E426F74746F6D050000000000000091084000000A
+          4E6F726D616C4C696E6B0E010E436170496E736574732E4C6566740500000000
+          000000C000400D436170496E736574732E546F700500000000000000C000400F
+          436170496E736574732E52696768740500000000000000C0004010436170496E
+          736574732E426F74746F6D0500000000000000C000400F536F75726365526563
+          742E4C65667405000000000000008001400E536F75726365526563742E546F70
+          0500000000000000A8064010536F75726365526563742E526967687405000000
+          00000000A8054011536F75726365526563742E426F74746F6D05000000000000
+          00C5064000010E436170496E736574732E4C6566740500000000000000800140
+          0D436170496E736574732E546F7005000000000000008001400F436170496E73
+          6574732E5269676874050000000000000080014010436170496E736574732E42
+          6F74746F6D0500000000000000800140055363616C650500000000000000C0FF
+          3F0F536F75726365526563742E4C6566740500000000000000C001400E536F75
+          726365526563742E546F700500000000000000FC064010536F75726365526563
+          742E52696768740500000000000000FC054011536F75726365526563742E426F
+          74746F6D050000000000008093074000010E436170496E736574732E4C656674
+          0500000000000000C001400D436170496E736574732E546F7005000000000000
+          00C001400F436170496E736574732E52696768740500000000000000C0014010
+          436170496E736574732E426F74746F6D0500000000000000C00140055363616C
+          6505000000000000008000400F536F75726365526563742E4C65667405000000
+          000000008002400E536F75726365526563742E546F700500000000000000A807
+          4010536F75726365526563742E52696768740500000000000000A8064011536F
+          75726365526563742E426F74746F6D0500000000000000C5074000000B507265
+          737365644C696E6B0E010E436170496E736574732E4C65667405000000000000
+          00C000400D436170496E736574732E546F700500000000000000C000400F4361
+          70496E736574732E52696768740500000000000000C0004010436170496E7365
+          74732E426F74746F6D0500000000000000C000400F536F75726365526563742E
+          4C65667405000000000000008001400E536F75726365526563742E546F700500
+          000000000000E6064010536F75726365526563742E5269676874050000000000
+          0000A8054011536F75726365526563742E426F74746F6D050000000000008081
+          074000010E436170496E736574732E4C65667405000000000000008001400D43
+          6170496E736574732E546F7005000000000000008001400F436170496E736574
+          732E5269676874050000000000000080014010436170496E736574732E426F74
+          746F6D0500000000000000800140055363616C650500000000000000C0FF3F0F
+          536F75726365526563742E4C6566740500000000000000C001400E536F757263
+          65526563742E546F700500000000000080AC074010536F75726365526563742E
+          52696768740500000000000000FC054011536F75726365526563742E426F7474
+          6F6D0500000000000000C2074000010E436170496E736574732E4C6566740500
+          000000000000C001400D436170496E736574732E546F700500000000000000C0
+          01400F436170496E736574732E52696768740500000000000000C00140104361
+          70496E736574732E426F74746F6D0500000000000000C00140055363616C6505
+          000000000000008000400F536F75726365526563742E4C656674050000000000
+          00008002400E536F75726365526563742E546F700500000000000000E6074010
+          536F75726365526563742E52696768740500000000000000A8064011536F7572
+          6365526563742E426F74746F6D0500000000000080810840000013546F756368
+          416E696D6174696F6E2E4C696E6B0E0000000654476C79706800095374796C65
+          4E616D65060A676C7970687374796C650C4D617267696E732E4C656674050000
+          0000000000C000400B4D617267696E732E546F7005000000000000008000400D
+          4D617267696E732E5269676874050000000000000080FF3F0E4D617267696E73
+          2E426F74746F6D050000000000000080004005416C69676E07044C6566740A53
+          697A652E576964746805000000000000008004400B53697A652E486569676874
+          05000000000000008003401453697A652E506C6174666F726D44656661756C74
+          0800001654427574746F6E5374796C65546578744F626A65637400095374796C
+          654E616D6506047465787405416C69676E0706436C69656E74064C6F636B6564
+          090C4D617267696E732E4C656674050000000000000080FF3F0B4D617267696E
+          732E546F7005000000000000008000400D4D617267696E732E52696768740500
+          00000000000080FF3F0E4D617267696E732E426F74746F6D0500000000000000
+          8000400A53697A652E576964746805000000000000009406400B53697A652E48
+          65696768740500000000000000F803401453697A652E506C6174666F726D4465
+          6661756C740804546578740604546578740D536861646F7756697369626C6508
+          08486F74436F6C6F720708636C61426C61636B0C466F6375736564436F6C6F72
+          0708636C61426C61636B0B4E6F726D616C436F6C6F720708636C61426C61636B
+          0C50726573736564436F6C6F720708636C61426C61636B000000}
+      end>
+    Left = 112
+    Top = 272
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              03CA494441546843ED98CF4F134114C76766F96D34A090986862E3CD5B390137
+              7AA32A01FF03FA1708272FC276D13BF817C0CD2310422A27B8154EE5A6F12078
+              9204B00495B495CE38DFE9B4D9FEDE1FACC5D84F329937339BEC7BF3DEBE37B3
+              A44D9B366DDAFCD750DD07CAD9DEC28AEC660AA3C6E444F6BC87F5440646AC03
+              3DD510A6FBC070A33CE8A2DDFD5CF0253D6C4AA01EB02BDF3D1426B71EBF8058
+              975CFA13F9F9F9BD92EF8D2E3AD22D300FD895EF7D1869AA3CE8E8BBAF25E704
+              62805D7928DEFB601C62535877BF969C53E6A6B3E47C3C47722F11877ACA1750
+              1EA1E386EFFBA6EA5D8790DA354ACDEB521E61E356792F282BD34933C4A93884
+              DC792744FA1E4589E1211EAF034F1E1818B38ED44872FB49AC65CA7B21F03A10
+              34FFBC01A538931FB1407F77C452E37AF0EC39B9FC9A5045A79508C10F06C7DE
+              0EBBF6C00F59295BAD3C1054A86CE9CA80ECC901C95F1EEB516B61C4D82DF42E
+              C89DA6B4E41321D60511738CD261A44B7BE38246B08610D14FD78413BA81DEF1
+              37707571442E3EE284E08B5526A8654FDB8D38499AE38C725918E8B8BD2E9CEC
+              99D343A3D63A64C706FCFAB2A642C80B38E377D09E58F1A5536622C4199D8628
+              35283F280982D0D8605CAC6F585165E8E9DEFCECE0E89B65C895380A21641E3F
+              CAE38202E5A7CC9DFEE78B89256ED043A9F85295F20073720DCF4C5A8938A6EC
+              CA3F8B7F280B034706648E935A7287FD76F5D4DC0E5F19D9142574562F37479E
+              CD2617132918AE67086364C66E445303443EE379F73B699705E511327983EFC8
+              9785F452891C11E72A6C6453721534CC8DCC4E3D239A1A00E561845B38C91F15
+              5DCF0DB2D64568F929572A2C0F9091ED85E8C0A6391141838C39FD1DD8A0E1BC
+              91299CF2343042F56AD400AFE143097B875E86807C11AD38578B1814DE9A8FEE
+              A653663FB20D1A56308735CEC9AA7A5483D04318EA6189860660F7F1017BC1A0
+              ACB08B42661A3B82CC6D2E445771849717A8359E156946C50EDAB7E4AB34320E
+              1EDB8A4FC42A3D61305175D96F68809FC255FA2D4255BA5470428EE4EE2EA7F7
+              CD70866452F63580CB94DCE925DC0C31E64C94E7F41A59ABAE01285CBF65F383
+              FDC3039408550738E70D6F7EB8D622B4104E95A15449DD42E6A770017BE5ACA4
+              F82ED0E839A08A1EEA460D361726684D0FF8295CD78DAAC6A222946CD4F400CE
+              FB99E33D351F34450F20AF1753A3536A7AC04FE1F2C269F2B5521A59A759BCD7
+              A2CA00AF85CB2B94B2153F46548510FE8E79CDFD7E90E7FF98BC22FAF7402B94
+              07764FB8A1CA033709DCCCEADD038AD42D643701A39B350DA99B6B80CCFD03C3
+              566BE2B94D9B367F0B42FE00E22AD5310E394BAD0000000049454E44AE426082}
+            FileName = 'E:\Delphi\TMS FNC UI Pack\Resources\large\Open.png'
+          end>
+        Name = '1'
+      end
+      item
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              00D5494441546843EDD8310AC2301406E017CF68419DF412EA11D413B8290E2A
+              D4D9CDC55507876E4E2E5E23127C74B0C150A5FC49F9BF252F4BE9DFD7472042
+              F41FA36B69DECFAD96D19AECB2F2BD3BBA262BD881F1B6AB15CE6270D0EAAD55
+              1D60003406406300340640630034064063003406406B7F80FBF5A91546717E68
+              E5170C705C5E820F698AFB78A7CD4D777EBC56416300B4E403D41EE2A66FEA3E
+              6FE17C38C431E10C38DFFEDBBA33C319480D03A031005A2580B5B2D632099573
+              C099F5F2953132D46D7482E7C0749F8D52EB04D14F445EF9BC39B1BEBCC06D00
+              00000049454E44AE426082}
+            FileName = 'E:\Delphi\TMS FNC UI Pack\Resources\large\Save.png'
+          end>
+        Name = '2'
+      end
+      item
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0178494441546843ED97317283301045E54C4E43C52D922A54F4CE4112607290
+              A4A74BAADC828AEB2442B3F2D8448B5662B530446FC6B3EB02599FFFB56095D9
+              9813D40B6DDBFE401BC387BEFE197A11EEA07271D602DEA1170175A0691AF39D
+              4AD775D019C49CE076C022E604BB80BAAEA19311C12EA0280A5111DE33F0F4F6
+              6D2AC6E7CB83A9F60CD8EBC671547DDF9B5E93EC4CB01FE2EBEB2444A49A4218
+              EC22D823E443AFFFE737D7C0E6800F2B905B40AAE78018AB23E4E2EBF591F52E
+              2F912442270DB4C94922807AA0118226156B844227D2026411491D085D63269C
+              2462CF5388F41E750F152526426B29CB520DC330B593882915A8135E015C9B0A
+              A1AA2A532922BC0238A0BE8E5C43152112A158172922F63C85306EA693C8149A
+              5C5CFA0472866A48FA205BE3A20BBBAEDEE365DFBB8A908FCD0444C4E486B9B3
+              FFC38118ECC21C37C1C566024423C4C15C00172E01C7FB4FCC418E10428E1095
+              1C21841C212A394208878C503E032E6C845271A80865B645A95FA76C4203F562
+              E4740000000049454E44AE426082}
+            FileName = 'E:\Delphi\TMS FNC UI Pack\Resources\large\Copy.png'
+          end>
+        Name = '3'
+      end
+      item
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              01BF494441546843ED98314EC3301486E320D13552C5DE2364A41B9C20F406E5
+              223881037004B8418F5036CA448EC05EA130762835CFF0622524C56E6B63BBF2
+              27457ECF51D3F7E7B71D2791EF106C0F82529A124266108E7E7A5ABC31C62645
+              5194986B25C6F620A0F80768FA8AE78CF0BC11B40800526CB7213BBF37BA0408
+              F23C27F5815D46D12EE0BFD9E92EC164CD613C534C7B69DE79881986BDC0E486
+              B95DE498EE454740F542D3355BCFE2E8444CCAE1F92D81E21328BEC22E6DD482
+              DF17376DB1206E38BE938AEB0CA1D566356F166F0D89D3351D01A7649060D802
+              ACFEC0D029BC9FC4C7B70A752613B061E4F26C5C3C61AA9DE533BD88099B632A
+              E08B07865B517280449FF7FC4F30D546F54A93E5825EF1EB63D7CE2839600B6D
+              0EB88C760754EE9A4E8203BFA91D90ED83243CC2EFAF31FE13571D988200A597
+              20E30EC02690374AC076052381D409271D4853F1022775C249015996298B7076
+              155215E1F432AA22C269011C99082705F0D5A8799465EB9BD814DB6F9C774086
+              53CF0119F57302AE2DEAF6DE8120C03641806D8200DB0401B609026CD3238019
+              FB066A828E8078104F7C12D1D98DEA22EC4615F15E80F1216482A31A429E1345
+              5FC255A02B54B7FE8E0000000049454E44AE426082}
+            FileName = 'E:\Delphi\TMS FNC UI Pack\Resources\large\Paste.png'
+          end>
+        Name = '4'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = '1'
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = '2'
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = '3'
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = '4'
+            SourceRect.Right = 48.000000000000000000
+            SourceRect.Bottom = 48.000000000000000000
+          end>
+      end>
+    Left = 72
+    Top = 272
+  end
+end

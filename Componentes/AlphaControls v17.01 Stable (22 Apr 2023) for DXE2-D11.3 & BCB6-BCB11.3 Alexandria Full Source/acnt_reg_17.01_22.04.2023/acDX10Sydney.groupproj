@@ -1,0 +1,48 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{56F822D3-28D7-4FA2-AA73-D230124CEF89}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="acntDX10Sydney_R.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="acntDX10Sydney.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="acntDX10Sydney_R">
+        <MSBuild Projects="acntDX10Sydney_R.dproj"/>
+    </Target>
+    <Target Name="acntDX10Sydney_R:Clean">
+        <MSBuild Projects="acntDX10Sydney_R.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="acntDX10Sydney_R:Make">
+        <MSBuild Projects="acntDX10Sydney_R.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="acntDX10Sydney">
+        <MSBuild Projects="acntDX10Sydney.dproj"/>
+    </Target>
+    <Target Name="acntDX10Sydney:Clean">
+        <MSBuild Projects="acntDX10Sydney.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="acntDX10Sydney:Make">
+        <MSBuild Projects="acntDX10Sydney.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="acntDX10Sydney_R;acntDX10Sydney"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="acntDX10Sydney_R:Clean;acntDX10Sydney:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="acntDX10Sydney_R:Make;acntDX10Sydney:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

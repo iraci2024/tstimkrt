@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoD104Sydney">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoD104Sydney">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoD104Sydney">
+    <MSBuild Projects="UnboundDemo\UnboundDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoD104Sydney">
+    <MSBuild Projects="DBDemo\DBDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD104Sydney">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoD104Sydney">
+    <MSBuild Projects="StylesDemo\StylesDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoD104Sydney">
+    <MSBuild Projects="ResourceDemo\ResourceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoD104Sydney">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoD104Sydney">
+    <MSBuild Projects="AggregateDemo\AggregateDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoD104Sydney">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoD104Sydney">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoD104Sydney;RangeControlDemoD104Sydney;UnboundDemoD104Sydney;DBDemoD104Sydney;CustomDrawDemoD104Sydney;StylesDemoD104Sydney;ResourceDemoD104Sydney;GanttViewDemoD104Sydney;AggregateDemoD104Sydney;HolidaysDemoD104Sydney;WebServiceDemoD104Sydney" />
+  </Target>
+</Project>

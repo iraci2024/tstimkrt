@@ -1,0 +1,7 @@
+In this demo, you can:
+
+ - Use the Customization Form to adjust a template row's layout as needed and apply the changes to the View (the Options | Customize Row Layout... menu item).
+ - Use the Customization Form to adjust the Edit Form's layout (the Options | Customize Edit Form... menu item).
+ - Try Table View-related features, including master-detail data presentation, modal Edit Form, group and sort operations, etc.
+ - Apply different paint styles to a form (the Look&Feel menu item).
+ - Make the size of tappable UI elements fit the average size of a fingertip, and revert back to the default size (the Options | Touch Mode menu item).

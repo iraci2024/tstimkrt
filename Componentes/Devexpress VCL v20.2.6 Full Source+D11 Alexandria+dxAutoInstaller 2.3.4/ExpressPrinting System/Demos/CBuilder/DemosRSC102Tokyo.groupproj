@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkRSC102Tokyo">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkRSC102Tokyo">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkRSC102Tokyo">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkRSC102Tokyo">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerRSC102Tokyo">
+    <MSBuild Projects="ReportExplorer\ReportExplorerRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkRSC102Tokyo">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLRSC102Tokyo">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkRSC102Tokyo">
+    <MSBuild Projects="StandardRL\StandardReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkRSC102Tokyo">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkRSC102Tokyo">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkRSC102Tokyo;FlowChartReportLinkRSC102Tokyo;LayoutControlReportLinkRSC102Tokyo;OrgChartReportLinkRSC102Tokyo;ReportExplorerRSC102Tokyo;SchedulerLinkRSC102Tokyo;SpreadSheetRLRSC102Tokyo;StandardReportLinkRSC102Tokyo;PivotGridReportLinkRSC102Tokyo;cxTreeListReportLinkRSC102Tokyo" />
+  </Target>
+</Project>

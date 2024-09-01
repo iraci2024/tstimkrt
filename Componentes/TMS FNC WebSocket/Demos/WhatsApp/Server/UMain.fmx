@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'WhatsApp Server'
+  ClientHeight = 426
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 624.000000000000000000
+    Size.Height = 408.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 620.000000000000000000
+    Viewport.Height = 404.000000000000000000
+  end
+  object TMSFNCWhatsAppServer1: TTMSFNCWhatsAppServer
+    Size.Width = 39.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    Position.X = 40.000000000000000000
+    Position.Y = 24.000000000000000000
+    Port = 8099
+    OnRawMessage = TMSFNCWhatsAppServer1RawMessage
+    OnGetSSLPassword = TMSFNCWhatsAppServer1GetSSLPassword
+  end
+end

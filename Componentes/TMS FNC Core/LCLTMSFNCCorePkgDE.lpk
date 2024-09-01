@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="LCLTMSFNCCorePkgDE"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <Libraries Value="."/>
+        <OtherUnitFiles Value="."/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="TMS FNC Core for LCL Designtime"/>
+    <Version Major="2" Minor="5"/>
+    <Files Count="17">
+      <Item1>
+        <Filename Value="LCLTMSFNCBitmapContainerDE.pas"/>
+        <UnitName Value="LCLTMSFNCBitmapContainerDE"/>
+      </Item1>
+      <Item2>
+        <Filename Value="LCLTMSFNCBitmapContainerRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCBitmapContainerRegDE"/>
+      </Item2>
+      <Item3>
+        <Filename Value="LCLTMSFNCGeneralDE.pas"/>
+        <UnitName Value="LCLTMSFNCGeneralDE"/>
+      </Item3>
+      <Item4>
+        <Filename Value="LCLTMSFNCGeneralRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCGeneralRegDE"/>
+      </Item4>
+      <Item5>
+        <Filename Value="LCLTMSFNCDataBindingDE.pas"/>
+        <UnitName Value="LCLTMSFNCDataBindingDE"/>
+      </Item5>
+      <Item6>
+        <Filename Value="LCLTMSFNCDataBindingEditorDE.pas"/>
+        <UnitName Value="LCLTMSFNCDataBindingEditorDE"/>
+      </Item6>
+      <Item7>
+        <Filename Value="LCLTMSFNCDataBindingEditorRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCDataBindingEditorRegDE"/>
+      </Item7>
+      <Item8>
+        <Filename Value="LCLTMSFNCDataBindingRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCDataBindingRegDE"/>
+      </Item8>
+      <Item9>
+        <Filename Value="LCLTMSFNCBitmapEditorDE.pas"/>
+        <UnitName Value="LCLTMSFNCBitmapEditorDE"/>
+      </Item9>
+      <Item10>
+        <Filename Value="LCLTMSFNCBitmapEditorRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCBitmapEditorRegDE"/>
+      </Item10>
+      <Item11>
+        <Filename Value="LCLTMSFNCGraphicsAppearanceEditorDE.pas"/>
+        <UnitName Value="LCLTMSFNCGraphicsAppearanceEditorDE"/>
+      </Item11>
+      <Item12>
+        <Filename Value="LCLTMSFNCGraphicsAppearanceEditorRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCGraphicsAppearanceEditorRegDE"/>
+      </Item12>
+      <Item13>
+        <Filename Value="LCLTMSFNCBitmapContainerEditorDE.pas"/>
+        <UnitName Value="LCLTMSFNCBitmapContainerEditorDE"/>
+      </Item13>
+      <Item14>
+        <Filename Value="LCLTMSFNCBitmapContainerEditorRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCBitmapContainerEditorRegDE"/>
+      </Item14>
+      <Item15>
+        <Filename Value="LCLTMSFNCResponsiveManagerDE.pas"/>
+        <UnitName Value="LCLTMSFNCResponsiveManagerDE"/>
+      </Item15>
+      <Item16>
+        <Filename Value="LCLTMSFNCResponsiveManagerRegDE.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LCLTMSFNCResponsiveManagerRegDE"/>
+      </Item16>
+      <Item17>
+        <Filename Value="LCLTMSFNCResponsiveManagerDimensionsEditor.pas"/>
+        <UnitName Value="LCLTMSFNCResponsiveManagerDimensionsEditor"/>
+      </Item17>
+    </Files>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="LCLTMSFNCCorePkg"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="IDEIntf"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="FCL"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

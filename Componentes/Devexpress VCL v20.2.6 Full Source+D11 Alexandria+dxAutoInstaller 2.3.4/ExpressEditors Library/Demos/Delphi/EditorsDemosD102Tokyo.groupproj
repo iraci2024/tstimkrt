@@ -1,0 +1,65 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FormattedLabelDemoD102Tokyo">
+    <MSBuild Projects="FormattedLabelDemo\FormattedLabelDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="TokenEditDemoD102Tokyo">
+    <MSBuild Projects="TokenEditDemo\TokenEditDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoD102Tokyo">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="BarCodeDemoD102Tokyo">
+    <MSBuild Projects="BarCodeDemo\BarCodeDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ActivityIndicatorDemoD102Tokyo">
+    <MSBuild Projects="ActivityIndicatorDemo\ActivityIndicatorDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="AlertWindowDemoD102Tokyo">
+    <MSBuild Projects="AlertWindowDemo\AlertWindowDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="AlertWindowCustomDrawDemoD102Tokyo">
+    <MSBuild Projects="AlertWindowCustomDrawDemo\AlertWindowCustomDrawDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemoD102Tokyo">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemoD102Tokyo">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsStylesDemoD102Tokyo">
+    <MSBuild Projects="EditorsStylesDemo\EditorsStylesDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="BreadcrumbEditDemoD102Tokyo">
+    <MSBuild Projects="BreadcrumbEditDemo\BreadcrumbEditDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="DBBreadcrumbEditDemoD102Tokyo">
+    <MSBuild Projects="DBBreadcrumbEditDemo\DBBreadcrumbEditDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ShellBreadcrumbEditDemoD102Tokyo">
+    <MSBuild Projects="ShellBreadcrumbEditDemo\ShellBreadcrumbEditDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsValidationDemoD102Tokyo">
+    <MSBuild Projects="EditorsValidationDemo\EditorsValidationDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ImageViewerDemoD102Tokyo">
+    <MSBuild Projects="ImageViewerDemo\ImageViewerDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ImageSliderDemoD102Tokyo">
+    <MSBuild Projects="ImageSliderDemo\ImageSliderDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="CloudStorageDemoD102Tokyo">
+    <MSBuild Projects="CloudStorageDemo\CloudStorageDemoD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FormattedLabelDemoD102Tokyo;TokenEditDemoD102Tokyo;RangeControlDemoD102Tokyo;BarCodeDemoD102Tokyo;ActivityIndicatorDemoD102Tokyo;AlertWindowDemoD102Tokyo;AlertWindowCustomDrawDemoD102Tokyo;EditorsLookupDemoD102Tokyo;EditorsMaskDemoD102Tokyo;EditorsStylesDemoD102Tokyo;BreadcrumbEditDemoD102Tokyo;DBBreadcrumbEditDemoD102Tokyo;ShellBreadcrumbEditDemoD102Tokyo;EditorsValidationDemoD102Tokyo;ImageViewerDemoD102Tokyo;ImageSliderDemoD102Tokyo;CloudStorageDemoD102Tokyo" />
+  </Target>
+</Project>

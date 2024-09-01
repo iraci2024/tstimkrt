@@ -1,0 +1,53 @@
+package vclFlexCompressd4;
+
+{$R *.RES}
+{$R 'FlexCompress.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'FlexCompress Package'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl40,
+  vclx40,
+  inet40;
+
+contains
+  FXCZlib in 'FXCZlib.pas',
+  FXCCipher in 'FXCCipher.pas',
+  FXCConst in 'FXCConst.pas',
+  FXCDecConst in 'FXCDecConst.pas',
+  FXCDecUtil in 'FXCDecUtil.pas',
+  FXCFolderDialog in 'FXCFolderDialog.pas',
+  FXCStrFunc in 'FXCStrFunc.pas',
+  FXCBZip2 in 'FXCBZip2.pas',
+  FXCExcept in 'FXCExcept.pas',
+  FXCPBKDF_2 in 'FXCPBKDF_2.pas',
+  FXChash in 'FXChash.pas',
+  FXChmac in 'FXChmac.pas',
+  FXCsha1 in 'FXCsha1.pas',
+  FXCpb_kdf in 'FXCpb_kdf.pas',
+  FXCKeyDeriv in 'FXCKeyDeriv.pas',
+  FlexCompress in 'FlexCompress.pas';
+
+end.

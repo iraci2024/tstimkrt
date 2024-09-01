@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoRSC102Tokyo">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC102Tokyo">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoRSC102Tokyo">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoRSC102Tokyo">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoRSC102Tokyo">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoRSC102Tokyo">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC102Tokyo">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSC102Tokyo">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSC102Tokyo">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSC102Tokyo">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSC102Tokyo">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoRSC102Tokyo;EditorsInPlaceDemoRSC102Tokyo;ProviderModeDemoRSC102Tokyo;RowsMultiEditorsDemoRSC102Tokyo;RTTIInspectorDemoRSC102Tokyo;SimpleVerticalGridDemoRSC102Tokyo;StylesMultiDemoRSC102Tokyo;StylesSimpleDemoRSC102Tokyo;EditorsInPlaceValidationDemoRSC102Tokyo;ScrollbarAnnotationsDemoRSC102Tokyo;CalculatedFieldsDemoRSC102Tokyo" />
+  </Target>
+</Project>

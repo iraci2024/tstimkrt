@@ -1,0 +1,38 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EBar2000DemoD101Berlin">
+    <MSBuild Projects="EBar2000Demo\EBar2000DemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="BackgroundDemoD101Berlin">
+    <MSBuild Projects="BackgroundDemo\BackgroundDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="DockingMegaDemoD101Berlin">
+    <MSBuild Projects="DockingMegaDemo\DockingMegaDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="InPlaceEditorsDemoD101Berlin">
+    <MSBuild Projects="InPlaceEditorsDemo\InPlaceEditorsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="BarNotepadDemoD101Berlin">
+    <MSBuild Projects="BarNotepadDemo\BarNotepadDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="RibbonNotepadDemoD101Berlin">
+    <MSBuild Projects="RibbonNotepadDemo\RibbonNotepadDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="SampleDockingD101Berlin">
+    <MSBuild Projects="SampleDocking\SampleDockingD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="NotesDemoD101Berlin">
+    <MSBuild Projects="NotesDemo\NotesDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EBar2000DemoD101Berlin;BackgroundDemoD101Berlin;DockingMegaDemoD101Berlin;InPlaceEditorsDemoD101Berlin;BarNotepadDemoD101Berlin;RibbonNotepadDemoD101Berlin;SampleDockingD101Berlin;NotesDemoD101Berlin" />
+  </Target>
+</Project>

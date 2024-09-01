@@ -1,0 +1,65 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="FormattedLabelDemoD101Berlin">
+    <MSBuild Projects="FormattedLabelDemo\FormattedLabelDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="TokenEditDemoD101Berlin">
+    <MSBuild Projects="TokenEditDemo\TokenEditDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoD101Berlin">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="BarCodeDemoD101Berlin">
+    <MSBuild Projects="BarCodeDemo\BarCodeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ActivityIndicatorDemoD101Berlin">
+    <MSBuild Projects="ActivityIndicatorDemo\ActivityIndicatorDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="AlertWindowDemoD101Berlin">
+    <MSBuild Projects="AlertWindowDemo\AlertWindowDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="AlertWindowCustomDrawDemoD101Berlin">
+    <MSBuild Projects="AlertWindowCustomDrawDemo\AlertWindowCustomDrawDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsLookupDemoD101Berlin">
+    <MSBuild Projects="EditorsLookupDemo\EditorsLookupDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsMaskDemoD101Berlin">
+    <MSBuild Projects="EditorsMaskDemo\EditorsMaskDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsStylesDemoD101Berlin">
+    <MSBuild Projects="EditorsStylesDemo\EditorsStylesDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="BreadcrumbEditDemoD101Berlin">
+    <MSBuild Projects="BreadcrumbEditDemo\BreadcrumbEditDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="DBBreadcrumbEditDemoD101Berlin">
+    <MSBuild Projects="DBBreadcrumbEditDemo\DBBreadcrumbEditDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ShellBreadcrumbEditDemoD101Berlin">
+    <MSBuild Projects="ShellBreadcrumbEditDemo\ShellBreadcrumbEditDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsValidationDemoD101Berlin">
+    <MSBuild Projects="EditorsValidationDemo\EditorsValidationDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ImageViewerDemoD101Berlin">
+    <MSBuild Projects="ImageViewerDemo\ImageViewerDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ImageSliderDemoD101Berlin">
+    <MSBuild Projects="ImageSliderDemo\ImageSliderDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CloudStorageDemoD101Berlin">
+    <MSBuild Projects="CloudStorageDemo\CloudStorageDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="FormattedLabelDemoD101Berlin;TokenEditDemoD101Berlin;RangeControlDemoD101Berlin;BarCodeDemoD101Berlin;ActivityIndicatorDemoD101Berlin;AlertWindowDemoD101Berlin;AlertWindowCustomDrawDemoD101Berlin;EditorsLookupDemoD101Berlin;EditorsMaskDemoD101Berlin;EditorsStylesDemoD101Berlin;BreadcrumbEditDemoD101Berlin;DBBreadcrumbEditDemoD101Berlin;ShellBreadcrumbEditDemoD101Berlin;EditorsValidationDemoD101Berlin;ImageViewerDemoD101Berlin;ImageSliderDemoD101Berlin;CloudStorageDemoD101Berlin" />
+  </Target>
+</Project>

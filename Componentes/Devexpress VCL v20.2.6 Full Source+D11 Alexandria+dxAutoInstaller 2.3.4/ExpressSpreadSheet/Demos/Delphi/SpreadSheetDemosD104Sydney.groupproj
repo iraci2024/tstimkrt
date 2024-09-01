@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoD104Sydney">
+    <MSBuild Projects="Invoice\InvoiceDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomFunctionDemoD104Sydney">
+    <MSBuild Projects="CustomFunction\CustomFunctionDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD104Sydney">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoD104Sydney">
+    <MSBuild Projects="Outline\OutlineDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoD104Sydney">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoD104Sydney">
+    <MSBuild Projects="Comments\CommentsDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoD104Sydney">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoD104Sydney">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoD104Sydney">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoD104Sydney">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoD104Sydney.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoD104Sydney;CustomFunctionDemoD104Sydney;CustomDrawDemoD104Sydney;OutlineDemoD104Sydney;ConditionalFormattingDemoD104Sydney;CommentsDemoD104Sydney;SimpleReportDemoD104Sydney;HorizontalReportDemoD104Sydney;MasterDetailReportDemoD104Sydney;InvoiceReportDemoD104Sydney" />
+  </Target>
+</Project>

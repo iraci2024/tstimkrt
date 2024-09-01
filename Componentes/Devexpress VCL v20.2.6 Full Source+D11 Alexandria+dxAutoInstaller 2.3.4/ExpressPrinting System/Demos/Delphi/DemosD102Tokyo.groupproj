@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkD102Tokyo">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkD102Tokyo">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkD102Tokyo">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkD102Tokyo">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerD102Tokyo">
+    <MSBuild Projects="ReportExplorer\ReportExplorerD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkD102Tokyo">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLD102Tokyo">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkD102Tokyo">
+    <MSBuild Projects="StandardRL\StandardReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkD102Tokyo">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkD102Tokyo">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkD102Tokyo.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkD102Tokyo;FlowChartReportLinkD102Tokyo;LayoutControlReportLinkD102Tokyo;OrgChartReportLinkD102Tokyo;ReportExplorerD102Tokyo;SchedulerLinkD102Tokyo;SpreadSheetRLD102Tokyo;StandardReportLinkD102Tokyo;PivotGridReportLinkD102Tokyo;cxTreeListReportLinkD102Tokyo" />
+  </Target>
+</Project>

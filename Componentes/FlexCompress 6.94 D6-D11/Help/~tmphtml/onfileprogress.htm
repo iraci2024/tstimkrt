@@ -1,0 +1,92 @@
+<html>
+<head>
+   <title>OnFileProgress</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_OnFileProgress;OnFileProgress_Event;OnFileProgress">
+<param name="alink name" value="$topicid_OnFileProgress">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.OnFileProgress</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Occurs when archive operation with a file updates a progress indication value.
+<br>
+
+<br>
+<b>type</b> TFXCFileProgressEvent =  procedure(
+<br>
+                                      Sender: &nbsp;&nbsp;&nbsp;TObject;
+<br>
+                                      FileName: &nbsp;&nbsp;&nbsp;WideString; 
+<br>
+                                      Progress: &nbsp;&nbsp;&nbsp;Double;
+<br>
+                                      Operation: &nbsp;&nbsp;&nbsp;<a href=tfcprocessoperation.htm>TFXCProcessOperation</a>;
+<br>
+                                      ProgressPhase: <a href=tfcprogressphase.htm>TFXCProgressPhase</a>;
+<br>
+                                      <b>var</b> Cancel: &nbsp;&nbsp;&nbsp;Boolean
+<br>
+                                      ) of <b>object</b>;
+<br>
+<b>property</b> OnFileProgress: TFXCFileProgressEvent;
+<br>
+
+<br>
+<b>Description</b>
+<br>
+
+<br>
+Write an OnFileProgress event handler to display progress of the current operation or 
+<br>
+to cancel it. OnFileProgress event is triggered by <a href=addfiles.htm>AddFiles</a>, <a href=movefiles.htm>MoveFiles</a>, <a href=updatefiles.htm>UpdateFiles</a>, <a href=deletefiles.htm>DeleteFiles</a>, <a href=testfiles.htm>TestFiles</a> or <a href=extractfiles.htm>ExtractFiles</a> when current archive operation with a file updates a progress indication value.
+<br>
+
+<br>
+The Sender parameter is the object whose event handler is called.  
+<br>
+
+<br>
+FileName indicates current file name.
+<br>
+
+<br>
+Progress indicates progress for the current operation in percents.
+<br>
+
+<br>
+Operation indicates current archive operation.
+<br>
+
+<br>
+Cancel determines if current operation on the current file should be cancelled. Set Cancel to True if you want to cancel executing of the current operation on the file. Default value for Cancel is False.
+<br>
+
+<br>
+</span>
+
+</body>
+</html>

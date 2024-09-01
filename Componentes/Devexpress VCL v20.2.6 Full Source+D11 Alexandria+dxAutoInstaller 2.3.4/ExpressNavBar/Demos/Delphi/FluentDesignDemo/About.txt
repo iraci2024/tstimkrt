@@ -1,0 +1,9 @@
+This demo shows a Fluent Design Form that uses the NavBar's Hamburger menu or Accordion View as a navigation control.
+
+This form features:
+- Acrylic Material (a semi-transparent texture). Move the form to see how it applies this texture to the navigation control, blending it with the background.
+- Reveal Highlight (a visual effect that brings focus to interactive elements). Hover the mouse pointer over the navigation control to see this effect.
+- Adaptive Layout for the Hamburger menu. Size the form to see how it automatically switches the menu's display mode.
+- An option to extend the navigation control into the form's caption for a more seamless look.
+
+Note: Acrylic Material and Reveal Highlight effects are available on systems with Windows 10 Fall Creators Update (OS Build 17064 or later).

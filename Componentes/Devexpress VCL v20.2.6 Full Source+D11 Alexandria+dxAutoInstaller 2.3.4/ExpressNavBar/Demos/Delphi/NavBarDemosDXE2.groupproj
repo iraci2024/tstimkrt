@@ -1,0 +1,38 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AlphaBlendingDemoDXE2">
+    <MSBuild Projects="AlphaBlendingDemo\AlphaBlendingDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoDXE2">
+    <MSBuild Projects="DragDropDemo\DragDropDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="FeaturesDemoDXE2">
+    <MSBuild Projects="FeaturesDemo\FeaturesDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="GroupControlDemoDXE2">
+    <MSBuild Projects="GroupControlDemo\GroupControlDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="Office12ViewsDemoDXE2">
+    <MSBuild Projects="Office12ViewsDemo\Office12ViewsDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="PhotoStudioDemoDXE2">
+    <MSBuild Projects="PhotoStudioDemo\PhotoStudioDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="HamburgerMenuDemoDXE2">
+    <MSBuild Projects="HamburgerMenu\HamburgerMenuDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="FluentDesignDemoDXE2">
+    <MSBuild Projects="FluentDesignDemo\FluentDesignDemoDXE2.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AlphaBlendingDemoDXE2;DragDropDemoDXE2;FeaturesDemoDXE2;GroupControlDemoDXE2;Office12ViewsDemoDXE2;PhotoStudioDemoDXE2;HamburgerMenuDemoDXE2;FluentDesignDemoDXE2" />
+  </Target>
+</Project>

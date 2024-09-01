@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoRSC100Seattle">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoRSC100Seattle">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoRSC100Seattle">
+    <MSBuild Projects="UnboundDemo\UnboundDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoRSC100Seattle">
+    <MSBuild Projects="DBDemo\DBDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoRSC100Seattle">
+    <MSBuild Projects="StylesDemo\StylesDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC100Seattle">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoRSC100Seattle">
+    <MSBuild Projects="ResourceDemo\ResourceDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoRSC100Seattle">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoRSC100Seattle">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoRSC100Seattle">
+    <MSBuild Projects="AggregateDemo\AggregateDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoRSC100Seattle">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoRSC100Seattle.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoRSC100Seattle;RangeControlDemoRSC100Seattle;UnboundDemoRSC100Seattle;DBDemoRSC100Seattle;StylesDemoRSC100Seattle;CustomDrawDemoRSC100Seattle;ResourceDemoRSC100Seattle;GanttViewDemoRSC100Seattle;HolidaysDemoRSC100Seattle;AggregateDemoRSC100Seattle;WebServiceDemoRSC100Seattle" />
+  </Target>
+</Project>

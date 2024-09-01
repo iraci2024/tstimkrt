@@ -1,0 +1,42 @@
+Migration from TMS Component Pack to TMS VCL UI Pack
+----------------------------------------------------
+
+For most users, the migration from TMS Component Pack to TMS VCL UI Pack will be seamless. Uninstall TMS Component Pack and install TMS VCL UI Pack and you can continue working with your existing projects as-is. 
+
+
+Only in 4 cases, adaptions will be needed:
+
+1) Use of runtime packages
+
+If you used runtime packages with your applications, the TMS VCL UI Pack packages have got new names to be consistent with our component product naming conventions.
+
+The old & new names are:
+
+tmsdxe*.lib  -> TMSVCLUIPackPkgDXE*.lib
+tmsexdxe*.lib  -> TMSVCLUIPackPkgExDXE*.lib
+tmsdedxe*.lib  -> TMSVCLUIPackPkgDEDXE*.lib
+tmsxlsdxe*.lib  -> TMSVCLUIPackPkgXlsDXE*.lib
+tmswizdxe*.lib  -> TMSVCLUIPackPkgWizDXE*.lib
+
+
+2) C++Builder users 
+
+When you link in C++Builder with the TMS Component Pack libraries (.lib files), these become for TMS VCL UI Pack:
+
+tmsdxe*.lib  -> TMSVCLUIPackPkgDXE*.lib
+tmsexdxe*.lib  -> TMSVCLUIPackPkgExDXE*.lib
+tmsdedxe*.lib  -> TMSVCLUIPackPkgDEDXE*.lib
+tmsxlsdxe*.lib  -> TMSVCLUIPackPkgXlsDXE*.lib
+tmswizdxe*.lib  -> TMSVCLUIPackPkgWizDXE*.lib
+
+3) Customers who are currently using TAdvTreeView.
+
+The TAdvTreeView component has changed to the new FNC created treeview.
+TCanvas interactions should be changed to TAdvTMSGraphics and some appearance properties are different (e.g. TopFontColor becomes TopFont.Color).
+
+4) Users of TMS Grid Filters
+
+A new version of TMS Grid Filters is currently available which is compatible with the VCL UI Pack.
+Please install this new version from our website.
+
+

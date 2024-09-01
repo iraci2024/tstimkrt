@@ -1,0 +1,99 @@
+<html>
+<head>
+   <title>TFXCOverwriteMode</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="$topicid_TFCOverwriteMode">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>TFXCOverwriteMode type</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Describes how extracted files will overwrite existing files.<b>
+<br>
+</b><b>
+<br>
+Unit</b>
+<br>
+FlexCompress
+<br>
+
+<br>
+<b>type </b>TFXCOverwriteMode = (omPrompt, omAlways, omNever, omIfNewer, omIfOlder);
+<br>
+
+<br>
+<b>Description</b>
+<br>
+
+<br>
+TFXCOverwriteMode value specifies whether extracted files will overwrite existing files. If you need to overwrite files always set <a href=options.htm>Options</a>.OverwriteMode to omAlways, if you do not need to overwrite any files set it to omNever. If you want to overwrite files with the newer versions set <a href=options.htm>Options</a>.OverwriteMode to omIfNewer, if you wish to overwrite only files with the older versions set it to omIfOlder. If you need to ask user about overwriting files or perform some custom overwriting handling set <a href=options.htm>Options</a>.OverwriteMode to omPrompt and <a href=onconfirmoverwrite.htm>OnConfirmOverwrite</a> event will be triggered each time before overwriting existing file.
+<br>
+
+<br>
+<a href=options.htm>Options</a>.OverwriteMode can be set to any of the following values:
+<br>
+<table border="0" cellpadding="1" cellspacing="0"><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Value                             </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Meaning                                                                                   </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">omAlways<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:MS Sans Serif; font-size:10pt; color:#000000">All existing files will be replaced with extracted files<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">omNever<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:MS Sans Serif; font-size:10pt; color:#000000">Files will not be replaced<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">omIfNewer<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Older versions of files will be replaced with extracted newer files.<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">omIfOlder<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Newer versions of files will be replaced with extracted older files.
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="123">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">omPrompt<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><a href=onconfirmoverwrite.htm>OnConfirmOverwrite</a> event will be triggered each time before overwriting existing file
+<br>
+</span></td></tr></table>
+<br>
+</span>
+
+</body>
+</html>

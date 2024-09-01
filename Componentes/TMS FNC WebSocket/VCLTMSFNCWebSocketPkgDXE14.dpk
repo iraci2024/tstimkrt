@@ -1,0 +1,52 @@
+package VCLTMSFNCWebSocketPkgDXE14;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TMS FNC WebSocket for VCL'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vclimg,
+  vcl,
+  xmlrtl,
+  VCLTMSFNCCorePkgDXE14,
+  IndySystem,
+  IndyProtocols,
+  IndyCore;
+
+contains
+  VCL.TMSFNCWebSocketClient in 'VCL.TMSFNCWebSocketClient.pas',
+  VCL.TMSFNCWebSocketClientReg in 'VCL.TMSFNCWebSocketClientReg.pas',
+  VCL.TMSFNCWebSocketCommon in 'VCL.TMSFNCWebSocketCommon.pas',
+  VCL.TMSFNCWebSocketServer in 'VCL.TMSFNCWebSocketServer.pas',
+  VCL.TMSFNCWebSocketServerReg in 'VCL.TMSFNCWebSocketServerReg.pas',
+  VCL.TMSFNCWhatsAppReceiver in 'VCL.TMSFNCWhatsAppReceiver.pas',
+  VCL.TMSFNCWhatsAppReceiverReg in 'VCL.TMSFNCWhatsAppReceiverReg.pas',
+  VCL.TMSFNCWhatsAppServer in 'VCL.TMSFNCWhatsAppServer.pas',
+  VCL.TMSFNCWhatsAppServerReg in 'VCL.TMSFNCWhatsAppServerReg.pas';
+
+end.

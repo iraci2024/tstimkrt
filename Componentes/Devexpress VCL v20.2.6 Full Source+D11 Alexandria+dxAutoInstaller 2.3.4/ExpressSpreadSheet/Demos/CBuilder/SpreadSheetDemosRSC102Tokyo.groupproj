@@ -1,0 +1,41 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="InvoiceDemoRSC102Tokyo">
+    <MSBuild Projects="Invoice\InvoiceDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC102Tokyo">
+    <MSBuild Projects="CustomDraw\CustomDrawDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="OutlineDemoRSC102Tokyo">
+    <MSBuild Projects="Outline\OutlineDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoRSC102Tokyo">
+    <MSBuild Projects="ConditionalFormatting\ConditionalFormattingDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="CommentsDemoRSC102Tokyo">
+    <MSBuild Projects="Comments\CommentsDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleReportDemoRSC102Tokyo">
+    <MSBuild Projects="SimpleReport\SimpleReportDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="HorizontalReportDemoRSC102Tokyo">
+    <MSBuild Projects="HorizontalReport\HorizontalReportDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailReportDemoRSC102Tokyo">
+    <MSBuild Projects="MasterDetailReport\MasterDetailReportDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="InvoiceReportDemoRSC102Tokyo">
+    <MSBuild Projects="InvoiceReport\InvoiceReportDemoRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="InvoiceDemoRSC102Tokyo;CustomDrawDemoRSC102Tokyo;OutlineDemoRSC102Tokyo;ConditionalFormattingDemoRSC102Tokyo;CommentsDemoRSC102Tokyo;SimpleReportDemoRSC102Tokyo;HorizontalReportDemoRSC102Tokyo;MasterDetailReportDemoRSC102Tokyo;InvoiceReportDemoRSC102Tokyo" />
+  </Target>
+</Project>

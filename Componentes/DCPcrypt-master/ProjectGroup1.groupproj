@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B55CEA15-259E-4468-A819-CF0DE39CC1D9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DCPdelphiRio.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DCPdelphiXE.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DCPdelphiRio">
+        <MSBuild Projects="DCPdelphiRio.dproj"/>
+    </Target>
+    <Target Name="DCPdelphiRio:Clean">
+        <MSBuild Projects="DCPdelphiRio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCPdelphiRio:Make">
+        <MSBuild Projects="DCPdelphiRio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCPdelphiXE">
+        <MSBuild Projects="DCPdelphiXE.dproj"/>
+    </Target>
+    <Target Name="DCPdelphiXE:Clean">
+        <MSBuild Projects="DCPdelphiXE.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCPdelphiXE:Make">
+        <MSBuild Projects="DCPdelphiXE.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DCPdelphiRio;DCPdelphiXE"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DCPdelphiRio:Clean;DCPdelphiXE:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DCPdelphiRio:Make;DCPdelphiXE:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

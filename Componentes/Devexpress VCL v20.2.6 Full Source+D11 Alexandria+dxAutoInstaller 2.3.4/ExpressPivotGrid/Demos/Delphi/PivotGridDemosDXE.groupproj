@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemoDXE">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoDXE">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoDXE">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoDXE">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoDXE">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoDXE">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoDXE">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoDXE">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartConnectionDemoDXE">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserDXE">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoDXE">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoDXE">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoDXE.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoDXE;CompactLayoutDemoDXE;MultipleTotalsDemoDXE;SortBySummaryDemoDXE;UnboundExternalDemoDXE;StylesMultiDemoDXE;CustomDrawDemoDXE;DataSetsDemoDXE;ChartConnectionDemoDXE;OLAPBrowserDXE;PrefilterByCodeDemoDXE;EditorsInPlaceDemoDXE" />
+  </Target>
+</Project>

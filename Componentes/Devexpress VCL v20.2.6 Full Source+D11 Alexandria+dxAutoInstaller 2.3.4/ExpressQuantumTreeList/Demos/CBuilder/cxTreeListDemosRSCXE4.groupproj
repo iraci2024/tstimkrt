@@ -1,0 +1,71 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="BandedDemoRSCXE4">
+    <MSBuild Projects="BandedDemo\BandedDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="BandedFixedDemoRSCXE4">
+    <MSBuild Projects="BandedFixedDemo\BandedFixedDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsMultiEditorsDemoRSCXE4">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="CheckGroupsDemoRSCXE4">
+    <MSBuild Projects="CheckGroupsDemo\CheckGroupsDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSCXE4">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoRSCXE4">
+    <MSBuild Projects="DragDropDemo\DragDropDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSCXE4">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="VirtualModeDemoRSCXE4">
+    <MSBuild Projects="VirtualModeDemo\VirtualModeDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoRSCXE4">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleListDemoRSCXE4">
+    <MSBuild Projects="SimpleListDemo\SimpleListDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleTreeDemoRSCXE4">
+    <MSBuild Projects="SimpleTreeDemo\SimpleTreeDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSCXE4">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSCXE4">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="SummariesDemoRSCXE4">
+    <MSBuild Projects="SummariesDemo\SummariesDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoRSCXE4">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSCXE4">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoRSCXE4">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSCXE4">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSCXE4">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSCXE4.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="BandedDemoRSCXE4;BandedFixedDemoRSCXE4;ColumnsMultiEditorsDemoRSCXE4;CheckGroupsDemoRSCXE4;CustomDrawDemoRSCXE4;DragDropDemoRSCXE4;EditorsInPlaceDemoRSCXE4;VirtualModeDemoRSCXE4;ProviderModeDemoRSCXE4;SimpleListDemoRSCXE4;SimpleTreeDemoRSCXE4;StylesMultiDemoRSCXE4;StylesSimpleDemoRSCXE4;SummariesDemoRSCXE4;UnboundModeDemoRSCXE4;EditorsInPlaceValidationDemoRSCXE4;FilterDropDownDemoRSCXE4;ScrollbarAnnotationsDemoRSCXE4;CalculatedFieldsDemoRSCXE4" />
+  </Target>
+</Project>

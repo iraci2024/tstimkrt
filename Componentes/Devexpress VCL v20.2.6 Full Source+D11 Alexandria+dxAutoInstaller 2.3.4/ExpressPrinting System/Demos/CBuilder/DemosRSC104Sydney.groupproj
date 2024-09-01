@@ -1,0 +1,44 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="EQGridReportLinkRSC104Sydney">
+    <MSBuild Projects="EQGridRL\EQGridReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="FlowChartReportLinkRSC104Sydney">
+    <MSBuild Projects="FlowChartRL\FlowChartReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="LayoutControlReportLinkRSC104Sydney">
+    <MSBuild Projects="LayoutControlRL\LayoutControlReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="OrgChartReportLinkRSC104Sydney">
+    <MSBuild Projects="OrgChartRL\OrgChartReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="ReportExplorerRSC104Sydney">
+    <MSBuild Projects="ReportExplorer\ReportExplorerRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="SchedulerLinkRSC104Sydney">
+    <MSBuild Projects="SchedulerRL\SchedulerLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="SpreadSheetRLRSC104Sydney">
+    <MSBuild Projects="SpreadSheetRL\SpreadSheetRLRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="StandardReportLinkRSC104Sydney">
+    <MSBuild Projects="StandardRL\StandardReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="PivotGridReportLinkRSC104Sydney">
+    <MSBuild Projects="PivotGridRL\PivotGridReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="cxTreeListReportLinkRSC104Sydney">
+    <MSBuild Projects="cxTreeListRL\cxTreeListReportLinkRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="EQGridReportLinkRSC104Sydney;FlowChartReportLinkRSC104Sydney;LayoutControlReportLinkRSC104Sydney;OrgChartReportLinkRSC104Sydney;ReportExplorerRSC104Sydney;SchedulerLinkRSC104Sydney;SpreadSheetRLRSC104Sydney;StandardReportLinkRSC104Sydney;PivotGridReportLinkRSC104Sydney;cxTreeListReportLinkRSC104Sydney" />
+  </Target>
+</Project>

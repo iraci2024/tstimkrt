@@ -1,0 +1,50 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="OrderReportsDemoD101Berlin">
+    <MSBuild Projects="OrderReportsDemo\OrderReportsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CompactLayoutDemoD101Berlin">
+    <MSBuild Projects="CompactLayoutDemo\CompactLayoutDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="MultipleTotalsDemoD101Berlin">
+    <MSBuild Projects="MultipleTotalsDemo\MultipleTotalsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="SortBySummaryDemoD101Berlin">
+    <MSBuild Projects="SortBySummaryDemo\SortBySummaryDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDemoD101Berlin">
+    <MSBuild Projects="UnboundExternalDemo\UnboundExternalDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD101Berlin">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoD101Berlin">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="DataSetsDemoD101Berlin">
+    <MSBuild Projects="DataSetsDemo\DataSetsDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartConnectionDemoD101Berlin">
+    <MSBuild Projects="ChartConnectionDemo\ChartConnectionDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="OLAPBrowserD101Berlin">
+    <MSBuild Projects="OLAPBrowser\OLAPBrowserD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="PrefilterByCodeDemoD101Berlin">
+    <MSBuild Projects="PrefilterByCodeDemo\PrefilterByCodeDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD101Berlin">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD101Berlin.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="OrderReportsDemoD101Berlin;CompactLayoutDemoD101Berlin;MultipleTotalsDemoD101Berlin;SortBySummaryDemoD101Berlin;UnboundExternalDemoD101Berlin;StylesMultiDemoD101Berlin;CustomDrawDemoD101Berlin;DataSetsDemoD101Berlin;ChartConnectionDemoD101Berlin;OLAPBrowserD101Berlin;PrefilterByCodeDemoD101Berlin;EditorsInPlaceDemoD101Berlin" />
+  </Target>
+</Project>

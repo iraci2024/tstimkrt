@@ -1,0 +1,23 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="dbtreeRSC102Tokyo">
+    <MSBuild Projects="DBTree\dbtreeRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="dbtree_fRSC102Tokyo">
+    <MSBuild Projects="DBTree_F\dbtree_fRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="dbtreditRSC102Tokyo">
+    <MSBuild Projects="TreeEdit\dbtreditRSC102Tokyo.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="dbtreeRSC102Tokyo;dbtree_fRSC102Tokyo;dbtreditRSC102Tokyo" />
+  </Target>
+</Project>

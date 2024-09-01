@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="WorldTimeDXE5">
+    <MSBuild Projects="WorldTime\WorldTimeDXE5.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoDXE5">
+    <MSBuild Projects="Styles\StylesDemoDXE5.dproj" Targets="" />
+  </Target>
+  <Target Name="SampleGaugesDXE5">
+    <MSBuild Projects="SampleGauges\SampleGaugesDXE5.dproj" Targets="" />
+  </Target>
+  <Target Name="CarDashboardDXE5">
+    <MSBuild Projects="CarDashboard\CarDashboardDXE5.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="WorldTimeDXE5;StylesDemoDXE5;SampleGaugesDXE5;CarDashboardDXE5" />
+  </Target>
+</Project>

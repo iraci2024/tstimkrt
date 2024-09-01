@@ -1,0 +1,218 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ColumnsMultiEditorsDemoD100Seattle">
+    <MSBuild Projects="ColumnsMultiEditorsDemo\ColumnsMultiEditorsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsShareDemoD100Seattle">
+    <MSBuild Projects="ColumnsShareDemo\ColumnsShareDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ColumnsSimpleDemoD100Seattle">
+    <MSBuild Projects="ColumnsSimpleDemo\ColumnsSimpleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawCardViewDemoD100Seattle">
+    <MSBuild Projects="CustomDrawCardViewDemo\CustomDrawCardViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawTableViewDemoD100Seattle">
+    <MSBuild Projects="CustomDrawTableViewDemo\CustomDrawTableViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="DragDropDemoD100Seattle">
+    <MSBuild Projects="DragDropDemo\DragDropDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoD100Seattle">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterByCodeDemoD100Seattle">
+    <MSBuild Projects="FilterByCodeDemo\FilterByCodeDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterControlDemoD100Seattle">
+    <MSBuild Projects="FilterControlDemo\FilterControlDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="GridMenuViewsDemoD100Seattle">
+    <MSBuild Projects="GridMenuViewsDemo\GridMenuViewsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="GridModeDemoD100Seattle">
+    <MSBuild Projects="GridModeDemo\GridModeDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="InplaceEditFormDemoD100Seattle">
+    <MSBuild Projects="InplaceEditFormDemo\InplaceEditFormDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="IssueListD100Seattle">
+    <MSBuild Projects="IssueList\IssueListD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailCardDemoD100Seattle">
+    <MSBuild Projects="MasterDetailCardDemo\MasterDetailCardDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailDemoD100Seattle">
+    <MSBuild Projects="MasterDetailDemo\MasterDetailDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailMultiDemoD100Seattle">
+    <MSBuild Projects="MasterDetailMultiDemo\MasterDetailMultiDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailTableDemoD100Seattle">
+    <MSBuild Projects="MasterDetailTableDemo\MasterDetailTableDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesCardViewDemoD100Seattle">
+    <MSBuild Projects="StylesCardViewDemo\StylesCardViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoD100Seattle">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoD100Seattle">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryFooterDemoD100Seattle">
+    <MSBuild Projects="SummaryFooterDemo\SummaryFooterDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryGroupDemoD100Seattle">
+    <MSBuild Projects="SummaryGroupDemo\SummaryGroupDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="SummaryMultiDemoD100Seattle">
+    <MSBuild Projects="SummaryMultiDemo\SummaryMultiDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundExternalDataDemoD100Seattle">
+    <MSBuild Projects="UnboundExternalDataDemo\UnboundExternalDataDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundModeDemoD100Seattle">
+    <MSBuild Projects="UnboundModeDemo\UnboundModeDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundSimpleDemoD100Seattle">
+    <MSBuild Projects="UnboundSimpleDemo\UnboundSimpleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedDemoD100Seattle">
+    <MSBuild Projects="ViewBandedDemo\ViewBandedDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewBandedFixedDemoD100Seattle">
+    <MSBuild Projects="ViewBandedFixedDemo\ViewBandedFixedDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardSimpleDemoD100Seattle">
+    <MSBuild Projects="ViewCardSimpleDemo\ViewCardSimpleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewTableSimpleDemoD100Seattle">
+    <MSBuild Projects="ViewTableSimpleDemo\ViewTableSimpleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CellLevelMultiselectDemoD100Seattle">
+    <MSBuild Projects="CellLevelMultiselectDemo\CellLevelMultiselectDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowHeightDemoD100Seattle">
+    <MSBuild Projects="CustomRowHeightDemo\CustomRowHeightDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Office11GroupRowStyleDemoD100Seattle">
+    <MSBuild Projects="Office11GroupRowStyleDemo\Office11GroupRowStyleDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundColumnsDemoD100Seattle">
+    <MSBuild Projects="UnboundColumnsDemo\UnboundColumnsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDesignDefinedDemoD100Seattle">
+    <MSBuild Projects="UnboundDesignDefinedDemo\UnboundDesignDefinedDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewCardDemoD100Seattle">
+    <MSBuild Projects="ViewCardDemo\ViewCardDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewNestedBandsDemoD100Seattle">
+    <MSBuild Projects="ViewNestedBandsDemo\ViewNestedBandsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="UnboundListDemoD100Seattle">
+    <MSBuild Projects="UnboundListDemo\UnboundListDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartDemoD100Seattle">
+    <MSBuild Projects="ViewChartDemo\ViewChartDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ViewChartStackedDemoD100Seattle">
+    <MSBuild Projects="ViewChartStackedDemo\ViewChartStackedDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="MasterDetailChartDemoD100Seattle">
+    <MSBuild Projects="MasterDetailChartDemo\MasterDetailChartDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CardLayoutDemoD100Seattle">
+    <MSBuild Projects="CardLayoutDemo\CardLayoutDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ChartDataDrillingDemoD100Seattle">
+    <MSBuild Projects="ChartDataDrillingDemo\ChartDataDrillingDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FindPanelDemoD100Seattle">
+    <MSBuild Projects="FindPanelDemo\FindPanelDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDemoD100Seattle">
+    <MSBuild Projects="FilterDemo\FilterDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FilterDropDownDemoD100Seattle">
+    <MSBuild Projects="FilterDropDownDemo\FilterDropDownDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoD100Seattle">
+    <MSBuild Projects="LayoutViewDemo\LayoutViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewCarouselModeDemoD100Seattle">
+    <MSBuild Projects="LayoutViewCarouselModeDemo\LayoutViewCarouselModeDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADODemoD100Seattle">
+    <MSBuild Projects="ServerModeADODemo\ServerModeADODemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXDemoD100Seattle">
+    <MSBuild Projects="ServerModeDBXDemo\ServerModeDBXDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACDemoD100Seattle">
+    <MSBuild Projects="ServerModeFireDACDemo\ServerModeFireDACDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeADOQueryDemoD100Seattle">
+    <MSBuild Projects="ServerModeADOQueryDemo\ServerModeADOQueryDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeDBXQueryDemoD100Seattle">
+    <MSBuild Projects="ServerModeDBXQueryDemo\ServerModeDBXQueryDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ServerModeFireDACQueryDemoD100Seattle">
+    <MSBuild Projects="ServerModeFireDACQueryDemo\ServerModeFireDACQueryDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoD100Seattle">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="RatingControlDemoD100Seattle">
+    <MSBuild Projects="RatingControlDemo\RatingControlDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedGroupsDemoD100Seattle">
+    <MSBuild Projects="FixedGroupsDemo\FixedGroupsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="SparklinesDemoD100Seattle">
+    <MSBuild Projects="SparklinesDemo\SparklinesDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="WinExplorerViewDemoD100Seattle">
+    <MSBuild Projects="WinExplorerViewDemo\WinExplorerViewDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="LayoutViewDemoGroupScrollingD100Seattle">
+    <MSBuild Projects="LayoutViewDemoGroupScrolling\LayoutViewDemoGroupScrollingD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="MergedGroupsDemoD100Seattle">
+    <MSBuild Projects="MergedGroupsDemo\MergedGroupsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CheckBoxMultiSelectDemoD100Seattle">
+    <MSBuild Projects="CheckBoxMultiSelectDemo\CheckBoxMultiSelectDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="FixedDataRowsDemoD100Seattle">
+    <MSBuild Projects="FixedDataRowsDemo\FixedDataRowsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ConditionalFormattingDemoD100Seattle">
+    <MSBuild Projects="ConditionalFormattingDemo\ConditionalFormattingDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoD100Seattle">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoD100Seattle">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFilterItemsDemoD100Seattle">
+    <MSBuild Projects="CalculatedFilterItemsDemo\CalculatedFilterItemsDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="CustomRowLayoutDemoD100Seattle">
+    <MSBuild Projects="CustomRowLayoutDemo\CustomRowLayoutDemoD100Seattle.dproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ColumnsMultiEditorsDemoD100Seattle;ColumnsShareDemoD100Seattle;ColumnsSimpleDemoD100Seattle;CustomDrawCardViewDemoD100Seattle;CustomDrawTableViewDemoD100Seattle;DragDropDemoD100Seattle;EditorsInPlaceDemoD100Seattle;FilterByCodeDemoD100Seattle;FilterControlDemoD100Seattle;GridMenuViewsDemoD100Seattle;GridModeDemoD100Seattle;InplaceEditFormDemoD100Seattle;IssueListD100Seattle;MasterDetailCardDemoD100Seattle;MasterDetailDemoD100Seattle;MasterDetailMultiDemoD100Seattle;MasterDetailTableDemoD100Seattle;StylesCardViewDemoD100Seattle;StylesMultiDemoD100Seattle;StylesSimpleDemoD100Seattle;SummaryFooterDemoD100Seattle;SummaryGroupDemoD100Seattle;SummaryMultiDemoD100Seattle;UnboundExternalDataDemoD100Seattle;UnboundModeDemoD100Seattle;UnboundSimpleDemoD100Seattle;ViewBandedDemoD100Seattle;ViewBandedFixedDemoD100Seattle;ViewCardSimpleDemoD100Seattle;ViewTableSimpleDemoD100Seattle;CellLevelMultiselectDemoD100Seattle;CustomRowHeightDemoD100Seattle;Office11GroupRowStyleDemoD100Seattle;UnboundColumnsDemoD100Seattle;UnboundDesignDefinedDemoD100Seattle;ViewCardDemoD100Seattle;ViewNestedBandsDemoD100Seattle;UnboundListDemoD100Seattle;ViewChartDemoD100Seattle;ViewChartStackedDemoD100Seattle;MasterDetailChartDemoD100Seattle;CardLayoutDemoD100Seattle;ChartDataDrillingDemoD100Seattle;FindPanelDemoD100Seattle;FilterDemoD100Seattle;FilterDropDownDemoD100Seattle;LayoutViewDemoD100Seattle;LayoutViewCarouselModeDemoD100Seattle;ServerModeADODemoD100Seattle;ServerModeDBXDemoD100Seattle;ServerModeFireDACDemoD100Seattle;ServerModeADOQueryDemoD100Seattle;ServerModeDBXQueryDemoD100Seattle;ServerModeFireDACQueryDemoD100Seattle;EditorsInPlaceValidationDemoD100Seattle;RatingControlDemoD100Seattle;FixedGroupsDemoD100Seattle;SparklinesDemoD100Seattle;WinExplorerViewDemoD100Seattle;LayoutViewDemoGroupScrollingD100Seattle;MergedGroupsDemoD100Seattle;CheckBoxMultiSelectDemoD100Seattle;FixedDataRowsDemoD100Seattle;ConditionalFormattingDemoD100Seattle;ScrollbarAnnotationsDemoD100Seattle;CalculatedFieldsDemoD100Seattle;CalculatedFilterItemsDemoD100Seattle;CustomRowLayoutDemoD100Seattle" />
+  </Target>
+</Project>

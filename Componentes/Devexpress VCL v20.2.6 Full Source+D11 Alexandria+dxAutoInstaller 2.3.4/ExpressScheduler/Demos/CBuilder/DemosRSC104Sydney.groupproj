@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AgendaViewDemoRSC104Sydney">
+    <MSBuild Projects="AgendaViewDemo\AgendaViewDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="RangeControlDemoRSC104Sydney">
+    <MSBuild Projects="RangeControlDemo\RangeControlDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="UnboundDemoRSC104Sydney">
+    <MSBuild Projects="UnboundDemo\UnboundDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="DBDemoRSC104Sydney">
+    <MSBuild Projects="DBDemo\DBDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesDemoRSC104Sydney">
+    <MSBuild Projects="StylesDemo\StylesDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="CustomDrawDemoRSC104Sydney">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="ResourceDemoRSC104Sydney">
+    <MSBuild Projects="ResourceDemo\ResourceDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="GanttViewDemoRSC104Sydney">
+    <MSBuild Projects="GanttViewDemo\GanttViewDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="HolidaysDemoRSC104Sydney">
+    <MSBuild Projects="HolidaysDemo\HolidaysDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="AggregateDemoRSC104Sydney">
+    <MSBuild Projects="AggregateDemo\AggregateDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="WebServiceDemoRSC104Sydney">
+    <MSBuild Projects="WebServiceDemo\WebServiceDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AgendaViewDemoRSC104Sydney;RangeControlDemoRSC104Sydney;UnboundDemoRSC104Sydney;DBDemoRSC104Sydney;StylesDemoRSC104Sydney;CustomDrawDemoRSC104Sydney;ResourceDemoRSC104Sydney;GanttViewDemoRSC104Sydney;HolidaysDemoRSC104Sydney;AggregateDemoRSC104Sydney;WebServiceDemoRSC104Sydney" />
+  </Target>
+</Project>

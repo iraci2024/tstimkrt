@@ -1,0 +1,96 @@
+<html>
+<head>
+   <title>CompressionLevel</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_CompressionLevel;CompressionLevel_Property;CompressionLevel">
+<param name="alink name" value="$topicid_CompressionLevel">
+</object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.CompressionLevel</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> 
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Specifies the compression level used for archive updating.
+<br>
+
+<br>
+<b>type </b>TFXCCompressionLevel = (clNone,clFastest,clNormal,clMax);
+<br>
+<b>property</b> CompressionLevel: TFXCCompressionLevel;
+<br>
+
+<br>
+<b>Description
+<br>
+</b>This property determines compression level for <a href=addfiles.htm>adding</a>, <a href=movefiles.htm>moving</a> or <a href=updatefiles.htm>updating</a> files. If you need only to store files, set CompressionLevel to clNone. Compression rate of the file stored within archive also depends on selected <a href=compressionalgorithm.htm>CompressionAlgorithm</a>.
+<br>
+
+<br>
+Set CompressionLevel to desired value before adding, moving or updating files.
+<br>
+CompressionLevel can be set to any of the following values:
+<br>
+<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000"> 
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><table border="0" cellpadding="1" cellspacing="0"><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Value                             </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000"><b><u>Meaning                                                                                   </u></b><span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">clNone<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">There is no compression<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">clFastest<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">The fastest compression level and low compression rate<span style="font-family:MS Sans Serif; font-size:8pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">clNormal<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Normal compression level. Slower compression and better compression rate than clFastest<span style="font-family:Helvetica,Arial; font-size:5pt; color:#000000">
+<br>
+</span></span></td></tr><tr><td align="left" valign="top" width="99">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">clMax
+<br>
+</span></td><td align="left" valign="top" width="391">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Slow compression and maximum compression rate
+<br>
+</span></td></tr></table>
+<br>
+
+<br>
+<b>Note:</b>    The CompressionLevel and <a href=compressionmode.htm>CompressionMode</a> properties influence each other. Setting one automatically determines value for the other.
+<br>
+</span></span>
+
+</body>
+</html>

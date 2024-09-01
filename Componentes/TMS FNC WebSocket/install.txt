@@ -1,0 +1,36 @@
+
+      ////////////////////////////////////////////////// 
+      //   I M P O R T A N T    R E M A R K  !!!!!    //
+      //                                              //  
+      //  For a successful install of the components, //
+      //       follow  A L L  steps below             //
+      //                                              //   
+      //////////////////////////////////////////////////
+
+
+Automatic installation
+-----------------------------------------
+
+ Unzip the distribution file TMSFNCWebSocketSetup.zip into a separate directory,
+ further referred to as {$TMSDIR} 
+
+ Run the setup executable file and install the components for the correct environment.
+
+ If the setup fails follow the manual installation instructions below.
+
+Manual installation
+-----------------------------------------
+
+  For Delphi XE7, XE8, 10 Seattle, 10.1 Berlin, 10.2 Tokyo, 10.3 Rio, 10.4 Sydney, 11 Alexandrie
+  -----------------------------------------------------------------------------------------------------------------------------------
+
+  In the IDE, select File, Open and browse for FMXTMSFNCWebSocketPkgD*.dproj
+  From the project manager, right click on the FMXTMSFNCWebSocketPkgD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for VCLTMSFNCWebSocketPkgD*.dproj
+  From the project manager, right click on the VCLTMSFNCWebSocketPkgD*.dproj project and from the menu, choose install
+
+  In the IDE, select File, Open and browse for TMSFNCWebSocketPkgDED*.dproj
+  From the project manager, right click on the TMSFNCWebSocketPkgDED*.dproj project and from the menu, choose install
+
+  (* XE7, XE8, XE9, XE10, XE11, XE12, XE13, XE14)

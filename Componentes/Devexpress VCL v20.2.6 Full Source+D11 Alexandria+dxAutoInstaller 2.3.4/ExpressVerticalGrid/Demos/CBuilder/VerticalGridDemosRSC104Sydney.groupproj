@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	  <ProjectGuid>{624986FA-A7F7-4F65-944F-B4291D80BD68}</ProjectGuid>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality.12</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CustomDrawDemoRSC104Sydney">
+    <MSBuild Projects="CustomDrawDemo\CustomDrawDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceDemoRSC104Sydney">
+    <MSBuild Projects="EditorsInPlaceDemo\EditorsInPlaceDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="ProviderModeDemoRSC104Sydney">
+    <MSBuild Projects="ProviderModeDemo\ProviderModeDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="RowsMultiEditorsDemoRSC104Sydney">
+    <MSBuild Projects="RowsMultiEditorsDemo\RowsMultiEditorsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="RTTIInspectorDemoRSC104Sydney">
+    <MSBuild Projects="RTTIInspectorDemo\RTTIInspectorDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="SimpleVerticalGridDemoRSC104Sydney">
+    <MSBuild Projects="SimpleVerticalGridDemo\SimpleVerticalGridDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesMultiDemoRSC104Sydney">
+    <MSBuild Projects="StylesMultiDemo\StylesMultiDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="StylesSimpleDemoRSC104Sydney">
+    <MSBuild Projects="StylesSimpleDemo\StylesSimpleDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="EditorsInPlaceValidationDemoRSC104Sydney">
+    <MSBuild Projects="EditorsInPlaceValidationDemo\EditorsInPlaceValidationDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="ScrollbarAnnotationsDemoRSC104Sydney">
+    <MSBuild Projects="ScrollbarAnnotationsDemo\ScrollbarAnnotationsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="CalculatedFieldsDemoRSC104Sydney">
+    <MSBuild Projects="CalculatedFieldsDemo\CalculatedFieldsDemoRSC104Sydney.cbproj" Targets="" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CustomDrawDemoRSC104Sydney;EditorsInPlaceDemoRSC104Sydney;ProviderModeDemoRSC104Sydney;RowsMultiEditorsDemoRSC104Sydney;RTTIInspectorDemoRSC104Sydney;SimpleVerticalGridDemoRSC104Sydney;StylesMultiDemoRSC104Sydney;StylesSimpleDemoRSC104Sydney;EditorsInPlaceValidationDemoRSC104Sydney;ScrollbarAnnotationsDemoRSC104Sydney;CalculatedFieldsDemoRSC104Sydney" />
+  </Target>
+</Project>

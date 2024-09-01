@@ -1,0 +1,82 @@
+<html>
+<head>
+   <title>TestFiles</title>
+<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="alink name" value="TFlexCompress_TestFiles;TestFiles_Method;TestFiles">
+<param name="alink name" value="$topicid_TestFiles">
+</object><object id=hhctrl_1 type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"><param name="Command" value="ALink"><param name="Window" value="Example"><param name="Item1" value=""><param name="Item2" value="$topicid_AdvancedExample"></object></head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>T</b><b>FlexCompress</b><b>.TestFiles</b><span style="font-family:Helvetica,Arial; font-size:6pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=tflexcompress.htm>TFlexCompress</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b> &nbsp;&nbsp;&nbsp;</b></span><span style="font-family:Helvetica,Arial; font-size:8pt; color:#000000"><a href=javascript:hhctrl_1.hhclick()>Example</a></span><span style="font-family:Helvetica,Arial; font-size:12pt; color:#000000"><b>
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     
+     <a href="overview.htm">Top</a>&nbsp;
+     
+     </font>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+
+
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Tests files stored within the archive.<b>
+<br>
+</b><b>
+<br>
+procedure </b>TestFiles;<b> overload;
+<br>
+procedure </b>TestFiles(
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FileMask: &nbsp;&nbsp;&nbsp;WideString;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SearchAttr: &nbsp;&nbsp;&nbsp;Word = faAnyFile;
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExclusionMask: WideString = '');<b> overload;
+<br>
+
+<br>
+</b><b>Description</b>
+<br>
+Use TestFiles to test files stored within the <a href=openarchive.htm>open</a> archive file. Selected files will be extracted to temporary directory specified by <a href=tempdir.htm>TempDir</a> property. TestFiles will delete these temporary files after testing. If errors occurs during test operation <a href=onprocessfilefailure.htm>OnProcessFileFailure</a> event will be triggered. If there is no event handler available then exception will be raised. If <a href=options.htm>Options</a>.Recurse is set to True, TestFiles will search files recursively.
+<br>
+
+<br>
+
+<br>
+TestFiles variant without parameters uses <a href=filemasks.htm>FileMasks</a>, <a href=exclusionmasks.htm>ExclusionMasks</a> and <a href=options.htm>Options</a>.SearchAttr to specify search conditions and to exclude files from test operation.
+<br>
+
+<br>
+The FileMask parameter is the directory and file name mask, including wildcard characters. For example, 'TEST\*.*' specifies all files in the TEST directory stored within the archive file. All files that meets FileMask and SearchAttr will be tested.
+<br>
+
+<br>
+The SearchAttr parameter specifies the special files to include in addition to all normal files. This parameter is similar to the Attr parameter in FindFirst function from SysUtils unit. You can set it to any combination of faReadOnly, faHidden, faSysFile, faVolumeID, faDirectory, faArchive constants defined in SysUtils or value faAnyFile meaning that any file meets search condition.
+<br>
+
+<br>
+The ExclusionMask specifies files to be excluded from test operation.
+<br>
+
+<br>
+<b>Note:</b>    Any transaction must be finished before calling TestFiles. Otherwise an exception will be raised. Also if some other errors occurs an exception will be raised. Write an <a href=onprocessfilefailure.htm>OnProcessFileFailure</a> event handler to perform your own error handling. 
+<br>
+
+<br>
+</span>
+
+</body>
+</html>
